@@ -40,6 +40,12 @@ Thumbs.db
 *.exe
 *.war
 
+# Dataset files
+tinyllava/data/nextqa/videos/
+tinyllava/data/nextqa/*.zip
+tinyllava/data/nextqa/*.csv
+tinyllava/data/nextqa/*.json
+
 # Large media files
 *.mp4
 *.tiff
@@ -49,6 +55,7 @@ Thumbs.db
 *.wmv
 
 #
+.venv/
 .ipynb_checkpoints
 __pycache__
 *.egg-info

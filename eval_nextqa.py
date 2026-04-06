@@ -6,7 +6,7 @@ import pandas as pd
 from PIL import Image
 from tqdm import tqdm
 
-sys.path.insert(0, "/home/brisic03/TinyLLaVA_Factory")
+sys.path.insert(0, os.path.dirname(__file__))
 
 from tinyllava.data.template.base import Template
 from tinyllava.model.load_model import load_pretrained_model
@@ -14,9 +14,9 @@ from tinyllava.utils.arguments import *
 from tinyllava.utils.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN
 
 MODEL_PATH = "TinyLLaVA/TinyLLaVA-3.1B"
-DATA_ROOT = "/home/brisic03/dataset/nextqa/val_descriptive.csv"
-VIDEO_ROOT = "/home/brisic03/NExT-QA/dataset/videos/val"
-OUT_PATH = "/home/brisic03/thesis_eval/results_3b_nextqa.csv"
+DATA_ROOT = os.path.join(os.path.dirname(__file__), "tinyllava", "data", "nextqa", "val_descriptive.csv")
+VIDEO_ROOT = os.path.join(os.path.dirname(__file__), "tinyllava", "data", "nextqa", "videos", "NExTVideo")
+OUT_PATH = os.path.join(os.path.dirname(__file__), "results_3b_nextqa.csv")
 
 def get_frames(v_path, n=8):
 	vid = cv2.VideoCapture(v_path)
