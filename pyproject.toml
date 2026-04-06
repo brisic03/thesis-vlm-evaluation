@@ -7,7 +7,7 @@ name = "tinyllava"
 version = "1.0.0"
 description = "A Framework of Small-scale Large Multimodal Models."
 readme = "README.md"
-requires-python = "==3.11.*"
+requires-python = "==3.9.*"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: Apache Software License",
@@ -21,7 +21,7 @@ dependencies = [
     "requests", "httpx==0.24.0", "uvicorn", "fastapi",
     "einops==0.6.1", "einops-exts==0.0.4", "timm==0.6.13",
     "deepspeed==0.14.0", "ninja", "wandb",
-    "huggingface_hub", "opencv-python",
+    "huggingface_hub", "opencv-python", "datasets",
 ]
 
 [project.optional-dependencies]

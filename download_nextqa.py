@@ -27,8 +27,9 @@ def download_annotations():
 
 
 def download_videos():
-    if os.path.isdir(VIDEO_DIR) and any(f.endswith(".mp4") for f in os.listdir(VIDEO_DIR)):
-        print(f"Videos already exist in {VIDEO_DIR}, skipping.")
+    nextvideo_dir = os.path.join(VIDEO_DIR, "NExTVideo")
+    if os.path.isdir(nextvideo_dir) and any(f.endswith(".mp4") for f in os.listdir(nextvideo_dir)):
+        print(f"Videos already exist in {nextvideo_dir}, skipping.")
         return
 
     if not os.path.exists(ZIP_PATH):

@@ -8,6 +8,10 @@ from tqdm import tqdm
 
 sys.path.insert(0, os.path.dirname(__file__))
 
+from download_nextqa import download_annotations, download_videos
+download_annotations()
+download_videos()
+
 from tinyllava.data.template.base import Template
 from tinyllava.model.load_model import load_pretrained_model
 from tinyllava.utils.arguments import *
@@ -45,12 +49,6 @@ for item in results:
    elif "Processor" in str(type(item)) or "Image" in str(type(item)):
       img_proc = item
 
-print(f"Model vocab size: {model.config.vocab_size}")
-print(f"Tokenizer vocab size: {len(tok)}")
-
-target_size = max(len(tok), model.config.vocab_size) + 100
-print(f"Syncing vocab to {target_size} (with safety buffer)...")
-model.resize_token_embeddings(target_size)
 
 questions = pd.read_csv(DATA_ROOT)
 print(f"DEBUG: Available columns are: {questions.columns.tolist()}")
@@ -73,13 +71,8 @@ for i, row in tqdm(questions.iterrows(), total=len(questions)):
 	qs = row['question']
 	prompt = DEFAULT_IMAGE_TOKEN + "\n" + qs
 
-	input_ids = Template.tokenizer_image_token(prompt, tok, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()
-
-	input_ids  = input_ids.cpu()
-	input_ids[input_ids == -200] = 51199
-
-	input_ids = input_ids.unsqueeze(0).to(model.device)
-	images_tensor = pixel_values.unsqueeze(0).to(device=model.device)
+	input_ids = Template.tokenizer_image_token(prompt, tok, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).to(model.device)
+	images_tensor = pixel_values.to(device=model.device)
 
 	with torch.inference_mode():
 	    output = model.generate(
