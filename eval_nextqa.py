@@ -38,7 +38,7 @@ def get_frames(v_path, n=8):
 	return frames
 
 print("Loading TinyLLaVA-3.1B...")
-results = load_pretrained_model(MODEL_PATH, attn_implementation="eager", load_in_4bit=True, device_map="auto")
+results = load_pretrained_model(MODEL_PATH, attn_implementation="eager")
 
 model, tok, img_proc = None, None, None
 for item in results:
@@ -48,6 +48,9 @@ for item in results:
       tok = item
    elif "Processor" in str(type(item)) or "Image" in str(type(item)):
       img_proc = item
+
+print("Moving model to GPU (float16)...")
+model = model.half().cuda()
 
 
 questions = pd.read_csv(DATA_ROOT)
