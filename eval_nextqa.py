@@ -12,10 +12,11 @@ from download_nextqa import download_annotations, download_videos
 download_annotations()
 download_videos()
 
-from tinyllava.data.template.base import Template
 from tinyllava.model.load_model import load_pretrained_model
 from tinyllava.utils.arguments import *
 from tinyllava.utils.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN
+from tinyllava.data.text_preprocess import TextPreprocess
+from tinyllava.utils.message import Message
 
 MODEL_PATH = "TinyLLaVA/TinyLLaVA-3.1B"
 DATA_ROOT = os.path.join(os.path.dirname(__file__), "tinyllava", "data", "nextqa", "val_descriptive.csv")
@@ -52,6 +53,9 @@ for item in results:
 print("Moving model to GPU (float16)...")
 model = model.half().cuda()
 
+text_processor = TextPreprocess(tok, 'phi')
+stop_str = text_processor.template.separator.apply()[1]
+
 
 questions = pd.read_csv(DATA_ROOT)
 print(f"DEBUG: Available columns are: {questions.columns.tolist()}")
@@ -72,9 +76,15 @@ for i, row in tqdm(questions.iterrows(), total=len(questions)):
 	pixel_values = torch.stack(pixel_values).cuda()
 
 	qs = row['question']
-	prompt = DEFAULT_IMAGE_TOKEN + "\n" + qs
+	choices = [row['a0'], row['a1'], row['a2'], row['a3'], row['a4']]
+	options_str = "\n".join(f"{i}: {c}" for i, c in enumerate(choices))
+	question = (DEFAULT_IMAGE_TOKEN + "\n" + qs + "\n" + options_str +
+	            "\nAnswer with the option number only (0-4).")
 
-	input_ids = Template.tokenizer_image_token(prompt, tok, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).to(model.device)
+	msg = Message()
+	msg.add_message(question)
+	result = text_processor(msg.messages, mode='eval')
+	input_ids = result['input_ids'].unsqueeze(0).to(model.device)
 	images_tensor = pixel_values.to(device=model.device)
 
 	with torch.inference_mode():
@@ -82,17 +92,25 @@ for i, row in tqdm(questions.iterrows(), total=len(questions)):
 		input_ids,
 		images=images_tensor,
 		do_sample=False,
-		max_new_tokens=64,
-		use_cache=True
+		max_new_tokens=16,
+		use_cache=True,
+		pad_token_id=tok.eos_token_id
 	   )
 
-	res = tok.decode(output[0], skip_special_tokens=True).strip()
+	res = tok.batch_decode(output, skip_special_tokens=True)[0].strip()
+	if res.endswith(stop_str):
+	    res = res[:-len(stop_str)].strip()
+
+	# Extract first digit 0-4 as predicted index
+	pred_idx = next((int(c) for c in res if c in '01234'), -1)
 
 	out_data.append({
 	    'videoID': v_id,
 	    'question': qs,
-	    'prediction': res,
-	    'answer': row ['answer']
+	    'prediction_text': res,
+	    'predicted_idx': pred_idx,
+	    'answer_idx': int(row['answer']),
+	    'correct': pred_idx == int(row['answer']),
 	})
 
 os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
