@@ -1,0 +1,778 @@
+videoID,question,options,frame_preds,prediction,answer,correct
+7508439506,where is this video taken,"{'A': 'swimming pool', 'B': 'outdoor', 'C': 'field', 'D': 'desert', 'E': 'bed room'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+8547321641,how many babies are in the video,"{'A': 'kitchen', 'B': 'four', 'C': 'two', 'D': 'three', 'E': 'one'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'C']",E,E,1
+5840177726,how are the men positioned in the video,"{'A': 'riding the cycle', 'B': 'half squat', 'C': 'sit on the sofa', 'D': 'skateboard', 'E': 'stand closely'}","['A', 'A', 'B', 'A', 'B', 'B', 'A', 'A']",A,A,1
+3963997053,where is the performance taking place,"{'A': 'on a stage', 'B': 'room', 'C': 'bar', 'D': 'restaurant', 'E': 'road'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+7533369046,where is this video taken,"{'A': 'dining table', 'B': 'lake', 'C': 'construction site', 'D': 'house', 'E': 'playground'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3550839192,what did the baby hold onto,"{'A': 'father', 'B': 'apple', 'C': 'toys', 'D': 'lady', 'E': 'pram table'}","['A', 'C', 'A', 'D', 'C', 'C', 'C', 'C']",C,E,0
+6895608152,what type of performance is occuring,"{'A': 'ballet', 'B': 'introducing the hall', 'C': 'street performance', 'D': 'wedding', 'E': 'piano'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+3821781616,where is the man at,"{'A': 'classroom', 'B': 'roadside', 'C': 'mountain', 'D': 'hallway', 'E': 'living room'}","['E', 'D', 'E', 'E', 'D', 'B', 'E', 'D']",E,E,1
+4942054721,how many goats can be spotted,"{'A': 'eight', 'B': 'two', 'C': 'one', 'D': 'three', 'E': 'four'}","['C', 'D', 'E', 'D', 'D', 'D', 'D', 'D']",D,A,0
+9213637099,how many people are involved,"{'A': 'six', 'B': 'two', 'C': 'five', 'D': 'seven', 'E': 'one'}","['C', 'C', 'B', 'C', 'C', 'C', 'C', 'C']",C,C,1
+5561024834,where is the boy hanging out,"{'A': 'bedroom', 'B': 'by a stream', 'C': 'yard', 'D': 'in his backyard', 'E': 'coffee shop'}","['A', 'A', 'A', 'A', 'C', 'A', 'A', 'A']",A,A,1
+2793260225,what were there two men wearing on their heads,"{'A': 'flowers', 'B': 'streamers', 'C': 'bandages', 'D': 'ribbons', 'E': 'caps'}","['E', 'E', 'E', 'E', 'E', 'E', 'C', 'B']",E,E,1
+8107573462,where is this place,"{'A': 'bus terminal', 'B': 'theatre', 'C': 'snow field', 'D': 'park', 'E': 'waterfall'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+7001078933,where is this video taken,"{'A': 'sea', 'B': 'field', 'C': 'mountain top', 'D': 'computer table', 'E': 'snow mountain'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3206694342,how many people are on stage,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'five', 'E': 'seven'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,B,0
+2735019707,what is the relationship between the boy and the man in red,"{'A': 'father daughter', 'B': 'parent offspring', 'C': 'trainer trainee', 'D': 'friends', 'E': 'team member'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4130504920,what is the colour of the balloon,"{'A': 'purple', 'B': 'black', 'C': 'brown', 'D': 'white and red', 'E': 'green'}","['D', 'A', 'A', 'A', 'A', 'A', 'A', 'D']",A,A,1
+4798585428,how many people are posing for the photos,"{'A': 'two', 'B': 'five', 'C': 'six', 'D': 'thirteen', 'E': 'one'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4984417707,how many elephants were playing with the ball,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'five', 'E': 'one'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+6860322796,where is this video taken,"{'A': 'by a lake', 'B': 'dancing hall', 'C': 'park', 'D': 'kitchen', 'E': 'computer table'}","['C', 'C', 'C', 'C', 'C', 'A', 'C', 'C']",C,C,1
+2461993294,what is the relationship between the two performers,"{'A': 'classmates', 'B': 'team member', 'C': 'colleagues', 'D': 'friends', 'E': 'puppet show'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4889681401,where are the people cycling,"{'A': 'road', 'B': 'beach', 'C': 'auditorium', 'D': 'bus', 'E': 'living room'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5296635780,where is this happening,"{'A': 'backyard', 'B': 'hallway', 'C': 'in the middle of the sea', 'D': 'bowling alley', 'E': 'road'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3550839192,what colour is the baby wearing,"{'A': 'yellow', 'B': 'brown', 'C': 'blue', 'D': 'green', 'E': 'pink'}","['B', 'B', 'B', 'C', 'B', 'B', 'B', 'B']",B,B,1
+6860322796,what is jumping in the snow,"{'A': 'birds', 'B': 'elephants', 'C': 'rabbits', 'D': 'crocodile', 'E': 'dogs'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+8811725760,what are the people at,"{'A': 'forest', 'B': 'living room', 'C': 'bedroom', 'D': 'park', 'E': 'beach'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+5237219621,how many people are there,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'eleven', 'E': 'five'}","['B', 'B', 'B', 'B', 'B', 'A', 'B', 'B']",B,C,0
+6253433310,how did the boy protect his eyes,"{'A': 'wear bib', 'B': 'covered with hands', 'C': 'blanket', 'D': 'turn his head to look around', 'E': 'wear swimming goggles'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3851961428,what is the relationship between the man wearing red and the boy wearing blue,"{'A': 'parent child', 'B': 'trainer trainee', 'C': 'friends', 'D': 'parents and children', 'E': 'friend'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2834146886,how many dogs are there,"{'A': 'four', 'B': 'one', 'C': 'two', 'D': 'six', 'E': 'three'}","['C', 'B', 'B', 'B', 'C', 'C', 'B', 'B']",B,C,0
+3345608051,where are the dogs fighting,"{'A': 'barren land', 'B': 'snow wild', 'C': 'living room', 'D': 'garden', 'E': 'grass patch'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+4087013668,where is this video taken,"{'A': 'bedroom', 'B': 'speech event', 'C': 'mountain', 'D': 'kitchen', 'E': 'playground'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+7223854838,how do the two boys position their hands,"{'A': 'put in their pocket', 'B': 'touch baby s hand and smile', 'C': 'on the glass', 'D': 'kiss the babies', 'E': 'move handle'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+5229476012,where is this video taken,"{'A': 'dinning table', 'B': 'park', 'C': 'carnival', 'D': 'boxing ring', 'E': 'swimming pool'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+8563398032,how many people are presenting,"{'A': 'seven', 'B': 'five', 'C': 'six', 'D': 'three', 'E': 'two'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+2679328607,how many times does the girl pass the toy to the boy,"{'A': 'six', 'B': 'two', 'C': 'four', 'D': 'five', 'E': 'three'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,E,0
+8594309349,where is this video taken,"{'A': 'room', 'B': 'outdoor', 'C': 'along the streets', 'D': 'under the water', 'E': 'on the plane'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3550839192,where is this place,"{'A': 'house floor', 'B': 'restaurant', 'C': 'classroom', 'D': 'train station', 'E': 'playground'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+2824317018,where is this place,"{'A': 'forest', 'B': 'outdoors', 'C': 'near a staircase', 'D': 'living room', 'E': 'their house'}","['A', 'A', 'A', 'A', 'A', 'B', 'A', 'B']",A,A,1
+8740703217,what is on the table,"{'A': 'white cake', 'B': 'cardboard box', 'C': 'letters', 'D': 'birthday gifts', 'E': 'food'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+2731071928,what instrument is the child playing,"{'A': 'santa claus', 'B': 'vacuum cleaner', 'C': 'pick up fallen paper', 'D': 'guitar', 'E': 'piano'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3861485381,which animal went into the forest first,"{'A': 'fishes', 'B': 'polar bear', 'C': 'deep', 'D': 'leopard at the front', 'E': 'horse'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3981865268,where is this video taken,"{'A': 'stage', 'B': 'ballroom', 'C': 'park', 'D': 'road', 'E': 'forest'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5801184682,how many cats are there,"{'A': 'three', 'B': 'four', 'C': 'two', 'D': 'one', 'E': 'five'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+2978295992,how many ladies are filmed,"{'A': 'six', 'B': 'two', 'C': 'seven', 'D': 'five', 'E': 'four'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3388598772,how many people are mainly involved in the video,"{'A': 'four', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'one'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3469864014,where was the fish sliced,"{'A': 'dining room', 'B': 'restaurant', 'C': 'along its belly', 'D': 'bowl', 'E': 'fish tank'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+2717347132,what is the color of the bib,"{'A': 'red', 'B': 'black', 'C': 'grey', 'D': 'light blue', 'E': 'white'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3804148568,what is the relationship between the man in specs and the two wearing masks,"{'A': 'team members', 'B': 'fix the bunker', 'C': 'teacher student', 'D': 'friends', 'E': 'poster'}","['D', 'D', 'D', 'D', 'D', 'C', 'D', 'D']",D,D,1
+4036955771,how many performers are there,"{'A': 'six', 'B': 'seven', 'C': 'eleven', 'D': 'eight', 'E': 'five'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,B,0
+5328004991,where are the people hanging out,"{'A': 'kitchen', 'B': 'grass', 'C': 'living area', 'D': 'zoo', 'E': 'classroom'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+6265968082,how many people are performing on stage,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'three', 'E': 'nine'}","['D', 'D', 'B', 'D', 'D', 'B', 'D', 'B']",D,A,0
+4825843801,where are the penguins hanging out,"{'A': 'cage', 'B': 'floor', 'C': 'zoo', 'D': 'kitchen', 'E': 'pond'}","['C', 'C', 'B', 'B', 'B', 'B', 'C', 'C']",C,C,1
+11541421563,how many people are involved in reading the score,"{'A': 'six', 'B': 'four', 'C': 'eight', 'D': 'seven', 'E': 'two'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+4518113460,where are the people hanging out,"{'A': 'classroom', 'B': 'bus', 'C': 'kitchen', 'D': 'living room', 'E': 'snow mountain'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,D,0
+2552130183,where are the people hanging out,"{'A': 'hospital room', 'B': 'beach', 'C': 'forest trail', 'D': 'home', 'E': 'living room'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+2735019707,where are the people hanging out,"{'A': 'indoors', 'B': 'grass', 'C': 'swimming pool', 'D': 'lake', 'E': 'kitchen'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+7988210561,what was the baby looking at at the beginning of the video,"{'A': 'birthday celebration', 'B': 'bite toy', 'C': 'computer screen', 'D': 'siblings', 'E': 'stuff toy'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+4485707628,how does the black dog position himself at the end,"{'A': 'wear collars', 'B': 'using hands', 'C': 'keep getting up', 'D': 'sit on the ground', 'E': 'lie on the grassland'}","['D', 'A', 'D', 'C', 'C', 'D', 'B', 'D']",D,D,1
+2495861393,what is the relationship between the lady and the children,"{'A': 'caregiver', 'B': 'teacher student', 'C': 'friends', 'D': 'trainer and trainee', 'E': 'mother and children'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,B,0
+2573424030,how many people in total are there in the video,"{'A': 'six', 'B': 'one', 'C': 'two', 'D': 'five', 'E': 'seven'}","['A', 'E', 'C', 'C', 'C', 'C', 'C', 'C']",C,E,0
+4336654741,where is this happening,"{'A': 'skate park', 'B': 'living room', 'C': 'beach', 'D': 'office', 'E': 'garden'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+11244289523,what is the relationship between the lady in black and the baby,"{'A': 'mother and child', 'B': 'parent offspring', 'C': 'colleagues', 'D': 'teacher', 'E': 'supervisor'}","['A', 'B', 'A', 'A', 'A', 'A', 'A', 'A']",A,B,0
+4671452046,what did the baby do with the spoon that he was holding,"{'A': 'presents', 'B': 'blue and purple', 'C': 'stir the cup', 'D': 'orange', 'E': 'the girl'}","['C', 'C', 'C', 'B', 'C', 'C', 'C', 'C']",C,C,1
+6806999702,where is this video taken,"{'A': 'field', 'B': 'park', 'C': 'room', 'D': 'by a lake', 'E': 'speech event'}","['B', 'B', 'B', 'B', 'B', 'A', 'B', 'A']",B,A,0
+5017166671,how many pople are on stage,"{'A': 'nine', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'four'}","['C', 'C', 'C', 'C', 'E', 'C', 'C', 'C']",C,E,0
+4516967897,how many ladies are there,"{'A': 'three', 'B': 'two', 'C': 'seven', 'D': 'one', 'E': 'six'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+8225502382,how many times does the man in dark green attempt to go up the slope,"{'A': 'one', 'B': 'eight', 'C': 'five', 'D': 'three', 'E': 'twelve'}","['D', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,C,0
+5658916668,how many people were filmed sliding down,"{'A': 'four', 'B': 'one', 'C': 'seven', 'D': 'two', 'E': 'six'}","['D', 'D', 'C', 'D', 'B', 'B', 'B', 'B']",B,B,1
+11244289523,what is the occasion in the video,"{'A': 'wedding', 'B': 'cosplay', 'C': 'birthday', 'D': 'colleagues', 'E': 'computer screen'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+2973331780,what is the possible relationship between the lady in black and the lady with blonde hair,"{'A': 'train trainee', 'B': 'friends', 'C': 'teacher student', 'D': 'mother and daughter', 'E': 'colleagues'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4740074365,where is this video taken,"{'A': 'classroom', 'B': 'forest', 'C': 'wedding hall', 'D': 'park', 'E': 'living room'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+8224504302,where are the men delivering their speech,"{'A': 'stage', 'B': 'outdoors', 'C': 'on water', 'D': 'living room', 'E': 'roadside'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+3655906094,where is this video taken,"{'A': 'train', 'B': 'roadside', 'C': 'dinning table', 'D': 'lake', 'E': 'outdoor'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+6793786769,where is the video taken,"{'A': 'backyard', 'B': 'swimming pool', 'C': 'track', 'D': 'in house', 'E': 'along the streets'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4444192938,how many kids are there at the area,"{'A': 'one', 'B': 'four', 'C': 'nine', 'D': 'two', 'E': 'three'}","['D', 'D', 'E', 'D', 'D', 'D', 'D', 'A']",D,E,0
+4882414082,what is the baby eating,"{'A': 'ice cream', 'B': 'pacifier', 'C': 'noodle', 'D': 'bubbles', 'E': 'fruit'}","['C', 'B', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+9409566840,how many dogs are playng biting with each other in the video,"{'A': 'three', 'B': 'two', 'C': 'five', 'D': 'six', 'E': 'four'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+11276567104,where is this procession being held,"{'A': 'on a cruise', 'B': 'desert', 'C': 'forest', 'D': 'church', 'E': 'office'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3530231811,where are the people in the video performing,"{'A': 'staircase', 'B': 'airport', 'C': 'event hall', 'D': 'living room', 'E': 'concert stage'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+8552680285,how does the person sitting down position higher hands,"{'A': 'move wrists', 'B': 'right angle to his body', 'C': 'push chair behind', 'D': 'light on the speaker', 'E': 'on the handle'}","['B', 'E', 'E', 'B', 'B', 'B', 'C', 'C']",B,E,0
+6233408665,where is this video taken,"{'A': 'kitchen', 'B': 'outdoors', 'C': 'playground', 'D': 'field', 'E': 'indoors'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+2716277960,where is this place,"{'A': 'in a building', 'B': 'playground', 'C': 'forest', 'D': 'a hut', 'E': 'grassland'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+2679328607,where are the people hanging out,"{'A': 'water fountain', 'B': 'classroom', 'C': 'car', 'D': 'forest trail', 'E': 'house'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+7887764754,what did the baby do to the dog,"{'A': 'feed it', 'B': 'let it jump', 'C': 'dice toy', 'D': 'kiss its head', 'E': 'playing fetch'}","['A', 'E', 'E', 'E', 'E', 'D', 'E', 'E']",E,A,0
+11670386946,what is the purpose of the piece of paper that the man with brown hat is holding on to,"{'A': 'provide information on displays', 'B': 'tripod', 'C': 'cup', 'D': 'wooden stick', 'E': 'driver'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+12392885583,how many babies are in the video,"{'A': 'three', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'kitchen'}","['D', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4846820256,what is the boy pulling,"{'A': 'toy table', 'B': 'the dog s tail', 'C': 'toy car', 'D': 'sand', 'E': 'rope'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+4189100053,where can this be happening,"{'A': 'grass patch', 'B': 'front porch', 'C': 'club', 'D': 'living room', 'E': 'farm'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3804148568,where are the people hanging out,"{'A': 'road', 'B': 'car', 'C': 'bus', 'D': 'outdoor porch', 'E': 'living room'}","['E', 'E', 'D', 'D', 'D', 'E', 'D', 'D']",D,E,0
+7988210561,where is the toy sitting at,"{'A': 'chair', 'B': 'play area', 'C': 'on the bed', 'D': 'classroom', 'E': 'floor'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,A,0
+7492398760,where is this happening,"{'A': 'garden', 'B': 'bedroom', 'C': 'outdoors', 'D': 'room', 'E': 'car'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,A,0
+5235909148,how many people are in the video,"{'A': 'three', 'B': 'six', 'C': 'one', 'D': 'four', 'E': 'eight'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'D']",C,D,0
+5061117640,where is this happening,"{'A': 'in the sea', 'B': 'residential area', 'C': 'wooded areas', 'D': 'outdoors', 'E': 'office'}","['E', 'B', 'E', 'B', 'B', 'B', 'B', 'B']",B,E,0
+5433090067,how was the girl positioned at the start of the video,"{'A': 'lying in bed', 'B': 'standing', 'C': 'sit on the toy cart', 'D': 'open her arms', 'E': 'sit on mat'}","['C', 'C', 'C', 'C', 'C', 'C', 'D', 'D']",C,B,0
+6754608321,what color is the baby s clothes,"{'A': 'black and red', 'B': 'yellow and red', 'C': 'yellow', 'D': 'white', 'E': 'green'}","['E', 'E', 'E', 'E', 'E', 'E', 'C', 'E']",E,E,1
+2857132732,where is this place,"{'A': 'farm', 'B': 'theatre', 'C': 'kitchen', 'D': 'house floor', 'E': 'indoors'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+6772999108,where is this video taken,"{'A': 'mountain top', 'B': 'by a lake', 'C': 'stage', 'D': 'living room', 'E': 'studio'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8241491518,where is the man working,"{'A': 'living room', 'B': 'lake', 'C': 'public area', 'D': 'forest', 'E': 'lake side'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8132842161,where is this video taken,"{'A': 'classroom', 'B': 'living room', 'C': 'in house', 'D': 'outdoors', 'E': 'park'}","['D', 'E', 'E', 'E', 'E', 'E', 'D', 'E']",E,E,1
+9208803675,how many people are on the swing in the video,"{'A': 'five', 'B': 'one', 'C': 'six', 'D': 'two', 'E': 'eight'}","['D', 'B', 'B', 'D', 'B', 'B', 'D', 'B']",B,D,0
+3388598772,what is the relationship between the man in blue and the woman in black,"{'A': 'producer and cast', 'B': 'go another side', 'C': 'dance partner', 'D': 'teacher', 'E': 'couple'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3851913128,what is the relationship between the guy in red and the rest of the people in black,"{'A': 'producer and cast', 'B': 'colleagues', 'C': 'trainer trainee', 'D': 'parent child', 'E': 'fire rods'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4636208292,how many people are cheering their glasses at the end,"{'A': 'five', 'B': 'three', 'C': 'four', 'D': 'seven', 'E': 'one'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,C,0
+8594309349,what are the people carrying on their back,"{'A': 'their kids', 'B': 'backpacks', 'C': 'performers', 'D': 'cards', 'E': 'oxygen tank'}","['E', 'E', 'E', 'A', 'E', 'E', 'E', 'E']",E,E,1
+7887764754,how many people are involved in the video,"{'A': 'four', 'B': 'six', 'C': 'three', 'D': 'one', 'E': 'two'}","['E', 'D', 'E', 'D', 'E', 'D', 'E', 'D']",E,D,0
+3869005094,what are the four people holding,"{'A': 'dog s paws', 'B': 'wooden sword', 'C': 'silver boxes', 'D': 'rope', 'E': 'glasses'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3477387686,where did this video take place,"{'A': 'park', 'B': 'roadside', 'C': 'home', 'D': 'at a wedding', 'E': 'camp'}","['C', 'C', 'C', 'C', 'C', 'A', 'C', 'C']",C,A,0
+5635265624,where are they sitting in the video,"{'A': 'bench', 'B': 'museum', 'C': 'floor', 'D': 'forest area', 'E': 'bed'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'B']",A,A,1
+4822859674,where is this video taken,"{'A': 'front porch', 'B': 'beach', 'C': 'ball room', 'D': 'park', 'E': 'living room'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+5064681723,what is the animal behind the fence,"{'A': 'polar bear', 'B': 'panda', 'C': 'squirrel', 'D': 'dogs', 'E': 'deer'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+6201488511,where is this video taken,"{'A': 'ballroom', 'B': 'outdoor', 'C': 'mountain', 'D': 'living room', 'E': 'road'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+8253302563,how many people are involved in the video,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'one', 'E': 'five'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+2589540862,how many children are there,"{'A': 'nine', 'B': 'two', 'C': 'six', 'D': 'one', 'E': 'four'}","['D', 'D', 'B', 'D', 'B', 'D', 'D', 'D']",D,D,1
+6096998186,who clapped her hands at the end,"{'A': 'lady on the sofa', 'B': 'lady in black', 'C': 'taller boy', 'D': 'boy in the middle', 'E': 'man in green'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+5349766264,where is this video taken,"{'A': 'computer table', 'B': 'sheltered area', 'C': 'train', 'D': 'room', 'E': 'playground'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3321261856,what is the girl holding,"{'A': 'v and e', 'B': 'party props', 'C': 'cat toy', 'D': 'phone', 'E': 'pacifier'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+7531285946,where is this video taken,"{'A': 'backyard', 'B': 'deserted area', 'C': 'front porch', 'D': 'outdoors', 'E': 'ball room'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,B,0
+2559262403,where are the pugs hanging out,"{'A': 'grass patch', 'B': 'snow wild', 'C': 'in the garden', 'D': 'a forest', 'E': 'at a house'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3263908208,where is this video taken,"{'A': 'indoors', 'B': 'sea', 'C': 'lake side', 'D': 'carnival', 'E': 'snow mountain'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+5521781780,where are the people hanging out,"{'A': 'house', 'B': 'beach', 'C': 'swimming pool', 'D': 'car', 'E': 'ancient site'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+8464056582,where is this happening,"{'A': 'house', 'B': 'beach', 'C': 'roadside', 'D': 'porch', 'E': 'pool'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+8403741210,where is this happening,"{'A': 'car', 'B': 'skate park', 'C': 'living room', 'D': 'swimming pool', 'E': 'stage'}","['C', 'C', 'C', 'E', 'E', 'C', 'C', 'C']",C,C,1
+2584172238,how are the baby in blue and woman in yellow related,"{'A': 'mother', 'B': 'friends', 'C': 'father son', 'D': 'parent offspring', 'E': 'make the baby calm'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+7961460440,where is this video taken,"{'A': 'studio', 'B': 'boxing ring', 'C': 'park', 'D': 'outdoor', 'E': 'train'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+7453733046,where are the people hanging out,"{'A': 'outside house', 'B': 'water park', 'C': 'at a house', 'D': 'bus', 'E': 'studio'}","['B', 'B', 'B', 'B', 'B', 'B', 'A', 'A']",B,B,1
+6542914065,where is this happening,"{'A': 'garden', 'B': 'wooded areas', 'C': 'field', 'D': 'footpath', 'E': 'home'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+5854324479,what event is happening,"{'A': 'concert', 'B': 'speech', 'C': 'water skiing', 'D': 'boxing game', 'E': 'stage'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3131380536,what is the colour of the yoghurt,"{'A': 'light blue', 'B': 'black and white', 'C': 'pink', 'D': 'white', 'E': 'black'}","['C', 'C', 'C', 'C', 'D', 'C', 'D', 'C']",C,C,1
+6046149003,how many girls are there,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}","['B', 'D', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+5237219621,how is the atmosphere of this group discussion,"{'A': 'happy', 'B': 'serious', 'C': 'sad', 'D': 'angry', 'E': 'shocking'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+5533380417,how is the baby positioned throuh the video,"{'A': 'on man s laps', 'B': 'sitting on baby seat', 'C': 'lie on bed', 'D': 'sitting on sofa', 'E': 'carried on man s back'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+6356067859,where could this be happening,"{'A': 'hospital', 'B': 'barn', 'C': 'home corridor', 'D': 'roadside', 'E': 'zoo'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3626788516,how many people are in the video,"{'A': 'four', 'B': 'eight', 'C': 'two', 'D': 'nine', 'E': 'ten'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4136617240,how does the girl feel,"{'A': 'laughs', 'B': 'sad', 'C': 'happy', 'D': 'annoyed', 'E': 'confused but calm'}","['E', 'E', 'E', 'E', 'C', 'C', 'C', 'C']",E,C,0
+13296054183,what is the relation between the two people on the bicycle,"{'A': 'slow', 'B': 'family', 'C': 'colleagues', 'D': 'signs on handlebar', 'E': 'ride horse and carriage'}","['D', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+5902452647,where is this happening,"{'A': 'living room', 'B': 'wooded areas', 'C': 'hospital', 'D': 'house', 'E': 'grassland'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'D']",E,E,1
+8552680285,how many people are there,"{'A': 'two', 'B': 'six', 'C': 'one', 'D': 'eleven', 'E': 'three'}","['A', 'A', 'C', 'C', 'C', 'A', 'A', 'A']",A,A,1
+8531675050,where are the people performing,"{'A': 'pool', 'B': 'grass patch', 'C': 'ring', 'D': 'on the streets', 'E': 'on stage'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+4612723694,what is inside the white bag,"{'A': 'scores', 'B': 'toys', 'C': 'carrying bags', 'D': 'snake', 'E': 'soft toy'}","['A', 'A', 'C', 'D', 'D', 'C', 'D', 'D']",D,D,1
+3249402410,what are the ladies making in the video,"{'A': 'soup', 'B': 'pizza', 'C': 'fried chicken', 'D': 'cake', 'E': 'pie'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'A']",B,B,1
+5875242364,where is this video taken,"{'A': 'computer table', 'B': 'boxing ring', 'C': 'garden', 'D': 'kitchen', 'E': 'jungle'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+10727696143,what is a possible relationship between the boy and the lady,"{'A': 'father and child', 'B': 'team mates', 'C': 'parent offspring', 'D': 'teacher student', 'E': 'couple'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3158022797,where was this video taken,"{'A': 'park', 'B': 'living room', 'C': 'on the plane', 'D': 'outdoor', 'E': 'forest'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2835125654,how many elephants are there,"{'A': 'one', 'B': 'five', 'C': 'two', 'D': 'four', 'E': 'three'}","['C', 'C', 'C', 'C', 'D', 'C', 'C', 'C']",C,C,1
+14012319794,what did the girl take from the cupboard,"{'A': 'red hat', 'B': 'bottle of syrup', 'C': 'pet', 'D': 'baby snake', 'E': 'horse guide'}","['A', 'E', 'C', 'C', 'A', 'C', 'C', 'C']",C,B,0
+4744503881,what were passed outside the window,"{'A': 'nurses', 'B': 'two ladies', 'C': 'cars', 'D': 'man in black', 'E': 'lady wearing skirt'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+11966080214,where is this place,"{'A': 'living room', 'B': 'corridor', 'C': 'classroom', 'D': 'farm', 'E': 'golf course'}","['B', 'B', 'A', 'B', 'B', 'B', 'B', 'B']",B,B,1
+14003541505,what does the girl in pink do as the baby tried to move around,"{'A': 'parent offspring', 'B': 'sit at the side and watch', 'C': 'grandmother grandson', 'D': 'parent child', 'E': 'offspring'}","['B', 'B', 'B', 'D', 'D', 'B', 'B', 'D']",B,B,1
+9256409422,where is this video taken,"{'A': 'supermarket', 'B': 'on the plane', 'C': 'road', 'D': 'train station', 'E': 'lake side'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+5858985747,where is this happening,"{'A': 'in the sea', 'B': 'karaoke room', 'C': 'trail', 'D': 'house', 'E': 'wooded areas'}","['B', 'B', 'B', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8531675050,what is the possible relation between lady in black and white and the man in white,"{'A': 'baby', 'B': 'siblings', 'C': 'fatherdaughter', 'D': 'husband wife', 'E': 'colleagues'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,E,0
+4123211145,where is this video taken,"{'A': 'backyard', 'B': 'snow mountain', 'C': 'room', 'D': 'computer table', 'E': 'train'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4542882771,where is the baby hanging out,"{'A': 'along the roadside', 'B': 'bathtub', 'C': 'house floor', 'D': 'dining table', 'E': 'kitchen'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+10597533885,where is this happening,"{'A': 'playground', 'B': 'in the day', 'C': 'beach', 'D': 'room', 'E': 'home'}","['D', 'E', 'D', 'D', 'D', 'E', 'E', 'E']",D,A,0
+5406108447,where is the girl hanging out,"{'A': 'classroom', 'B': 'farm', 'C': 'play room', 'D': 'dance studio', 'E': 'gym'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+2705374471,how many people are there in the room,"{'A': 'three', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'eight'}","['D', 'D', 'D', 'D', 'D', 'D', 'B', 'D']",D,D,1
+5445581571,where is this video taken,"{'A': 'living room', 'B': 'dinning table', 'C': 'computer table', 'D': 'kitchen', 'E': 'outside'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5907839036,where is this happening,"{'A': 'bridge', 'B': 'trail', 'C': 'skate park', 'D': 'house', 'E': 'bed room'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+9256409422,how did the lady in black protect herself from the cold,"{'A': 'covered with blanket', 'B': 'hand gestures', 'C': 'crawling', 'D': 'woolen cap', 'E': 'wear jacket'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+11584566583,how many people can be seen in the video,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'thirteen', 'E': 'eight'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+5064681723,how did the baby keep his head warm,"{'A': 'thick clothes', 'B': 'mat', 'C': 'beanie', 'D': 'wear gloves', 'E': 'wear warm clothes'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,C,0
+9213637099,where is this,"{'A': 'horse enclosure', 'B': 'restaurant', 'C': 'park', 'D': 'childcare center', 'E': 'indoors'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+8253302563,where is this happening,"{'A': 'bowling alley', 'B': 'beach', 'C': 'kitchen', 'D': 'home', 'E': 'hospital'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+7088595057,where is this video taken,"{'A': 'playground', 'B': 'stage', 'C': 'paddock', 'D': 'forest', 'E': 'construction site'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+6329077812,where is the baby while him was fed milk,"{'A': 'mobile', 'B': 'in lady s arm', 'C': 'pillow', 'D': 'baby trolley', 'E': 'living room'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3469864014,how many cats were there,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'five'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,B,0
+4626535366,what is the possible relationship among the people,"{'A': 'colleagues', 'B': 'friends', 'C': 'dance partner', 'D': 'classmates', 'E': 'coworkers'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4970148391,what is the boy hitting that it splashes water on his face,"{'A': 'water balloon', 'B': 'snow ball', 'C': 'milk pack', 'D': 'a cup of drink', 'E': 'beer bottle'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+6754608321,how many people are shown in the video,"{'A': 'eight', 'B': 'two', 'C': 'five', 'D': 'eleven', 'E': 'one'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+6772999108,what did the girl do in the middle of the video,"{'A': 'fall down', 'B': 'show her toy', 'C': 'start dancing', 'D': 'clap', 'E': 'hit the drum'}","['B', 'C', 'B', 'D', 'C', 'B', 'D', 'D']",B,D,0
+10001787725,where are the people hanging out,"{'A': 'car', 'B': 'grassland', 'C': 'bed', 'D': 'road', 'E': 'studio'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+6097994550,how many men were there,"{'A': 'seven', 'B': 'two', 'C': 'four', 'D': 'three', 'E': 'one'}","['B', 'B', 'D', 'B', 'B', 'B', 'D', 'E']",B,B,1
+4264435046,how many dogs are there,"{'A': 'one', 'B': 'two', 'C': 'four', 'D': 'six', 'E': 'nine'}","['A', 'B', 'B', 'A', 'A', 'B', 'B', 'B']",B,B,1
+2400715506,how did the person handle the animal,"{'A': 'with difficulty', 'B': 'carry', 'C': 'gently on the palm', 'D': 'hold the rope', 'E': 'touch the head by hand'}","['C', 'E', 'B', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4092992100,how many people are filmed,"{'A': 'three', 'B': 'nine', 'C': 'two', 'D': 'five', 'E': 'four'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+8531675050,how many people are acting on the stage,"{'A': 'two', 'B': 'nine', 'C': 'one', 'D': 'eleven', 'E': 'six'}","['A', 'A', 'A', 'A', 'A', 'A', 'C', 'A']",A,A,1
+7728559968,how are the kittens positioned at the start,"{'A': 'hugged by man', 'B': 'look at the hand', 'C': 'feed water and hug the doll', 'D': 'side to side', 'E': 'lying down'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,E,0
+5145526755,where is this happening,"{'A': 'desert', 'B': 'garden', 'C': 'bedroom', 'D': 'school', 'E': 'wildlife reserve'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+2932897373,what is the relationship between the man in grey and the lady in white,"{'A': 'parent offspring', 'B': 'classmate', 'C': 'trainer trainee', 'D': 'couple', 'E': 'colleagues'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+10030609934,where is this video taken,"{'A': 'playground', 'B': 'dinning table', 'C': 'stage', 'D': 'house', 'E': 'porch at garden'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,E,0
+11587211476,how did the people protect themselves from the cold weather,"{'A': 'shine light', 'B': 'stick', 'C': 'rode on truck', 'D': 'wear facemask', 'E': 'wear winter clothing'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+6329954198,how did the man in black adjust his position,"{'A': 'using the mouse', 'B': 'keep getting up', 'C': 'hit the drum', 'D': 'running', 'E': 'jacket'}","['A', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4465235803,where is this happening,"{'A': 'beach', 'B': 'hospital', 'C': 'bedroom', 'D': 'barber', 'E': 'on the road'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3121571439,where is this happening,"{'A': 'footpath', 'B': 'outside house', 'C': 'on the road', 'D': 'in the sea', 'E': 'home'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2454242177,where is the baby is playing,"{'A': 'along the roadside', 'B': 'home', 'C': 'in the room', 'D': 'on a couch in living room', 'E': 'playliving area'}","['C', 'C', 'C', 'B', 'C', 'B', 'C', 'C']",C,B,0
+11681746823,where are the people hanging out,"{'A': 'playground', 'B': 'grassland', 'C': 'outside a building', 'D': 'bedroom', 'E': 'outside house'}","['D', 'D', 'D', 'D', 'D', 'D', 'C', 'C']",D,D,1
+10109097475,how many planes are involved in the video,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'eight'}","['C', 'C', 'C', 'C', 'C', 'D', 'D', 'C']",C,D,0
+5297811305,where is this happening,"{'A': 'beach', 'B': 'karaoke room', 'C': 'hospital', 'D': 'outside the house', 'E': 'trail'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3218498932,what is the relationship between the boys in the videos,"{'A': 'colleagues', 'B': 'classmates', 'C': 'brothers', 'D': 'friends', 'E': 'performers'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+6277800530,how many people were on the jeep,"{'A': 'two', 'B': 'five', 'C': 'one', 'D': 'six', 'E': 'nine'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+8505893258,how many people were in the video,"{'A': 'seven', 'B': 'twelve', 'C': 'six', 'D': 'five', 'E': 'two'}","['C', 'E', 'D', 'E', 'E', 'D', 'C', 'C']",C,C,1
+6300775954,where is this video taken,"{'A': 'speech event', 'B': 'roadside', 'C': 'studio', 'D': 'outside', 'E': 'gym'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+4465235803,how many people are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'three', 'D': 'one', 'E': 'four'}","['D', 'D', 'D', 'C', 'D', 'C', 'C', 'C']",D,C,0
+2829462646,what event is occuring,"{'A': 'children s show', 'B': 'introducing the hall', 'C': 'party', 'D': 'traditional formal musical performance', 'E': 'piano'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+6024684644,where is this place,"{'A': 'zoo', 'B': 'field', 'C': 'train station', 'D': 'classroom', 'E': 'beach'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+5429688959,how many people are playing instruments,"{'A': 'five', 'B': 'eleven', 'C': 'one', 'D': 'four', 'E': 'three'}","['E', 'C', 'C', 'E', 'C', 'C', 'E', 'E']",E,C,0
+4838145161,what is the animal shown in the video,"{'A': 'dog', 'B': 'fish', 'C': 'rabbit', 'D': 'birds', 'E': 'cat'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+8513603944,how many children are there,"{'A': 'one', 'B': 'two', 'C': 'four', 'D': 'nine', 'E': 'three'}","['B', 'B', 'B', 'B', 'B', 'A', 'A', 'A']",B,B,1
+2809330695,how many times does the baby attempt to flip over,"{'A': 'five', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'three'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,E,0
+3814690167,who did the baby approach at the start,"{'A': 'the lady', 'B': 'man in white', 'C': 'man in grey', 'D': 'man in black', 'E': 'his sister'}","['B', 'E', 'B', 'A', 'B', 'E', 'A', 'B']",B,A,0
+3524939594,what is the relationship between the men,"{'A': 'cowboy', 'B': 'friends', 'C': 'parent offspring', 'D': 'team member opponent', 'E': 'trainer trainee'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'C']",E,B,0
+4740074365,what is the occasion in the video,"{'A': 'colleagues', 'B': 'wedding', 'C': 'warm up for boxing match', 'D': 'speech', 'E': 'phone'}","['B', 'B', 'B', 'D', 'B', 'B', 'B', 'B']",B,B,1
+9917882506,where are the children riding the bicycle,"{'A': 'balcony', 'B': 'study room', 'C': 'outdoor covered area', 'D': 'park', 'E': 'home'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4103088549,where is this place,"{'A': 'beach', 'B': 'theater', 'C': 'dirt field', 'D': 'playground', 'E': 'bus terminal'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+3218498932,where could this be happening,"{'A': 'dining room', 'B': 'restaurant', 'C': 'living room', 'D': 'shop', 'E': 'front porch'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4276006683,how many people are involved in the video,"{'A': 'two', 'B': 'six', 'C': 'five', 'D': 'one', 'E': 'four'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3711681535,what actvity is being carried out,"{'A': 'rowing competition', 'B': 'street performance', 'C': 'friend s gathering', 'D': 'a play', 'E': 'swinging'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3708066257,what colour shirt were the guy and girl wearing,"{'A': 'black', 'B': 'blue', 'C': 'white', 'D': 'red', 'E': 'yellow'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+4244817395,what is the relationship between the boy and the adults,"{'A': 'classmates', 'B': 'brothers', 'C': 'friends', 'D': 'parent offspring', 'E': 'trainer trainee'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3489439407,what profession are these people,"{'A': 'team members', 'B': 'they are back stage crew', 'C': 'piano', 'D': 'talent perfromance', 'E': 'fireman'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2535384528,where is the man playing golf,"{'A': 'beach', 'B': 'golf course', 'C': 'brown board', 'D': 'snow', 'E': 'bedroom'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+6096998186,how many items was the woman in blonde hair holding at the end,"{'A': 'four', 'B': 'three', 'C': 'six', 'D': 'two', 'E': 'seven'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4412508597,where are the people,"{'A': 'playground', 'B': 'room', 'C': 'concert', 'D': 'bus', 'E': 'factory'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3455926688,what happened to the kite at the end of the video,"{'A': 'dropped', 'B': 'vanished', 'C': 'clashed with a ball', 'D': 'torn apart', 'E': 'hit a rock'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,A,0
+5521781780,how many people were under the umbrella,"{'A': 'six', 'B': 'eleven', 'C': 'five', 'D': 'one', 'E': 'two'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,E,0
+2782658657,where were the girls,"{'A': 'chair', 'B': 'by a stream', 'C': 'park', 'D': 'sofa', 'E': 'bedroom'}","['C', 'C', 'C', 'B', 'B', 'C', 'C', 'B']",C,C,1
+5070310138,what is the baby sitting in,"{'A': 'yellow toy', 'B': 'bathtub', 'C': 'baby walker', 'D': 'high chair', 'E': 'bed'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,B,0
+4488066715,what is the baby sucking on,"{'A': 'food from table', 'B': 'girls finger', 'C': 'pacifier', 'D': 'microphone', 'E': 'toy giraffe'}","['C', 'C', 'A', 'C', 'C', 'C', 'C', 'C']",C,C,1
+6300775954,what does the lady do with the barbell at the end,"{'A': 'put on barbell stand', 'B': 'throw away', 'C': 'give to man', 'D': 'hold it', 'E': 'put on floor'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,A,0
+3158022797,how many people were playing together,"{'A': 'eight', 'B': 'four', 'C': 'two', 'D': 'three', 'E': 'eleven'}","['C', 'C', 'B', 'D', 'B', 'B', 'D', 'D']",B,B,1
+8024853715,where are the children in the video,"{'A': 'fire station', 'B': 'police station', 'C': 'fireplace', 'D': 'park', 'E': 'dance hall'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+6582763207,where is this video taken,"{'A': 'living room', 'B': 'dancing hall', 'C': 'train', 'D': 'computer table', 'E': 'backyard'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+3124551255,where could this be happening,"{'A': 'farm', 'B': 'house', 'C': 'road', 'D': 'front porch', 'E': 'jail'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3388598772,where is this happening,"{'A': 'pub', 'B': 'wooded areas', 'C': 'kitchen', 'D': 'river', 'E': 'swimming pool'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2809330695,what is the baby holding tight for a few times,"{'A': 'towel', 'B': 'baby food', 'C': 'eggs', 'D': 'dinosaur toy', 'E': 'watermelon toy'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,A,0
+11566980553,what present does the boy receive,"{'A': 'toy', 'B': 'father offspring', 'C': 'friends', 'D': 'keep warm', 'E': 'bottle of snack'}","['A', 'D', 'A', 'A', 'E', 'A', 'A', 'A']",A,A,1
+5256928210,how many dogs are there,"{'A': 'two', 'B': 'nine', 'C': 'one', 'D': 'three', 'E': 'four'}","['A', 'A', 'A', 'C', 'C', 'C', 'C', 'A']",A,C,0
+3105728894,what is the relationship between the people in the video,"{'A': 'book launch', 'B': 'familyfriends', 'C': 'training team', 'D': 'colleagues', 'E': 'friendsteam member'}","['B', 'C', 'E', 'E', 'B', 'B', 'B', 'B']",B,D,0
+5863411262,where could this be happening,"{'A': 'in a shop', 'B': 'outdoor', 'C': 'home corridor', 'D': 'roadside', 'E': 'dining room'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4782722858,who is the tallest among the three singers,"{'A': 'father', 'B': 'woman with purple scarf', 'C': 'both of them', 'D': 'the middle singer', 'E': 'boy in the middle'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+2596300565,how does the baby push the pram differently in the start versus the end of the video,"{'A': 'different direction', 'B': 'smiling', 'C': 'waving', 'D': 'move body', 'E': 'right'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,A,0
+2573424030,where are the people hanging out,"{'A': 'water fountain', 'B': 'park', 'C': 'outside a building', 'D': 'road', 'E': 'studio'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'C']",D,D,1
+3974684583,how does the big cylinder being moved to the right position at the beginning,"{'A': 'swim', 'B': 'crawl', 'C': 'press the buttons', 'D': 'galloping', 'E': 'rotating floor'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+4688219212,where is this be happening,"{'A': 'playing baseball', 'B': 'pool', 'C': 'hall', 'D': 'backyard', 'E': 'road'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+2503404966,where is the boy playing with the toy,"{'A': 'restaurant in a mall', 'B': 'living room', 'C': 'pool', 'D': 'car', 'E': 'sand box'}","['D', 'B', 'D', 'D', 'B', 'B', 'B', 'B']",B,B,1
+3581585756,where are the people hanging out,"{'A': 'bus', 'B': 'snow mountain', 'C': 'at a house', 'D': 'hospital room', 'E': 'garden'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5623068492,what activity is being carried out,"{'A': 'boxing', 'B': 'egg hunter', 'C': 'archery', 'D': 'conference call', 'E': 'playing balloon'}","['B', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+3164519967,where is this video taken,"{'A': 'playground', 'B': 'sofa', 'C': 'house', 'D': 'ball room', 'E': 'computer table'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2435633172,how many people are there,"{'A': 'one', 'B': 'seven', 'C': 'four', 'D': 'eleven', 'E': 'three'}","['A', 'A', 'A', 'A', 'A', 'A', 'E', 'E']",A,E,0
+6018490041,what event could this be,"{'A': 'a funeral', 'B': 'dance competition', 'C': 'game celebration', 'D': 'a wedding', 'E': 'music performance'}","['D', 'C', 'C', 'C', 'C', 'D', 'C', 'C']",C,C,1
+3846475848,how many people are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'two', 'E': 'one'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,E,0
+6356067859,how many children are involved in the video,"{'A': 'one', 'B': 'four', 'C': 'six', 'D': 'kitchen', 'E': 'seven'}","['A', 'A', 'B', 'A', 'A', 'A', 'A', 'A']",A,B,0
+3194558043,where are the people hanging out,"{'A': 'performance stage', 'B': 'snow mountain', 'C': 'kitchen', 'D': 'lake', 'E': 'bus'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+8318310610,where is this happening,"{'A': 'house', 'B': 'kitchen', 'C': 'runway', 'D': 'playing with the piano', 'E': 'performance practice'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3477387686,what was moving behind the dog and the girl at the start,"{'A': 'another dog', 'B': 'country flag', 'C': ""the girl's mother"", 'D': 'multicolor box', 'E': 'a bird'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+8080432373,where is this video taken,"{'A': 'living room', 'B': 'dining table', 'C': 'grassland', 'D': 'train', 'E': 'dancing hall'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5907839036,what is causing the shirt of the man in white to move in the middle,"{'A': 'baby pulling shirt', 'B': 'scores', 'C': 'strong wind', 'D': 'shirt caught on to pole', 'E': 'shirt dirty'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+7572859950,where is the baby lying,"{'A': 'play area', 'B': 'back of the trunk', 'C': 'mobile', 'D': 'crib', 'E': 'bathtub'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+12392885583,what colour is the boy s clothes,"{'A': 'blue', 'B': 'light blue', 'C': 'orange', 'D': 'purple', 'E': 'black and white'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,A,0
+2736413196,where are the people at,"{'A': 'fish farm', 'B': 'bar', 'C': 'a park', 'D': 'in the sea', 'E': 'beach'}","['D', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+5421648216,how many sheeps are involved in the video,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'two'}","['C', 'C', 'D', 'D', 'C', 'C', 'D', 'E']",C,C,1
+3851913128,how many people are involved in the video,"{'A': 'two', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'one'}","['C', 'C', 'C', 'D', 'C', 'D', 'C', 'C']",C,B,0
+7786283208,how many children are there in total,"{'A': 'six', 'B': 'three', 'C': 'two', 'D': 'one', 'E': 'nine'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'B']",C,B,0
+5333075105,how did the man kept himself warm,"{'A': 'thick jacket', 'B': 'wearing a jacket', 'C': 'winter clothes', 'D': 'wear thick clothings', 'E': 'wear long sleeves'}","['C', 'C', 'C', 'A', 'A', 'A', 'A', 'A']",A,C,0
+5803861992,where is this video taken,"{'A': 'mountain top', 'B': 'snow mountain', 'C': 'home', 'D': 'dining table', 'E': 'bedroom'}","['C', 'C', 'C', 'C', 'D', 'C', 'C', 'C']",C,E,0
+5498331490,what does the cat do on the toilet bowl at the start,"{'A': 'support to poop', 'B': 'playing', 'C': 'bathtub', 'D': 'clean itself', 'E': 'plastic wrap'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2976913210,what is the man adjusting in vehicle near the end,"{'A': 'to go back', 'B': 'red', 'C': 'musical instruments', 'D': 'cardboard box', 'E': 'mobile phone'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+6142416815,how many children are in the video,"{'A': 'one', 'B': 'two', 'C': 'kitchen', 'D': 'four', 'E': 'three'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5766018720,where is this video taken,"{'A': 'speech event', 'B': 'jungle', 'C': 'beach', 'D': 'room', 'E': 'sheltered area'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+5940941487,what is the man with guitar wearing,"{'A': 'white tshirt', 'B': 'black shirt', 'C': 'pink shirt', 'D': 'shorts', 'E': 'long boots'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+6480018109,how is the patient able to see clearly,"{'A': 'man made it', 'B': 'spectacles', 'C': 'powered by batteries', 'D': 'helmet', 'E': 'press the shutter'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4984331176,how does the girl in yellow position her legs before running through,"{'A': 'bend forward', 'B': 'takes support on the floor', 'C': 'up in the air', 'D': 'swing her leg', 'E': 'move slowly'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+3935853204,what is the colour of the shirt the woman controlling the screen is wearing,"{'A': 'yellow', 'B': 'black', 'C': 'orange', 'D': 'blue', 'E': 'purple'}","['B', 'B', 'D', 'D', 'B', 'B', 'B', 'B']",B,B,1
+2976913210,what is the man trying to do in this video on his vehicle,"{'A': 'band members', 'B': 'get across the dirt', 'C': 'the man', 'D': 'discussion', 'E': 'touch the screen'}","['B', 'B', 'B', 'B', 'C', 'B', 'C', 'C']",B,B,1
+4189100053,what is the relationship between the woman and the boy,"{'A': 'siblingsfriends', 'B': 'sibling', 'C': 'offspringparents', 'D': 'siblings', 'E': 'mother child'}","['C', 'C', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3524939594,where are the men hanging out,"{'A': 'by a stream', 'B': 'carpark', 'C': 'home living area', 'D': 'mountain', 'E': 'hallway'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'A']",E,E,1
+3063380173,how many kittens are in the video,"{'A': 'one', 'B': 'three', 'C': 'two', 'D': 'four', 'E': 'five'}","['C', 'A', 'C', 'A', 'A', 'A', 'A', 'A']",A,C,0
+4978714491,where is this video taken,"{'A': 'jungle', 'B': 'grassland', 'C': 'mountain top', 'D': 'sheltered area', 'E': 'road'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3456030972,where are the children sitting in,"{'A': 'high chair', 'B': 'classroom', 'C': 'crib', 'D': 'in the boat', 'E': 'steps'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+9873067604,how many people were singing,"{'A': 'four', 'B': 'three', 'C': 'two', 'D': 'nine', 'E': 'eleven'}","['B', 'B', 'C', 'B', 'B', 'B', 'C', 'B']",B,B,1
+6860322796,how did the lady protect her eyes from the sun,"{'A': 'stay in shade area', 'B': 'wear sunglasses', 'C': 'thick clothes', 'D': 'wearing thick clothes', 'E': 'wearing long sleeve shirt'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2697214342,what is the relationship between the men,"{'A': 'colleague', 'B': 'classmates', 'C': 'friends', 'D': 'team members', 'E': 'parent offspring'}","['A', 'A', 'A', 'A', 'A', 'A', 'D', 'A']",A,A,1
+4762946272,what was in the bowl,"{'A': 'fruit', 'B': 'water', 'C': 'wood', 'D': 'plate', 'E': 'flour'}","['A', 'A', 'A', 'A', 'E', 'E', 'E', 'A']",A,E,0
+5129152550,what is the relationship between the man speaking and people standing behind him,"{'A': 'monitor', 'B': 'cameraman', 'C': 'short guy', 'D': 'prototype of a hot air balloon', 'E': 'team members'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,E,0
+4740074365,what is the relationship between the two people slow dance in the middle,"{'A': 'band member', 'B': 'couple', 'C': 'colleague', 'D': 'sibling', 'E': 'classmates'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+8594309349,where is the fish swimming towards at the end,"{'A': 'the ship', 'B': 'to the right', 'C': 'sink area', 'D': 'nope', 'E': 'shaking'}","['B', 'A', 'A', 'B', 'B', 'B', 'B', 'B']",B,B,1
+9531760182,what is the relationship between the lady and the man,"{'A': 'friend', 'B': 'grandparent offspring', 'C': 'trainer trainee', 'D': 'friends', 'E': 'team mates'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3380344744,where is the lady cleaning the baby,"{'A': 'living room', 'B': 'river', 'C': 'pool', 'D': 'wash room', 'E': 'kitchen'}","['E', 'E', 'E', 'E', 'E', 'D', 'E', 'D']",E,E,1
+4798585428,where are they taking photos,"{'A': 'house', 'B': 'gallery', 'C': 'the beach', 'D': 'restaurant', 'E': 'screen'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4483447009,where could this be happening,"{'A': 'farm', 'B': 'function room', 'C': 'school', 'D': 'garden', 'E': 'living room'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+3843551232,which dog is jumping back and forth,"{'A': 'the one on the chair', 'B': 'the white dog', 'C': 'the big dog', 'D': 'yellow dog', 'E': 'the black  puppy'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+4087654898,how many children are there,"{'A': 'two', 'B': 'nine', 'C': 'six', 'D': 'three', 'E': 'one'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2940373590,where are the people dancing,"{'A': 'classroom', 'B': 'ballroom', 'C': 'on the streets', 'D': 'swimming pool', 'E': 'in front of the television'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+5445581571,what is the animal in the video,"{'A': 'dog', 'B': 'rabbit', 'C': 'crab', 'D': 'horse', 'E': 'elephants'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+13515224395,where is the lady playing with the dog,"{'A': 'in her house', 'B': 'snow wild', 'C': 'kitched', 'D': 'garden', 'E': 'a forest'}","['D', 'A', 'D', 'D', 'D', 'D', 'D', 'D']",D,A,0
+5833145209,what is the animal shown in the video,"{'A': 'bird', 'B': 'tiger', 'C': 'fish', 'D': 'penguins', 'E': 'cat'}","['C', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2495861393,where are the people cooking,"{'A': 'house', 'B': 'fish market', 'C': 'kitchen', 'D': 'at home', 'E': 'stage'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+10309542255,which part of the body did the animals use to fight each other,"{'A': 'horns', 'B': 'head', 'C': 'leg', 'D': 'neck', 'E': 'nose'}","['B', 'E', 'E', 'E', 'C', 'E', 'E', 'E']",E,A,0
+3192668394,whose portrait is the woman in blue drawing in the room,"{'A': 'boy in red', 'B': 'family', 'C': 'the man wearing orange pants', 'D': 'girl with hoodie', 'E': 'woman in grey'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'D']",B,E,0
+6291413193,what is the colour of the cap the lady in white is wearing,"{'A': 'grey', 'B': 'white and red', 'C': 'pink', 'D': 'orange', 'E': 'navy blue'}","['E', 'E', 'E', 'E', 'E', 'D', 'E', 'E']",E,E,1
+3427674558,what is the relationship between the people on stage,"{'A': 'classmates', 'B': 'dance group', 'C': 'friends', 'D': 'colleagues', 'E': 'band member'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2510696559,where is this happening,"{'A': 'outdoors', 'B': 'bar', 'C': 'in the day', 'D': 'classroom', 'E': 'bicycle park'}","['E', 'E', 'A', 'A', 'A', 'A', 'E', 'E']",E,E,1
+4857781123,where is the dog and the person hanging out,"{'A': 'outdoors', 'B': 'grass patch', 'C': 'kitchen', 'D': 'house', 'E': 'snow wild'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4075791856,where is this video taken,"{'A': 'train', 'B': 'ballroom', 'C': 'stage', 'D': 'construction site', 'E': 'field'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+9217939684,where are the people hanging out,"{'A': 'forest trail', 'B': 'room', 'C': 'kitchen', 'D': 'playground', 'E': 'bus'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2461993294,how many audiences are there,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'one', 'E': 'five'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,A,0
+4978714491,which bus arrives at the road gate first,"{'A': 'white bus', 'B': 'blue one', 'C': 'orange bus', 'D': 'red one', 'E': 'black bus'}","['B', 'B', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5702201498,how is the man feeling the softness of the pillow,"{'A': 'wear more clothes', 'B': 'hug it', 'C': 'wear socks', 'D': 'hitting the pillow', 'E': 'hold it on shoulder'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+8024853715,where is this place,"{'A': 'in a building', 'B': 'park', 'C': 'dirt field', 'D': 'waterfall', 'E': 'grassland'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2821788355,where is this happening,"{'A': 'car', 'B': 'sea', 'C': 'stage', 'D': 'forest', 'E': 'karaoke room'}","['B', 'B', 'D', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3303565503,how many people are posing in this shoot,"{'A': 'seven', 'B': 'five', 'C': 'six', 'D': 'two', 'E': 'three'}","['D', 'D', 'D', 'D', 'D', 'E', 'D', 'D']",D,D,1
+5205081904,where is the child hanging out,"{'A': 'outside house', 'B': 'home', 'C': 'kitchen', 'D': 'dining table', 'E': 'indoors'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,B,0
+5702201498,how many people are present in the video,"{'A': 'five', 'B': 'four', 'C': 'two', 'D': 'eight', 'E': 'one'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,E,0
+8594309349,why are there so many bubbles,"{'A': 'breathing under water', 'B': 'boy and baby in the room', 'C': 'oxygen', 'D': 'cold weather', 'E': 'for everyone to drink'}","['A', 'A', 'A', 'A', 'C', 'A', 'A', 'A']",A,C,0
+6592821115,where is this video taken,"{'A': 'beach', 'B': 'dancing hall', 'C': 'sea', 'D': 'living room', 'E': 'train'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8493226484,how many people are involved in the video,"{'A': 'five', 'B': 'one', 'C': 'two', 'D': 'six', 'E': 'four'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3555755537,how many people are in the video,"{'A': 'three', 'B': 'one', 'C': 'seven', 'D': 'eight', 'E': 'nine'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3861485381,how many animals are in the video,"{'A': 'two', 'B': 'one', 'C': 'three', 'D': 'four', 'E': 'five'}","['C', 'B', 'A', 'B', 'B', 'B', 'C', 'C']",B,E,0
+6037747123,where is the santa claus decoration being placed,"{'A': 'toy', 'B': 'on the car', 'C': 'looking down', 'D': 'continue reading', 'E': 'lying on his back'}","['B', 'B', 'B', 'B', 'B', 'C', 'C', 'D']",B,B,1
+4138579400,what is the colour of the cup,"{'A': 'lights', 'B': 'red and white', 'C': 'white', 'D': 'blue', 'E': 'beige'}","['C', 'E', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3550839192,what is the baby sitting in,"{'A': 'toilet bowl', 'B': 'chair', 'C': 'floor', 'D': 'trolley', 'E': 'pram'}","['E', 'E', 'E', 'C', 'E', 'B', 'B', 'E']",E,E,1
+3897746373,where is this video taken,"{'A': 'swimming pool', 'B': 'lake', 'C': 'room', 'D': 'studio', 'E': 'backyard'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+13884293626,where is this video taken,"{'A': 'snow mountain', 'B': 'carnival', 'C': 'train', 'D': 'kitchen', 'E': 'classroom'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+8531675050,what event is occuring,"{'A': 'concert', 'B': 'ballet', 'C': 'piano', 'D': 'marketing', 'E': 'rowing competition'}","['A', 'A', 'A', 'A', 'D', 'A', 'A', 'A']",A,D,0
+4838113006,where are the people hanging out,"{'A': 'car', 'B': 'room', 'C': 'snow mountain', 'D': 'road', 'E': 'lawn'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+7508439506,what color shirt is the baby wearing,"{'A': 'green', 'B': 'yellow', 'C': 'white', 'D': 'blue', 'E': 'black'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3355698421,how many people are there together,"{'A': 'eleven', 'B': 'seven', 'C': 'five', 'D': 'three', 'E': 'six'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+7651639778,how many people are present,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'seven', 'E': 'eleven'}","['A', 'A', 'A', 'B', 'B', 'A', 'A', 'A']",A,C,0
+5504913999,how did the man kept himself warm,"{'A': 'shirtless', 'B': 'long sleeve clothes', 'C': 'wear warm clothes and glove', 'D': 'thick jacket', 'E': 'beanies'}","['D', 'C', 'C', 'C', 'C', 'C', 'D', 'C']",C,C,1
+9917882506,how many children are cycling,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'two', 'E': 'eight'}","['D', 'B', 'D', 'D', 'D', 'D', 'D', 'B']",D,D,1
+3049351381,where are the people hanging out,"{'A': 'park', 'B': 'ancient site', 'C': 'living room', 'D': 'forest trail', 'E': 'studio'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+7571121368,where are the people hanging out,"{'A': 'beach', 'B': 'lake', 'C': 'bridge', 'D': 'zoo', 'E': 'forest trail'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'D']",C,C,1
+4147398280,where is the boy hanging out,"{'A': 'at a slope', 'B': 'restuarant', 'C': 'shower', 'D': 'coffee shop', 'E': 'living room'}","['E', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,E,0
+2925298951,where are the women hanging out,"{'A': 'beach', 'B': 'backyard', 'C': 'forest', 'D': 'mountain', 'E': 'inflatable pool'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+4151403382,where are the boys hanging out,"{'A': 'roadside', 'B': 'fountain', 'C': 'classroom', 'D': 'backyard', 'E': 'living room'}","['E', 'D', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+2833209794,what there hanging on the black bag owned by the man wearing yellow shirt,"{'A': 'balloons', 'B': 'santa s hat', 'C': 'streamers', 'D': 'flowers', 'E': 'necklace'}","['A', 'B', 'A', 'A', 'A', 'A', 'B', 'A']",A,B,0
+11670386946,where could this be happening,"{'A': 'park', 'B': 'room', 'C': 'museum', 'D': 'farm', 'E': 'workplace'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+5840177726,how many people were cycling,"{'A': 'five', 'B': 'four', 'C': 'seven', 'D': 'two', 'E': 'six'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+5504913999,how did the man protect his head from injury,"{'A': 'beanie', 'B': 'wear helmet', 'C': 'ear muffs', 'D': 'mat', 'E': 'up down'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3526597179,where is this video taken,"{'A': 'supermarket', 'B': 'stage', 'C': 'house', 'D': 'studio', 'E': 'forest'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+5533380417,which direction did the man turn at the first part of the video,"{'A': 'to his right', 'B': 'towards two boys', 'C': 'towards man in white shirt', 'D': 'his back', 'E': 'towards girl with hoodie'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2976913210,where is this place,"{'A': 'dirt field', 'B': 'park', 'C': 'living room', 'D': 'golf course', 'E': 'waterfall'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2405940242,where is this video taken,"{'A': 'road', 'B': 'dancing hall', 'C': 'forest', 'D': 'playground', 'E': 'outdoors'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4273039295,which season is this happening,"{'A': 'winter', 'B': 'spring', 'C': 'summer', 'D': 'autumn', 'E': 'discussion'}","['D', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+6188449000,what was the colour of the paper that the boy is holding,"{'A': 'white and brown', 'B': 'red', 'C': 'black', 'D': 'grey', 'E': 'pink and white'}","['B', 'B', 'E', 'B', 'B', 'B', 'E', 'E']",B,B,1
+4378803532,what is the relationship between the child in stripes and the man in red,"{'A': 'friend', 'B': 'team member', 'C': 'popper', 'D': 'parent offspring', 'E': 'friends'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8189958994,where is the person walking the dogs,"{'A': 'park', 'B': 'kitchen', 'C': 'front porch', 'D': 'jungle', 'E': 'grassland'}","['A', 'A', 'A', 'A', 'C', 'C', 'C', 'C']",A,A,1
+3581585756,what is the relationship between the girl and the woman,"{'A': 'parent offspring', 'B': 'friends', 'C': 'friend', 'D': 'team member', 'E': 'grandparent and grandchild'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+6624174621,what are the event shown in the video,"{'A': 'dancing', 'B': 'concert', 'C': 'birthday celebration', 'D': 'music show', 'E': 'dinner'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+2604394962,where is this place,"{'A': 'gym', 'B': 'rooftop', 'C': 'kitchen', 'D': 'mountain', 'E': 'in a building'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3261079025,what is the man in blue holding in his hands,"{'A': 'plastic card with command', 'B': 'mobile phone', 'C': 'siblings', 'D': 'parent offspring', 'E': 'controller'}","['B', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+2697261300,how many dogs are filmed,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'two', 'E': 'three'}","['D', 'A', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+6895608152,where is this video taken,"{'A': 'stage', 'B': 'forest', 'C': 'construction site', 'D': 'dinning table', 'E': 'living room'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+3581585756,how many adults are on the bus,"{'A': 'one', 'B': 'four', 'C': 'nine', 'D': 'five', 'E': 'two'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,A,0
+5623068492,how did the two men protect their hands,"{'A': 'gloves', 'B': 'move arms', 'C': 'helmet', 'D': 'thick clothes', 'E': 'on each other'}","['B', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+11566930393,where could this be happening,"{'A': 'farm', 'B': 'dining room', 'C': 'living room', 'D': 'zoo', 'E': 'garden'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3708066257,where are the people dancing,"{'A': 'in the forest', 'B': 'in the jungle', 'C': 'front yard', 'D': 'house', 'E': 'concert hall'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3270490566,what is the relationship between the people performing,"{'A': 'singers', 'B': 'band member', 'C': 'snake handler', 'D': 'flute performers', 'E': 'parent offspring'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4127497265,which part of the toy did the boy chew for the second time,"{'A': 'feet', 'B': 'hairs', 'C': 'tail', 'D': 'head', 'E': 'dinosaur toy'}","['D', 'C', 'D', 'D', 'B', 'A', 'C', 'A']",D,A,0
+6443512089,where is the child hanging out,"{'A': 'along the roadside', 'B': 'playground', 'C': 'room', 'D': 'living room', 'E': 'balcony'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+8457210773,how many dogs are in the video,"{'A': 'one', 'B': 'three', 'C': 'two', 'D': 'five', 'E': 'six'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+6988748711,where are the people working,"{'A': 'fish market', 'B': 'outdoor', 'C': 'matial arts', 'D': 'amusement park', 'E': 'ring'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3972259774,how many people are filmed by the camera,"{'A': 'one', 'B': 'five', 'C': 'six', 'D': 'seven', 'E': 'two'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'B']",A,B,0
+5858985747,whose phone the baby in yellow pick up at the end,"{'A': 'kids', 'B': 'woman in black', 'C': 'girl in black', 'D': 'man sitting at sofa', 'E': 'girl in red'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'B']",D,B,0
+7308042410,where did the man in white took the tools from,"{'A': 'carpark', 'B': 'public area', 'C': 'on table', 'D': 'kitchen', 'E': 'at the bucket'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,E,0
+3078294001,where are the people hanging out,"{'A': 'kitchen', 'B': 'room', 'C': 'outside house', 'D': 'swimming pool', 'E': 'outdoor porch'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3105728894,how many people are practising their tricks in the video,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'two', 'E': 'one'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,A,0
+8403741210,how many people are involved in the video,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'three', 'E': 'one'}","['D', 'D', 'D', 'B', 'B', 'D', 'D', 'B']",D,D,1
+4189100053,how many people are involved in the video,"{'A': 'one', 'B': 'two', 'C': 'five', 'D': 'four', 'E': 'three'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2809330695,where is the baby resting,"{'A': 'in walker', 'B': 'crib', 'C': 'lady s lap', 'D': 'ground', 'E': 'chair'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4083875373,where is the girl dancing,"{'A': 'room', 'B': 'stage', 'C': 'at a carnival', 'D': 'in front of the television', 'E': 'beach'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+7691172922,what was the dog lying next to at the beginning,"{'A': 'car', 'B': 'polar bear', 'C': 'door', 'D': 'water', 'E': 'cat'}","['C', 'C', 'C', 'C', 'D', 'D', 'A', 'A']",C,C,1
+2987766537,what is the baby struggling to do in this video,"{'A': 'smiling', 'B': 'get the toy giraffe', 'C': 'move body', 'D': 'wipe the boy s mouth', 'E': 'swing himself'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'C']",B,C,0
+4978714491,which bus runs off first after parking for a while,"{'A': 'red bus', 'B': 'orange bus', 'C': 'white bus', 'D': 'blue bus', 'E': 'black bus'}","['D', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,D,0
+2679328607,what is the relationship between the man in red and the children,"{'A': 'father daughter', 'B': 'trainer trainee', 'C': 'teacher student', 'D': 'coach and players', 'E': 'parent offspring'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+5877508141,where is this video taken,"{'A': 'kitchen', 'B': 'house', 'C': 'studio', 'D': 'ball room', 'E': 'playground'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3375218204,what colour is the girl's shirt,"{'A': 'yellow', 'B': 'blue', 'C': 'pink', 'D': 'white', 'E': 'purple'}","['D', 'D', 'C', 'C', 'C', 'C', 'C', 'A']",C,C,1
+2830899473,what is the relationship between the men,"{'A': 'friends', 'B': 'band mates', 'C': 'band members', 'D': 'team member opponent', 'E': 'trainer trainee'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+7453733046,how many people are playing in the water playground,"{'A': 'one', 'B': 'kitchen', 'C': 'four', 'D': 'five', 'E': 'two'}","['E', 'E', 'E', 'E', 'E', 'E', 'A', 'A']",E,E,1
+4024008346,where are the people hanging out,"{'A': 'outside a building', 'B': 'zoo', 'C': 'studio', 'D': 'living room', 'E': 'auditorium'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3902997424,what is the colour of the shirt of the lady cycling,"{'A': 'black', 'B': 'light blue', 'C': 'white and red', 'D': 'blue', 'E': 'purple'}","['C', 'D', 'C', 'B', 'D', 'B', 'C', 'C']",C,D,0
+2679130168,how many times did the girl try to stuff her face into the cushion in the beginning of the video,"{'A': 'four', 'B': 'two', 'C': 'three', 'D': 'five', 'E': 'six'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,D,0
+3741143820,what could be the relation between the people on the stage,"{'A': 'singing', 'B': 'classmates', 'C': 'snake handling', 'D': 'partners', 'E': 'team mates'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,E,0
+6143391925,how many babies are there,"{'A': 'one', 'B': 'nine', 'C': 'three', 'D': 'four', 'E': 'six'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5702201498,where is the man resting,"{'A': 'grassland', 'B': 'sitting on the rocks', 'C': 'on the bed', 'D': 'workshop', 'E': 'sofa'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+5145526755,how many people are involved in the video,"{'A': 'one', 'B': 'three', 'C': 'four', 'D': 'five', 'E': 'two'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+6024684644,what is the relationship between the woman and the man,"{'A': 'trainer trainee', 'B': 'father and child', 'C': 'colleagues', 'D': 'couple', 'E': 'classmates'}","['B', 'B', 'D', 'B', 'B', 'B', 'D', 'D']",B,D,0
+2854886555,where is the boy picking the fruit,"{'A': 'head', 'B': 'classroom', 'C': 'in the forest', 'D': 'beach', 'E': 'floor'}","['C', 'C', 'A', 'C', 'C', 'C', 'C', 'C']",C,C,1
+7330294814,where is this happening,"{'A': 'horse farm', 'B': 'living room', 'C': 'runway', 'D': 'mountain', 'E': 'zoo'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3441428429,how many skaters are performing on the ice,"{'A': 'eight', 'B': 'nine', 'C': 'six', 'D': 'four', 'E': 'two'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+2925298951,how many women are posing for the photo,"{'A': 'six', 'B': 'five', 'C': 'two', 'D': 'four', 'E': 'one'}","['C', 'D', 'D', 'C', 'D', 'D', 'D', 'D']",D,A,0
+6168295272,where is this video taken,"{'A': 'park', 'B': 'dance room', 'C': 'room', 'D': 'mountain top', 'E': 'train'}","['B', 'B', 'B', 'B', 'C', 'B', 'B', 'C']",B,B,1
+2771402761,where are the people hanging out,"{'A': 'car', 'B': 'lake', 'C': 'swimming pool', 'D': 'outside a building', 'E': 'grassland'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+6898821807,what did the taller boy wear while playing with the young boy,"{'A': 'life vest', 'B': 'stripped shirt', 'C': 'sport suit', 'D': 'red shirt', 'E': 'jacket'}","['E', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+7442562474,how are the kittens positioned at the start of the video,"{'A': 'jump on toilet', 'B': 'pat the cat', 'C': 'raise her hands upward', 'D': 'lie on its side', 'E': 'laying on the bed'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,E,0
+8132842161,what color shirt is the baby wearing,"{'A': 'white', 'B': 'red and black', 'C': 'blue', 'D': 'red', 'E': 'black'}","['A', 'A', 'A', 'C', 'A', 'C', 'A', 'A']",A,A,1
+5421648216,where is this happening,"{'A': 'roadside', 'B': 'farm', 'C': 'mountain', 'D': 'in the river', 'E': 'classroom'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+10127533784,who are the people in the background supporting,"{'A': 'the lady sitting down', 'B': 'other fencers', 'C': 'the elderly man', 'D': 'boy in the middle', 'E': 'woman with purple scarf'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3375218204,how many people are involved in the video,"{'A': 'three', 'B': 'five', 'C': 'two', 'D': 'six', 'E': 'one'}","['E', 'E', 'C', 'A', 'C', 'C', 'A', 'C']",C,A,0
+8211075660,how many men are filmed,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'one', 'E': 'four'}","['C', 'C', 'C', 'D', 'D', 'C', 'C', 'C']",C,A,0
+8254300526,what was the pole for,"{'A': 'suona', 'B': 'balance', 'C': 'public speaking event', 'D': 'birthday celebration', 'E': 'cameraman'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+8224492254,where is this video taken,"{'A': 'home', 'B': 'lake side', 'C': 'backyard', 'D': 'mountain areas', 'E': 'studio'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5833145209,where is this video taken,"{'A': 'outdoors', 'B': 'snow mountain', 'C': 'kitchen', 'D': 'garden', 'E': 'computer table'}","['A', 'A', 'A', 'D', 'D', 'A', 'A', 'D']",A,D,0
+6480018109,what is the nurse with hair tied up pushing behind the patient,"{'A': 'help them move feet as trained', 'B': 'parent offspring', 'C': 'machines', 'D': 'cake', 'E': 'accordion'}","['C', 'C', 'C', 'A', 'A', 'A', 'C', 'A']",C,C,1
+3131380536,what is the colour of the spoon,"{'A': 'orange', 'B': 'light brown', 'C': 'red', 'D': 'light blue', 'E': 'pink'}","['C', 'B', 'B', 'B', 'B', 'E', 'B', 'E']",B,C,0
+11849091804,what is the relationship between the kids and lady,"{'A': 'teacher student', 'B': 'parent offspring', 'C': 'friends', 'D': 'teacher and student', 'E': 'mother and child'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,B,0
+2717347132,is the baby relaxed in the scene,"{'A': 'pacifier', 'B': 'top part', 'C': 'stroller', 'D': 'yes', 'E': 'no'}","['A', 'A', 'A', 'A', 'A', 'E', 'D', 'E']",A,D,0
+4166942239,what is the relation between the man in red and the man in the suit,"{'A': 'team members', 'B': 'blue', 'C': 'performers', 'D': 'security personnel', 'E': 'friends'}","['C', 'E', 'E', 'C', 'C', 'C', 'C', 'C']",C,E,0
+11503803033,how many people are skiing,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'one', 'E': 'two'}","['E', 'E', 'E', 'B', 'E', 'E', 'B', 'B']",E,B,0
+7001078933,how do the men protect their head from injuries,"{'A': 'wear bandana', 'B': 'with bandage', 'C': 'hug their heads', 'D': 'put on cushion', 'E': 'wear helmet'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+6860322796,how did the lady keep herself warm,"{'A': 'jacket', 'B': 'thick winter clothing', 'C': 'jacket gloves long pants', 'D': 'put into her pocket', 'E': 'put on blanket'}","['C', 'B', 'B', 'B', 'C', 'B', 'B', 'B']",B,A,0
+6265968082,where are the people performing,"{'A': 'concert hall', 'B': 'living room', 'C': 'stairs', 'D': 'stage', 'E': 'park'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+6136926089,where is the baby hanging out,"{'A': 'grassland', 'B': 'on stage', 'C': 'along the road', 'D': 'living room', 'E': 'play area'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+4925211209,how many people are in the video,"{'A': 'nine', 'B': 'five', 'C': 'seven', 'D': 'one', 'E': 'six'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+6272786009,where is the event taking place,"{'A': 'forest', 'B': 'park', 'C': 'river', 'D': 'restaurant', 'E': 'garden'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+2669452260,how many people walk past the man,"{'A': 'three', 'B': 'two', 'C': 'seven', 'D': 'thirteen', 'E': 'four'}","['A', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3198533789,how do the two men working position their backs,"{'A': 'on each other', 'B': 'shirtless', 'C': 'stand in a circle', 'D': 'bend', 'E': 'lie on ground'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8547321641,where are the people,"{'A': 'bus', 'B': 'living room', 'C': 'beach', 'D': 'indoors', 'E': 'kitchen'}","['C', 'C', 'C', 'D', 'C', 'C', 'C', 'C']",C,C,1
+4838113006,what objects are placed on the tables,"{'A': 'foods', 'B': 'microphones', 'C': 'dishes', 'D': 'fruits', 'E': 'bells'}","['C', 'C', 'B', 'C', 'B', 'B', 'C', 'C']",C,E,0
+2679130168,where is this video taken,"{'A': 'lake side', 'B': 'mountain areas', 'C': 'bedroom', 'D': 'sheltered area', 'E': 'jungle'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4970148391,where is the boy hanging out,"{'A': 'indoor', 'B': 'field', 'C': 'on a platform', 'D': 'restaurant', 'E': 'beach'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4674481985,where is this place,"{'A': 'outdoors', 'B': 'dirt field', 'C': 'waterfall', 'D': 'playground', 'E': 'stage'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3372023610,how many people are there in the video,"{'A': 'seven', 'B': 'one', 'C': 'two', 'D': 'four', 'E': 'six'}","['D', 'D', 'D', 'D', 'D', 'C', 'D', 'C']",D,D,1
+4765564263,where are the children playing water at,"{'A': 'backyard', 'B': 'living area', 'C': 'water park', 'D': 'river', 'E': 'office'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2940373590,what is the relationship between the two people dancing,"{'A': 'work mates', 'B': 'team mates', 'C': 'team members', 'D': 'girl in braids', 'E': 'couple'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+5889898795,how do the people wanting to zipline position themselves for the lady in white to secure them,"{'A': 'facing forward', 'B': 'standing at the back', 'C': 'nodding her head', 'D': 'use recycling bag', 'E': 'move slowly'}","['A', 'A', 'B', 'A', 'A', 'B', 'A', 'A']",A,A,1
+3719793245,how many people are there in the video,"{'A': 'six', 'B': 'four', 'C': 'five', 'D': 'two', 'E': 'thirteen'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3175315183,how many toys are hang above the baby,"{'A': 'three', 'B': 'two', 'C': 'five', 'D': 'one', 'E': 'four'}","['A', 'D', 'C', 'A', 'A', 'A', 'C', 'B']",A,C,0
+6143391925,where are the woman and baby at,"{'A': 'her crib', 'B': 'chair', 'C': 'on the bus', 'D': 'house', 'E': 'kitchen'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+5008618500,why is the baby in diapers,"{'A': 'playing', 'B': 'showered', 'C': 'it s sunny', 'D': 'too young to go toilet himself', 'E': 'for someone to wear'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4164771889,how many boys are working together to bury the boy,"{'A': 'seven', 'B': 'three', 'C': 'one', 'D': 'five', 'E': 'twice'}","['D', 'D', 'B', 'D', 'D', 'B', 'B', 'B']",D,D,1
+4388652400,where is this place,"{'A': 'waterfall', 'B': 'living room', 'C': 'grassland', 'D': 'kitchen', 'E': 'studio'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+6542914065,how many people are involved in the video,"{'A': 'three', 'B': 'six', 'C': 'five', 'D': 'two', 'E': 'one'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,C,0
+5008618500,where did the lady lying on,"{'A': 'kitchen', 'B': 'grassland', 'C': 'bed', 'D': 'mat on floor', 'E': 'sofa'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4126010904,how many times does the tall man lean his face on the television,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'one', 'E': 'two'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,A,0
+4846820256,where are the people at,"{'A': 'construction site', 'B': 'dancing hall', 'C': 'stage', 'D': 'road', 'E': 'boat'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3477387686,how many times did the girl put her palm out,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'seven'}","['A', 'A', 'A', 'A', 'A', 'D', 'A', 'A']",A,C,0
+5658916668,why are there so much snow on the ground,"{'A': 'people pour snow', 'B': 'adjust his ski board', 'C': 'heavy snowfall', 'D': 'skii area', 'E': 'snow stuck on shoe'}","['C', 'C', 'C', 'C', 'E', 'C', 'C', 'C']",C,D,0
+6297019062,how many babies are there in the video,"{'A': 'two', 'B': 'three', 'C': 'five', 'D': 'four', 'E': 'seven'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,D,0
+2401167740,what kind of cup is the man drinking from,"{'A': 'goblet', 'B': 'stainless steel cup', 'C': 'ceramic cup', 'D': 'glass', 'E': 'vacuum cup'}","['D', 'D', 'D', 'D', 'D', 'D', 'C', 'C']",D,C,0
+9528990839,how did the lady protect her head,"{'A': 'wear helmet', 'B': 'pillow', 'C': 'bandage', 'D': 'tie it with hair band', 'E': 'hat'}","['B', 'E', 'E', 'A', 'E', 'E', 'A', 'E']",E,E,1
+2614918961,where are the children hanging out,"{'A': 'staircase', 'B': 'room', 'C': 'kitchen', 'D': 'home', 'E': 'on a couch in living room'}","['D', 'D', 'D', 'D', 'B', 'B', 'D', 'B']",D,D,1
+4650556666,how did the child keep his feet warm,"{'A': 'wear thick clothes', 'B': 'covered with blanket', 'C': 'long sleeve clothing', 'D': 'wear socks', 'E': 'winter clothing'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8455160795,how many people are there,"{'A': 'four', 'B': 'seven', 'C': 'five', 'D': 'two', 'E': 'three'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+10082798964,what hand gesture did the mother do at the end of the video,"{'A': 'siblings', 'B': 'siblingoffspring', 'C': 'billing', 'D': 'clap hands', 'E': 'game'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4164771889,where are they,"{'A': 'classroom', 'B': 'beach', 'C': 'gymnasium', 'D': 'horse enclosure', 'E': 'hospital room'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2833209794,what else does the man in yellow carry aside from a black laptop bag,"{'A': 'water bottle', 'B': 'microphone', 'C': 'baby', 'D': 'posters', 'E': 'book'}","['C', 'C', 'B', 'A', 'C', 'C', 'C', 'C']",C,E,0
+7499763064,how many people are climbing,"{'A': 'eleven', 'B': 'four', 'C': 'seven', 'D': 'two', 'E': 'six'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3383804222,where is this happening,"{'A': 'work place', 'B': 'zoo', 'C': 'hall', 'D': 'performance practice', 'E': 'hiking trail'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+10309542255,where is this place,"{'A': 'a hut', 'B': 'wedding hall', 'C': 'park', 'D': 'porch outside house', 'E': 'near a staircase'}","['A', 'A', 'C', 'C', 'A', 'A', 'A', 'C']",A,C,0
+6018490041,what did the men need to do with the bat in the game,"{'A': 'catch all the balls', 'B': 'change all their clothes', 'C': 'foosball', 'D': 'hit all the cans', 'E': 'toy that moves'}","['A', 'A', 'D', 'D', 'A', 'A', 'A', 'A']",A,D,0
+5889898795,how many people ziplined down,"{'A': 'six', 'B': 'four', 'C': 'seven', 'D': 'three', 'E': 'two'}","['E', 'E', 'E', 'D', 'E', 'D', 'D', 'E']",E,E,1
+4199369046,what is shown in the background,"{'A': 'snow moutain', 'B': 'lake', 'C': 'screen', 'D': 'bookshelf', 'E': 'sea view'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+2712662377,where are the turtles hanging out,"{'A': 'on the floor', 'B': 'sea', 'C': 'fish tank', 'D': 'grassy area', 'E': 'at a house'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8224504302,what is the relationship between the two men on stage,"{'A': 'teammates', 'B': 'coworkers', 'C': 'classmates', 'D': 'work mates', 'E': 'band members'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,A,0
+5877508141,what is the man looking at,"{'A': 'team member', 'B': 'horses', 'C': 'girls', 'D': 'boy', 'E': 'cars'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8388104887,how many times did the dog run back and forth,"{'A': 'three', 'B': 'fifteen', 'C': 'one', 'D': 'nine', 'E': 'two'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,E,0
+6860322796,how many dogs are there playing,"{'A': 'four', 'B': 'one', 'C': 'two', 'D': 'three', 'E': 'five'}","['C', 'C', 'C', 'C', 'C', 'B', 'C', 'C']",C,C,1
+3372023610,what is the lady in black holding in her left hand as she sang,"{'A': 'book', 'B': 'microphone', 'C': 'country flag card', 'D': 'stick', 'E': 'cup'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,E,0
+4859057828,how many ladies are there,"{'A': 'six', 'B': 'three', 'C': 'four', 'D': 'two', 'E': 'seven'}","['B', 'B', 'D', 'D', 'B', 'B', 'D', 'B']",B,B,1
+6480018109,where is this video taken,"{'A': 'roadside', 'B': 'supermarket', 'C': 'park', 'D': 'hospital', 'E': 'dining table'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8604794910,where is this video taken,"{'A': 'tennis court', 'B': 'dinning table', 'C': 'living room', 'D': 'supermarket', 'E': 'computer table'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+8783897632,where are the people riding bikes,"{'A': 'wild outside', 'B': 'living room', 'C': 'backyard', 'D': 'beach', 'E': 'city street'}","['C', 'C', 'C', 'A', 'A', 'A', 'A', 'A']",A,A,1
+6786501294,why is there a cake,"{'A': 'container being spin around', 'B': 'showcase', 'C': 'engrossed in them', 'D': 'birthday celebration', 'E': 'to blow the candles'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4626085492,where is this video taken,"{'A': 'outdoors', 'B': 'field', 'C': 'room', 'D': 'forest', 'E': 'mountain'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+8064178441,where are the children playing,"{'A': 'living room', 'B': 'beach', 'C': 'staircase', 'D': 'playground', 'E': 'forest area'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+4217422838,where is this video taken,"{'A': 'road', 'B': 'lake', 'C': 'studio', 'D': 'computer table', 'E': 'living room'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+6772999108,what is the boy holding in his hand,"{'A': 'guitar', 'B': 'jackets', 'C': 'towel', 'D': 'stick', 'E': 'cup'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+4264435046,how many vehicles were filmed,"{'A': 'four', 'B': 'one', 'C': 'six', 'D': 'three', 'E': 'five'}","['B', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+6188449000,what was the colour of the ukulele,"{'A': 'white and red', 'B': 'blue and white', 'C': 'red', 'D': 'beige', 'E': 'purple'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+13515224395,how many dogs appear in the video,"{'A': 'two', 'B': 'five', 'C': 'one', 'D': 'four', 'E': 'three'}","['A', 'C', 'A', 'C', 'C', 'C', 'C', 'C']",C,A,0
+3402648543,who does the cage in the middle with the metal bowl belong to,"{'A': 'rainforest rescue organization', 'B': 'passerby', 'C': 'lady in yellow', 'D': 'man in red pants', 'E': 'dogs'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+5863411262,how many people are involved in the video,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'four', 'E': 'two'}","['C', 'B', 'D', 'D', 'E', 'C', 'B', 'D']",D,A,0
+5323654756,where is this video taken,"{'A': 'dining room', 'B': 'backyard', 'C': 'road', 'D': 'forest', 'E': 'room'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,A,0
+4444192938,where are the kids hanging out,"{'A': 'kitchen', 'B': 'staircase', 'C': 'playground', 'D': 'on stage', 'E': 'homeindoor'}","['D', 'D', 'B', 'B', 'D', 'D', 'D', 'B']",D,B,0
+2567843468,where is the girl playing,"{'A': 'kitched', 'B': 'inflatable pool', 'C': 'play room', 'D': 'living room', 'E': 'in house'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4094488636,how many dogs are there,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'two'}","['E', 'E', 'E', 'C', 'E', 'E', 'D', 'E']",E,E,1
+5133787349,how many of the man are actually involved in the fighting on stage,"{'A': 'three', 'B': 'four', 'C': 'one', 'D': 'seven', 'E': 'five'}","['A', 'A', 'A', 'C', 'A', 'C', 'C', 'C']",A,B,0
+11849091804,what is the other kid and lady sitting on the ground trying to do,"{'A': 'bottle', 'B': 'friends', 'C': 'organize the presents', 'D': 'sofa', 'E': 'kid'}","['C', 'C', 'A', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4130504920,how many babies are there,"{'A': 'three', 'B': 'four', 'C': 'two', 'D': 'one', 'E': 'nine'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3078294001,how many people are there,"{'A': 'five', 'B': 'six', 'C': 'eleven', 'D': 'two', 'E': 'one'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+2584172238,where are the people at,"{'A': 'office', 'B': 'airport', 'C': 'playground', 'D': 'studio', 'E': 'beach'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3155382178,how many people are there,"{'A': 'eleven', 'B': 'one', 'C': 'seven', 'D': 'four', 'E': 'two'}","['E', 'E', 'E', 'B', 'B', 'B', 'B', 'B']",B,E,0
+4260763967,how many boys are in the video,"{'A': 'five', 'B': 'eight', 'C': 'eleven', 'D': 'two', 'E': 'nine'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+9082180631,where are the people at,"{'A': 'playground', 'B': 'water park', 'C': 'beach', 'D': 'slippery road', 'E': 'living room'}","['D', 'D', 'D', 'D', 'D', 'D', 'C', 'C']",D,D,1
+3489439407,what is the relationship between the people,"{'A': 'colleague', 'B': 'phone', 'C': 'partners', 'D': 'husband wife', 'E': 'team members'}","['A', 'A', 'A', 'D', 'A', 'A', 'A', 'A']",A,A,1
+14003541505,what is the baby trying to do,"{'A': 'piano', 'B': 'ride a tricycle', 'C': 'crawl to the girl', 'D': 'classmate', 'E': 'a walking toy'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4412508597,how many people are filmed,"{'A': 'two', 'B': 'four', 'C': 'seven', 'D': 'one', 'E': 'three'}","['D', 'D', 'E', 'E', 'D', 'D', 'D', 'E']",D,E,0
+6253433310,how many people were in the pool,"{'A': 'eleven', 'B': 'three', 'C': 'two', 'D': 'four', 'E': 'nine'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,B,0
+4825843801,how many penguins are there,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'four', 'E': 'two'}","['D', 'D', 'B', 'D', 'E', 'D', 'D', 'D']",D,B,0
+4010069381,where are the people performing,"{'A': 'outdoors', 'B': 'outside restaurant', 'C': 'event hall', 'D': 'stage', 'E': 'public area'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+9293415110,how many people are on the stage,"{'A': 'two', 'B': 'nine', 'C': 'four', 'D': 'seven', 'E': 'three'}","['C', 'A', 'E', 'E', 'E', 'E', 'E', 'E']",E,C,0
+4166942239,what is the man in red trying to show the man in the suit,"{'A': 'dance move', 'B': 'wine', 'C': 'a cup', 'D': 'his laptop', 'E': 'his new shoes'}","['E', 'E', 'B', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2930782930,where is this video taken,"{'A': 'park', 'B': 'on the plane', 'C': 'outside', 'D': 'kitchen', 'E': 'construction site'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,A,0
+4123211145,how is the taller girl seeing things clearly,"{'A': 'with screw', 'B': 'sit in front', 'C': 'lean forward', 'D': 'use poles', 'E': 'glasses'}","['E', 'C', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+6031805098,where is this video taken,"{'A': 'dancing hall', 'B': 'speech event', 'C': 'roadside', 'D': 'backyard', 'E': 'boxing ring'}","['C', 'C', 'C', 'C', 'D', 'C', 'C', 'C']",C,C,1
+5803861992,what is the brand of the hand fan,"{'A': 'cameraman', 'B': 'car', 'C': 'cards', 'D': 'osim', 'E': 'mobile phone'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4925211209,how did the man protect his head,"{'A': 'gloves', 'B': 'on man s lap', 'C': 'helmet', 'D': 'beanie', 'E': 'by watching him'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4123915842,how was the girl dressed up,"{'A': 'move her body', 'B': 'winter clothes', 'C': 'wear kimono', 'D': 'follow a routine', 'E': 'tshirt'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+6244675392,what activity is being carried out,"{'A': 'playing music', 'B': 'boxing', 'C': 'kayaking', 'D': 'feeding the cat', 'E': 'archery'}","['A', 'A', 'D', 'D', 'D', 'D', 'D', 'A']",D,D,1
+3261079025,where did the plane crash onto,"{'A': 'the snow', 'B': 'zoo', 'C': 'bench', 'D': 'in a house', 'E': 'forest'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2482028659,how many people are in the video,"{'A': 'one', 'B': 'five', 'C': 'eight', 'D': 'four', 'E': 'three'}","['D', 'D', 'D', 'E', 'E', 'D', 'D', 'D']",D,D,1
+3427674558,how many people can be seen dancing on the stage,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'nine', 'E': 'two'}","['B', 'B', 'B', 'B', 'C', 'B', 'B', 'B']",B,B,1
+10779838974,how many girls are there,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'six', 'E': 'five'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4882414082,where is the baby sitting,"{'A': 'grassland', 'B': 'high chair', 'C': 'baby trolley', 'D': 'living room sofa', 'E': 'room'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2830899473,what is the man in grey holding,"{'A': 'scissors', 'B': 'tripod', 'C': 'toy dianasour', 'D': 'dog s paws', 'E': 'offspring'}","['B', 'E', 'E', 'B', 'E', 'E', 'A', 'E']",E,B,0
+4774302357,how did the man in grey playing the guitar see his surrounding clearly,"{'A': 'stainding', 'B': 'wear spectacles', 'C': 'hit hand on it', 'D': 'strum strings with fingers', 'E': 'with his hands'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+8495272210,where is this video taken,"{'A': 'outside', 'B': 'room', 'C': 'snow mountain', 'D': 'train', 'E': 'outdoor'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+7536230796,where is the boy hanging out,"{'A': 'playground', 'B': 'home', 'C': 'grassland', 'D': 'outdoors', 'E': 'mountain'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+11849091804,where are the people hanging out,"{'A': 'snow hill', 'B': 'jungle', 'C': 'water fountain', 'D': 'living room', 'E': 'outside house'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+5996148663,how did the lady protect her eyes from the sun,"{'A': 'wear bandage', 'B': 'use her hands', 'C': 'with her long hair', 'D': 'ride behind a tree', 'E': 'wear sunglasses'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3066064005,how many women in total that can be seen in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'seven', 'E': 'six'}","['B', 'B', 'B', 'B', 'A', 'A', 'A', 'A']",B,C,0
+4103088549,how many people successfully got on the surfboard,"{'A': 'twelve', 'B': 'five', 'C': 'three', 'D': 'one', 'E': 'two'}","['C', 'D', 'C', 'D', 'D', 'D', 'D', 'D']",D,D,1
+6895608152,why is the girl wearing such a white skirt,"{'A': 'her birthday', 'B': 'ballet skirt', 'C': 'wedding', 'D': 'siblings', 'E': 'the lake'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+11587211476,where is this place,"{'A': 'field', 'B': 'playground', 'C': 'stage', 'D': 'waterfall', 'E': 'theatre'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+4333544549,how many men are there,"{'A': 'three', 'B': 'six', 'C': 'four', 'D': 'eight', 'E': 'two'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+2821968703,where is this happening,"{'A': 'residential area', 'B': 'sea', 'C': 'skate park', 'D': 'swimming pool', 'E': 'living room'}","['A', 'A', 'B', 'B', 'D', 'B', 'B', 'A']",B,B,1
+6786501294,what is the cartoon on the cake,"{'A': 'yellow', 'B': 'strawberry', 'C': 'robot', 'D': 'cartoon character', 'E': 'brown'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4761953886,how many dogs are there,"{'A': 'three', 'B': 'two', 'C': 'one', 'D': 'six', 'E': 'four'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+6762389913,where is this happening,"{'A': 'wooded areas', 'B': 'hiking', 'C': 'bowling alley', 'D': 'bedroom', 'E': 'classroom'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+5308503740,what is the animal shown in the video,"{'A': 'rabbit', 'B': 'sheeps', 'C': 'elephants', 'D': 'birds', 'E': 'penguins'}","['A', 'A', 'A', 'D', 'A', 'D', 'A', 'A']",A,A,1
+2735019707,how many drums in total are there for the people to play,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'three', 'E': 'eleven'}","['D', 'D', 'D', 'B', 'D', 'D', 'B', 'D']",D,C,0
+3708066257,how many peopl are dancing,"{'A': 'one', 'B': 'three', 'C': 'four', 'D': 'five', 'E': 'two'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+4983922034,how many dogs are there,"{'A': 'six', 'B': 'two', 'C': 'nine', 'D': 'one', 'E': 'three'}","['E', 'E', 'E', 'E', 'B', 'E', 'E', 'E']",E,E,1
+9409566840,where are the dogs hanging out,"{'A': 'a forest', 'B': 'room', 'C': 'outside in snow', 'D': 'snow wild', 'E': 'bed'}","['E', 'E', 'E', 'E', 'B', 'B', 'B', 'B']",E,B,0
+2984974097,how many wheels does the girl s bike have,"{'A': 'five', 'B': 'six', 'C': 'seven', 'D': 'four', 'E': 'three'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+5679866364,where is this place,"{'A': 'kitchen', 'B': 'beach', 'C': 'bus terminal', 'D': 'bedroom', 'E': 'a hut'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+7533369046,what is being hung on the baby s neck,"{'A': 'parent offspring', 'B': 'lying down', 'C': 'bib', 'D': 'parent and child', 'E': 'mat'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+5064681723,where is this video taken,"{'A': 'in house', 'B': 'zoo', 'C': 'sheltered area', 'D': 'outdoors', 'E': 'kitchen'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,B,0
+7786283208,how are the children positioned on the floor at the start,"{'A': 'sit up', 'B': 'lying down', 'C': 'jump', 'D': 'touch the toys', 'E': 'ski'}","['B', 'B', 'B', 'B', 'D', 'B', 'B', 'B']",B,B,1
+7999756100,where are the people hanging out,"{'A': 'mountain', 'B': 'forest trail', 'C': 'water fountain', 'D': 'living room', 'E': 'studio'}","['A', 'A', 'A', 'A', 'A', 'A', 'B', 'A']",A,A,1
+8505893258,what was the colour of the pot at the back,"{'A': 'blue', 'B': 'brown', 'C': 'pink', 'D': 'light blue', 'E': 'green'}","['D', 'C', 'C', 'C', 'B', 'C', 'C', 'D']",C,C,1
+6018490041,how many players are involved in the video,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'five', 'E': 'one'}","['D', 'A', 'B', 'C', 'B', 'A', 'A', 'D']",A,C,0
+2552130183,how many people are in the room,"{'A': 'three', 'B': 'one', 'C': 'eight', 'D': 'two', 'E': 'five'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,A,0
+3626788516,what animal is in the video,"{'A': 'lizard', 'B': 'dolphin', 'C': 'deer', 'D': 'bird', 'E': 'crocodile'}","['A', 'A', 'A', 'A', 'E', 'A', 'E', 'E']",A,A,1
+5987365500,what is the girl holding,"{'A': 'toy microphone', 'B': 'bin', 'C': 'bib', 'D': 'spoon', 'E': 'pacifier'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+3557498300,how many children are in the video,"{'A': 'one', 'B': 'five', 'C': 'three', 'D': 'seven', 'E': 'kitchen'}","['C', 'A', 'C', 'C', 'C', 'A', 'A', 'C']",C,C,1
+6621511673,what color is the baby s dress,"{'A': 'red', 'B': 'lights', 'C': 'green', 'D': 'grey', 'E': 'light blue'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+6037747123,how does the lady in red shorts position her right hand at the end of the video,"{'A': 'pat lady s shoulder', 'B': 'touch the nose', 'C': 'in her pockets', 'D': 'points towards him', 'E': 'left and right'}","['D', 'D', 'D', 'D', 'D', 'E', 'E', 'E']",D,C,0
+9873067604,which child did the head get touched,"{'A': 'baby', 'B': 'girl', 'C': 'boy near the window', 'D': 'boy in white', 'E': 'the tallest ball'}","['B', 'A', 'B', 'B', 'B', 'B', 'B', 'A']",B,B,1
+3402648543,what is the relationship between the two small dogs and the big dog,"{'A': 'dice toy', 'B': 'light brown dog', 'C': 'panda', 'D': 'parent offspring', 'E': 'dogs'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4984331176,how many groups passed the rope,"{'A': 'one', 'B': 'two', 'C': 'five', 'D': 'six', 'E': 'three'}","['E', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,E,0
+7987845241,how many people were needed to hold the dog down during the injection,"{'A': 'six', 'B': 'three', 'C': 'four', 'D': 'one', 'E': 'two'}","['B', 'B', 'D', 'B', 'B', 'D', 'B', 'D']",B,E,0
+8171216955,what is the relationship between the two children,"{'A': 'school mates', 'B': 'friends', 'C': 'sport team mates', 'D': 'band member', 'E': 'siblings'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+2957808913,how are the band that appeared in the middle related to the man in the black jacket,"{'A': 'team member', 'B': 'classmate', 'C': 'teacher student', 'D': 'sibling', 'E': 'fatherdaughter'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+8594309349,what kind of sport it is,"{'A': 'scuba diving', 'B': 'obstacle challenge for dog', 'C': 'baseball', 'D': 'dancing', 'E': 'ski'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+3171006258,where is this video taken,"{'A': 'outside', 'B': 'desert', 'C': 'along the streets', 'D': 'mountain', 'E': 'forest'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+5133787349,where is this occurring,"{'A': 'garden', 'B': 'car', 'C': 'stage', 'D': 'river', 'E': 'outdoors'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4367056464,how is the girl positioned in front of the table,"{'A': 'move her hands around on the screen', 'B': 'standing', 'C': 'lie on table', 'D': 'sitting', 'E': 'press the key'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,B,0
+3376544720,where are the people hanging out,"{'A': 'playground', 'B': 'grassland', 'C': 'road', 'D': 'beach', 'E': 'outside'}","['E', 'E', 'E', 'E', 'E', 'E', 'C', 'E']",E,E,1
+4219909195,how did the man see clearly,"{'A': 'stand behind the baby', 'B': 'wear spectacles', 'C': 'moving animation', 'D': 'standing', 'E': 'turn his head to look around'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3846475848,where is this happening,"{'A': 'bathroom', 'B': 'road', 'C': 'living room', 'D': 'outdoor', 'E': 'bedroom'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+6037747123,why is there a stanta claus soft toy on the vehicle,"{'A': 'entertain baby', 'B': 'to help fix the wheel', 'C': 'playing with toys', 'D': 'decoration', 'E': 'want to pick up it'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+7059877301,how many dogs are there in the video,"{'A': 'one', 'B': 'four', 'C': 'three', 'D': 'six', 'E': 'five'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,C,0
+5070310138,where is this video taken,"{'A': 'dinning table', 'B': 'computer table', 'C': 'bathroom', 'D': 'grassland', 'E': 'beach'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3105728894,what is the people s occupation,"{'A': 'fireman', 'B': 'celebration', 'C': 'discussion', 'D': 'performers', 'E': 'swimming'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4707679105,how did the man ensure he can see the book clearly,"{'A': 'wear glasses', 'B': 'puts book on table', 'C': 'look at book', 'D': 'slides as visual', 'E': 'put his face near book'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+7364407194,how many babies are in the video,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'two', 'E': 'kitchen'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+2810112808,how many people are there,"{'A': 'three', 'B': 'eleven', 'C': 'five', 'D': 'one', 'E': 'four'}","['A', 'A', 'D', 'D', 'D', 'A', 'D', 'A']",A,A,1
+6011836129,which lady is the leader of the yoga activity,"{'A': 'lady in white', 'B': 'lady in black', 'C': 'lady in deep blue', 'D': 'lady in red', 'E': 'lady in orange'}","['B', 'B', 'A', 'C', 'C', 'C', 'C', 'B']",C,C,1
+4147398280,how does the boy keep himself warm indoors,"{'A': 'cover his body fully', 'B': 'wear long-sleeved clothing', 'C': 'towel', 'D': 'wear shoes', 'E': 'lean against wall'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4333544549,how many dogs are there,"{'A': 'one', 'B': 'nine', 'C': 'six', 'D': 'four', 'E': 'two'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'A']",E,E,1
+3383804222,how many pandas are involved in the video,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'two', 'E': 'four'}","['D', 'D', 'B', 'D', 'D', 'C', 'C', 'D']",D,D,1
+10109097475,where is this happening,"{'A': 'performance practice', 'B': 'under water', 'C': 'outdoors', 'D': 'playground', 'E': 'runway'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+5635265624,what is the lady wearing in her left hand,"{'A': 'a ball', 'B': 'watch', 'C': 'cake', 'D': 'helmet', 'E': 'balloon'}","['B', 'B', 'B', 'B', 'B', 'A', 'A', 'B']",B,B,1
+4190655097,where is the cat and the person hanging out,"{'A': 'toilet', 'B': 'golf range', 'C': 'on a pillow', 'D': 'by a stream', 'E': 'in the house'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+6168716346,how does the boy with red shirt feel at the start,"{'A': 'happy', 'B': 'emotional', 'C': 'refreshing', 'D': 'annoyed', 'E': 'enjoyable'}","['A', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,A,0
+4636208292,where are the people hanging out,"{'A': 'zoo', 'B': 'beach', 'C': 'dining table', 'D': 'car', 'E': 'classroom'}","['C', 'C', 'C', 'C', 'B', 'B', 'C', 'A']",C,C,1
+2599937944,how many people were in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'two', 'E': 'nine'}","['D', 'D', 'D', 'D', 'C', 'B', 'B', 'B']",D,A,0
+9304738817,where is this happening,"{'A': 'bowling alley', 'B': 'office', 'C': 'playground', 'D': 'beach', 'E': 'kitchen'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+7999756100,why did the man in blue shown after the middle lift up his right hand?,"{'A': 'use phone camera', 'B': 'adjuct helmet', 'C': 'run hand in hand', 'D': 'watch tv', 'E': 'make hand gestures'}","['A', 'A', 'A', 'C', 'C', 'C', 'E', 'A']",A,A,1
+6159637889,where is the baby resting on,"{'A': 'mobile', 'B': 'in walker', 'C': 'cradle', 'D': 'bed', 'E': 'baby trolley'}","['A', 'A', 'A', 'A', 'E', 'C', 'E', 'A']",A,C,0
+5803861992,what is the lady holding,"{'A': 'grandmother', 'B': 'luggage', 'C': 'wrist band', 'D': 'fan', 'E': 'horse guide'}","['C', 'D', 'D', 'C', 'D', 'C', 'C', 'C']",C,D,0
+4626535366,where is this video taken,"{'A': 'front porch', 'B': 'dining table', 'C': 'road', 'D': 'jungle', 'E': 'stage'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+8388104887,what was the colour of the dog s collar,"{'A': 'light blue', 'B': 'orange', 'C': 'black', 'D': 'navy blue', 'E': 'pink and white'}","['E', 'A', 'C', 'B', 'A', 'A', 'C', 'C']",A,C,0
+3557498300,where are the people at,"{'A': 'in the sea', 'B': 'living room', 'C': 'park', 'D': 'classroom', 'E': 'airport'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+8254300526,how is the baby positioned at the start,"{'A': 'sit up', 'B': 'lady pushes girl forward', 'C': 'safety belt', 'D': 'sitting on baby chair', 'E': 'walking'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2405940242,how did the man in red protect his hands from the friction,"{'A': 'smile with teeth', 'B': 'standing', 'C': 'wear gloves', 'D': 'swim', 'E': 'control his computer'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+8783897632,how many people are filmed,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'six', 'E': 'two'}","['B', 'B', 'B', 'B', 'C', 'E', 'E', 'B']",B,E,0
+6239210933,where is the child hanging out,"{'A': 'playground', 'B': 'bed', 'C': 'kitchen', 'D': 'on a couch in living room', 'E': 'balcony'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+2400715506,where is this place in the house,"{'A': 'bathtub', 'B': 'bedroom', 'C': 'in a cave', 'D': 'classroom', 'E': 'home'}","['E', 'A', 'A', 'E', 'E', 'B', 'A', 'B']",E,B,0
+4968805923,where are they at,"{'A': 'field', 'B': 'on a roof', 'C': 'factory', 'D': 'restaurant', 'E': 'gymnasium'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2435633172,where is this place,"{'A': 'kitchen', 'B': 'bus terminal', 'C': 'porch outside house', 'D': 'in a building', 'E': 'zoo'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+5623068492,where are the people hanging out,"{'A': 'auditorium', 'B': 'playground', 'C': 'home', 'D': 'kitchen', 'E': 'lawn'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+2793260225,what did the man in black hat do near the end of the video,"{'A': 'check on the boy', 'B': 'untie the toy', 'C': 'point at the lady', 'D': 'pick ball up', 'E': 'walk away to do something else'}","['A', 'A', 'A', 'A', 'D', 'A', 'B', 'C']",A,C,0
+5667931404,where is the baby hanging out,"{'A': 'along a pathway', 'B': 'baby crib', 'C': 'house floor', 'D': 'kitchen', 'E': 'in walker'}","['A', 'A', 'A', 'A', 'A', 'C', 'A', 'A']",A,A,1
+3233088823,what is the time of the day as this construction occur in the video,"{'A': 'night', 'B': 'seesaw', 'C': 'wedding', 'D': 'prototype of a hot air balloon', 'E': 'phone'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+6786501294,what is the occasion occuring,"{'A': 'acting', 'B': 'wedding', 'C': 'swimming', 'D': 'birthday celebration', 'E': 'musical performance'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8171216955,where is the toy dog kept,"{'A': 'roadside', 'B': 'sofa', 'C': 'on the table', 'D': 'kitchen', 'E': 'house'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+2809330695,where is the baby fidgeting,"{'A': 'sofa', 'B': 'on the mattress', 'C': 'kitchen', 'D': 'in the cradle', 'E': 'playground'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+2547885226,where is the kid playing,"{'A': 'sports hall', 'B': 'sand pit', 'C': 'bedroom', 'D': 'forest area', 'E': 'playground'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+6329954198,where is this video taken,"{'A': 'park', 'B': 'outdoor', 'C': 'ball room', 'D': 'train', 'E': 'speech event'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+8495272210,how did the lady protect her eyes from the sunlight,"{'A': 'sunglasses', 'B': 'cap', 'C': 'wear thick clothes', 'D': 'put in the pocket', 'E': 'use their hands'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+3508407941,where is the baby hanging out,"{'A': 'along the road', 'B': 'house', 'C': 'along a pathway', 'D': 'living room', 'E': 'in walker'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3508459605,where are the people hanging out,"{'A': 'home', 'B': 'garden', 'C': 'zoo', 'D': 'living room', 'E': 'outside house'}","['E', 'E', 'E', 'E', 'E', 'B', 'E', 'E']",E,B,0
+3049351381,how is the kid positioned in the video,"{'A': 'lies on adults arm', 'B': 'sit on ladys laps', 'C': 'lying on bed', 'D': 'lying on mat', 'E': 'lying on sofa'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+10082798964,what is the lady trying to explain the kid,"{'A': 'series of actions', 'B': 'to the person opposite her', 'C': 'parent children', 'D': 'teach them dance', 'E': 'help them move feet as trained'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,A,0
+11503803033,where are the people hanging out,"{'A': 'snow mountain', 'B': 'zoo', 'C': 'garden', 'D': 'house', 'E': 'car'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+10727696143,how many children are there,"{'A': 'nine', 'B': 'four', 'C': 'one', 'D': 'six', 'E': 'three'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+2987766537,where is the baby lying,"{'A': 'chair', 'B': 'bathtub', 'C': 'on the mat', 'D': 'mobile', 'E': 'baby crib'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+6898821807,what are the boy and baby sitting on,"{'A': 'stroller', 'B': 'balloon sledge', 'C': 'swing', 'D': 'puppet', 'E': 'sofa'}","['E', 'E', 'E', 'E', 'B', 'C', 'E', 'E']",E,E,1
+3456030972,what is the relationship between the man in red and the chidlren in the room,"{'A': 'team member', 'B': 'dance move', 'C': 'a speech', 'D': 'teacher student', 'E': 'bride and groom'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+9498159305,what animal is beside the man as he is sitting,"{'A': 'parrot', 'B': 'duck', 'C': 'cat', 'D': 'dog', 'E': 'penguin'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+7605329840,what does the man wear on his head,"{'A': 'dog s paws', 'B': 'balloon hat', 'C': 'scarf', 'D': 'spectacles', 'E': 'cap'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4166942239,where is this happening,"{'A': 'outdoors', 'B': 'on the road', 'C': 'living room', 'D': 'trail', 'E': 'beach'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+9565310990,where is the baby hanging out,"{'A': 'grassland', 'B': 'along the road', 'C': 'play area', 'D': 'home', 'E': 'homeindoor'}","['A', 'C', 'A', 'C', 'C', 'A', 'A', 'A']",A,A,1
+7223854838,how are the people positioned in the video,"{'A': 'sitting', 'B': 'shake body', 'C': 'pretend to punch him', 'D': 'standing', 'E': 'lean on laptop'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+2535384528,how many people are together on the field,"{'A': 'three', 'B': 'six', 'C': 'one', 'D': 'seven', 'E': 'eleven'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,A,0
+2885091387,where is the car travelling,"{'A': 'carpark', 'B': 'avenue', 'C': 'high way', 'D': 'stage', 'E': 'forest'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+5047408177,where is this place,"{'A': 'field', 'B': 'park', 'C': 'theatre', 'D': 'in a building', 'E': 'outdoors'}","['E', 'E', 'E', 'E', 'E', 'E', 'D', 'E']",E,E,1
+3784543730,where is the man cycling,"{'A': 'playground', 'B': 'outdoor covered area', 'C': 'workshop', 'D': 'contryside', 'E': 'on the road'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+6011836129,where is this place,"{'A': 'restaurant', 'B': 'yoga class', 'C': 'mountain', 'D': 'home', 'E': 'classroom'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4013751996,where is the girl hanging out,"{'A': 'bedroom', 'B': 'kitchen', 'C': 'garden', 'D': 'home', 'E': 'room'}","['C', 'D', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+10607095936,what type of performance is this,"{'A': 'party concert', 'B': 'parade', 'C': 'group discussion', 'D': 'marketing', 'E': 'a play'}","['E', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,E,0
+3233088823,what is the bulldozer deployed to do,"{'A': 'removing something', 'B': 'football', 'C': 'street performance', 'D': 'snake handling', 'E': 'drama'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+3469864014,where was the fish lying on,"{'A': 'cutting board', 'B': 'high chair', 'C': 'cradle', 'D': 'tap', 'E': 'on the floor'}","['A', 'A', 'E', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2833209794,how many bags is the man in black carrying,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'one', 'E': 'four'}","['B', 'B', 'D', 'B', 'B', 'B', 'B', 'C']",B,B,1
+5008618500,what is the lady trying to do with the girl in this video,"{'A': 'talk with her', 'B': 'feed the girl', 'C': 'teach girl about baby', 'D': 'dancing with her', 'E': 'teach her how to play'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3814690167,where is this place,"{'A': 'mountain', 'B': 'house', 'C': 'classroom', 'D': 'theatre', 'E': 'dirt field'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2434859163,what animal is this,"{'A': 'cat', 'B': 'polar bear', 'C': 'dog', 'D': 'rabbit', 'E': 'lion'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4372494989,where are the people hanging out,"{'A': 'park', 'B': 'forest trail', 'C': 'auditorium', 'D': 'house', 'E': 'grassland'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+10607095936,what does the cross on the lady s costume represent,"{'A': 'parent offspring', 'B': 'wrist band', 'C': 'nurse', 'D': 'balloon', 'E': 'firends'}","['A', 'A', 'A', 'A', 'C', 'A', 'A', 'C']",A,C,0
+6542914065,who capture the ball at the end,"{'A': 'lady in black', 'B': 'kids', 'C': 'girl with hoodie', 'D': 'man in black shirt', 'E': 'the guy'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,D,0
+5635265624,what is baby trying to do near the black bag,"{'A': 'pat the balloon', 'B': 'take the baby doll', 'C': 'grab something', 'D': 'bubbles', 'E': 'crawl to the girl'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+6011836129,how many ladies are doing yoga,"{'A': 'nine', 'B': 'two', 'C': 'one', 'D': 'three', 'E': 'four'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,E,0
+3526597179,what is the relationship between the man in blue and the lady in white,"{'A': 'couple', 'B': 'teammates', 'C': 'camera', 'D': 'trainer trainee', 'E': 'parent offspring'}","['A', 'A', 'C', 'A', 'C', 'C', 'C', 'A']",A,A,1
+4968805923,how many people are in the video,"{'A': 'three', 'B': 'eleven', 'C': 'seven', 'D': 'six', 'E': 'five'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+9576671750,how many phones are shown in the video,"{'A': 'six', 'B': 'five', 'C': 'three', 'D': 'one', 'E': 'nine'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+3263908208,what is the color of the nearest sailboat,"{'A': 'yellow', 'B': 'red', 'C': 'green', 'D': 'red', 'E': 'white'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+12392885583,what did the baby put in his mouth,"{'A': 'classmate', 'B': 'food', 'C': 'toy car', 'D': 'pacifier', 'E': 'toy giraffe'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+5667931404,what is the animal printed on the baby s jacket,"{'A': 'gorilla', 'B': 'tiger', 'C': 'elephant', 'D': 'cat', 'E': 'horse'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3429509208,how did the boy kept his feet warm,"{'A': 'winter clothes', 'B': 'wear warm clothes and glove', 'C': 'gloves', 'D': 'socks and long sleeves', 'E': 'wear shoes'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,E,0
+7416295940,where is the baby playing,"{'A': 'pool', 'B': 'at home', 'C': 'school', 'D': 'sand box', 'E': 'kitchen'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+6964124866,where are the people sitting at,"{'A': 'bed', 'B': 'chair', 'C': 'sofa', 'D': 'floor', 'E': 'stage'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+5008618500,where is this place,"{'A': 'martial arts classroom', 'B': 'hospital', 'C': 'bus terminal', 'D': 'restaurant', 'E': 'farm'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+8171216955,what is the girl hitting,"{'A': 'toy microphone', 'B': 'fan', 'C': 'toy dog', 'D': 'a soft toy', 'E': 'piano'}","['D', 'C', 'C', 'D', 'C', 'D', 'C', 'D']",D,C,0
+3869005094,where is this video taken,"{'A': 'dinning table', 'B': 'computer table', 'C': 'along the streets', 'D': 'hall', 'E': 'roadside'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+2731071928,how many children are in the video,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'two'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+10030609934,what colour is the two toy cars shown in the middle of the video,"{'A': 'lights', 'B': 'yellow and blue', 'C': 'blue', 'D': 'light blue', 'E': 'pink'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+5229476012,how did the lady see the boy clearly,"{'A': 'turn his head to look around', 'B': 'wear spectacles', 'C': 'coming close to eachother', 'D': 'child holds his finger', 'E': 'on her lap'}","['C', 'E', 'C', 'E', 'C', 'B', 'B', 'B']",C,B,0
+4136617240,how is the girl positioned at the start,"{'A': 'squatting', 'B': 'use poles', 'C': 'refer to her laptop', 'D': 'push with legs', 'E': 'swing her leg'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,A,0
+5940941487,how many people are performing,"{'A': 'five', 'B': 'four', 'C': 'eight', 'D': 'seven', 'E': 'eleven'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,A,0
+6160414832,what game are they playing,"{'A': 'computer game', 'B': 'monopoly', 'C': 'toy that moves', 'D': 'rowing competition', 'E': 'television'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3192668394,where are the people hanging out,"{'A': 'outside house', 'B': 'lake', 'C': 'kitchen', 'D': 'outside a building', 'E': 'living room'}","['E', 'C', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+4138579400,how many times did he put stuffs in the cup before it dropped,"{'A': 'seven', 'B': 'three', 'C': 'two', 'D': 'one', 'E': 'five'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,E,0
+4635309062,where are the two men cooking,"{'A': 'kitchen', 'B': 'workshop', 'C': 'bedroom', 'D': 'house', 'E': 'at a restaurant'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+8594309349,what is the animal in the video,"{'A': 'lizard', 'B': 'fishes', 'C': 'swans', 'D': 'penguins', 'E': 'elephants'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3164519967,how did the baby kept himself warm,"{'A': 'wear beanie', 'B': 'wear more clothes', 'C': 'wear long-sleeved clothings', 'D': 'wrap around blanket', 'E': 'shirt'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,B,0
+4146348376,where are the men hanging out,"{'A': 'balcony', 'B': 'fountain', 'C': 'classroom', 'D': 'restaurant', 'E': 'by a stream'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5237219621,how do you know that the woman with black spectacles at the start is married,"{'A': 'wearing a wedding gown', 'B': 'holding flowers', 'C': 'wearing a wedding ring', 'D': 'grandparent and grandchild', 'E': 'walking with the groom'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4378803532,where is this video taken,"{'A': 'sea', 'B': 'road', 'C': 'sheltered area', 'D': 'mountain top', 'E': 'dining table'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+2697214342,how did the guys working protect themself from any injury,"{'A': 'wear helmet', 'B': 'stay close to the girl', 'C': 'wearing protective gloves', 'D': 'hold him', 'E': 'wear life jacket'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3380344744,what is the lady wearing to prevent herself from getting wet,"{'A': 'apron', 'B': 'the tiles', 'C': 'grooming brush', 'D': 'cloth', 'E': 'helmet'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2796821016,where are the boys hanging out,"{'A': 'living room', 'B': 'fountain', 'C': 'shower', 'D': 'footpath', 'E': 'balcony'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+4249756405,how many people are there in the video,"{'A': 'eleven', 'B': 'two', 'C': 'six', 'D': 'five', 'E': 'thirteen'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+9735768590,how many babies are in the video,"{'A': 'two', 'B': 'seven', 'C': 'four', 'D': 'one', 'E': 'three'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4765717907,where are the man and the boy playing,"{'A': 'pool', 'B': 'bedroom', 'C': 'classroom', 'D': 'park', 'E': 'living room'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8575881495,where are the people hanging out,"{'A': 'living room', 'B': 'classroom', 'C': 'swimming pool', 'D': 'auditorium', 'E': 'water fountain'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+4757890069,how many vehicles passed by,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'four'}","['A', 'D', 'A', 'D', 'D', 'A', 'D', 'A']",A,E,0
+2857132732,how does the baby feel about the instrument,"{'A': 'shy', 'B': 'sad', 'C': 'curious', 'D': 'happy', 'E': 'excited'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'D']",C,C,1
+2810112808,how do the three people position themselves in the room,"{'A': 'dancing around', 'B': 'with toy', 'C': 'serious', 'D': 'thick clothing', 'E': 'seated on sofa chair'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+5863411262,how does the donkey look at the end,"{'A': 'clean itself', 'B': 'tired', 'C': 'towards the left', 'D': 'wakes up and lean forward', 'E': 'turn away'}","['D', 'D', 'D', 'D', 'D', 'E', 'D', 'D']",D,B,0
+7288107396,where is this video taken,"{'A': 'playground', 'B': 'beach', 'C': 'road', 'D': 'lake side', 'E': 'living room'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+6244382586,what alphabet is on the wall shown at the end,"{'A': 'h', 'B': 'b', 'C': 'g', 'D': 'p', 'E': 'f'}","['D', 'A', 'B', 'D', 'A', 'B', 'D', 'D']",D,E,0
+2920952624,where is this happening,"{'A': 'kitchen', 'B': 'on the road', 'C': 'river', 'D': 'forest', 'E': 'hiking'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+10082798964,what is the relation between the kid and lady,"{'A': 'parent offspring', 'B': 'teacher and student', 'C': 'teacher student', 'D': 'lady is mother', 'E': 'sisters cousins'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,A,0
+10127533784,what is the role of the man standing in the background,"{'A': 'host', 'B': 'singer', 'C': 'audiance', 'D': 'microphone', 'E': 'referee'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3462517143,where is the container at,"{'A': 'backyard', 'B': 'classroom', 'C': 'garden', 'D': 'home', 'E': 'aracade'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,C,0
+4419096437,how many times does the person signal for the cat to close its eyes,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,A,0
+5134317883,what does the man in red initially do with a spoon,"{'A': 'left hand', 'B': 'cup of drink', 'C': 'scoop the pulp out', 'D': 'coke', 'E': 'bride and groom'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+6205856607,where is the man and the girl,"{'A': 'field', 'B': 'outdoor', 'C': 'sea', 'D': 'on a sofa', 'E': 'horse stable'}","['E', 'B', 'B', 'E', 'B', 'B', 'B', 'E']",B,E,0
+9498159305,where is this video taken,"{'A': 'bedroom', 'B': 'penguin habitat', 'C': 'ballroom', 'D': 'on the plane', 'E': 'backyard'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+7288107396,where is the child before he runs on the floor,"{'A': 'sitting on chair', 'B': 'lady s laps', 'C': 'stairs', 'D': 'bed', 'E': 'sofa'}","['C', 'C', 'C', 'C', 'C', 'A', 'A', 'A']",C,C,1
+2697214342,where are they working,"{'A': 'side of a road', 'B': 'hall', 'C': 'factory or workshop', 'D': 'outdoors', 'E': 'field'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4249756405,what instrument is the man playing,"{'A': 'nerf gun', 'B': 'battle game', 'C': 'guitar', 'D': 'keyboard', 'E': 'suona'}","['C', 'C', 'C', 'C', 'E', 'C', 'C', 'C']",C,C,1
+7651639778,where is the video being taken,"{'A': 'mountain area', 'B': 'kitchen', 'C': 'museum', 'D': 'baseball field', 'E': 'outdoors'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+9576671750,what is the person holding,"{'A': 'phone', 'B': 'cup', 'C': 'bottle', 'D': 'children s toy', 'E': 'music instrument'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2810112808,what are these people holding in their hands,"{'A': 'scissors', 'B': 'phone', 'C': 'cards', 'D': 'sofa', 'E': 'doll and microphone'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3851961428,where is this video taken,"{'A': 'roadside', 'B': 'forest', 'C': 'dining table', 'D': 'pool', 'E': 'studio'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+9208803675,where is this happening,"{'A': 'bedroom', 'B': 'classroom', 'C': 'on the road', 'D': 'hospital', 'E': 'park'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+2973331780,where is this video taken,"{'A': 'room', 'B': 'kitchen', 'C': 'park', 'D': 'train', 'E': 'station'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2973331780,how did the lady in black express her feeling as she sang,"{'A': 'sway her body', 'B': 'speak loudly', 'C': 'jump up and down', 'D': 'holds her hand', 'E': 'running'}","['A', 'A', 'A', 'C', 'A', 'A', 'A', 'A']",A,A,1
+4087013668,where did the baby take the peels from,"{'A': 'pumpkin', 'B': 'stainless basin', 'C': 'pour the bottle', 'D': 'cup', 'E': 'lady s hands'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,B,0
+3372023610,what are the possible relationships among the 4 people,"{'A': 'coworkers', 'B': 'team member', 'C': 'teacher student', 'D': 'classmates', 'E': 'friends'}","['E', 'E', 'A', 'A', 'A', 'E', 'E', 'E']",E,E,1
+6163877860,how was the baby positioned at the start of the video,"{'A': 'taking support of the ladies leg', 'B': 'held by man', 'C': 'sitting', 'D': 'carry and bounce him up', 'E': 'crawling'}","['E', 'C', 'C', 'E', 'A', 'E', 'E', 'A']",E,C,0
+3060478605,how many people were riding the horse,"{'A': 'one', 'B': 'two', 'C': 'six', 'D': 'five', 'E': 'three'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5134317883,whta are the two men doing in the video,"{'A': 'music show', 'B': 'curving pumpkin', 'C': 'singing', 'D': 'play the guitar', 'E': 'having dinner'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+5349766264,how did the man in black checkered see clearly,"{'A': 'swinging cups to each other', 'B': 'hit the drum', 'C': 'shocked', 'D': 'sit in front of the classroom', 'E': 'wear spectacles'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3530231811,what is the possible relationship among the people on the stage,"{'A': 'team member', 'B': 'friends', 'C': 'classmates', 'D': 'rock', 'E': 'band members'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+6272786009,what event is taking place,"{'A': 'rowing competition', 'B': 'informal dinner and dance gathering', 'C': 'dinner', 'D': 'family gathering', 'E': 'a conference of leaders'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+3321261856,where is this video taken,"{'A': 'sheltered area', 'B': 'on the plane', 'C': 'outside', 'D': 'speech hall', 'E': 'corridor'}","['E', 'E', 'E', 'E', 'A', 'A', 'A', 'A']",E,E,1
+5735711594,where is this place,"{'A': 'train station', 'B': 'in a building', 'C': 'golf course', 'D': 'park', 'E': 'theatre'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8387356484,where is the baby sitting,"{'A': 'baby chair', 'B': 'indoors', 'C': 'in walker', 'D': 'play area', 'E': 'living room'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,A,0
+2461993294,where are the people performing,"{'A': 'room', 'B': 'in the sea', 'C': 'concert hall', 'D': 'ice field', 'E': 'road'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+8387356484,where is this video taken,"{'A': 'backyard', 'B': 'train', 'C': 'playground', 'D': 'sea', 'E': 'house'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+4485498145,where could this be happening,"{'A': 'bouncy castle', 'B': 'roadside', 'C': 'shop', 'D': 'lab', 'E': 'kitchen'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+2400171624,where are the people hanging out,"{'A': 'living room', 'B': 'swimming pool', 'C': 'grassland', 'D': 'garden', 'E': 'hill'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+13569831214,what is the relation between two people skiing down the snow,"{'A': 'parent offspring', 'B': 'teacher and student', 'C': 'employer and employee', 'D': 'friends', 'E': 'strangers'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+10607095936,how many people are involved in the video,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'one', 'E': 'four'}","['E', 'C', 'B', 'C', 'C', 'C', 'C', 'E']",C,A,0
+14012319794,how many children are in the video,"{'A': 'three', 'B': 'six', 'C': 'seven', 'D': 'kitchen', 'E': 'one'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+4485498145,who is the woman talking to initially,"{'A': 'boy in red', 'B': 'man in blue', 'C': 'lady in yellow', 'D': 'to the person opposite her', 'E': 'the middle singer'}","['B', 'D', 'D', 'D', 'D', 'D', 'D', 'B']",D,D,1
+4419096437,where is the cat resting,"{'A': 'stone', 'B': 'ledge', 'C': 'balcony', 'D': 'house', 'E': 'on a pillow'}","['E', 'D', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3158022797,what is the relationship of the people in the video,"{'A': 'friendsteam member', 'B': 'friendsfamile member', 'C': 'teammates', 'D': 'family', 'E': 'wedding'}","['D', 'D', 'D', 'B', 'B', 'A', 'B', 'B']",B,D,0
+3869005094,how many people are in the video,"{'A': 'eleven', 'B': 'four', 'C': 'nine', 'D': 'seven', 'E': 'two'}","['B', 'B', 'D', 'B', 'B', 'B', 'B', 'B']",B,B,1
+8318310610,how many girls are involved in the video,"{'A': 'seven', 'B': 'five', 'C': 'one', 'D': 'three', 'E': 'two'}","['B', 'B', 'B', 'D', 'D', 'B', 'D', 'D']",B,B,1
+3902997424,how many people were watching the man playing keyboard,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'five', 'E': 'two'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+4935987905,how many dogs are there in the video,"{'A': 'one', 'B': 'five', 'C': 'two', 'D': 'three', 'E': 'six'}","['C', 'C', 'C', 'C', 'C', 'A', 'A', 'C']",C,D,0
+3121571439,what is the relation between the man in black and the lady in pink,"{'A': 'couple', 'B': 'teammates', 'C': 'team member', 'D': 'grandparent grandchild', 'E': 'father and daughter'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5333075105,how did the man kept his head warm,"{'A': 'wearing a cap', 'B': 'beanie', 'C': 'put on blanket', 'D': 'blanket', 'E': 'jackets'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3375218204,what is the relationship between the man and the two kids,"{'A': 'grandparent offspring', 'B': 'brothers', 'C': 'friends', 'D': 'parent offspring', 'E': 'teacher student'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4846820256,how did the people protect their head from the sun,"{'A': 'wear yellow hat', 'B': 'sunglasses', 'C': 'wearing swimming goggles', 'D': 'hand', 'E': 'wear caps'}","['E', 'E', 'E', 'D', 'E', 'E', 'E', 'B']",E,E,1
+3897746373,how many people are standing on the white stage at the end,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'three', 'E': 'two'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,B,0
+5048503508,where are the people hanging out,"{'A': 'forest', 'B': 'swimming pool', 'C': 'auditorium', 'D': 'room', 'E': 'hospital room'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+7288107396,what animal is shown in the video,"{'A': 'sheeps', 'B': 'dog', 'C': 'camel', 'D': 'elephants', 'E': 'rabbit'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4882821564,how many children are in the video,"{'A': 'six', 'B': 'one', 'C': 'kitchen', 'D': 'two', 'E': 'four'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4774302357,where is this video taken,"{'A': 'field', 'B': 'backyard', 'C': 'room', 'D': 'construction site', 'E': 'speech event'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+13296054183,where is this place,"{'A': 'porch outside house', 'B': 'zoo', 'C': 'farm', 'D': 'park', 'E': 'bus terminal'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+5945172741,what was the design of the child's shirt,"{'A': 'bubbles', 'B': 'plain', 'C': 'balloon', 'D': 'striped', 'E': 'dinosaur'}","['C', 'E', 'A', 'C', 'D', 'D', 'D', 'D']",D,D,1
+7508439506,how many people are there in the video,"{'A': 'two', 'B': 'three', 'C': 'four', 'D': 'eleven', 'E': 'six'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,B,0
+2782307049,where is this video taken,"{'A': 'outdoors', 'B': 'cliff', 'C': 'grassland', 'D': 'sea', 'E': 'dining table'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+2401167740,where is the man,"{'A': 'home', 'B': 'cinema', 'C': 'shopping mall', 'D': 'room', 'E': 'playground'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'A']",D,D,1
+6244675392,where are the people hanging out,"{'A': 'home', 'B': 'lawn', 'C': 'zoo', 'D': 'bus', 'E': 'waterfall'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+7887764754,where could this be happening,"{'A': 'workplace', 'B': 'outdoor', 'C': 'in house', 'D': 'park', 'E': 'front porch'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+9528990839,where is this video taken,"{'A': 'jungle', 'B': 'speech event', 'C': 'train', 'D': 'desert', 'E': 'sea'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+8752043000,where is the baby lying on,"{'A': 'lady s arm', 'B': 'chair', 'C': 'bed', 'D': 'sofa', 'E': 'pram'}","['B', 'D', 'E', 'E', 'B', 'E', 'E', 'E']",E,E,1
+7651639778,what gesture did the man in blue jacket did with the man in black jacket,"{'A': 'sibling', 'B': 'plastic card with command', 'C': 'fix the bunker', 'D': 'shakes hands and hugs', 'E': 'colleagues'}","['D', 'C', 'C', 'A', 'A', 'D', 'A', 'A']",A,D,0
+4967810888,how are the people there positioned excluding speaker,"{'A': 'sitting', 'B': 'lean backwards', 'C': 'standing in a line', 'D': 'tie their hair', 'E': 'sitting around the table'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5987365500,what did the girl do with her hands at the end of the video,"{'A': 'hold metal pole', 'B': 'gives a flying kiss', 'C': 'cup her face', 'D': 'claps', 'E': 'show heart shape'}","['C', 'C', 'C', 'D', 'C', 'C', 'C', 'D']",C,D,0
+4127497265,which part of the toy did the boy chew for the first time,"{'A': 'sibling', 'B': 'head', 'C': 'play with toy', 'D': 'friends', 'E': 'left hand'}","['B', 'E', 'B', 'B', 'E', 'E', 'E', 'E']",E,B,0
+5308503740,how many rabbits are there in the video,"{'A': 'three', 'B': 'six', 'C': 'five', 'D': 'four', 'E': 'two'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+2854886555,what kind of fruit does the boy pick,"{'A': 'red fruit', 'B': 'sibling', 'C': 'taco', 'D': 'friends', 'E': 'pacifier'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+4127497265,what toy is the baby holding,"{'A': 'parent and child', 'B': 'giraffe toy', 'C': 'microphone', 'D': 'toy car', 'E': 'silver box'}","['D', 'B', 'B', 'B', 'D', 'B', 'B', 'D']",B,B,1
+6183104292,where is this place,"{'A': 'near a staircase', 'B': 'zoo', 'C': 'wedding hall', 'D': 'kitchen', 'E': 'train station'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+3719793245,what is the girl playing,"{'A': 'multicolor box', 'B': 'car', 'C': 'cat toy', 'D': 'friend', 'E': 'sand'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+7149153537,where is this video taken,"{'A': 'dinning table', 'B': 'swimming pool', 'C': 'ballroom', 'D': 'lake', 'E': 'roadside'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+11584566583,how many people are speaking on the microphone,"{'A': 'one', 'B': 'five', 'C': 'nine', 'D': 'six', 'E': 'three'}","['A', 'A', 'A', 'A', 'A', 'E', 'A', 'A']",A,A,1
+5766018720,how is the baby positioned as she plays the toys,"{'A': 'sitting', 'B': 'mimics on a phone call', 'C': 'hold baby in her hands', 'D': 'crawl on floor mat', 'E': 'touch toy with her hands'}","['E', 'E', 'C', 'E', 'E', 'A', 'A', 'A']",E,A,0
+6964124866,where are the people hanging out,"{'A': 'auditorium', 'B': 'playground', 'C': 'room', 'D': 'grassland', 'E': 'outdoor porch'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3322503255,where is this video taken,"{'A': 'boxing ring', 'B': 'parking lot', 'C': 'front porch', 'D': 'grassland', 'E': 'jungle'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+5467727317,how many elephants are there,"{'A': 'one', 'B': 'four', 'C': 'three', 'D': 'six', 'E': 'two'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+6253433310,what was the colour of the boy s goggles,"{'A': 'blue', 'B': 'red and white', 'C': 'white and red', 'D': 'grey', 'E': 'black and white'}","['C', 'A', 'A', 'B', 'A', 'A', 'C', 'A']",A,A,1
+6205856607,what is the animal show in the video,"{'A': 'lion', 'B': 'leopad', 'C': 'dog', 'D': 'horse', 'E': 'cow'}","['D', 'B', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+2984974097,where is the girl cycling,"{'A': 'room', 'B': 'road side', 'C': 'living area', 'D': 'reading corner', 'E': 'forest'}","['B', 'B', 'B', 'B', 'B', 'B', 'C', 'B']",B,B,1
+4127497265,where is the baby playing with his toy,"{'A': 'home', 'B': 'on a bed', 'C': 'her crib', 'D': 'water park', 'E': 'living room'}","['A', 'A', 'A', 'A', 'C', 'A', 'A', 'A']",A,E,0
+2697214342,how many guys can be seen working in the video,"{'A': 'one', 'B': 'four', 'C': 'two', 'D': 'five', 'E': 'six'}","['C', 'C', 'C', 'B', 'B', 'B', 'C', 'C']",C,B,0
+3595273118,what is this event,"{'A': 'celebration', 'B': 'public speaking event', 'C': 'friend s gathering', 'D': 'museum demonstration', 'E': 'rowing competition'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+9531760182,where are the people hanging out,"{'A': 'lawn', 'B': 'restaurant', 'C': 'bedroom', 'D': 'swimming pool', 'E': 'water fountain'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4179163342,where is this video taken,"{'A': 'kitchen', 'B': 'outdoors', 'C': 'forest', 'D': 'room', 'E': 'construction site'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5333075105,how did the man kept his palm warm,"{'A': 'put hands in pocket', 'B': 'wear long sleeves', 'C': 'gloves', 'D': 'jackets', 'E': 'blanket'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3719793245,what is the relationship between the girl and the lady,"{'A': 'friends', 'B': 'parent offspring', 'C': 'teacher student', 'D': 'friend', 'E': 'team member'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4179163342,what are the children playing,"{'A': 'playground', 'B': 'kitchen', 'C': 'classroom', 'D': 'park', 'E': 'living room'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+4219909195,where is this video taken,"{'A': 'lake', 'B': 'outdoor', 'C': 'living room', 'D': 'train', 'E': 'supermarket'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4889681401,what was on the back of the bicycles,"{'A': 'propeller', 'B': 'flags', 'C': 'steering wheels', 'D': 'wheels', 'E': 'television'}","['B', 'D', 'D', 'D', 'B', 'B', 'D', 'B']",B,B,1
+2871995580,how many children are in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'two', 'E': 'seven'}","['D', 'B', 'B', 'B', 'B', 'B', 'D', 'B']",B,B,1
+6160414832,what are the possible relationships among the people in the video,"{'A': 'friendsteam member', 'B': 'bandmates', 'C': 'living room', 'D': 'family', 'E': 'team member'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+7331927796,how many dogs are there in the video,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}","['B', 'D', 'B', 'D', 'E', 'B', 'B', 'B']",B,E,0
+8604794910,how did the children protect their head from the sun,"{'A': 'use hands', 'B': 'shade and cap', 'C': 'wear hat', 'D': 'wear yellow hat', 'E': 'cap and sunglasses'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+6879924118,where are the people,"{'A': 'lake side', 'B': 'field', 'C': 'classroom', 'D': 'park', 'E': 'hall'}","['B', 'B', 'D', 'D', 'B', 'B', 'D', 'B']",B,B,1
+6727904179,where is this video taken,"{'A': 'outside', 'B': 'park', 'C': 'indoors', 'D': 'field', 'E': 'speech event'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4838145161,where is this video taken,"{'A': 'sea', 'B': 'kitchen', 'C': 'room', 'D': 'bedroom', 'E': 'sheltered area'}","['B', 'B', 'B', 'B', 'B', 'B', 'E', 'B']",B,B,1
+8797589693,where is this happening,"{'A': 'restaurant', 'B': 'house floor', 'C': 'porch', 'D': 'by a pool', 'E': 'classroom'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+3429509208,where is this video taken,"{'A': 'living room', 'B': 'mountain top', 'C': 'speech event', 'D': 'dining table', 'E': 'mountain areas'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+2717347132,where is this place,"{'A': 'field', 'B': 'porch outside house', 'C': 'home', 'D': 'kitchen', 'E': 'bus terminal'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4671452046,where is this video taken,"{'A': 'sheltered area', 'B': 'stage', 'C': 'kitchen', 'D': 'room', 'E': 'speech event'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3942617402,where is the train running,"{'A': 'garden', 'B': 'in the wild', 'C': 'dessert', 'D': 'tracks', 'E': 'roadside'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+4279106208,where is this place,"{'A': 'stage', 'B': 'playground', 'C': 'dirt field', 'D': 'waterfall', 'E': 'kitchen'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+5549243726,where are the children hanging out,"{'A': 'living room', 'B': 'playground', 'C': 'along the roadside', 'D': 'dining table', 'E': 'balcony'}","['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']",A,A,1
+5919180502,how many people are sitting at the ledge of the swimming pool,"{'A': 'six', 'B': 'four', 'C': 'two', 'D': 'eight', 'E': 'seven'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+9576671750,what is in the background of the video,"{'A': 'birthday party', 'B': 'mouth talking', 'C': 'computer screen', 'D': 'the score', 'E': 'park'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+2510696559,how many people are cycling in the video,"{'A': 'eleven', 'B': 'eight', 'C': 'one', 'D': 'six', 'E': 'five'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+5498331490,how many cats are there,"{'A': 'two', 'B': 'four', 'C': 'three', 'D': 'five', 'E': 'one'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+2614918961,what toy is the children playing with,"{'A': 'train', 'B': 'blocks', 'C': 'pick up fallen paper', 'D': 'classmate', 'E': 'rocket'}","['B', 'B', 'B', 'B', 'B', 'A', 'B', 'B']",B,B,1
+2434859163,where is this place,"{'A': 'wedding hall', 'B': 'zoo', 'C': 'waterfall', 'D': 'bus terminal', 'E': 'outside a house'}","['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B']",B,B,1
+5926256714,how are the boy s arms positioned,"{'A': 'upward', 'B': 'on lady arms', 'C': 'put baby on his lap', 'D': 'sitting', 'E': 'kiss the baby'}","['A', 'A', 'C', 'C', 'C', 'C', 'A', 'C']",C,A,0
+5885887012,judging from the video where is the baby playing,"{'A': 'smiling', 'B': 'birthday party', 'C': 'playground', 'D': 'swimming', 'E': 'rocking chair'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+11566980553,what is the relationship between the boy and the lady,"{'A': 'colleagues', 'B': 'siblingsfriends', 'C': 'father daughter', 'D': 'grandmother', 'E': 'parent offspring'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+11670386946,how many people are mainly involved in the video,"{'A': 'eight', 'B': 'four', 'C': 'one', 'D': 'six', 'E': 'three'}","['C', 'C', 'E', 'E', 'E', 'C', 'C', 'C']",C,C,1
+2990321092,what were the men trying to do,"{'A': 'teammates', 'B': 'photographer', 'C': 'test', 'D': 'colleagues', 'E': 'eat food'}","['E', 'E', 'E', 'E', 'E', 'C', 'E', 'E']",E,E,1
+5987365500,how does the girl position her other hand not holding the microphone,"{'A': 'on the wheel', 'B': 'on the sofa', 'C': 'on her waist', 'D': 'on forehead', 'E': 'clip hair up'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+3562017845,what animals are these,"{'A': 'tigers', 'B': 'dogs', 'C': 'cats', 'D': 'elephants', 'E': 'birds'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+7771650716,where is this video taken,"{'A': 'snow mountain', 'B': 'jungle', 'C': 'road', 'D': 'backyard', 'E': 'studio'}","['C', 'C', 'D', 'C', 'C', 'D', 'C', 'D']",C,C,1
+3112351937,how many people are there,"{'A': 'seven', 'B': 'three', 'C': 'four', 'D': 'eleven', 'E': 'two'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1
+13884293626,what is the possible relationship between the lady in purple and man in brown,"{'A': 'husbandwifefriends', 'B': 'nurse', 'C': 'family member', 'D': 'teacher student', 'E': 'husband wife'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,D,1
+6168716346,from the types of clothes they are wearing what weather it could be,"{'A': 'raining', 'B': 'snowing', 'C': 'cooling', 'D': 'winter cold', 'E': 'hot'}","['D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']",D,C,0
+3375218204,where is this happening,"{'A': 'kitchen', 'B': 'karaoke room', 'C': 'living room', 'D': 'outdoors', 'E': 'classroom'}","['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']",C,C,1
+4483447009,how many ducks are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'one', 'E': 'two'}","['D', 'D', 'D', 'D', 'E', 'E', 'E', 'E']",D,E,0
