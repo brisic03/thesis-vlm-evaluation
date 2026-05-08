@@ -56,3 +56,9 @@ For MobileVLM:
 ```bash
 awk -F, '{print $(NF-2)}' /home/brisic03/thesis_eval/results_mobilevlm_3b_nextqa.csv | sort | uniq -c
 ```
+### Prediction Letter Distribution
+
+| Model | A | B | C | D | E |
+|---|---:|---:|---:|---:|---:|
+| TinyLLaVA | 177 | 172 | 153 | 157 | 118 |
+| MobileVLM | 147 | 169 | 158 | 172 | 131 |
