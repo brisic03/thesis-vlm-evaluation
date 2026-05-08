@@ -62,3 +62,11 @@ awk -F, '{print $(NF-2)}' /home/brisic03/thesis_eval/results_mobilevlm_3b_nextqa
 |---|---:|---:|---:|---:|---:|
 | TinyLLaVA | 177 | 172 | 153 | 157 | 118 |
 | MobileVLM | 147 | 169 | 158 | 172 | 131 |
+
+For TinyLLaVA the most frequent guess is A(177 times) and the least frequent guess is E(118 times), whereas MobileVLM has D as the most frequent guess (172 times) and E as the least frequent guess aswell.
+
+This shows that TinyLLaVA is slightly more likely to be influenced by the first answer option it reads and MobileVLM is more centred as it preferes the middle to late options B,C,D and its a bit more balanced then TinyLLaVA.
+Both models hate option E and this is a classic LLM trait because they run out of attention once they reacj to the last option in a multiple choice prompt.
+
+(Source: Liu et al. (2023) and Zheng et al. (2023) findings)
+### Inference Latency:
