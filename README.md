@@ -125,3 +125,62 @@ The efficiency comes from the fact that we aren’t doing the big multiplication
 
 Howard et al. (2017), "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications." (This is the original paper that proved this 8x-9x efficiency gain).
 Chu et al. (2023), "MobileVLM." (Cite this to show they specifically integrated this MobileNet-style logic into the VLM bridge).
+
+### Phase 2:
+In Phase 2, I basically test how stable and accurate TinyLLaVA and MobileVLM are when 
+the video frames are visually degraded. I keep the same 8 uniformly sampled frames from
+Phase 1, but apply different types of noise to them before giving them to the models.
+The goal is to see how much the accuracy drops compared to the clean baseline and whether the models become slower under harder visual conditions. The tested corruptions are:
+| Noise Type | Severity Levels |
+|---|---|
+| Gaussian blur | 3, 5, 7 |
+| JPEG compression | 60, 40, 20 |
+| Random occlusion | 0.1, 0.2, 0.3 |
+
+Also each experiment is repeated 3 times to make the results more reliable.
+
+These are the results of all three tries in the nine experiments put on tables:
+
+Each cell reports **accuracy** and **average inference time per question**.
+
+### Run 1
+
+| Model / Experiment | TinyLLaVA | MobileVLM |
+|---|---:|---:|
+| Blur 3 | 76.58%, 9.51s | 76.06%, 2.81s |
+| Blur 5 | 76.06%, 8.87s | 76.45%, 3.73s |
+| Blur 7 | 76.58%, 8.83s | 76.32%, 2.77s |
+| JPEG 60 | TBD | 75.80%, 2.75s |
+| JPEG 40 | TBD | 76.19%, 2.77s |
+| JPEG 20 | TBD | TBD |
+| Occlusion 0.1 | TBD | TBD |
+| Occlusion 0.2 | TBD | TBD |
+| Occlusion 0.3 | TBD | TBD |
+
+### Run 2
+
+| Model / Experiment | TinyLLaVA | MobileVLM |
+|---|---:|---:|
+| Blur 3 | TBD | TBD |
+| Blur 5 | TBD | TBD |
+| Blur 7 | TBD | TBD |
+| JPEG 60 | TBD | TBD |
+| JPEG 40 | TBD | TBD |
+| JPEG 20 | TBD | TBD |
+| Occlusion 0.1 | TBD | TBD |
+| Occlusion 0.2 | TBD | TBD |
+| Occlusion 0.3 | TBD | TBD |
+
+### Run 3
+
+| Model / Experiment | TinyLLaVA | MobileVLM |
+|---|---:|---:|
+| Blur 3 | TBD | TBD |
+| Blur 5 | TBD | TBD |
+| Blur 7 | TBD | TBD |
+| JPEG 60 | TBD | TBD |
+| JPEG 40 | TBD | TBD |
+| JPEG 20 | TBD | TBD |
+| Occlusion 0.1 | TBD | TBD |
+| Occlusion 0.2 | TBD | TBD |
+| Occlusion 0.3 | TBD | TBD |
