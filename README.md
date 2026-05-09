@@ -70,3 +70,58 @@ Both models hate option E and this is a classic LLM trait because they run out o
 
 (Source: Liu et al. (2023) and Zheng et al. (2023) findings)
 ### Inference Latency:
+| Metric | TinyLLaVA-3.1B | MobileVLM-3B |
+|---|---:|---:|
+| Mean latency | 1.249s | 0.496s |
+| Median latency | 1.079s | 0.327s |
+| Std latency | 1.188s | 1.183s |
+| Min latency | 1.070s | 0.323s |
+| Max latency | 9.568s | 9.568s |
+
+###Observations:
+MobileVLM is around 2.5x faster than TinyLLaVA on pure inference latency. Both models usually run quite fast but sometimes they get stuck and take up to 9 seconds for a single question. This happens when the models write too many words. The more it writes before giving the final answer, the longer we have to wait.
+
+Median typical performance: A typical TinyLLaVA answer takes 1.08 seconds whereas a typical MobileVLM answer takes only 0.33 seconds so basically in a normal situation MobileVLM is 3 times faster.
+
+### First Conclusions:
+MobileVLM is the best choice out of both for real world use (at least in normal cases). TinyLLaVA is only 0.9% more accurate but it is much slower and more expensive to run.
+
+MobileVLM gives us almost the exact same results at a much higher speed.
+
+### But WHY is MobileVLM more efficient:
+Moving from the observation that MobileVLM is more efficient than TinyLLaVA to the explanation why the architecture makes it so.
+Architectural differences:
+* Lightweight Downsample Projector (LDP)
+While TinyLLaVA uses a standard linear or multi layer perception projector, MobileVLM uses a specifically designed LDP.
+Standard projectors map all visual tokens from the Vision Encoder directly to the language Model. If the encoder outputs 256 tokens, the LLM must process all 256. In contrast, the LDP uses downsampling to compress those 256 tokens into a significantly smaller set of high info tokens before they enter the LLM.
+
+Therefore MobileVLM is faster bc it reduces the number of visual tokens the model has to think about. By downsampling the image features, it reduces the computational load significantly without losing the core info needed to answer the question.
+
+Source: Chu et al. (2023), "MobileVLM: A Fast, Strong and Open Vision Language Assistant for Mobile Devices. (https://arxiv.org/html/2312.16886v2)
+
+* The choice of visual encoder (CLIP vs SigLIP)
+TinyLLaVA often uses CLIP while the newest MobileVLM, like other modern efficient VLMs have transitioned to SigLIP. 
+SigLIP is a major factor in the efficiency and performance we are seeing in MobileVLM bc CLIP uses a softmax loss function that requires the model to look at every single image and every single text caption in a batch at the same time to normalise them and this is mathematically expensive and requires a lot of memory ass batch sizes grow.
+
+Whereas SigLIP replaces softmax w a sigmoid loss and this allows the model to process image text pairs independently.
+Because it doesnt need to globalise the math across the whole batch, it is way more memory efficient and allows the vision encoder to be trained on much larger resolutions without a massive hit to performance.
+
+SigLIP generally outperforms CLIP at the same model size bc it captures finer details in images bc the Sigmoid loss allows it to learn more dense features.
+
+SigLIP paper: Zhai et al. (2023), "Sigmoid Loss for Language-Image Pre-training" ( arXiv:2303.15343)
+Comparison Study: Zhou et al. 2024
+
+* Depth wise separable convolutions
+Standard convolutions used in older models (TinyLLaVA swell) are heavy. MobileVLM utilises depth wise separable convolutions in its vision language bridge by breaking a big math operation into two smaller faster ones and providing a 8x to 9x reduction in the number of parameters needed for that specific layer compared to standard designs
+
+So in a standard convolution the model tries to learn everything at once. It looks at the height, width, and all the color/data channels simultaneously. 
+So if we have a 3x3 filter and 128 channels, every single steps requires 3xx3x128 multiplications (=1152). This is computationally very expensive bc it creates a massive no of parameters which slows down inference latency on 3B models.
+
+MobileVLM breaks the heavy operation into 2 lightweight stages. This is a design borrowed from MobileNet (the architecture that revolutionized AI on smartphones). 
+Stage 1 is the depth wise convolution where instead of looking at all channels at once the model applies a single 3x3 filter to each channel individually.
+Stage 2 is point wise convolution (1x1) where once the spatial features are sorted the model uses a tiny 1x1 filter to mix the channels back together.
+
+The efficiency comes from the fact that we aren’t doing the big multiplication anymore but a small spatial part plus a small mixing part 
+
+Howard et al. (2017), "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications." (This is the original paper that proved this 8x-9x efficiency gain).
+Chu et al. (2023), "MobileVLM." (Cite this to show they specifically integrated this MobileNet-style logic into the VLM bridge).
