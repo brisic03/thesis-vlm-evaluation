@@ -126,6 +126,69 @@ The efficiency comes from the fact that we aren’t doing the big multiplication
 Howard et al. (2017), "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications." (This is the original paper that proved this 8x-9x efficiency gain).
 Chu et al. (2023), "MobileVLM." (Cite this to show they specifically integrated this MobileNet-style logic into the VLM bridge).
 
+## Visual Complexity Analysis
+To better understand why some phase 1 examples failed I used SAM to segment object like regions in the sampled video frames. 
+
+This analysis basically checks whether failed predictions are related to visual complexity such as having more objects or smaller regions(a phone, ball, shoe etc) in thhe scene.
+
+Therefore I used SAM which is a segmentation model that can identify these object like regions in an image wo reading the manual labels. In this analysis I used SAM to inspect the video frames and estimate how visually complex they were.
+
+It first loaded the TinyLLaVA phase 1 results and checked which questions were answered correctly or incorrectly. Then for each video question pair it sampled the same 8 frames used in the original evaluation and was applied to each frame to detect separate object like regions.
+For every frame the script counted how many regions SAM found
+```bash
+masks = mask_generator.generate(frame)
+
+region_count = len(masks)
+```
+how many of those regions were small 
+```bash
+small_region_count = sum(
+    1 for mask in masks
+    if mask["area"] < 0.01 * frame_area
+)
+```
+(this basically counts masks whose aeea is less than 1% of the whole frame.)
+and how much of the frame was covered by the detected regions.
+```bash
+h, w, _ = frame.shape
+frame_area = h * w
+
+total_mask_area = sum(mask["area"] for mask in masks)
+area_ratio = total_mask_area / frame_area if frame_area > 0 else 0
+```
+These values were then averaged across the 8 frames for each video.
+```bash
+"avg_region_count": float(np.mean(frame_region_counts)),
+"avg_total_mask_area_ratio": float(np.mean(frame_area_ratios)),
+"avg_small_region_count": float(np.mean(frame_small_region_counts)),
+```
+
+The output has 11 columns including:
+videoID
+question
+prediction
+answer
+correct
+avg_region_count
+avg_small_region_count
+
+To check if the model failed more on visually crowded videos, I used the SAM output to compare the average no of detected regions in correct and incorrect examples.
+
+The result showed that failed examples had an average of 33.57 SAM regions while correct examples had 34.39. 
+
+The average of small regions was also very similar. 20.68 for failed examples and 20.86 for correct ones.
+
+This suggests that TinyLLaVA's failures are not strongly explained by simple object density or visual clutter alone.
+```bash
+(tinyllava) [brisic03@login ~]$ python -c "import pandas as pd; df=pd.read_csv('/home/brisic03/sam_tinyllava_object_counts.csv'); print(df.groupby('correct')[['avg_region_count','avg_total_mask_area_ratio','avg_small_region_count']].mean())"
+         avg_region_count  ...  avg_small_region_count
+correct                    ...
+0               33.570312  ...               20.684659
+1               34.387271  ...               20.862105
+
+[2 rows x 3 columns]
+```
+
 ### Phase 2:
 In Phase 2, I basically test how stable and accurate TinyLLaVA and MobileVLM are when 
 the video frames are visually degraded. I keep the same 8 uniformly sampled frames from
