@@ -213,37 +213,37 @@ Each cell reports **accuracy** and **average inference time per question**.
 | Blur 3 | 76.58%, 9.51s | 76.06%, 2.81s |
 | Blur 5 | 76.06%, 8.87s | 76.45%, 3.73s |
 | Blur 7 | 76.58%, 8.83s | 76.32%, 2.77s |
-| JPEG 60 | TBD | 75.80%, 2.75s |
-| JPEG 40 | TBD | 76.19%, 2.77s |
-| JPEG 20 | TBD | TBD |
-| Occlusion 0.1 | TBD | TBD |
-| Occlusion 0.2 | TBD | TBD |
-| Occlusion 0.3 | TBD | TBD |
+| JPEG 60 | 76.71%, 9.16s | 75.80%, 2.75s |
+| JPEG 40 | 75.68%, 8.88s | 76.19%, 2.77s |
+| JPEG 20 | 75.03%, 8.93s | 76.06%, 2.68s |
+| Occlusion 0.1 | 76.32%, 8.86s | 75.29%, 2.73s |
+| Occlusion 0.2 | 74.13%, 8.93s | 73.75%, 2.74s |
+| Occlusion 0.3 | 71.94%, 9.10s | 70.79%, 2.66s |
 
 ### Run 2
 
 | Model / Experiment | TinyLLaVA | MobileVLM |
 |---|---:|---:|
-| Blur 3 | TBD | TBD |
-| Blur 5 | TBD | TBD |
-| Blur 7 | TBD | TBD |
-| JPEG 60 | TBD | TBD |
-| JPEG 40 | TBD | TBD |
-| JPEG 20 | TBD | TBD |
-| Occlusion 0.1 | TBD | TBD |
-| Occlusion 0.2 | TBD | TBD |
-| Occlusion 0.3 | TBD | TBD |
+| Blur 3 | 76.58%, 9.63s | 76.06%, 2.76s |
+| Blur 5 | 76.06%, 9.30s | 76.45%, 2.68s |
+| Blur 7 | 76.58%, 8.89s | 76.32%, 2.70s |
+| JPEG 60 | 76.71%, 8.87s | 75.80%, 3.90s |
+| JPEG 40 | 75.68%, 8.95s | 76.19%, 2.80s |
+| JPEG 20 | 75.03%, 9.09s | 76.06%, 2.76s |
+| Occlusion 0.1 | 76.32%, 8.96s | 75.29%, 2.76s |
+| Occlusion 0.2 | 74.13%, 8.79s | 73.75%, 3.82s |
+| Occlusion 0.3 | 71.94%, 8.92s | 70.79%, 2.77s |
 
 ### Run 3
 
 | Model / Experiment | TinyLLaVA | MobileVLM |
 |---|---:|---:|
-| Blur 3 | TBD | TBD |
-| Blur 5 | TBD | TBD |
-| Blur 7 | TBD | TBD |
-| JPEG 60 | TBD | TBD |
-| JPEG 40 | TBD | TBD |
-| JPEG 20 | TBD | TBD |
-| Occlusion 0.1 | TBD | TBD |
-| Occlusion 0.2 | TBD | TBD |
-| Occlusion 0.3 | TBD | TBD |
+| Blur 3 | 76.58%, 8.88s | 76.06%, 2.73s |
+| Blur 5 | 76.06%, 9.24s | 76.45%, 2.86s |
+| Blur 7 | 76.58%, 8.78s | 76.32%, 2.85s |
+| JPEG 60 | 76.71%, 8.93s | 75.80%, 2.76s |
+| JPEG 40 | 75.68%, 9.61s | 76.19%, 2.81s |
+| JPEG 20 | TBD | 76.06%, 2.77s |
+| Occlusion 0.1 | TBD | 75.29%, 2.79s |
+| Occlusion 0.2 | TBD | 73.75%, 2.67s |
+| Occlusion 0.3 | TBD | 70.79%, 2.72s |
