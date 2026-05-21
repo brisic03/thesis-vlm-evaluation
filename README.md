@@ -246,4 +246,4 @@ Each cell reports **accuracy** and **average inference time per question**.
 | JPEG 20 | 75.03%, 8.90s | 76.06%, 2.77s |
 | Occlusion 0.1 | 76.32%, 8.85s | 75.29%, 2.79s |
 | Occlusion 0.2 | 74.13%, 8.94s | 73.75%, 2.67s |
-| Occlusion 0.3 | TBD | 70.79%, 2.72s |
+| Occlusion 0.3 | 71.94%, 8.91s | 70.79%, 2.72s |
