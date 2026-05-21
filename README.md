@@ -247,3 +247,51 @@ Each cell reports **accuracy** and **average inference time per question**.
 | Occlusion 0.1 | 76.32%, 8.85s | 75.29%, 2.79s |
 | Occlusion 0.2 | 74.13%, 8.94s | 73.75%, 2.67s |
 | Occlusion 0.3 | 71.94%, 8.91s | 70.79%, 2.72s |
+
+The code uses do_sample=False and fixed noise settings therefore the accuracy run is identical across the three runs. So basically the model is not trying different answers each time and it does not answer randomly but always choosing the most likely output. It makes the model deterministic.
+It makes the evaluation fair and reproducible. It means changes in accuracy come from the visual degradation and not from random generation behavior.
+The three runs mainly help to show that inference time is stable.
+
+### Phase 2 results explenation
+| Experiment | TinyLLaVA Avg Acc | TinyLLaVA Drop | MobileVLM Avg Acc | MobileVLM Drop |
+|---|---:|---:|---:|---:|
+| Blur 3 | 76.58% | -0.77 | 76.06% | -0.39 |
+| Blur 5 | 76.06% | -1.29 | 76.45% | 0.00 |
+| Blur 7 | 76.58% | -0.77 | 76.32% | -0.13 |
+| JPEG 60 | 76.71% | -0.64 | 75.80% | -0.65 |
+| JPEG 40 | 75.68% | -1.67 | 76.19% | -0.26 |
+| JPEG 20 | 75.03% | -2.32 | 76.06% | -0.39 |
+| Occlusion 0.1 | 76.32% | -1.03 | 75.29% | -1.16 |
+| Occlusion 0.2 | 74.13% | -3.22 | 73.75% | -2.70 |
+| Occlusion 0.3 | 71.94% | -5.41 | 70.79% | -5.66 |
+
+Accuracy drop was calculated as Baseline accuracy - Degraded accuracy
+
+Relative drop (to show how large the accuracy loss is compared to the original baseline) = ((baseline accuracy - degraded accuracy) / baseline accuracy) × 100
+
+| Experiment | TinyLLaVA Relative Drop | MobileVLM Relative Drop |
+|---|---:|---:|
+| Blur 3 | 1.00% | 0.51% |
+| Blur 5 | 1.67% | 0.00% |
+| Blur 7 | 1.00% | 0.17% |
+| JPEG 60 | 0.83% | 0.85% |
+| JPEG 40 | 2.16% | 0.34% |
+| JPEG 20 | 3.00% | 0.51% |
+| Occlusion 0.1 | 1.33% | 1.52% |
+| Occlusion 0.2 | 4.16% | 3.53% |
+| Occlusion 0.3 | 6.99% | 7.40% |
+
+Questions that could be answered:
+1. Which corruption hurts the models most?
+
+Based on the results from phase 2, occlusion hurts both models the most and blur has the smallest effect on them. JPEG has a mild effect, especially for TinyLLaVA at quality 20.
+
+2. Does performance get worse as severity increases?
+   
+Occlusion shows a clear severity trend. As the occluded area increases, accuracy drops more.
+Blur does not show a clear monotonic trend and the accuracy changes are very small.
+Regarding JPEG, TinyLLaVA drops more as JPEG quality decreases while MobileVLM stays more stable under JPEG compression.
+
+3. Which model is more robust?
+
+Both models have similar robustness patterns. MobileVLM is slightly more robust to JPEG compression and blur showed as how it loses less accuracy under both than TinyLLaVA. TinyLLaVA and MobileVLM are both strongly affected by occlusion.
