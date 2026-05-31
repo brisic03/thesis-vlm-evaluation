@@ -174,7 +174,7 @@ avg_small_region_count
 
 To check if the model failed more on visually crowded videos, I used the SAM output to compare the average no of detected regions in correct and incorrect examples.
 
-The result showed that failed examples had an average of 33.57 SAM regions while correct examples had 34.39. 
+The result for TinyLLaVA showed that failed examples had an average of 33.57 SAM regions while correct examples had 34.39. 
 
 The average of small regions was also very similar. 20.68 for failed examples and 20.86 for correct ones.
 
@@ -188,6 +188,73 @@ correct                    ...
 
 [2 rows x 3 columns]
 ```
+For MobileVLM, just like TinyLLaVA, failed examples were not more visually crowded according to SAM.
+
+MobileVLM did not mainly fail because the videos had more object-like regions.
+The correct examples actually had slightly more SAM regions on average, but the difference is very small.
+
+### SAM-Based Visual Complexity Analysis
+
+| Model | Result Type | Avg SAM Regions | Avg Small Regions |
+|---|---|---:|---:|
+| TinyLLaVA | Failed | 33.57 | 20.68 |
+| TinyLLaVA | Correct | 34.39 | 20.86 |
+| MobileVLM | Failed | 33.80 | 20.55 |
+| MobileVLM | Correct | 34.33 | 20.91 |
+
+The SAM based region count did not show a clear difference between correctly and incorrectly answered examples. Therefore I went with the Sobel gradient strength and Laplacian variance.
+
+Sobel shows how many strong edges/boundaries/textures are in the frame and how strong the edges/details are on average. Laplacian concerns how sharp/detailed/blurry the frame is overall.
+
+The script first loaded the phase 1 result file for both models. These files already say whether each answer was correct or wrong. ( 1 or 0) For each video question pair it opened the original video and sampled the same 8 frames used in my model evaluation. For every sampled frame it than calculated three visual complexity values: Sobel edge density (how much of the frame contains strong edges or boundaries), Sobel gradient strength ( how strong the edges/details are on average) and Laplacian variance (how sharp or detailed the frame is overall).
+
+It averaged these values across 8 frames.
+
+So each video question pair got values like
+
+avg_sobel_edge_density
+
+avg_sobel_gradient_strength
+
+avg_laplacian_variance
+
+Then it grouped the examples by:
+
+correct = 0  failed examples
+
+correct = 1  correct examples
+
+And compared the average visual complexity for correct vs failed answers.
+
+The goal was to check if models fail more when the frames are visually more complex, detailed, or edge heavy.
+
+Results were:
+
+```
+TinyLLaVA,0,176,0.2602447923066777,47.087550555090544,456.8600681664789
+TinyLLaVA,1,601,0.26719771871981984,49.54611300290481,529.8756590671723
+MobileVLM,0,183,0.26602711115354,48.32037515308498,494.0420295825321
+MobileVLM,1,594,0.2654982341001501,49.19527636267201,519.2810634395073
+
+0  TinyLLaVA  ...              456.860068
+1  TinyLLaVA  ...              529.875659
+2  MobileVLM  ...              494.042030
+3  MobileVLM  ...              519.281063
+
+[4 rows x 6 columns]
+```
+
+### Sobel and Laplacian Visual Complexity Results
+
+| Model | Result Type | Samples | Avg Sobel Edge Density | Avg Sobel Gradient Strength | Avg Laplacian Variance |
+|---|---|---:|---:|---:|---:|
+| TinyLLaVA | Failed | 176 | 0.260 | 47.09 | 456.86 |
+| TinyLLaVA | Correct | 601 | 0.267 | 49.55 | 529.88 |
+| MobileVLM | Failed | 183 | 0.266 | 48.32 | 494.04 |
+| MobileVLM | Correct | 594 | 0.265 | 49.20 | 519.28 |
+
+The results showed that failed examples were not clearly more visually complex. Correct examples actually had slightly higher Sobel/Laplaian values in most cases.
+So the conclusion is that the models’ failures are probably not caused by low level visual complexity. They are more likely related to things like counting, object tracking, action understanding, question interpretation etc.
 
 ### Phase 2:
 In Phase 2, I basically test how stable and accurate TinyLLaVA and MobileVLM are when 
