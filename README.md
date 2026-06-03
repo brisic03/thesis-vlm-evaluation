@@ -126,6 +126,114 @@ The efficiency comes from the fact that we aren’t doing the big multiplication
 Howard et al. (2017), "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications." (This is the original paper that proved this 8x-9x efficiency gain).
 Chu et al. (2023), "MobileVLM." (Cite this to show they specifically integrated this MobileNet-style logic into the VLM bridge).
 
+### Phase 2:
+In Phase 2, I basically test how stable and accurate TinyLLaVA and MobileVLM are when 
+the video frames are visually degraded. I keep the same 8 uniformly sampled frames from
+Phase 1, but apply different types of noise to them before giving them to the models.
+The goal is to see how much the accuracy drops compared to the clean baseline and whether the models become slower under harder visual conditions. The tested corruptions are:
+| Noise Type | Severity Levels |
+|---|---|
+| Gaussian blur | 3, 5, 7 |
+| JPEG compression | 60, 40, 20 |
+| Random occlusion | 0.1, 0.2, 0.3 |
+
+Also each experiment is repeated 3 times to make the results more reliable.
+
+These are the results of all three tries in the nine experiments put on tables:
+
+Each cell reports **accuracy** and **average inference time per question**.
+
+### Run 1
+
+| Model / Experiment | TinyLLaVA | MobileVLM |
+|---|---:|---:|
+| Blur 3 | 76.58%, 9.51s | 76.06%, 2.81s |
+| Blur 5 | 76.06%, 8.87s | 76.45%, 3.73s |
+| Blur 7 | 76.58%, 8.83s | 76.32%, 2.77s |
+| JPEG 60 | 76.71%, 9.16s | 75.80%, 2.75s |
+| JPEG 40 | 75.68%, 8.88s | 76.19%, 2.77s |
+| JPEG 20 | 75.03%, 8.93s | 76.06%, 2.68s |
+| Occlusion 0.1 | 76.32%, 8.86s | 75.29%, 2.73s |
+| Occlusion 0.2 | 74.13%, 8.93s | 73.75%, 2.74s |
+| Occlusion 0.3 | 71.94%, 9.10s | 70.79%, 2.66s |
+
+### Run 2
+
+| Model / Experiment | TinyLLaVA | MobileVLM |
+|---|---:|---:|
+| Blur 3 | 76.58%, 9.63s | 76.06%, 2.76s |
+| Blur 5 | 76.06%, 9.30s | 76.45%, 2.68s |
+| Blur 7 | 76.58%, 8.89s | 76.32%, 2.70s |
+| JPEG 60 | 76.71%, 8.87s | 75.80%, 3.90s |
+| JPEG 40 | 75.68%, 8.95s | 76.19%, 2.80s |
+| JPEG 20 | 75.03%, 9.09s | 76.06%, 2.76s |
+| Occlusion 0.1 | 76.32%, 8.96s | 75.29%, 2.76s |
+| Occlusion 0.2 | 74.13%, 8.79s | 73.75%, 3.82s |
+| Occlusion 0.3 | 71.94%, 8.92s | 70.79%, 2.77s |
+
+### Run 3
+
+| Model / Experiment | TinyLLaVA | MobileVLM |
+|---|---:|---:|
+| Blur 3 | 76.58%, 8.88s | 76.06%, 2.73s |
+| Blur 5 | 76.06%, 9.24s | 76.45%, 2.86s |
+| Blur 7 | 76.58%, 8.78s | 76.32%, 2.85s |
+| JPEG 60 | 76.71%, 8.93s | 75.80%, 2.76s |
+| JPEG 40 | 75.68%, 9.61s | 76.19%, 2.81s |
+| JPEG 20 | 75.03%, 8.90s | 76.06%, 2.77s |
+| Occlusion 0.1 | 76.32%, 8.85s | 75.29%, 2.79s |
+| Occlusion 0.2 | 74.13%, 8.94s | 73.75%, 2.67s |
+| Occlusion 0.3 | 71.94%, 8.91s | 70.79%, 2.72s |
+
+The code uses do_sample=False and fixed noise settings therefore the accuracy run is identical across the three runs. So basically the model is not trying different answers each time and it does not answer randomly but always choosing the most likely output. It makes the model deterministic.
+It makes the evaluation fair and reproducible. It means changes in accuracy come from the visual degradation and not from random generation behavior.
+The three runs mainly help to show that inference time is stable.
+
+### Phase 2 results explenation
+| Experiment | TinyLLaVA Avg Acc | TinyLLaVA Drop | MobileVLM Avg Acc | MobileVLM Drop |
+|---|---:|---:|---:|---:|
+| Blur 3 | 76.58% | -0.77 | 76.06% | -0.39 |
+| Blur 5 | 76.06% | -1.29 | 76.45% | 0.00 |
+| Blur 7 | 76.58% | -0.77 | 76.32% | -0.13 |
+| JPEG 60 | 76.71% | -0.64 | 75.80% | -0.65 |
+| JPEG 40 | 75.68% | -1.67 | 76.19% | -0.26 |
+| JPEG 20 | 75.03% | -2.32 | 76.06% | -0.39 |
+| Occlusion 0.1 | 76.32% | -1.03 | 75.29% | -1.16 |
+| Occlusion 0.2 | 74.13% | -3.22 | 73.75% | -2.70 |
+| Occlusion 0.3 | 71.94% | -5.41 | 70.79% | -5.66 |
+
+Accuracy drop was calculated as Baseline accuracy - Degraded accuracy
+
+Relative drop (to show how large the accuracy loss is compared to the original baseline) = ((baseline accuracy - degraded accuracy) / baseline accuracy) × 100
+
+| Experiment | TinyLLaVA Relative Drop | MobileVLM Relative Drop |
+|---|---:|---:|
+| Blur 3 | 1.00% | 0.51% |
+| Blur 5 | 1.67% | 0.00% |
+| Blur 7 | 1.00% | 0.17% |
+| JPEG 60 | 0.83% | 0.85% |
+| JPEG 40 | 2.16% | 0.34% |
+| JPEG 20 | 3.00% | 0.51% |
+| Occlusion 0.1 | 1.33% | 1.52% |
+| Occlusion 0.2 | 4.16% | 3.53% |
+| Occlusion 0.3 | 6.99% | 7.40% |
+
+Questions that could be answered:
+1. Which corruption hurts the models most?
+
+Based on the results from phase 2, occlusion hurts both models the most and blur has the smallest effect on them. JPEG has a mild effect, especially for TinyLLaVA at quality 20.
+
+2. Does performance get worse as severity increases?
+   
+Occlusion shows a clear severity trend. As the occluded area increases, accuracy drops more.
+Blur does not show a clear monotonic trend and the accuracy changes are very small.
+Regarding JPEG, TinyLLaVA drops more as JPEG quality decreases while MobileVLM stays more stable under JPEG compression.
+
+3. Which model is more robust?
+
+Both models have similar robustness patterns. MobileVLM is slightly more robust to JPEG compression and blur showed as how it loses less accuracy under both than TinyLLaVA. TinyLLaVA and MobileVLM are both strongly affected by occlusion.
+
+## Phase 3
 ## Visual Complexity Analysis
 To better understand why some phase 1 examples failed I used SAM to segment object like regions in the sampled video frames. 
 
@@ -287,111 +395,162 @@ I will treat this as a qualitative diagnostic tool, not absolute proof as model 
 (Lanham et al. (2023), “Measuring Faithfulness in Chain-of-Thought Reasoning.”) 
 (Turpin et al. (2023) show that Chain-of-Thought explanations are not always faithful to the model’s actual decision process. Therefore, the reasoning outputs in this analysis are treated as qualitative diagnostic evidence rather than as guaranteed explanations of the model’s internal reasoning.)
 
+OUTPUT TINYLLAVA:
+To better understand the failure cases, I asked TinyLLaVA to provide a short visual explanation before giving the final answer. This was done on 50 incorrectly answered examples from the Phase 1 baseline evaluation.
+Some of the output examples are: 
+
+Video: 9213637099
+Question: how many people are involved
+Baseline pred: A
+Correct answer: C
+Reasoning pred: A
+Reasoning:
+['A. six', 'A. six', 'B', 'A. six', 'A. six', 'A. six', 'A. six', 'A. six']
+
+Video: 3804148568
+Question: what is the relationship between the man in specs and the two wearing masks
+Baseline pred: C
+Correct answer: D
+Reasoning pred: C
+Reasoning:
+['C', 'C', 'A man in a purple shirt is holding a sword.', 'A man in a mask is holding a sword.', 'C', 'C', 'C', 'A man in glasses is standing between two people wearing masks.']
+
+Video: 4518113460
+Question: where are the people hanging out
+Baseline pred: C
+Correct answer: D
+Reasoning pred: C
+Reasoning:
+['C', 'C', 'D', 'D', 'A baby is sitting on a chair.', 'C', 'C', 'C']
+
+Video: 8531675050
+Question: what is the possible relation between lady in black and white and the man in white
+Baseline pred: C
+Correct answer: E
+Reasoning pred: A
+Reasoning:
+['The man in white is holding a banana.', 'The man is holding a microphone.', 'The man is holding a microphone and the woman is holding a camera. Answer: D', 'The man is holding a banana.', 'The man is holding a banana.', 'The man in white is holding a microphone.', 'A man in a white shirt holding a banana and a woman in a black shirt and white shirt.', 'The man in white is holding a microphone and the lady in black is sitting in a tent. Answer: D']
+
+### Question Types in the 50 TinyLLaVA Failures
+
+| Question Type | Count |
+|---|---:|
+| how | 30 |
+| what | 11 |
+| where | 9 |
+
+Most selected failures were still **how** questions, especially counting or action-related questions.
+
+### Main TinyLLaVA Failure Patterns
+
+| Pattern | Count |
+|---|---:|
+| Miscounting / counting failure | 25 |
+| Scene/location confusion | 9 |
+| Relationship reasoning failure | 7 |
+| Action/temporal reasoning failure | 5 |
+| Object/action/event confusion | 4 |
+
+### TinyLLaVA Reasoning Output Quality
+
+| Output Type | Count |
+|---|---:|
+| Answer-only output | 22 |
+| Short option phrase, not real reasoning | 22 |
+| Contains some visual description | 6 |
+
+Looking at the whole CSV file, the results show that TinyLLaVA does not reliably produce detailed reasoning. In many cases the model returned only the answer letter, such as 'A' or 'C’, instead of explaining the visual evidence. In other cases, it gave a short answer phrase such as 'A. six’ or `A. caregiver’, which still does not count as real visual reasoning. Only a small number of examples contained actual visual descriptions.
+
+The most common failure pattern was miscounting. Many failed examples were ‘how many’ questions, where the model gave the wrong number of people, animals, or actions. This supports the earlier quantitative finding that `how’ questions are one of the weakest areas for TinyLLaVA.
+
+Other failure patterns included relationship reasoning errors, location confusion, action misunderstanding, and attention to irrelevant visual details. For example, in some cases the model described a visible object or person correctly, but still failed to infer the correct relationship or answer. This suggests that the model can sometimes detect parts of the scene, but struggles to connect them to the question.
+
+Asking for reasoning also did not substantially improve the model's answer. In 42 out of 50 cases, the reasoning based prediction stayed the same as the original baseline prediction. Only 4 out of 50 examples became correct after prompting the model to explain its answer.
+
+Overall, the reasoning analysis shows that TinyLLaVA's failures are not only caused by wrong final predictions, but also by weak explanatory behavior. The model often fails to provide useful visual evidence and frequently repeats answer choices without explaining them. This highlights a limitation of lightweight VLMs in qualitative reasoning and instruction following tasks.
+
+Since model-generated explanations are not always guaranteed to be faithful, these outputs should be treated as qualitative diagnostic evidence rather than exact explanations of the model's internal decision process.
+
+## OUTPUT MOBILEVLM:
+MobileVLM gives more actual visual descriptions than TinyLLaVA, but its reasoning is still messy and often not faithful enough.
+
+Output examples:
+
+Video: 3550839192
+
+Question: what did the baby hold onto
+
+Baseline pred: C
+
+Correct answer: E
+
+Reasoning pred: A
+
+Reasoning:
+
+['a', 'b', 'b', 'a', 'A baby is holding onto a motorcycle.', 'A', 'A baby is holding onto a stroller.', 'b']
 
 
-### Phase 2:
-In Phase 2, I basically test how stable and accurate TinyLLaVA and MobileVLM are when 
-the video frames are visually degraded. I keep the same 8 uniformly sampled frames from
-Phase 1, but apply different types of noise to them before giving them to the models.
-The goal is to see how much the accuracy drops compared to the clean baseline and whether the models become slower under harder visual conditions. The tested corruptions are:
-| Noise Type | Severity Levels |
-|---|---|
-| Gaussian blur | 3, 5, 7 |
-| JPEG compression | 60, 40, 20 |
-| Random occlusion | 0.1, 0.2, 0.3 |
+Video: 2834146886
 
-Also each experiment is repeated 3 times to make the results more reliable.
+Question: how many dogs are there
 
-These are the results of all three tries in the nine experiments put on tables:
+Baseline pred: B
 
-Each cell reports **accuracy** and **average inference time per question**.
+Correct answer: C
 
-### Run 1
+Reasoning pred: A
 
-| Model / Experiment | TinyLLaVA | MobileVLM |
-|---|---:|---:|
-| Blur 3 | 76.58%, 9.51s | 76.06%, 2.81s |
-| Blur 5 | 76.06%, 8.87s | 76.45%, 3.73s |
-| Blur 7 | 76.58%, 8.83s | 76.32%, 2.77s |
-| JPEG 60 | 76.71%, 9.16s | 75.80%, 2.75s |
-| JPEG 40 | 75.68%, 8.88s | 76.19%, 2.77s |
-| JPEG 20 | 75.03%, 8.93s | 76.06%, 2.68s |
-| Occlusion 0.1 | 76.32%, 8.86s | 75.29%, 2.73s |
-| Occlusion 0.2 | 74.13%, 8.93s | 73.75%, 2.74s |
-| Occlusion 0.3 | 71.94%, 9.10s | 70.79%, 2.66s |
+Reasoning:
 
-### Run 2
+['1', 'a', 'answering does not require reading text in the image', 'a', '1', 'answering does not require reading text in the image', 'answering does not require reading text in the image', 'answering does not require reading text in the image']
 
-| Model / Experiment | TinyLLaVA | MobileVLM |
-|---|---:|---:|
-| Blur 3 | 76.58%, 9.63s | 76.06%, 2.76s |
-| Blur 5 | 76.06%, 9.30s | 76.45%, 2.68s |
-| Blur 7 | 76.58%, 8.89s | 76.32%, 2.70s |
-| JPEG 60 | 76.71%, 8.87s | 75.80%, 3.90s |
-| JPEG 40 | 75.68%, 8.95s | 76.19%, 2.80s |
-| JPEG 20 | 75.03%, 9.09s | 76.06%, 2.76s |
-| Occlusion 0.1 | 76.32%, 8.96s | 75.29%, 2.76s |
-| Occlusion 0.2 | 74.13%, 8.79s | 73.75%, 3.82s |
-| Occlusion 0.3 | 71.94%, 8.92s | 70.79%, 2.77s |
+Video: 4518113460
 
-### Run 3
+Question: where are the people hanging out
 
-| Model / Experiment | TinyLLaVA | MobileVLM |
-|---|---:|---:|
-| Blur 3 | 76.58%, 8.88s | 76.06%, 2.73s |
-| Blur 5 | 76.06%, 9.24s | 76.45%, 2.86s |
-| Blur 7 | 76.58%, 8.78s | 76.32%, 2.85s |
-| JPEG 60 | 76.71%, 8.93s | 75.80%, 2.76s |
-| JPEG 40 | 75.68%, 9.61s | 76.19%, 2.81s |
-| JPEG 20 | 75.03%, 8.90s | 76.06%, 2.77s |
-| Occlusion 0.1 | 76.32%, 8.85s | 75.29%, 2.79s |
-| Occlusion 0.2 | 74.13%, 8.94s | 73.75%, 2.67s |
-| Occlusion 0.3 | 71.94%, 8.91s | 70.79%, 2.72s |
+Baseline pred: C
 
-The code uses do_sample=False and fixed noise settings therefore the accuracy run is identical across the three runs. So basically the model is not trying different answers each time and it does not answer randomly but always choosing the most likely output. It makes the model deterministic.
-It makes the evaluation fair and reproducible. It means changes in accuracy come from the visual degradation and not from random generation behavior.
-The three runs mainly help to show that inference time is stable.
+Correct answer: D
 
-### Phase 2 results explenation
-| Experiment | TinyLLaVA Avg Acc | TinyLLaVA Drop | MobileVLM Avg Acc | MobileVLM Drop |
-|---|---:|---:|---:|---:|
-| Blur 3 | 76.58% | -0.77 | 76.06% | -0.39 |
-| Blur 5 | 76.06% | -1.29 | 76.45% | 0.00 |
-| Blur 7 | 76.58% | -0.77 | 76.32% | -0.13 |
-| JPEG 60 | 76.71% | -0.64 | 75.80% | -0.65 |
-| JPEG 40 | 75.68% | -1.67 | 76.19% | -0.26 |
-| JPEG 20 | 75.03% | -2.32 | 76.06% | -0.39 |
-| Occlusion 0.1 | 76.32% | -1.03 | 75.29% | -1.16 |
-| Occlusion 0.2 | 74.13% | -3.22 | 73.75% | -2.70 |
-| Occlusion 0.3 | 71.94% | -5.41 | 70.79% | -5.66 |
+Reasoning pred: A
 
-Accuracy drop was calculated as Baseline accuracy - Degraded accuracy
+Reasoning:
 
-Relative drop (to show how large the accuracy loss is compared to the original baseline) = ((baseline accuracy - degraded accuracy) / baseline accuracy) × 100
+['a', 'A', 'A', 'A', 'a', 'a baby crawling on the floor', 'a', 'A']
 
-| Experiment | TinyLLaVA Relative Drop | MobileVLM Relative Drop |
-|---|---:|---:|
-| Blur 3 | 1.00% | 0.51% |
-| Blur 5 | 1.67% | 0.00% |
-| Blur 7 | 1.00% | 0.17% |
-| JPEG 60 | 0.83% | 0.85% |
-| JPEG 40 | 2.16% | 0.34% |
-| JPEG 20 | 3.00% | 0.51% |
-| Occlusion 0.1 | 1.33% | 1.52% |
-| Occlusion 0.2 | 4.16% | 3.53% |
-| Occlusion 0.3 | 6.99% | 7.40% |
+### MobileVLM Reasoning Failure Patterns
 
-Questions that could be answered:
-1. Which corruption hurts the models most?
+| Category | Count |
+|---|---:|
+| Miscounting / counting failure | 21 |
+| Scene/location confusion | 11 |
+| Object/action/event confusion | 8 |
+| Action/temporal reasoning failure | 5 |
+| Relationship reasoning failure | 4 |
+| Other | 1 |
 
-Based on the results from phase 2, occlusion hurts both models the most and blur has the smallest effect on them. JPEG has a mild effect, especially for TinyLLaVA at quality 20.
+### MobileVLM Reasoning Output Quality
 
-2. Does performance get worse as severity increases?
-   
-Occlusion shows a clear severity trend. As the occluded area increases, accuracy drops more.
-Blur does not show a clear monotonic trend and the accuracy changes are very small.
-Regarding JPEG, TinyLLaVA drops more as JPEG quality decreases while MobileVLM stays more stable under JPEG compression.
+| Output Type | Count |
+|---|---:|
+| Has visual sentence | 20 |
+| All numeric-only output | 13 |
+| All letter-only output | 10 |
 
-3. Which model is more robust?
+### MobileVLM Reasoning Comparison
 
-Both models have similar robustness patterns. MobileVLM is slightly more robust to JPEG compression and blur showed as how it loses less accuracy under both than TinyLLaVA. TinyLLaVA and MobileVLM are both strongly affected by occlusion.
+| Metric | MobileVLM |
+|---|---:|
+| Reasoning prediction same as baseline | 3 / 50 |
+| Reasoning prediction became correct | 12 / 50 |
+
+MobileVLM responded better to the reasoning prompt than TinyLLaVA. It produced visual descriptions in 20 out of 50 examples, showing that it was more willing to describe what it saw.
+
+However, the outputs were still inconsistent. Many responses were only numbers, especially for counting questions, and some did not follow the requested Answer: <letter> format. Miscounting remained the most common failure type, followed by location, object/action, and relationship errors.
+
+The reasoning prompt changed MobileVLM’s prediction more often than TinyLLaVA’s: only 3 out of 50 predictions stayed the same as the baseline, and 12 became correct. Still, these explanations should be treated as qualitative evidence, not fully faithful reasoning.
+
+The reasoning based failure analysis showed that both models struggle to provide explanation for their wrong answers. 
+Across both models, the most common failure pattern was miscounting, especially in 'how many' questions. Other recurring errors included location confusion, object/action confusion, relationship reasoning failures, and attention to irrelevant visual details.
+Overall, the reasoning prompts were useful for qualitative inspection, but the generated explanations should not be treated as fully faithful. Instead, they provide diagnostic evidence that lightweight VLMs struggle not only with final answer accuracy, but also with explaining visual evidence and reasoning consistently.
