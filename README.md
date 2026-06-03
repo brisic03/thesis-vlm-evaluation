@@ -256,6 +256,39 @@ MobileVLM,1,594,0.2654982341001501,49.19527636267201,519.2810634395073
 The results showed that failed examples were not clearly more visually complex. Correct examples actually had slightly higher Sobel/Laplaian values in most cases.
 So the conclusion is that the models’ failures are probably not caused by low level visual complexity. They are more likely related to things like counting, object tracking, action understanding, question interpretation etc.
 
+### Reasoning Based Failure Analysis
+Right now my prompt is:
+Answer with only the letter of the correct option.
+So if the model is wrong I only see:
+Prediction: B
+Correct: D
+But I don’t know why it chose B.
+
+With reasoning outputs I would ask something like:
+Briefly explain what you see in the frame/video that supports your answer.
+Then give the final answer as one letter.
+
+Example output:
+Reasoning: The person appears to be holding a cup near the table.
+Answer: B
+
+Then if the correct answer was phone, I can see the failure type which in this case example would be object confusion.
+
+Or 
+
+Reasoning: I see two people in the scene.
+Answer: C
+
+But the correct answer is four people, the failure would be miscounting.
+
+This is similar to CoT with LLMs: we ask the model to show an explanation before the final answer, so we can inspect its reasoning path.
+
+I will treat this as a qualitative diagnostic tool, not absolute proof as model reasoning is not always very faithful and the model can give a plausible explanation even when it is wrong. 
+(Lanham et al. (2023), “Measuring Faithfulness in Chain-of-Thought Reasoning.”) 
+(Turpin et al. (2023) show that Chain-of-Thought explanations are not always faithful to the model’s actual decision process. Therefore, the reasoning outputs in this analysis are treated as qualitative diagnostic evidence rather than as guaranteed explanations of the model’s internal reasoning.)
+
+
+
 ### Phase 2:
 In Phase 2, I basically test how stable and accurate TinyLLaVA and MobileVLM are when 
 the video frames are visually degraded. I keep the same 8 uniformly sampled frames from
