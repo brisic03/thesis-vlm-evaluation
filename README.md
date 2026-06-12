@@ -396,41 +396,42 @@ I will treat this as a qualitative diagnostic tool, not absolute proof as model 
 (Turpin et al. (2023) show that Chain-of-Thought explanations are not always faithful to the model’s actual decision process. Therefore, the reasoning outputs in this analysis are treated as qualitative diagnostic evidence rather than as guaranteed explanations of the model’s internal reasoning.)
 
 OUTPUT TINYLLAVA:
+
 To better understand the failure cases, I asked TinyLLaVA to provide a short visual explanation before giving the final answer. This was done on 50 incorrectly answered examples from the Phase 1 baseline evaluation.
 Some of the output examples are: 
 
-Video: 9213637099
+```Video: 9213637099
 Question: how many people are involved
 Baseline pred: A
 Correct answer: C
 Reasoning pred: A
 Reasoning:
 ['A. six', 'A. six', 'B', 'A. six', 'A. six', 'A. six', 'A. six', 'A. six']
-
-Video: 3804148568
+```
+```Video: 3804148568
 Question: what is the relationship between the man in specs and the two wearing masks
 Baseline pred: C
 Correct answer: D
 Reasoning pred: C
 Reasoning:
 ['C', 'C', 'A man in a purple shirt is holding a sword.', 'A man in a mask is holding a sword.', 'C', 'C', 'C', 'A man in glasses is standing between two people wearing masks.']
-
-Video: 4518113460
+```
+```Video: 4518113460
 Question: where are the people hanging out
 Baseline pred: C
 Correct answer: D
 Reasoning pred: C
 Reasoning:
 ['C', 'C', 'D', 'D', 'A baby is sitting on a chair.', 'C', 'C', 'C']
-
-Video: 8531675050
+```
+```Video: 8531675050
 Question: what is the possible relation between lady in black and white and the man in white
 Baseline pred: C
 Correct answer: E
 Reasoning pred: A
 Reasoning:
 ['The man in white is holding a banana.', 'The man is holding a microphone.', 'The man is holding a microphone and the woman is holding a camera. Answer: D', 'The man is holding a banana.', 'The man is holding a banana.', 'The man in white is holding a microphone.', 'A man in a white shirt holding a banana and a woman in a black shirt and white shirt.', 'The man in white is holding a microphone and the lady in black is sitting in a tent. Answer: D']
-
+```
 ### Question Types in the 50 TinyLLaVA Failures
 
 | Question Type | Count |
@@ -476,49 +477,33 @@ MobileVLM gives more actual visual descriptions than TinyLLaVA, but its reason
 
 Output examples:
 
-Video: 3550839192
-
+```Video: 3550839192
 Question: what did the baby hold onto
-
 Baseline pred: C
-
 Correct answer: E
-
 Reasoning pred: A
-
 Reasoning:
 
 ['a', 'b', 'b', 'a', 'A baby is holding onto a motorcycle.', 'A', 'A baby is holding onto a stroller.', 'b']
+```
 
-
-Video: 2834146886
+```Video: 2834146886
 
 Question: how many dogs are there
-
 Baseline pred: B
-
 Correct answer: C
-
 Reasoning pred: A
-
 Reasoning:
-
 ['1', 'a', 'answering does not require reading text in the image', 'a', '1', 'answering does not require reading text in the image', 'answering does not require reading text in the image', 'answering does not require reading text in the image']
-
-Video: 4518113460
-
+```
+```Video: 4518113460
 Question: where are the people hanging out
-
 Baseline pred: C
-
 Correct answer: D
-
 Reasoning pred: A
-
 Reasoning:
-
 ['a', 'A', 'A', 'A', 'a', 'a baby crawling on the floor', 'a', 'A']
-
+```
 ### MobileVLM Reasoning Failure Patterns
 
 | Category | Count |
@@ -554,3 +539,186 @@ The reasoning prompt changed MobileVLM’s prediction more often than TinyLLaVA�
 The reasoning based failure analysis showed that both models struggle to provide explanation for their wrong answers. 
 Across both models, the most common failure pattern was miscounting, especially in 'how many' questions. Other recurring errors included location confusion, object/action confusion, relationship reasoning failures, and attention to irrelevant visual details.
 Overall, the reasoning prompts were useful for qualitative inspection, but the generated explanations should not be treated as fully faithful. Instead, they provide diagnostic evidence that lightweight VLMs struggle not only with final answer accuracy, but also with explaining visual evidence and reasoning consistently.
+
+### Reasoning Analysis on correct examples
+
+For the correct example analysis I took 12 correctly answered baseline examples for each model. 4 how, 4 what, and 4 where questions. The goal was to check whether the models could provide useful visual explanations when their original answer was already correct.
+
+TinyLLaVA results examples:
+(not all)
+
+```Video: 3972259774
+Question: how many people are filmed by the camera
+Baseline pred: B
+Correct answer: B
+Reasoning pred: B
+Reasoning:
+['A', 'A. one', 'B', 'B', 'B', 'B', 'B', 'B']
+```
+
+
+```Video: 5919180502
+Question: how many people are sitting at the ledge of the swimming pool
+Baseline pred: C
+Correct answer: C
+Reasoning pred: C
+Reasoning:
+['C', 'C', 'C', 'C', 'There are no people sitting at the ledge of the swimming pool.', 'C', 'C', 'C']
+```
+
+```Video: 4123915842
+Question: how was the girl dressed up
+Baseline pred: C
+Correct answer: C
+Reasoning pred: C
+Reasoning:
+['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']
+```
+
+```
+Video: 2973331780
+Question: what is the possible relationship between the lady in black and the lady with 
+blonde hair
+Baseline pred: B
+Correct answer: B
+Reasoning pred: B
+Reasoning:
+['B', 'B', 'The lady in black is standing in front of the lady with blonde hair.', 'B', 'The lady in black is holding a microphone and the lady with blonde hair is wearing a white shirt. Answer: B', 'The lady in black is holding a microphone and the lady with blonde hair is wearing a white shirt. Answer: B', 'The lady in black is wearing headphones.', 'B']
+```
+
+```Video: 3562017845
+Question: what animals are these
+Baseline pred: E
+Correct answer: E
+Reasoning pred: E
+Reasoning:
+['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']
+```
+
+```Video: 8171216955
+Question: what is the relationship between the two children
+Baseline pred: E
+Correct answer: E
+Reasoning pred: A
+Reasoning:
+['A young girl is playing with a toy dog.', 'E', 'E', 'A', 'A little girl is playing a game with a little boy.', 'A', 'E', 'E']
+```
+```Video: 3049351381
+Question: where are the people hanging out
+Baseline pred: C
+Correct answer: C
+Reasoning pred: C
+Reasoning:
+['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']
+```
+```Video: 3218498932
+Question: where could this be happening
+Baseline pred: C
+Correct answer: C
+Reasoning pred: C
+Reasoning:
+['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']
+```
+
+MobileVLM results examples:
+
+```Video: 3441428429
+Question: how many skaters are performing on the ice
+Baseline pred: E
+Correct answer: E
+Reasoning pred: A
+Reasoning:
+['2', '2', '2', '2', '2', '2', '2', '2']
+```
+
+```Video: 2510696559
+Question: how many people are cycling in the video
+Baseline pred: C
+Correct answer: C
+Reasoning pred: A
+Reasoning:
+['1', '1', '1', '1', '1', '1', '1', '1']
+```
+
+```Video: 5996148663
+Question: how did the lady protect her eyes from the sun
+Baseline pred: E
+Correct answer: E
+Reasoning pred: A
+Reasoning:
+['sunglasses', 'The lady is wearing sunglasses.', 'The lady is wearing sunglasses.', 'The lady is wearing sunglasses.', 'sunglasses', 'A hat', 'sunglasses', 'sunglasses']
+```
+
+```Video: 4199369046
+Question: what is shown in the background
+Baseline pred: D
+Correct answer: D
+Reasoning pred: B
+Reasoning:
+['b', 'books', 'books', 'books', 'books', 'books', 'books', 'books']
+```
+
+```Video: 6772999108
+Question: what is the boy holding in his hand
+Baseline pred: A
+Correct answer: A
+Reasoning pred: A
+Reasoning:
+['guitar', 'A guitar', 'guitar', 'guitar', 'guitar', 'guitar', 'guitar', 'guitar']
+```
+
+```
+Video: 8505893258
+Question: what was the colour of the pot at the back
+Baseline pred: C
+Correct answer: C
+Reasoning pred: B
+Reasoning:
+['p', 'p', 'pink', 'b', 'b', 'p', 'pink', 'p']
+```
+
+```Video: 2716277960
+Question: where is this place
+Baseline pred: C
+Correct answer: C
+Reasoning pred: A
+Reasoning:
+['answering does not require reading text in the image', 'answering does not require reading text in the image', 'answering does not require reading text in the image', 'answering does not require reading text in the image', 'answering does not require reading text in the image', 'answering does not require reading text in the image', 'answering does not require reading text in the image', 'a bridge in the woods']
+```
+
+```Video: 3049351381
+Question: where are the people hanging out
+Baseline pred: C
+Correct answer: C
+Reasoning pred: A
+Reasoning:
+['A', 'A', 'A', 'A', 'pink', 'A baby is laying on a pillow with a pink shirt on.', 'A', 'A']
+```
+
+### Correct Example Selection
+
+| Model | Total Examples | How | What | Where |
+|---|---:|---:|---:|---:|
+| TinyLLaVA | 12 | 4 | 4 | 4 |
+| MobileVLM | 12 | 4 | 4 | 4 |
+
+### Reasoning Prediction Behavior
+
+| Model | Baseline Correct | Reasoning Prediction Same as Baseline | Reasoning Prediction Still Correct |
+|---|---:|---:|---:|
+| TinyLLaVA | 12 / 12 | 11 / 12 | 11 / 12 |
+| MobileVLM | 12 / 12 | 1 / 12 | 1 / 12 |
+### Reasoning Output Quality
+
+| Model | Answer-Only / Numeric-Only | Short Option Phrase | Contains Visual Sentence |
+|---|---:|---:|---:|
+| TinyLLaVA | 7 | 2 | 3 |
+| MobileVLM | 4 | 0 | 5 |
+
+Analysis: 
+
+TinyLLaVA was more stable on correct examples. In 11 out of 12 cases the reasoning prompt the original correct answer. However the explanations were often weak as many outputs were still only answer letters or short phrases rather than real visual evidence. This suggests that TinyLLaVA can keep the correct answer, but does not reliably explain why. MobileVLM behaved differently. It produced more visual descriptions than TinyLLaVA but it often failed to follow the requested Answer letter format. As a result, only 1 out of 12 reasoning based predictions was written as correct even though the original baseline answers were all correct.
+
+This suggests that MobileVLM is more expressive, but less stable and less format compliant under reasoning prompts.
+
+Overall the correct example analysis shows a trade off: TinyLLaVA is more consistent but less explanatory, while MobileVLM gives richer descriptions but struggles to preserve the final multiple choice answer format. Therefore, reasoning outputs are useful for qualitative inspection but they should not replace the original accuracy based evaluation.
