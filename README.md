@@ -722,3 +722,216 @@ TinyLLaVA was more stable on correct examples. In 11 out of 12 cases the reasoni
 This suggests that MobileVLM is more expressive, but less stable and less format compliant under reasoning prompts.
 
 Overall the correct example analysis shows a trade off: TinyLLaVA is more consistent but less explanatory, while MobileVLM gives richer descriptions but struggles to preserve the final multiple choice answer format. Therefore, reasoning outputs are useful for qualitative inspection but they should not replace the original accuracy based evaluation.
+
+### VisDrone
+
+VisDrone is very useful because it contains drone scenes with annotated objects such as pedestrians, cars, bicycles, buses etc. However, drone images contain many very small objects. E.g. a car may be only 8x10 pixels. TinyLLaVA and MobileVLM probably cannot reliably see that, so instead of counting every annotated object I will instead only count objects whose bounding box area is above a fixed threshold.
+
+The bounding box area will be
+bbox area / image area >= 0.001
+
+bbox area = bounding box width * bounding box height
+Image area = image width * image height
+
+So the models will only count objects whose bounding box takes up at least 0.1% of the whole image. Tiny objects whose bounding box covers at least 0.1% of the image will be ignored.
+
+10 object classes:
+
+```pedestrian
+people
+bicycle
+car
+van
+truck
+tricycle
+awning-tricycle
+bus
+motor
+```
+Question types for VisDrone:
+
+1. Counting: How many cars are visible?
+   
+2. Presence: Which object type is visible in the image?
+   
+3. Most frequent object: Which object appears most often?
+
+4. Location: Where is the largest bus located?
+
+I worked on 545 VisDrone images and each image got one presence, one counting and once location question. Most frequent questions has only 525 because the script skips questions when there is a tie for the most frequent object type.
+
+VisDrone question generation script:
+
+The script reads the VisDrone annotation files and turns the object detection labels into multiple choice questions.
+
+It uses bounding boxes to decide which object classes are visible, how many objects of a class are visible, which object class appears most often and where the largest object is located. It also filters out tiny objects using the bounding box area threshold. (MIN_AREA_RATIO=0.001)
+
+The output file (/home/brisic03/visdrone_val_questions.csv) contains an image, image_path, question type, question, answer, answer_letter, answer_text.
+
+Following are some output examples from TinyLLaVA:
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: presence
+Question: Which object type is visible in the drone image?
+Prediction: C
+Correct answer: D (van)
+Correct: 0
+Raw output: C
+```
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: counting
+Question: How many cars are visible in the drone image?
+Prediction: A
+Correct answer: E (4 or more)
+Correct: 0
+Raw output: A
+```
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: most_frequent
+Question: Which object type appears most often in the drone image?
+Prediction: C
+Correct answer: C (car)
+Correct: 1
+Raw output: C
+```
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: location
+Question: Where is the largest van located in the image?
+Prediction: A
+Correct answer: E (center)
+Correct: 0
+Raw output: A
+```
+
+```Image: 0000001_03999_d_0000007.jpg
+Type: counting
+Question: How many motors are visible in the drone image?
+Prediction: A
+Correct answer: E (4 or more)
+Correct: 0
+Raw output: A
+```
+
+```Image: 0000001_03999_d_0000007.jpg
+Type: most_frequent
+Question: Which object type appears most often in the drone image?
+Prediction: A
+Correct answer: D (motor)
+Correct: 0
+Raw output: A
+```
+
+```Image: 0000001_03999_d_0000007.jpg
+Type: location
+Question: Where is the largest car located in the image?
+Prediction: E
+Correct answer: E (center)
+Correct: 1
+Raw output: E
+```
+
+For the first example above,
+```Image: 0000001_02999_d_0000005.jpg
+Type: presence
+Question: Which object type is visible in the drone image?
+Prediction: C
+Correct answer: D (van)
+Correct: 0
+Raw output: C
+```
+the VisDrone image is the one below:
+
+<img width="596" height="331" alt="Screenshot 2026-06-15 at 20 32 23" src="https://github.com/user-attachments/assets/160f61a3-0b1b-4e7f-a64f-87c77be43627" />
+
+So the object type visible in this case is a van, however TinyLLaVA chose 'C': 'awning-tricycle' as an answer, which in this case is wrong.
+
+(Options: {'A': 'bus', 'B': 'car', 'C': 'awning-tricycle', 'D': 'van', 'E': 'truck'})
+
+And the following output examples for MobileVLM:
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: counting
+Question: How many cars are visible in the drone image?
+Prediction: E
+Correct answer: E (4 or more)
+Correct: 1
+Raw output: E
+```
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: most_frequent
+Question: Which object type appears most often in the drone image?
+Prediction: C
+Correct answer: C (car)
+Correct: 1
+Raw output: C
+```
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: location
+Question: Where is the largest van located in the image?
+Prediction: A
+Correct answer: E (center)
+Correct: 0
+Raw output: A
+```
+
+```Image: 0000001_03999_d_0000007.jpg
+Type: counting
+Question: How many motors are visible in the drone image?
+Prediction: B
+Correct answer: E (4 or more)
+Correct: 0
+Raw output: B
+```
+
+```Image: 0000001_03999_d_0000007.jpg
+Type: most_frequent
+Question: Which object type appears most often in the drone image?
+Prediction: A
+Correct answer: D (motor)
+Correct: 0
+Raw output: A
+```
+
+```Image: 0000001_03999_d_0000007.jpg
+Type: location
+Question: Where is the largest car located in the image?
+Prediction: E
+Correct answer: E (center)
+Correct: 1
+Raw output: E
+```
+
+```Image: 0000001_05999_d_0000011.jpg
+Type: most_frequent
+Question: Which object type appears most often in the drone image?
+Prediction: A
+Correct answer: A (car)
+Correct: 1
+Raw output: A
+```
+The VisDrone evaluation used 2160 automatically generated multiple choice questions based on object-detection annotations. Questions were generated from bounding boxes after filtering out very small objects.
+
+| Model | Questions | Overall Accuracy | Avg. Inference Time |
+|---|---:|---:|---:|
+| TinyLLaVA-3.1B | 2160 | 39.86% | 1.13s |
+| MobileVLM-3B | 2160 | 42.82% | 0.37s |
+
+Also accuracy by question type:
+
+| Question Type | TinyLLaVA-3.1B | MobileVLM-3B |
+|---|---:|---:|
+| Counting | 13.21% | 32.29% |
+| Location | 43.30% | 37.25% |
+| Most Frequent Object | 73.71% | 76.19% |
+| Object Presence | 30.46% | 26.79% |
+
+MobileVLM achieved the higher overall accuracy on the generated VisDrone questions with 42.82% compared to TinyLLaVA with 39.86%. It was also way faster, with an average inference time of 0.37s compared to 1.13s for TinyLLaVA.
+
+The strongest performance for both models was on the most frequent object question type, where both models reached above 70% accuracy. Counting was the weakest category, especially for TinyLLaVA, which reached only 13.21%. This suggests that object counting in aerial drone images is difficult for lightweight VLMs, even after filtering out very small bounding boxes.
+
+TinyLLaVA performed slightly better on location and object presence questions, while MobileVLM performed better overall mainly because of its way stronger counting performance.
