@@ -1,422 +1,937 @@
-<h2 align="center"> <a href="https://arxiv.org/abs/2402.14289">TinyLLaVA Factory</a><h5 align="center">
+### Phase 1:
+In the initial phase of the thesis work, I tested the two models TinyLLava 3B and MobileVLM 3B on 
+NExT-QA's descriptive questions. Both models processed 8 frames per video and generated as output answers in
+multiple choice format (A-E).
+For each video question, I asked the models the same question for each frame. So the model gave 8
+answers in total. The final answer was selected using majority voting, meaning the option letter
+predicted the most often across the 8 frames was used as the final prediction.
+Then, I generated both models' accuracy to compare their performance on descriptive question answering
+and wrote down the results.
 
-[![hf_space](https://img.shields.io/badge/🤗-%20Open%20In%20HF-blue.svg)](https://huggingface.co/tinyllava) [![arXiv](https://img.shields.io/badge/Arxiv-2402.14289-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2402.14289) [![arXiv](https://img.shields.io/badge/Arxiv-2405.11788-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2405.11788)[![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](https://github.com/TinyLLaVA/TinyLLaVA_Factory/blob/main/LICENSE) [![Doc](https://img.shields.io/badge/Doc-Document-logo=read%20the%20docs&logoColor=white&label=Doc)](https://tinyllava-factory.readthedocs.io/en/latest/) [![Demo](https://img.shields.io/badge/Demo-Demo-red.svg)](http://8843843nmph5.vicp.fun/#/)
-
-![architecture](./assets/architecture.jpg)
-
-## &#x1F389; News
-* **[2025.01]**  Our new work [TinyLLaVA-Video](https://github.com/ZhangXJ199/TinyLLaVA-Video) is released.
-* **[2024.08.13]**  A simple [visualizaiton tool](https://github.com/TinyLLaVA/TinyLLaVA_Factory/tree/main/tinyllava_visualizer) for interpreting the prediction of TinyLLaVA is added.
-* **[2024.05.21]**  Our paper: [TinyLLaVA Factory: A Modularized Codebase for Small-scale Large Multimodal Models](https://arxiv.org/abs/2405.11788) is released!
-* **[2024.05.15]** [TinyLLaVA Factory](https://github.com/TinyLLaVA/TinyLLaVA_Factory), our new codebase, is released!  **Note that the old codebase, TinyLLaVABench, is moved to the [tinyllava_bench](https://github.com/TinyLLaVA/TinyLLaVA_Factory/tree/tinyllava_bench) branch.**
-* **[2024.05.04]**  [TinyLLaVA Demo](http://8843843nmph5.vicp.fun/#/) is released! (The password to access our demo is '1234'.)
-* **[2024.02.21]**  Our paper: [TinyLLaVA: A Framework of Small-scale Large Multimodal Models](https://arxiv.org/abs/2402.14289) is released!
-
-## &#x1F525; Takeaways
-- Our best model, [TinyLLaVA-Phi-2-SigLIP-3.1B](https://huggingface.co/tinyllava/TinyLLaVA-Phi-2-SigLIP-3.1B), achieves better overall performance against existing 7B models such as LLaVA-1.5 and Qwen-VL.
-
-- TinyLLaVA Factory is an open-source modular codebase for small-scale large multimodal models (LMMs), implemented in PyTorch and HuggingFace, with a focus on simplicity of code implementations, extensibility of new features, and reproducibility of training results.
-
-- With TinyLLaVA Factory, you can customize your own large multimodal models with less coding effort and less coding mistakes.
-
-- TinyLLaVA Factory integrates a suite of cutting-edge models and methods. 
-
-  - LLM currently supports **OpenELM**, **TinyLlama**, **StableLM**, **Qwen**, **Gemma**, and **Phi**. 
-
-  - Vision tower currently supports **CLIP,** **SigLIP**, **Dino**, and **combination of CLIP and Dino**.
-    
-  - Connector currently supports **MLP**, **Qformer**, and **Resampler**.
-    
-  - Training Recipe currently supports **Frozen/Fully/Partially tuning** and **LoRA/QLoRA tuning**.
-
-## Contents
-
-- [🎉 News](#-news)
-- [🔥 Takeaways](#-takeaways)
-- [Contents](#contents)
-- [Installation and Requirements](#installation-and-requirements)
-    - [Upgrade to the latest code base](#upgrade-to-the-latest-code-base)
-- [Get Started](#get-started)
-    - [1. Data Preparation](#1-data-preparation)
-    - [2. Train](#2-train)
-    - [3. Evaluation](#3-evaluation)
-- [Model Zoo](#model-zoo)
-  - [Trained Models](#trained-models)
-    - [Model Performance](#model-performance)
-  - [Legacy Models](#legacy-models)
-- [Launch Demo Locally](#launch-demo-locally)
-  - [Gradio Web Demo](#gradio-web-demo)
-  - [CLI Inference](#cli-inference)
-  - [Quick Inference Scripts](#quick-inference-scripts)
-- [Custom Finetune](#custom-finetune)
-- [Customize Your Own Large Multimodel Models](#customize-your-own-large-multimodel-models)
-  - [LLM](#llm)
-  - [Vision Tower](#vision-tower)
-  - [Connector](#connector)
-- [Acknowledgement](#acknowledgement)
-- [Contact](#contact)
-- [✏ Citation](#-citation)
-- [❤️ Community efforts](#️-community-efforts)
+### Baseline results:
 
 
-## Installation and Requirements
+| Model | Accuracy | Correct Answers |
+|---|---:|---:|
+| TinyLLaVA-3.1B | 77.35% | 601 |
+| MobileVLM-3B | 76.45% | 594 |
 
-Please note that our environment requirements are different from LLaVA's environment requirements. We strongly recommend you create the environment from scratch as follows.
+TinyLLaVA performed slightly better overall, but the difference between the two models was small.
 
-1. Clone this repository and navigate to the folder
-```bash
-git clone https://github.com/TinyLLaVA/TinyLLaVA_Factory.git
-cd TinyLLaVA_Factory
-```
-
-2. Create a conda environment, activate it and install Packages
-```Shell
-conda create -n tinyllava_factory python=3.10 -y
-conda activate tinyllava_factory
-pip install --upgrade pip  # enable PEP 660 support
-pip install -e .
-```
-
-3. Install additional packages
-```Shell
-pip install flash-attn==2.5.7 --no-build-isolation
-```
-#### Upgrade to the latest code base
-
-```Shell
-git pull
-pip install -e .
-```
-
-## Get Started
-
-#### 1. Data Preparation
-
-Please refer to the [Data Preparation](https://tinyllava-factory.readthedocs.io/en/latest/Prepare%20Datasets.html) section in our [Documenation](https://tinyllava-factory.readthedocs.io/en/latest/).
-
-#### 2. Train
-
-Here's an example for training a LMM using Phi-2.
-
-- Replace data paths with yours in `scripts/train/train_phi.sh`
-- Replace `output_dir` with yours in `scripts/train/pretrain.sh`
-- Replace `pretrained_model_path` and `output_dir` with yours in `scripts/train/finetune.sh`
-- Adjust your GPU ids (localhost) and `per_device_train_batch_size` in `scripts/train/pretrain.sh` and `scripts/train/finetune.sh`
+### Checking correct answers:
+To check the exact number of correct predictions in each model, I used the following command:
 
 ```bash
-bash scripts/train/train_phi.sh
+awk -F, '{print $NF}' /home/brisic03/thesis_eval/results_3b_nextqa.csv | sort | uniq -c
 ```
-
-Important hyperparameters used in pretraining and finetuning are provided below.
-
-| Training Stage | Global Batch Size | Learning rate | conv_version |
-| -------------- | :---------------: | :-----------: | :----------: |
-| Pretraining    | 256               | 1e-3          | pretrain     |
-| Finetuning     | 128               | 2e-5          | phi          |
-
-**Tips:** 
-
-Global Batch Size = num of GPUs * `per_device_train_batch_size` * `gradient_accumulation_steps`, we recommand you always keep global batch size and learning rate as above except for lora tuning your model.
-
-`conv_version` is a hyperparameter used for choosing different chat templates for different LLMs. In the pretraining stage, `conv_version` is the same for all LLMs, using `pretrain`. In the finetuning stage, we use
-
-`phi` for Phi-2, StableLM, Qwen-1.5
-
-`llama` for TinyLlama, OpenELM
-
-`gemma` for Gemma
-
-#### 3. Evaluation
-
-Please refer to the [Evaluation](https://tinyllava-factory.readthedocs.io/en/latest/Evaluation.html) section in our [Documenation](https://tinyllava-factory.readthedocs.io/en/latest/Evaluation.html).
-
-## Model Zoo
-
-### Trained Models
-
-which are trained using TinyLLaVA Factory.
-
-- [TinyLLaVA-Phi-2-SigLIP-3.1B](https://huggingface.co/tinyllava/TinyLLaVA-Phi-2-SigLIP-3.1B)
-- [TinyLLaVA-Gemma-SigLIP-2.4B](https://huggingface.co/tinyllava/TinyLLaVA-Gemma-SigLIP-2.4B)
-- [TinyLLaVA-OpenELM-450M-SigLIP-0.89B](https://huggingface.co/jiajunlong/TinyLLaVA-0.89B)
-- [TinyLLaVA-Qwen2-0.5B-SigLIP](https://huggingface.co/Zhang199/TinyLLaVA-Qwen2-0.5B-SigLIP)
-- [TinyLLaVA-Qwen2.5-3B-SigLIP](https://huggingface.co/Zhang199/TinyLLaVA-Qwen2.5-3B-SigLIP)
-
-#### Model Performance
-
-| VT (HF Path)                      | LLM (HF Path)                      | Recipe    | VQA-v2 | GQA  | SQA-image | TextVQA | MM-Vet | POPE | MME    | MMMU-val |
-| --------------------------------- | ---------------------------------- | --------- | :----: | :--: | :-------: | :-----: | :----: | :--: | :----: | :------: |
-| openai/clip-vit-large-patch14-336 | apple/OpenELM-450M-Instruct        | base      | 69.5   | 52.1 | 50.6      | 40.4    | 20.0   | 83.6 | 1052.9 | 23.9     |
-| google/siglip-so400m-patch14-384  | apple/OpenELM-450M-Instruct        | base      | 71.7   | 53.9 | 54.1      | 44.0    | 20.0   | 85.4 | 1118.8 | 24.0     |
-| google/siglip-so400m-patch14-384  | Qwen/Qwen2-0.5B                    | base      | 72.3   | 55.8 | 60.1      | 45.2    | 19.5   | 86.6 | 1153.0 | 29.7     |
-| google/siglip-so400m-patch14-384  | Qwen/Qwen2.5-0.5B                  | base      | 75.3   | 59.5 | 60.3      | 48.3    | 23.9   | 86.1 | 1253.0 | 33.3     |
-| google/siglip-so400m-patch14-384  | Qwen/Qwen2.5-3B                    | base      | 79.4   | 62.5 | 74.1      | 58.3    | 34.8   | 87.4 | 1438.7 | 39.9     |
-| openai/clip-vit-large-patch14-336 | TinyLlama/TinyLlama-1.1B-Chat-v1.0 | base      | 73.7   | 58.0 | 59.9      | 46.3    | 23.2   | 85.5 | 1284.6 | 27.9     |
-| google/siglip-so400m-patch14-384  | TinyLlama/TinyLlama-1.1B-Chat-v1.0 | base      | 75.5   | 58.6 | 64.0      | 49.6    | 23.5   | 86.3 | 1256.5 | 28.3     |
-| openai/clip-vit-large-patch14-336 | stabilityai/stablelm-2-zephyr-1_6b | base      | 75.9   | 59.5 | 64.6      | 50.5    | 27.3   | 86.1 | 1368.1 | 31.8     |
-| google/siglip-so400m-patch14-384  | stabilityai/stablelm-2-zephyr-1_6b | base      | 78.2   | 60.7 | 66.7      | 56.0    | 29.4   | 86.3 | 1319.3 | 32.6     |
-| google/siglip-so400m-patch14-384  | google/gemma-2b-it                 | base      | 78.4   | 61.6 | 64.4      | 53.6    | 26.9   | 86.4 | 1339.0 | 31.7     |
-| openai/clip-vit-large-patch14-336 | microsoft/phi-2                    | base      | 76.8   | 59.4 | 71.2      | 53.4    | 31.7   | 86.8 | 1448.6 | 36.3     |
-| google/siglip-so400m-patch14-384  | microsoft/phi-2                    | base      | 79.2   | 61.6 | 71.9      | 57.4    | 35.0   | 87.2 | 1462.4 | 38.2     |
-| google/siglip-so400m-patch14-384  | microsoft/phi-2                    | base&lora | 77.6   | 59.7 | 71.6      | 53.8    | 33.3   | 87.9 | 1413.2 | 35.6     |
-| google/siglip-so400m-patch14-384  | microsoft/phi-2                    | share     | 80.1   | 62.1 | 73.0      | 60.3    | 37.5   | 87.2 | 1466.4 | 38.4     |
-
-### Legacy Models
-
-which are trained using the old codebase TinyLLaVABench.
-
-- [TinyLLaVA-3.1B](https://huggingface.co/bczhou/TinyLLaVA-3.1B)
-- [TinyLLaVA-2.0B](https://huggingface.co/bczhou/TinyLLaVA-2.0B)
-- [TinyLLaVA-1.5B](https://huggingface.co/bczhou/TinyLLaVA-1.5B)
-- [tiny-llava-hf](https://huggingface.co/bczhou/tiny-llava-v1-hf)
-
-If you have models trained by our old codebase TinyLLaVABench and you still want to use them, we provide an example of [TinyLLaVA-3.1B](https://huggingface.co/bczhou/TinyLLaVA-3.1B) for how to use legacy models.
-
-<details>
-<summary>Example of using legacy models</summary>
-
-
-```Python
-from tinyllava.eval.run_tiny_llava import eval_model
-from tinyllava.model.convert_legecy_weights_to_tinyllavafactory import *
-
-model = convert_legecy_weights_to_tinyllavafactory('bczhou/TinyLLaVA-3.1B')
-
-prompt = "What are the things I should be cautious about when I visit here?"
-image_file = "https://llava-vl.github.io/static/images/view.jpg"
-
-args = type('Args', (), {
-    "model_path": None,
-    "model": model,
-    "query": prompt,
-    "conv_mode": "phi", # the same as conv_version in the training stage. Different LLMs have different conv_mode/conv_version, please replace it
-    "image_file": image_file,
-    "sep": ",",
-    "temperature": 0,
-    "top_p": None,
-    "num_beams": 1,
-    "max_new_tokens": 512
-})()
-
-eval_model(args)
-
-"""
-Output: 
-When visiting this serene lakeside location with a wooden dock, there are a few things to be cautious about. First, ensure that the dock is stable and secure before stepping onto it, as it might be slippery or wet, especially if it's a wooden structure. Second, be mindful of the surrounding water, as it can be deep or have hidden obstacles, such as rocks or debris, that could pose a risk. Additionally, be aware of the weather conditions, as sudden changes in weather can make the area more dangerous. Lastly, respect the natural environment and wildlife, and avoid littering or disturbing the ecosystem.
-"""
-```
-
-</details>
-
-
-
-## Launch Demo Locally
-
-### Gradio Web Demo
-Launch a local web demo by running:
+TinyLLaVA got 601 answers correct, while MobileVLM got 594 answers correct.
+### Failed Question Types:
+To get a basic overview of which question types appeared most often in the failed predictions, I checked the first word of each failed question.
 ```bash
-python tinyllava/serve/app.py --model-path tinyllava/TinyLLaVA-Phi-2-SigLIP-3.1B
+cut -d, -f2 /home/brisic03/thesis_eval/errors_only.csv | awk '{print $1}' | sort | uniq -c | sort -nr
 ```
-### CLI Inference
-We also support running inference with CLI. To use our model, run:
+
+| Question Word | TinyLLaVA Errors | MobileVLM Errors |
+|---|---:|---:|
+| how | 96 | 96 |
+| what | 43 | 44 |
+| where | 29 | 31 |
+| which | 3 | 4 |
+| why | 2 | 2 |
+| whose | 1 | 2 |
+| who | 1 | 2 |
+| from | 1 | 1 |
+| is | 0 | 1 |
+
+The largest error group for both models was the how questions which suggests that counting, quantity reasoning and tracking objects across frames are difficult for both lightweight models and more error prone.
+Also worth mentioning that both models show very strong causal reasoning.
+### Patterns of errors:
+To check if there is any bias patterns in both models when the model gets lazy and just has a favourite letter I used this command:
+
+For TinyLLaVA:
 ```bash
-python -m tinyllava.serve.cli \
-   --model-path tinyllava/TinyLLaVA-Phi-2-SigLIP-3.1B \
-   --image-file "./tinyllava/serve/examples/extreme_ironing.jpg" 
+awk -F, '{print $(NF-2)}' /home/brisic03/thesis_eval/results_3b_nextqa.csv | sort | uniq -c
 ```
-### Quick Inference Scripts
-If you want to launch the model trained by yourself or us locally, here's an example.
-<details>
-<summary>Run inference with the model trained by yourself or downloaded from HuggingFace</summary>
-
-```Python
-from tinyllava.eval.run_tiny_llava import eval_model
-
-model_path = "/absolute/path/to/your/model/"
-prompt = "What are the things I should be cautious about when I visit here?"
-image_file = "https://llava-vl.github.io/static/images/view.jpg"
-conv_mode = "phi" # or llama, gemma, etc
-
-args = type('Args', (), {
-    "model_path": model_path,
-    "model": None,
-    "query": prompt,
-    "conv_mode": conv_mode,
-    "image_file": image_file,
-    "sep": ",",
-    "temperature": 0,
-    "top_p": None,
-    "num_beams": 1,
-    "max_new_tokens": 512
-})()
-
-eval_model(args)
+For MobileVLM:
+```bash
+awk -F, '{print $(NF-2)}' /home/brisic03/thesis_eval/results_mobilevlm_3b_nextqa.csv | sort | uniq -c
 ```
-</details>
+### Prediction Letter Distribution
 
-<details>
-<summary>Run inference with the model trained by us using huggingface transformers</summary>
+| Model | A | B | C | D | E |
+|---|---:|---:|---:|---:|---:|
+| TinyLLaVA | 177 | 172 | 153 | 157 | 118 |
+| MobileVLM | 147 | 169 | 158 | 172 | 131 |
 
-```Python
-from transformers import AutoTokenizer, AutoModelForCausalLM
+For TinyLLaVA the most frequent guess is A(177 times) and the least frequent guess is E(118 times), whereas MobileVLM has D as the most frequent guess (172 times) and E as the least frequent guess aswell.
 
-hf_path = 'tinyllava/TinyLLaVA-Phi-2-SigLIP-3.1B'
-model = AutoModelForCausalLM.from_pretrained(hf_path, trust_remote_code=True)
-model.cuda()
-config = model.config
-tokenizer = AutoTokenizer.from_pretrained(hf_path, use_fast=False, model_max_length = config.tokenizer_model_max_length,padding_side = config.tokenizer_padding_side)
-prompt="What are these?"
-image_url="http://images.cocodataset.org/val2017/000000039769.jpg"
-output_text, genertaion_time = model.chat(prompt=prompt, image=image_url, tokenizer=tokenizer)
+This shows that TinyLLaVA is slightly more likely to be influenced by the first answer option it reads and MobileVLM is more centred as it preferes the middle to late options B,C,D and its a bit more balanced then TinyLLaVA.
+Both models hate option E and this is a classic LLM trait because they run out of attention once they reacj to the last option in a multiple choice prompt.
 
-print('model output:', output_text)
-print('runing time:', genertaion_time)
+(Source: Liu et al. (2023) and Zheng et al. (2023) findings)
+### Inference Latency:
+| Metric | TinyLLaVA-3.1B | MobileVLM-3B |
+|---|---:|---:|
+| Mean latency | 1.249s | 0.496s |
+| Median latency | 1.079s | 0.327s |
+| Std latency | 1.188s | 1.183s |
+| Min latency | 1.070s | 0.323s |
+| Max latency | 9.568s | 9.568s |
+
+###Observations:
+MobileVLM is around 2.5x faster than TinyLLaVA on pure inference latency. Both models usually run quite fast but sometimes they get stuck and take up to 9 seconds for a single question. This happens when the models write too many words. The more it writes before giving the final answer, the longer we have to wait.
+
+Median typical performance: A typical TinyLLaVA answer takes 1.08 seconds whereas a typical MobileVLM answer takes only 0.33 seconds so basically in a normal situation MobileVLM is 3 times faster.
+
+### First Conclusions:
+MobileVLM is the best choice out of both for real world use (at least in normal cases). TinyLLaVA is only 0.9% more accurate but it is much slower and more expensive to run.
+
+MobileVLM gives us almost the exact same results at a much higher speed.
+
+### But WHY is MobileVLM more efficient:
+Moving from the observation that MobileVLM is more efficient than TinyLLaVA to the explanation why the architecture makes it so.
+Architectural differences:
+* Lightweight Downsample Projector (LDP)
+While TinyLLaVA uses a standard linear or multi layer perception projector, MobileVLM uses a specifically designed LDP.
+Standard projectors map all visual tokens from the Vision Encoder directly to the language Model. If the encoder outputs 256 tokens, the LLM must process all 256. In contrast, the LDP uses downsampling to compress those 256 tokens into a significantly smaller set of high info tokens before they enter the LLM.
+
+Therefore MobileVLM is faster bc it reduces the number of visual tokens the model has to think about. By downsampling the image features, it reduces the computational load significantly without losing the core info needed to answer the question.
+
+Source: Chu et al. (2023), "MobileVLM: A Fast, Strong and Open Vision Language Assistant for Mobile Devices. (https://arxiv.org/html/2312.16886v2)
+
+* The choice of visual encoder (CLIP vs SigLIP)
+TinyLLaVA often uses CLIP while the newest MobileVLM, like other modern efficient VLMs have transitioned to SigLIP. 
+SigLIP is a major factor in the efficiency and performance we are seeing in MobileVLM bc CLIP uses a softmax loss function that requires the model to look at every single image and every single text caption in a batch at the same time to normalise them and this is mathematically expensive and requires a lot of memory ass batch sizes grow.
+
+Whereas SigLIP replaces softmax w a sigmoid loss and this allows the model to process image text pairs independently.
+Because it doesnt need to globalise the math across the whole batch, it is way more memory efficient and allows the vision encoder to be trained on much larger resolutions without a massive hit to performance.
+
+SigLIP generally outperforms CLIP at the same model size bc it captures finer details in images bc the Sigmoid loss allows it to learn more dense features.
+
+SigLIP paper: Zhai et al. (2023), "Sigmoid Loss for Language-Image Pre-training" ( arXiv:2303.15343)
+Comparison Study: Zhou et al. 2024
+
+* Depth wise separable convolutions
+Standard convolutions used in older models (TinyLLaVA swell) are heavy. MobileVLM utilises depth wise separable convolutions in its vision language bridge by breaking a big math operation into two smaller faster ones and providing a 8x to 9x reduction in the number of parameters needed for that specific layer compared to standard designs
+
+So in a standard convolution the model tries to learn everything at once. It looks at the height, width, and all the color/data channels simultaneously. 
+So if we have a 3x3 filter and 128 channels, every single steps requires 3xx3x128 multiplications (=1152). This is computationally very expensive bc it creates a massive no of parameters which slows down inference latency on 3B models.
+
+MobileVLM breaks the heavy operation into 2 lightweight stages. This is a design borrowed from MobileNet (the architecture that revolutionized AI on smartphones). 
+Stage 1 is the depth wise convolution where instead of looking at all channels at once the model applies a single 3x3 filter to each channel individually.
+Stage 2 is point wise convolution (1x1) where once the spatial features are sorted the model uses a tiny 1x1 filter to mix the channels back together.
+
+The efficiency comes from the fact that we aren’t doing the big multiplication anymore but a small spatial part plus a small mixing part 
+
+Howard et al. (2017), "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications." (This is the original paper that proved this 8x-9x efficiency gain).
+Chu et al. (2023), "MobileVLM." (Cite this to show they specifically integrated this MobileNet-style logic into the VLM bridge).
+
+### Phase 2:
+In Phase 2, I basically test how stable and accurate TinyLLaVA and MobileVLM are when 
+the video frames are visually degraded. I keep the same 8 uniformly sampled frames from
+Phase 1, but apply different types of noise to them before giving them to the models.
+The goal is to see how much the accuracy drops compared to the clean baseline and whether the models become slower under harder visual conditions. The tested corruptions are:
+| Noise Type | Severity Levels |
+|---|---|
+| Gaussian blur | 3, 5, 7 |
+| JPEG compression | 60, 40, 20 |
+| Random occlusion | 0.1, 0.2, 0.3 |
+
+Also each experiment is repeated 3 times to make the results more reliable.
+
+These are the results of all three tries in the nine experiments put on tables:
+
+Each cell reports **accuracy** and **average inference time per question**.
+
+### Run 1
+
+| Model / Experiment | TinyLLaVA | MobileVLM |
+|---|---:|---:|
+| Blur 3 | 76.58%, 9.51s | 76.06%, 2.81s |
+| Blur 5 | 76.06%, 8.87s | 76.45%, 3.73s |
+| Blur 7 | 76.58%, 8.83s | 76.32%, 2.77s |
+| JPEG 60 | 76.71%, 9.16s | 75.80%, 2.75s |
+| JPEG 40 | 75.68%, 8.88s | 76.19%, 2.77s |
+| JPEG 20 | 75.03%, 8.93s | 76.06%, 2.68s |
+| Occlusion 0.1 | 76.32%, 8.86s | 75.29%, 2.73s |
+| Occlusion 0.2 | 74.13%, 8.93s | 73.75%, 2.74s |
+| Occlusion 0.3 | 71.94%, 9.10s | 70.79%, 2.66s |
+
+### Run 2
+
+| Model / Experiment | TinyLLaVA | MobileVLM |
+|---|---:|---:|
+| Blur 3 | 76.58%, 9.63s | 76.06%, 2.76s |
+| Blur 5 | 76.06%, 9.30s | 76.45%, 2.68s |
+| Blur 7 | 76.58%, 8.89s | 76.32%, 2.70s |
+| JPEG 60 | 76.71%, 8.87s | 75.80%, 3.90s |
+| JPEG 40 | 75.68%, 8.95s | 76.19%, 2.80s |
+| JPEG 20 | 75.03%, 9.09s | 76.06%, 2.76s |
+| Occlusion 0.1 | 76.32%, 8.96s | 75.29%, 2.76s |
+| Occlusion 0.2 | 74.13%, 8.79s | 73.75%, 3.82s |
+| Occlusion 0.3 | 71.94%, 8.92s | 70.79%, 2.77s |
+
+### Run 3
+
+| Model / Experiment | TinyLLaVA | MobileVLM |
+|---|---:|---:|
+| Blur 3 | 76.58%, 8.88s | 76.06%, 2.73s |
+| Blur 5 | 76.06%, 9.24s | 76.45%, 2.86s |
+| Blur 7 | 76.58%, 8.78s | 76.32%, 2.85s |
+| JPEG 60 | 76.71%, 8.93s | 75.80%, 2.76s |
+| JPEG 40 | 75.68%, 9.61s | 76.19%, 2.81s |
+| JPEG 20 | 75.03%, 8.90s | 76.06%, 2.77s |
+| Occlusion 0.1 | 76.32%, 8.85s | 75.29%, 2.79s |
+| Occlusion 0.2 | 74.13%, 8.94s | 73.75%, 2.67s |
+| Occlusion 0.3 | 71.94%, 8.91s | 70.79%, 2.72s |
+
+The code uses do_sample=False and fixed noise settings therefore the accuracy run is identical across the three runs. So basically the model is not trying different answers each time and it does not answer randomly but always choosing the most likely output. It makes the model deterministic.
+It makes the evaluation fair and reproducible. It means changes in accuracy come from the visual degradation and not from random generation behavior.
+The three runs mainly help to show that inference time is stable.
+
+### Phase 2 results explenation
+| Experiment | TinyLLaVA Avg Acc | TinyLLaVA Drop | MobileVLM Avg Acc | MobileVLM Drop |
+|---|---:|---:|---:|---:|
+| Blur 3 | 76.58% | -0.77 | 76.06% | -0.39 |
+| Blur 5 | 76.06% | -1.29 | 76.45% | 0.00 |
+| Blur 7 | 76.58% | -0.77 | 76.32% | -0.13 |
+| JPEG 60 | 76.71% | -0.64 | 75.80% | -0.65 |
+| JPEG 40 | 75.68% | -1.67 | 76.19% | -0.26 |
+| JPEG 20 | 75.03% | -2.32 | 76.06% | -0.39 |
+| Occlusion 0.1 | 76.32% | -1.03 | 75.29% | -1.16 |
+| Occlusion 0.2 | 74.13% | -3.22 | 73.75% | -2.70 |
+| Occlusion 0.3 | 71.94% | -5.41 | 70.79% | -5.66 |
+
+Accuracy drop was calculated as Baseline accuracy - Degraded accuracy
+
+Relative drop (to show how large the accuracy loss is compared to the original baseline) = ((baseline accuracy - degraded accuracy) / baseline accuracy) × 100
+
+| Experiment | TinyLLaVA Relative Drop | MobileVLM Relative Drop |
+|---|---:|---:|
+| Blur 3 | 1.00% | 0.51% |
+| Blur 5 | 1.67% | 0.00% |
+| Blur 7 | 1.00% | 0.17% |
+| JPEG 60 | 0.83% | 0.85% |
+| JPEG 40 | 2.16% | 0.34% |
+| JPEG 20 | 3.00% | 0.51% |
+| Occlusion 0.1 | 1.33% | 1.52% |
+| Occlusion 0.2 | 4.16% | 3.53% |
+| Occlusion 0.3 | 6.99% | 7.40% |
+
+Questions that could be answered:
+1. Which corruption hurts the models most?
+
+Based on the results from phase 2, occlusion hurts both models the most and blur has the smallest effect on them. JPEG has a mild effect, especially for TinyLLaVA at quality 20.
+
+2. Does performance get worse as severity increases?
+   
+Occlusion shows a clear severity trend. As the occluded area increases, accuracy drops more.
+Blur does not show a clear monotonic trend and the accuracy changes are very small.
+Regarding JPEG, TinyLLaVA drops more as JPEG quality decreases while MobileVLM stays more stable under JPEG compression.
+
+3. Which model is more robust?
+
+Both models have similar robustness patterns. MobileVLM is slightly more robust to JPEG compression and blur showed as how it loses less accuracy under both than TinyLLaVA. TinyLLaVA and MobileVLM are both strongly affected by occlusion.
+
+## Phase 3
+## Visual Complexity Analysis
+To better understand why some phase 1 examples failed I used SAM to segment object like regions in the sampled video frames. 
+
+This analysis basically checks whether failed predictions are related to visual complexity such as having more objects or smaller regions(a phone, ball, shoe etc) in thhe scene.
+
+Therefore I used SAM which is a segmentation model that can identify these object like regions in an image wo reading the manual labels. In this analysis I used SAM to inspect the video frames and estimate how visually complex they were.
+
+It first loaded the TinyLLaVA phase 1 results and checked which questions were answered correctly or incorrectly. Then for each video question pair it sampled the same 8 frames used in the original evaluation and was applied to each frame to detect separate object like regions.
+For every frame the script counted how many regions SAM found
+```bash
+masks = mask_generator.generate(frame)
+
+region_count = len(masks)
 ```
-</details>
-
-## Custom Finetune
-If you want to finetune TinyLLaVA with your custom datasets, please refer to [here](https://github.com/TinyLLaVA/TinyLLaVA_Factory/blob/main/CUSTOM_FINETUNE.md).
-
-## Customize Your Own Large Multimodel Models
-
-### LLM
-
-If you want to add a new LLM by yourself, you need to create two files: one for chat template and the other for language model, under the folders `tinyllava/data/template/` and `tinyllava/model/llm/`.
-
-Here is an example of adding the Gemma model.
-
-Firstly, create `tinyllava/data/template/gemma_template.py`, which will be used for the finetuning stage.
-
-```python
-from dataclasses import dataclass
-from typing import TYPE_CHECKING, Dict, List, Optional, Sequence, Tuple, Union
-from packaging import version
-
-from .formatter import EmptyFormatter, StringFormatter
-from .base import Template
-from .formatter import Formatter
-from . import register_template
-from ...utils.constants import *
-
-from transformers import PreTrainedTokenizer
-import torch
-import tokenizers
-
-    
-system = "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions."
-
-@register_template('gemma') # Enable the TemplateFactory to obtain the added template by this string ('gemma').
-@dataclass
-class GemmaTemplate(Template):
-    format_image_token: "Formatter" = StringFormatter(slot="<image>\n{{content}}")
-    format_user: "Formatter" = StringFormatter(slot="USER" + ": " + "{{content}}" + " ")
-    format_assistant: "Formatter" = StringFormatter(slot="ASSISTANT" + ": " + "{{content}}" + "<eos>") # to be modified according to the tokenizer you choose
-    system: "Formatter" = EmptyFormatter(slot=system+" ")
-    separator: "Formatter" = EmptyFormatter(slot=[' ASSISTANT: ', '<eos>']) # to be modified according to the tokenizer you choose
-
-    def _make_masks(self, labels, tokenizer, sep, eos_token_length, rounds):
-        # your code here
-        return labels, cur_len
+how many of those regions were small 
+```bash
+small_region_count = sum(
+    1 for mask in masks
+    if mask["area"] < 0.01 * frame_area
+)
 ```
-**Tips:**
+(this basically counts masks whose aeea is less than 1% of the whole frame.)
+and how much of the frame was covered by the detected regions.
+```bash
+h, w, _ = frame.shape
+frame_area = h * w
 
-Please ensure that the `labels` (returned by the `_make_masks` function) follows this format: answers and the eos token id are not masked, and the other tokens are masked with `-100`.
-
-Secondly, create `tinyllava/model/llm/gemma.py`.
-
-```python
-from transformers import GemmaForCausalLM, AutoTokenizer
-# The LLM you want to add along with its corresponding tokenizer.
-
-from . import register_llm
-
-# Add GemmaForCausalLM along with its corresponding tokenizer and handle special tokens.
-@register_llm('gemma') # Enable the LLMFactory to obtain the added LLM by this string ('gemma').
-def return_gemmaclass(): 
-    def tokenizer_and_post_load(tokenizer):
-        tokenizer.pad_token = tokenizer.unk_token
-        return tokenizer
-    return (GemmaForCausalLM, (AutoTokenizer, tokenizer_and_post_load))
+total_mask_area = sum(mask["area"] for mask in masks)
+area_ratio = total_mask_area / frame_area if frame_area > 0 else 0
+```
+These values were then averaged across the 8 frames for each video.
+```bash
+"avg_region_count": float(np.mean(frame_region_counts)),
+"avg_total_mask_area_ratio": float(np.mean(frame_area_ratios)),
+"avg_small_region_count": float(np.mean(frame_small_region_counts)),
 ```
 
-Finally, create `scripts/train/train_gemma.sh` with the corresponding `LLM_VERSION` and `CONV_VERSION`.
+The output has 11 columns including:
+videoID
+question
+prediction
+answer
+correct
+avg_region_count
+avg_small_region_count
 
-### Vision Tower
+To check if the model failed more on visually crowded videos, I used the SAM output to compare the average no of detected regions in correct and incorrect examples.
 
-If you want to add a new vision tower, you need to implement a new vision tower class that should be inherited from the base class `VisionTower`. Here's an example of the MoF vision tower.
+The result for TinyLLaVA showed that failed examples had an average of 33.57 SAM regions while correct examples had 34.39. 
 
-First, create `tinyllava/model/vision_tower/mof.py`
+The average of small regions was also very similar. 20.68 for failed examples and 20.86 for correct ones.
 
-```python
-@register_vision_tower('mof')      
-class MoFVisionTower(VisionTower):
-    def __init__(self, cfg):
-        super().__init__(cfg)
+This suggests that TinyLLaVA's failures are not strongly explained by simple object density or visual clutter alone.
+```bash
+(tinyllava) [brisic03@login ~]$ python -c "import pandas as pd; df=pd.read_csv('/home/brisic03/sam_tinyllava_object_counts.csv'); print(df.groupby('correct')[['avg_region_count','avg_total_mask_area_ratio','avg_small_region_count']].mean())"
+         avg_region_count  ...  avg_small_region_count
+correct                    ...
+0               33.570312  ...               20.684659
+1               34.387271  ...               20.862105
 
-        self._vision_tower = MoF(cfg)
-        self._image_processor = # your image processor
-  
-    def _load_model(self, vision_tower_name, **kwargs):
-        # your code here, make sure your model can be correctly loaded from pretrained parameters either by huggingface or pytorch loading
+[2 rows x 3 columns]
+```
+For MobileVLM, just like TinyLLaVA, failed examples were not more visually crowded according to SAM.
 
-    def forward(self, x, **kwargs):
-        # your code here
+MobileVLM did not mainly fail because the videos had more object-like regions.
+The correct examples actually had slightly more SAM regions on average, but the difference is very small.
+
+### SAM-Based Visual Complexity Analysis
+
+| Model | Result Type | Avg SAM Regions | Avg Small Regions |
+|---|---|---:|---:|
+| TinyLLaVA | Failed | 33.57 | 20.68 |
+| TinyLLaVA | Correct | 34.39 | 20.86 |
+| MobileVLM | Failed | 33.80 | 20.55 |
+| MobileVLM | Correct | 34.33 | 20.91 |
+
+The SAM based region count did not show a clear difference between correctly and incorrectly answered examples. Therefore I went with the Sobel gradient strength and Laplacian variance.
+
+Sobel shows how many strong edges/boundaries/textures are in the frame and how strong the edges/details are on average. Laplacian concerns how sharp/detailed/blurry the frame is overall.
+
+The script first loaded the phase 1 result file for both models. These files already say whether each answer was correct or wrong. ( 1 or 0) For each video question pair it opened the original video and sampled the same 8 frames used in my model evaluation. For every sampled frame it than calculated three visual complexity values: Sobel edge density (how much of the frame contains strong edges or boundaries), Sobel gradient strength ( how strong the edges/details are on average) and Laplacian variance (how sharp or detailed the frame is overall).
+
+It averaged these values across 8 frames.
+
+So each video question pair got values like
+
+avg_sobel_edge_density
+
+avg_sobel_gradient_strength
+
+avg_laplacian_variance
+
+Then it grouped the examples by:
+
+correct = 0  failed examples
+
+correct = 1  correct examples
+
+And compared the average visual complexity for correct vs failed answers.
+
+The goal was to check if models fail more when the frames are visually more complex, detailed, or edge heavy.
+
+Results were:
+
+```
+TinyLLaVA,0,176,0.2602447923066777,47.087550555090544,456.8600681664789
+TinyLLaVA,1,601,0.26719771871981984,49.54611300290481,529.8756590671723
+MobileVLM,0,183,0.26602711115354,48.32037515308498,494.0420295825321
+MobileVLM,1,594,0.2654982341001501,49.19527636267201,519.2810634395073
+
+0  TinyLLaVA  ...              456.860068
+1  TinyLLaVA  ...              529.875659
+2  MobileVLM  ...              494.042030
+3  MobileVLM  ...              519.281063
+
+[4 rows x 6 columns]
 ```
 
-Then, modify your training scripts with the corresponding `VT_VERSION`.
+### Sobel and Laplacian Visual Complexity Results
 
-### Connector
+| Model | Result Type | Samples | Avg Sobel Edge Density | Avg Sobel Gradient Strength | Avg Laplacian Variance |
+|---|---|---:|---:|---:|---:|
+| TinyLLaVA | Failed | 176 | 0.260 | 47.09 | 456.86 |
+| TinyLLaVA | Correct | 601 | 0.267 | 49.55 | 529.88 |
+| MobileVLM | Failed | 183 | 0.266 | 48.32 | 494.04 |
+| MobileVLM | Correct | 594 | 0.265 | 49.20 | 519.28 |
 
-If you want to add a new connector, you need to implement a new connector class that should be inherited from the base class `Connector`. Here's an example of the Linear connector.
+The results showed that failed examples were not clearly more visually complex. Correct examples actually had slightly higher Sobel/Laplaian values in most cases.
+So the conclusion is that the models’ failures are probably not caused by low level visual complexity. They are more likely related to things like counting, object tracking, action understanding, question interpretation etc.
 
-First, create `tinyllava/model/connector/linear.py`
+### Reasoning Based Failure Analysis
+Right now my prompt is:
+Answer with only the letter of the correct option.
+So if the model is wrong I only see:
+Prediction: B
+Correct: D
+But I don’t know why it chose B.
 
+With reasoning outputs I would ask something like:
+Briefly explain what you see in the frame/video that supports your answer.
+Then give the final answer as one letter.
 
-```python
-import torch.nn as nn
+Example output:
+Reasoning: The person appears to be holding a cup near the table.
+Answer: B
 
-from . import register_connector
-from .base import Connector
-    
-@register_connector('linear') #Enable the ConnectorMFactory to obtain the added connector by this string ('linear').     
-class LinearConnector(Connector):
-    def __init__(self, config):
-        super().__init__()
-        self._connector =  nn.Linear(config.vision_hidden_size, config.hidden_size) # define your connector model
+Then if the correct answer was phone, I can see the failure type which in this case example would be object confusion.
+
+Or 
+
+Reasoning: I see two people in the scene.
+Answer: C
+
+But the correct answer is four people, the failure would be miscounting.
+
+This is similar to CoT with LLMs: we ask the model to show an explanation before the final answer, so we can inspect its reasoning path.
+
+I will treat this as a qualitative diagnostic tool, not absolute proof as model reasoning is not always very faithful and the model can give a plausible explanation even when it is wrong. 
+(Lanham et al. (2023), “Measuring Faithfulness in Chain-of-Thought Reasoning.”) 
+(Turpin et al. (2023) show that Chain-of-Thought explanations are not always faithful to the model’s actual decision process. Therefore, the reasoning outputs in this analysis are treated as qualitative diagnostic evidence rather than as guaranteed explanations of the model’s internal reasoning.)
+
+OUTPUT TINYLLAVA:
+
+To better understand the failure cases, I asked TinyLLaVA to provide a short visual explanation before giving the final answer. This was done on 50 incorrectly answered examples from the Phase 1 baseline evaluation.
+Some of the output examples are: 
+
+```Video: 9213637099
+Question: how many people are involved
+Baseline pred: A
+Correct answer: C
+Reasoning pred: A
+Reasoning:
+['A. six', 'A. six', 'B', 'A. six', 'A. six', 'A. six', 'A. six', 'A. six']
+```
+```Video: 3804148568
+Question: what is the relationship between the man in specs and the two wearing masks
+Baseline pred: C
+Correct answer: D
+Reasoning pred: C
+Reasoning:
+['C', 'C', 'A man in a purple shirt is holding a sword.', 'A man in a mask is holding a sword.', 'C', 'C', 'C', 'A man in glasses is standing between two people wearing masks.']
+```
+```Video: 4518113460
+Question: where are the people hanging out
+Baseline pred: C
+Correct answer: D
+Reasoning pred: C
+Reasoning:
+['C', 'C', 'D', 'D', 'A baby is sitting on a chair.', 'C', 'C', 'C']
+```
+```Video: 8531675050
+Question: what is the possible relation between lady in black and white and the man in white
+Baseline pred: C
+Correct answer: E
+Reasoning pred: A
+Reasoning:
+['The man in white is holding a banana.', 'The man is holding a microphone.', 'The man is holding a microphone and the woman is holding a camera. Answer: D', 'The man is holding a banana.', 'The man is holding a banana.', 'The man in white is holding a microphone.', 'A man in a white shirt holding a banana and a woman in a black shirt and white shirt.', 'The man in white is holding a microphone and the lady in black is sitting in a tent. Answer: D']
+```
+### Question Types in the 50 TinyLLaVA Failures
+
+| Question Type | Count |
+|---|---:|
+| how | 30 |
+| what | 11 |
+| where | 9 |
+
+Most selected failures were still **how** questions, especially counting or action-related questions.
+
+### Main TinyLLaVA Failure Patterns
+
+| Pattern | Count |
+|---|---:|
+| Miscounting / counting failure | 25 |
+| Scene/location confusion | 9 |
+| Relationship reasoning failure | 7 |
+| Action/temporal reasoning failure | 5 |
+| Object/action/event confusion | 4 |
+
+### TinyLLaVA Reasoning Output Quality
+
+| Output Type | Count |
+|---|---:|
+| Answer-only output | 22 |
+| Short option phrase, not real reasoning | 22 |
+| Contains some visual description | 6 |
+
+Looking at the whole CSV file, the results show that TinyLLaVA does not reliably produce detailed reasoning. In many cases the model returned only the answer letter, such as 'A' or 'C’, instead of explaining the visual evidence. In other cases, it gave a short answer phrase such as 'A. six’ or `A. caregiver’, which still does not count as real visual reasoning. Only a small number of examples contained actual visual descriptions.
+
+The most common failure pattern was miscounting. Many failed examples were ‘how many’ questions, where the model gave the wrong number of people, animals, or actions. This supports the earlier quantitative finding that `how’ questions are one of the weakest areas for TinyLLaVA.
+
+Other failure patterns included relationship reasoning errors, location confusion, action misunderstanding, and attention to irrelevant visual details. For example, in some cases the model described a visible object or person correctly, but still failed to infer the correct relationship or answer. This suggests that the model can sometimes detect parts of the scene, but struggles to connect them to the question.
+
+Asking for reasoning also did not substantially improve the model's answer. In 42 out of 50 cases, the reasoning based prediction stayed the same as the original baseline prediction. Only 4 out of 50 examples became correct after prompting the model to explain its answer.
+
+Overall, the reasoning analysis shows that TinyLLaVA's failures are not only caused by wrong final predictions, but also by weak explanatory behavior. The model often fails to provide useful visual evidence and frequently repeats answer choices without explaining them. This highlights a limitation of lightweight VLMs in qualitative reasoning and instruction following tasks.
+
+Since model-generated explanations are not always guaranteed to be faithful, these outputs should be treated as qualitative diagnostic evidence rather than exact explanations of the model's internal decision process.
+
+## OUTPUT MOBILEVLM:
+MobileVLM gives more actual visual descriptions than TinyLLaVA, but its reasoning is still messy and often not faithful enough.
+
+Output examples:
+
+```Video: 3550839192
+Question: what did the baby hold onto
+Baseline pred: C
+Correct answer: E
+Reasoning pred: A
+Reasoning:
+
+['a', 'b', 'b', 'a', 'A baby is holding onto a motorcycle.', 'A', 'A baby is holding onto a stroller.', 'b']
 ```
 
-Then, modify your training scripts with the corresponding `CN_VERSION`.
+```Video: 2834146886
 
-## Acknowledgement
-We give special thanks to Lei Zhao, Luche Wang, Kaijun Luo, and Junchen Wang for building the [Demo](http://8843843nmph5.vicp.fun/#/).
-
-## Contact
-If you have any questions, feel free to either initiate an *Issue* or contact us by WeChat (WeChatID: *TinyLLaVA*).
-
-## &#x270F; Citation
-
-If you find our paper and code useful in your research, please consider giving a star :star: and citation :pencil:.
-
-```BibTeX
-@misc{zhou2024tinyllava,
-      title={TinyLLaVA: A Framework of Small-scale Large Multimodal Models}, 
-      author={Baichuan Zhou and Ying Hu and Xi Weng and Junlong Jia and Jie Luo and Xien Liu and Ji Wu and Lei Huang},
-      year={2024},
-      eprint={2402.14289},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-}
+Question: how many dogs are there
+Baseline pred: B
+Correct answer: C
+Reasoning pred: A
+Reasoning:
+['1', 'a', 'answering does not require reading text in the image', 'a', '1', 'answering does not require reading text in the image', 'answering does not require reading text in the image', 'answering does not require reading text in the image']
 ```
-```BibTeX
-@article{jia2024tinyllava,
-  title={TinyLLaVA Factory: A Modularized Codebase for Small-scale Large Multimodal Models},
-  author={Jia, Junlong and Hu, Ying and Weng, Xi and Shi, Yiming and Li, Miao and Zhang, Xingjian and Zhou, Baichuan and Liu, Ziyu and Luo, Jie and Huang, Lei and Wu, Ji},
-  journal={arXiv preprint arXiv:2405.11788},
-  year={2024}
-}
+```Video: 4518113460
+Question: where are the people hanging out
+Baseline pred: C
+Correct answer: D
+Reasoning pred: A
+Reasoning:
+['a', 'A', 'A', 'A', 'a', 'a baby crawling on the floor', 'a', 'A']
+```
+### MobileVLM Reasoning Failure Patterns
+
+| Category | Count |
+|---|---:|
+| Miscounting / counting failure | 21 |
+| Scene/location confusion | 11 |
+| Object/action/event confusion | 8 |
+| Action/temporal reasoning failure | 5 |
+| Relationship reasoning failure | 4 |
+| Other | 1 |
+
+### MobileVLM Reasoning Output Quality
+
+| Output Type | Count |
+|---|---:|
+| Has visual sentence | 20 |
+| All numeric-only output | 13 |
+| All letter-only output | 10 |
+
+### MobileVLM Reasoning Comparison
+
+| Metric | MobileVLM |
+|---|---:|
+| Reasoning prediction same as baseline | 3 / 50 |
+| Reasoning prediction became correct | 12 / 50 |
+
+MobileVLM responded better to the reasoning prompt than TinyLLaVA. It produced visual descriptions in 20 out of 50 examples, showing that it was more willing to describe what it saw.
+
+However, the outputs were still inconsistent. Many responses were only numbers, especially for counting questions, and some did not follow the requested Answer: <letter> format. Miscounting remained the most common failure type, followed by location, object/action, and relationship errors.
+
+The reasoning prompt changed MobileVLM’s prediction more often than TinyLLaVA’s: only 3 out of 50 predictions stayed the same as the baseline, and 12 became correct. Still, these explanations should be treated as qualitative evidence, not fully faithful reasoning.
+
+The reasoning based failure analysis showed that both models struggle to provide explanation for their wrong answers. 
+Across both models, the most common failure pattern was miscounting, especially in 'how many' questions. Other recurring errors included location confusion, object/action confusion, relationship reasoning failures, and attention to irrelevant visual details.
+Overall, the reasoning prompts were useful for qualitative inspection, but the generated explanations should not be treated as fully faithful. Instead, they provide diagnostic evidence that lightweight VLMs struggle not only with final answer accuracy, but also with explaining visual evidence and reasoning consistently.
+
+### Reasoning Analysis on correct examples
+
+For the correct example analysis I took 12 correctly answered baseline examples for each model. 4 how, 4 what, and 4 where questions. The goal was to check whether the models could provide useful visual explanations when their original answer was already correct.
+
+TinyLLaVA results examples:
+(not all)
+
+```Video: 3972259774
+Question: how many people are filmed by the camera
+Baseline pred: B
+Correct answer: B
+Reasoning pred: B
+Reasoning:
+['A', 'A. one', 'B', 'B', 'B', 'B', 'B', 'B']
 ```
 
 
-## ❤️ Community efforts
-* Our codebase is built upon the [LLaVA](https://github.com/haotian-liu/LLaVA) project. Great work!
-* Our project uses data from the [ShareGPT4V](https://github.com/InternLM/InternLM-XComposer/tree/main/projects/ShareGPT4V) project. Great work!
+```Video: 5919180502
+Question: how many people are sitting at the ledge of the swimming pool
+Baseline pred: C
+Correct answer: C
+Reasoning pred: C
+Reasoning:
+['C', 'C', 'C', 'C', 'There are no people sitting at the ledge of the swimming pool.', 'C', 'C', 'C']
+```
+
+```Video: 4123915842
+Question: how was the girl dressed up
+Baseline pred: C
+Correct answer: C
+Reasoning pred: C
+Reasoning:
+['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']
+```
+
+```
+Video: 2973331780
+Question: what is the possible relationship between the lady in black and the lady with 
+blonde hair
+Baseline pred: B
+Correct answer: B
+Reasoning pred: B
+Reasoning:
+['B', 'B', 'The lady in black is standing in front of the lady with blonde hair.', 'B', 'The lady in black is holding a microphone and the lady with blonde hair is wearing a white shirt. Answer: B', 'The lady in black is holding a microphone and the lady with blonde hair is wearing a white shirt. Answer: B', 'The lady in black is wearing headphones.', 'B']
+```
+
+```Video: 3562017845
+Question: what animals are these
+Baseline pred: E
+Correct answer: E
+Reasoning pred: E
+Reasoning:
+['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']
+```
+
+```Video: 8171216955
+Question: what is the relationship between the two children
+Baseline pred: E
+Correct answer: E
+Reasoning pred: A
+Reasoning:
+['A young girl is playing with a toy dog.', 'E', 'E', 'A', 'A little girl is playing a game with a little boy.', 'A', 'E', 'E']
+```
+```Video: 3049351381
+Question: where are the people hanging out
+Baseline pred: C
+Correct answer: C
+Reasoning pred: C
+Reasoning:
+['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']
+```
+```Video: 3218498932
+Question: where could this be happening
+Baseline pred: C
+Correct answer: C
+Reasoning pred: C
+Reasoning:
+['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']
+```
+
+MobileVLM results examples:
+
+```Video: 3441428429
+Question: how many skaters are performing on the ice
+Baseline pred: E
+Correct answer: E
+Reasoning pred: A
+Reasoning:
+['2', '2', '2', '2', '2', '2', '2', '2']
+```
+
+```Video: 2510696559
+Question: how many people are cycling in the video
+Baseline pred: C
+Correct answer: C
+Reasoning pred: A
+Reasoning:
+['1', '1', '1', '1', '1', '1', '1', '1']
+```
+
+```Video: 5996148663
+Question: how did the lady protect her eyes from the sun
+Baseline pred: E
+Correct answer: E
+Reasoning pred: A
+Reasoning:
+['sunglasses', 'The lady is wearing sunglasses.', 'The lady is wearing sunglasses.', 'The lady is wearing sunglasses.', 'sunglasses', 'A hat', 'sunglasses', 'sunglasses']
+```
+
+```Video: 4199369046
+Question: what is shown in the background
+Baseline pred: D
+Correct answer: D
+Reasoning pred: B
+Reasoning:
+['b', 'books', 'books', 'books', 'books', 'books', 'books', 'books']
+```
+
+```Video: 6772999108
+Question: what is the boy holding in his hand
+Baseline pred: A
+Correct answer: A
+Reasoning pred: A
+Reasoning:
+['guitar', 'A guitar', 'guitar', 'guitar', 'guitar', 'guitar', 'guitar', 'guitar']
+```
+
+```
+Video: 8505893258
+Question: what was the colour of the pot at the back
+Baseline pred: C
+Correct answer: C
+Reasoning pred: B
+Reasoning:
+['p', 'p', 'pink', 'b', 'b', 'p', 'pink', 'p']
+```
+
+```Video: 2716277960
+Question: where is this place
+Baseline pred: C
+Correct answer: C
+Reasoning pred: A
+Reasoning:
+['answering does not require reading text in the image', 'answering does not require reading text in the image', 'answering does not require reading text in the image', 'answering does not require reading text in the image', 'answering does not require reading text in the image', 'answering does not require reading text in the image', 'answering does not require reading text in the image', 'a bridge in the woods']
+```
+
+```Video: 3049351381
+Question: where are the people hanging out
+Baseline pred: C
+Correct answer: C
+Reasoning pred: A
+Reasoning:
+['A', 'A', 'A', 'A', 'pink', 'A baby is laying on a pillow with a pink shirt on.', 'A', 'A']
+```
+
+### Correct Example Selection
+
+| Model | Total Examples | How | What | Where |
+|---|---:|---:|---:|---:|
+| TinyLLaVA | 12 | 4 | 4 | 4 |
+| MobileVLM | 12 | 4 | 4 | 4 |
+
+### Reasoning Prediction Behavior
+
+| Model | Baseline Correct | Reasoning Prediction Same as Baseline | Reasoning Prediction Still Correct |
+|---|---:|---:|---:|
+| TinyLLaVA | 12 / 12 | 11 / 12 | 11 / 12 |
+| MobileVLM | 12 / 12 | 1 / 12 | 1 / 12 |
+### Reasoning Output Quality
+
+| Model | Answer-Only / Numeric-Only | Short Option Phrase | Contains Visual Sentence |
+|---|---:|---:|---:|
+| TinyLLaVA | 7 | 2 | 3 |
+| MobileVLM | 4 | 0 | 5 |
+
+Analysis: 
+
+TinyLLaVA was more stable on correct examples. In 11 out of 12 cases the reasoning prompt the original correct answer. However the explanations were often weak as many outputs were still only answer letters or short phrases rather than real visual evidence. This suggests that TinyLLaVA can keep the correct answer, but does not reliably explain why. MobileVLM behaved differently. It produced more visual descriptions than TinyLLaVA but it often failed to follow the requested Answer letter format. As a result, only 1 out of 12 reasoning based predictions was written as correct even though the original baseline answers were all correct.
+
+This suggests that MobileVLM is more expressive, but less stable and less format compliant under reasoning prompts.
+
+Overall the correct example analysis shows a trade off: TinyLLaVA is more consistent but less explanatory, while MobileVLM gives richer descriptions but struggles to preserve the final multiple choice answer format. Therefore, reasoning outputs are useful for qualitative inspection but they should not replace the original accuracy based evaluation.
+
+### VisDrone
+
+VisDrone is very useful because it contains drone scenes with annotated objects such as pedestrians, cars, bicycles, buses etc. However, drone images contain many very small objects. E.g. a car may be only 8x10 pixels. TinyLLaVA and MobileVLM probably cannot reliably see that, so instead of counting every annotated object I will instead only count objects whose bounding box area is above a fixed threshold.
+
+The bounding box area will be
+bbox area / image area >= 0.001
+
+bbox area = bounding box width * bounding box height
+Image area = image width * image height
+
+So the models will only count objects whose bounding box takes up at least 0.1% of the whole image. Tiny objects whose bounding box covers at least 0.1% of the image will be ignored.
+
+10 object classes:
+
+```pedestrian
+people
+bicycle
+car
+van
+truck
+tricycle
+awning-tricycle
+bus
+motor
+```
+Question types for VisDrone:
+
+1. Counting: How many cars are visible?
+   
+2. Presence: Which object type is visible in the image?
+   
+3. Most frequent object: Which object appears most often?
+
+4. Location: Where is the largest bus located?
+
+I worked on 545 VisDrone images and each image got one presence, one counting and once location question. Most frequent questions has only 525 because the script skips questions when there is a tie for the most frequent object type.
+
+VisDrone question generation script:
+
+The script reads the VisDrone annotation files and turns the object detection labels into multiple choice questions.
+
+It uses bounding boxes to decide which object classes are visible, how many objects of a class are visible, which object class appears most often and where the largest object is located. It also filters out tiny objects using the bounding box area threshold. (MIN_AREA_RATIO=0.001)
+
+The output file (/home/brisic03/visdrone_val_questions.csv) contains an image, image_path, question type, question, answer, answer_letter, answer_text.
+
+Following are some output examples from TinyLLaVA:
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: presence
+Question: Which object type is visible in the drone image?
+Prediction: C
+Correct answer: D (van)
+Correct: 0
+Raw output: C
+```
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: counting
+Question: How many cars are visible in the drone image?
+Prediction: A
+Correct answer: E (4 or more)
+Correct: 0
+Raw output: A
+```
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: most_frequent
+Question: Which object type appears most often in the drone image?
+Prediction: C
+Correct answer: C (car)
+Correct: 1
+Raw output: C
+```
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: location
+Question: Where is the largest van located in the image?
+Prediction: A
+Correct answer: E (center)
+Correct: 0
+Raw output: A
+```
+
+```Image: 0000001_03999_d_0000007.jpg
+Type: counting
+Question: How many motors are visible in the drone image?
+Prediction: A
+Correct answer: E (4 or more)
+Correct: 0
+Raw output: A
+```
+
+```Image: 0000001_03999_d_0000007.jpg
+Type: most_frequent
+Question: Which object type appears most often in the drone image?
+Prediction: A
+Correct answer: D (motor)
+Correct: 0
+Raw output: A
+```
+
+```Image: 0000001_03999_d_0000007.jpg
+Type: location
+Question: Where is the largest car located in the image?
+Prediction: E
+Correct answer: E (center)
+Correct: 1
+Raw output: E
+```
+
+For the first example above,
+```Image: 0000001_02999_d_0000005.jpg
+Type: presence
+Question: Which object type is visible in the drone image?
+Prediction: C
+Correct answer: D (van)
+Correct: 0
+Raw output: C
+```
+the VisDrone image is the one below:
+
+<img width="596" height="331" alt="Screenshot 2026-06-15 at 20 32 23" src="https://github.com/user-attachments/assets/160f61a3-0b1b-4e7f-a64f-87c77be43627" />
+
+So the object type visible in this case is a van, however TinyLLaVA chose 'C': 'awning-tricycle' as an answer, which in this case is wrong.
+
+(Options: {'A': 'bus', 'B': 'car', 'C': 'awning-tricycle', 'D': 'van', 'E': 'truck'})
+
+And the following output examples for MobileVLM:
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: counting
+Question: How many cars are visible in the drone image?
+Prediction: E
+Correct answer: E (4 or more)
+Correct: 1
+Raw output: E
+```
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: most_frequent
+Question: Which object type appears most often in the drone image?
+Prediction: C
+Correct answer: C (car)
+Correct: 1
+Raw output: C
+```
+
+```Image: 0000001_02999_d_0000005.jpg
+Type: location
+Question: Where is the largest van located in the image?
+Prediction: A
+Correct answer: E (center)
+Correct: 0
+Raw output: A
+```
+
+```Image: 0000001_03999_d_0000007.jpg
+Type: counting
+Question: How many motors are visible in the drone image?
+Prediction: B
+Correct answer: E (4 or more)
+Correct: 0
+Raw output: B
+```
+
+```Image: 0000001_03999_d_0000007.jpg
+Type: most_frequent
+Question: Which object type appears most often in the drone image?
+Prediction: A
+Correct answer: D (motor)
+Correct: 0
+Raw output: A
+```
+
+```Image: 0000001_03999_d_0000007.jpg
+Type: location
+Question: Where is the largest car located in the image?
+Prediction: E
+Correct answer: E (center)
+Correct: 1
+Raw output: E
+```
+
+```Image: 0000001_05999_d_0000011.jpg
+Type: most_frequent
+Question: Which object type appears most often in the drone image?
+Prediction: A
+Correct answer: A (car)
+Correct: 1
+Raw output: A
+```
+The VisDrone evaluation used 2160 automatically generated multiple choice questions based on object-detection annotations. Questions were generated from bounding boxes after filtering out very small objects.
+
+| Model | Questions | Overall Accuracy | Avg. Inference Time |
+|---|---:|---:|---:|
+| TinyLLaVA-3.1B | 2160 | 39.86% | 1.13s |
+| MobileVLM-3B | 2160 | 42.82% | 0.37s |
+
+Also accuracy by question type:
+
+| Question Type | TinyLLaVA-3.1B | MobileVLM-3B |
+|---|---:|---:|
+| Counting | 13.21% | 32.29% |
+| Location | 43.30% | 37.25% |
+| Most Frequent Object | 73.71% | 76.19% |
+| Object Presence | 30.46% | 26.79% |
+
+MobileVLM achieved the higher overall accuracy on the generated VisDrone questions with 42.82% compared to TinyLLaVA with 39.86%. It was also way faster, with an average inference time of 0.37s compared to 1.13s for TinyLLaVA.
+
+The strongest performance for both models was on the most frequent object question type, where both models reached above 70% accuracy. Counting was the weakest category, especially for TinyLLaVA, which reached only 13.21%. This suggests that object counting in aerial drone images is difficult for lightweight VLMs, even after filtering out very small bounding boxes.
+
+TinyLLaVA performed slightly better on location and object presence questions, while MobileVLM performed better overall mainly because of its way stronger counting performance.

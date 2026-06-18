@@ -1,0 +1,2 @@
+videoID,question,options,frame_preds,prediction,answer,correct
+7508439506,where is this video taken,"{'A': 'swimming pool', 'B': 'outdoor', 'C': 'field', 'D': 'desert', 'E': 'bed room'}","['E', 'E', 'E', 'E', 'E', 'E', 'E', 'E']",E,E,1

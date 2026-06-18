@@ -1,5 +1,11 @@
+import io
+import random
+import time
+import numpy as np
 import sys
 import os
+import re
+import ast
 import torch
 import cv2
 import pandas as pd
@@ -8,42 +14,110 @@ from tqdm import tqdm
 from collections import Counter
 
 sys.path.insert(0, "/home/brisic03/TinyLLaVA_Factory")
+
 from tinyllava.data.template.base import Template
 from tinyllava.model.load_model import load_pretrained_model
 from tinyllava.utils.arguments import *
 from tinyllava.utils.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN
 
 MODEL_PATH = "TinyLLaVA/TinyLLaVA-3.1B"
-DATA_ROOT = "/home/brisic03/dataset/nextqa/val_descriptive.csv"
+DATA_ROOT = "/home/brisic03/thesis_eval/results_3b_nextqa.csv"
 VIDEO_ROOT = "/home/brisic03/NExT-QA/dataset/videos/val"
-OUT_PATH = "/home/brisic03/thesis_eval/results_3b_nextqa.csv"
+
+OUT_PATH = "/home/brisic03/tinyllava_reasoning_failures.csv"
+
 NUM_FRAMES = 8
+
+NOISE_TYPE = None
+SEVERITY = None
 
 def get_frames(v_path, n=NUM_FRAMES):
     vid = cv2.VideoCapture(v_path)
     total = int(vid.get(cv2.CAP_PROP_FRAME_COUNT))
+
     if total <= 0:
         return []
     indices = [int(i * total / n) for i in range(n)]
     frames = []
+
     for idx in indices:
         vid.set(cv2.CAP_PROP_POS_FRAMES, idx)
         success, frame = vid.read()
+
         if success:
           frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
           frames.append(Image.fromarray(frame))
+
     vid.release()
     return frames
 
+def apply_noise(img, noise_type=None, severity=None, seed=42):
+    if noise_type is None:
+        return img
+
+    if noise_type == "blur":
+        arr = np.array(img)
+        k = int(severity)
+
+        if k % 2 == 0:
+            k += 1
+
+        blurred = cv2.GaussianBlur(arr, (k, k), 0)
+        return Image.fromarray(blurred)
+
+    if noise_type == "jpeg":
+        buffer = io.BytesIO()
+        img.save(buffer, format="JPEG", quality=int(severity))
+        buffer.seek(0)
+        return Image.open(buffer).convert("RGB")
+
+    if noise_type == "occlusion":
+        rng = random.Random(seed)
+        arr = np.array(img).copy()
+        h, w, _ = arr.shape
+
+        area_ratio = float(severity)
+        occ_area = int(h * w * area_ratio)
+
+        occ_w = int(np.sqrt(occ_area))
+        occ_h = int(occ_area / max(occ_w, 1))
+
+        occ_w = min(occ_w, w)
+        occ_h = min(occ_h, h)
+
+        x = rng.randint(0, max(w - occ_w, 0))
+        y = rng.randint(0, max(h - occ_h, 0))
+
+        arr[y:y + occ_h, x:x + occ_w] = 0
+        return Image.fromarray(arr)
+
+    return Img
+
+
 def build_prompt(question, options):
     opts_str = "\n".join([f"{k}. {v}" for k, v in options.items()])
+
     prompt = (
         f"{DEFAULT_IMAGE_TOKEN}\n"
         f"Question: {question}\n"
         f"{opts_str}\n"
-        f"Answer with only the letter of the correct option (A, B, C, D or E)."
+        f"Do not answer with only a letter.\n"
+        f"First write one short sentence describing the visual evidence in the frame.\n"
+        f"Then write the final answer as: Answer: <letter>.\n"
     )
+
     return prompt
+
+def extract_answer_letter(text):
+    match = re.search(r"(?:final\s*)?answer\s*[:\-]\s*([A-E])\b", text, re.IGNORECASE)
+    if match:
+        return match.group(1).upper()
+
+    matches = re.findall(r"\b([A-E])\b", text.upper())
+    if matches:
+        return matches[-1]
+
+    return None
 
 def query_single_frame(frame, question, options, model, tok, img_proc):
     from tinyllava.data import TextPreprocess, ImagePreprocess
@@ -51,11 +125,13 @@ def query_single_frame(frame, question, options, model, tok, img_proc):
     from tinyllava.utils.eval_utils import KeywordsStoppingCriteria
 
     qs = build_prompt(question, options)
+
     text_processor = TextPreprocess(tok, 'phi')
     image_processor = ImagePreprocess(img_proc, model.config)
 
     msg = Message()
     msg.add_message(qs)
+
     result = text_processor(msg.messages, mode='eval')
     input_ids = result['input_ids'].unsqueeze(0).to(model.device)
 
@@ -70,30 +146,34 @@ def query_single_frame(frame, question, options, model, tok, img_proc):
             input_ids,
             images=images_tensor,
             do_sample=False,
-            max_new_tokens=64,
+            max_new_tokens=192,
             pad_token_id=tok.pad_token_id,
             use_cache=True,
             stopping_criteria=[stopping_criteria]
         )
 
     decoded = tok.batch_decode(output, skip_special_tokens=True)[0].strip()
+
     if decoded.endswith(stop_str):
         decoded = decoded[:-len(stop_str)].strip()
 
-    for char in decoded.upper():
-        if char in ('A', 'B', 'C', 'D', 'E', ):
-            return char
-    return None
+    pred_letter = extract_answer_letter(decoded)
+    return decoded, pred_letter
 
 def majority_vote(predictions):
     valid = [p for p in predictions if p is not None]
+
     if not valid:
         return 'A'
+
     return Counter(valid).most_common(1)[0][0]
 
+
 print("Loading TinyLLaVA-3.1B...")
+
 results = load_pretrained_model(MODEL_PATH, attn_implementation="eager", device_map=None)
 model, tok, img_proc = None, None, None
+
 for item in results:
    if hasattr(item, 'parameters'):
       model = item
@@ -105,67 +185,102 @@ for item in results:
 model = model.half().cuda()
 
 target_size = max(len(tok), model.config.vocab_size) + 100
+
 for name, param in model.named_parameters():
     print(f"{name}: {param.device}")
     break
+
 print(f"CUDA available: {torch.cuda.is_available()}")
 print(f"GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'None'}")
 print(f"Syncing vocab to {target_size}...")
+
 model.resize_token_embeddings(target_size)
 
 questions = pd.read_csv(DATA_ROOT)
+questions = questions[questions["correct"] == 0]
+questions = questions.head(50)
+
 print(f"Columns:  {questions.columns.tolist()}")
 print(f"Running inference on {len(questions)} samples with {NUM_FRAMES} frames each...")
 
 OPTION_KEYS = ['a0', 'a1', 'a2', 'a3', 'a4']
+
 LETTER_MAP = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E'}
 
 out_data = []
 
 for i, row in tqdm(questions.iterrows(), total=len(questions)):
-    v_id = str(row['video'])
+    v_id = str(row['videoID'])
     v_file = os.path.join(VIDEO_ROOT, f"{v_id}.mp4")
+
     if not os.path.exists(v_file):
         continue
 
+
     frames = get_frames(v_file)
+
     if not frames:
          continue
 
-    options = {
-        LETTER_MAP[j]: str(row[key])
-        for j, key in enumerate(OPTION_KEYS)
-        if key in row and pd.notna(row[key])
-    }
+    frames = [
+        apply_noise(frame, noise_type=NOISE_TYPE, severity=SEVERITY, seed=i * 1000 + j)
+        for j, frame in enumerate(frames)
+    ]
+
+    options = ast.literal_eval(row["options"])
 
     gt_raw = row['answer']
+
     if isinstance(gt_raw, (int, float)):
         gt_letter = LETTER_MAP.get(int(gt_raw), str(gt_raw))
     else:
         gt_letter = str(gt_raw).strip().upper()
 
-    frame_preds = [
+    start_time = time.time()
+
+    if torch.cuda.is_available():
+        torch.cuda.synchronize()
+
+    start_time = time.time()
+
+    frame_outputs = [
        query_single_frame(frame, row['question'], options, model, tok, img_proc)
        for frame in frames
     ]
+
+    reasoning_outputs = [item[0] for item in frame_outputs]
+    frame_preds = [item[1] for item in frame_outputs]
+
+    if torch.cuda.is_available():
+        torch.cuda.synchronize()
+
+    inference_time = time.time() - start_time
+
     final_pred = majority_vote(frame_preds)
 
     out_data.append({
         'videoID': v_id,
         'question': row['question'],
         'options': str(options),
-        'frame_preds': str(frame_preds),
-        'prediction': final_pred,
+        'baseline_prediction': row.get('prediction', ""),
         'answer': gt_letter,
-        'correct': int(final_pred == gt_letter)
-    })
+        'reasoning_output': str(reasoning_outputs),
+        'frame_reasoning_predictions': str(frame_preds),
+        'reasoning_prediction': final_pred,
+        'correct': int(final_pred == gt_letter),
+        'num_frames': NUM_FRAMES,
+        'inference_time_sec': inference_time,
+    }
+  )
 
 os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
+
 df = pd.DataFrame(out_data)
 df.to_csv(OUT_PATH, index=False)
 
 accuracy = df['correct'].mean() * 100
+avg_time = df['inference_time_sec'].mean()
+
 print(f"\nAccuracy: {accuracy:.2f}%")
-print(f"Results saved in {OUT_PATH}")
-
-
+print(f"Average inference time per question: {avg_time:.2f} seconds")
+print(f"Results saved in {OUT_PATH}") 

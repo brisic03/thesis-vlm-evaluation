@@ -3,7 +3,7 @@ import os
 
 import torch
 from peft.tuners.lora import LoraLayer
-from deepspeed import zero
+#from deepspeed import zero
 from deepspeed.runtime.zero.partition_parameters import ZeroParamStatus
 
 
