@@ -57,6 +57,8 @@ tinyllava/data/nextqa/*.json
 #
 .venv/
 .venv-analysis/
+.venv-mobilevlm/
+MobileVLM/
 .ipynb_checkpoints
 __pycache__
 *.egg-info
