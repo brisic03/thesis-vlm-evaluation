@@ -1,0 +1,11 @@
+model,size_band,n,MAE,signed,mean_true_count
+TinyLLaVA,0.1-0.2%,112,3.46,-0.82,3.2
+TinyLLaVA,0.2-0.5%,76,2.32,-2.21,3.2
+TinyLLaVA,0.5-1%,32,2.38,-2.38,3.4
+TinyLLaVA,1-2%,18,0.94,-0.83,3.0
+TinyLLaVA,>2%,10,0.8,-0.6,1.9
+MobileVLM,0.1-0.2%,141,4.52,0.18,6.0
+MobileVLM,0.2-0.5%,87,2.7,-1.34,5.2
+MobileVLM,0.5-1%,34,1.59,-0.88,3.5
+MobileVLM,1-2%,20,1.15,-0.05,3.7
+MobileVLM,>2%,10,0.6,-0.2,1.9

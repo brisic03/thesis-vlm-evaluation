@@ -372,6 +372,44 @@ as we raise the threshold. Thresholds: 0.05%, 0.1%, 0.2%, 0.5%, 1% of image area
 There is no single threshold where either error suddenly collapses. RMSE stays
 high throughout for both — the occasional huge miss is not a small-object effect.
 
+> Caveat on this sweep: it changes what counts as GROUND TRUTH (drop GT objects
+> below the cutoff) while leaving the model's guess fixed. So it measures "does
+> the fixed guess match a smaller truth," not "are small objects hard to see."
+> The cut below answers the latter directly.
+
+### Step 3B (direct cut) — error vs the ACTUAL size of the counted objects
+
+Instead of moving a GT cutoff, here we bin each question by the median size of
+the objects being counted, and measure error per band. Script:
+`scripts/visdrone/step3b_error_by_objsize.py`.
+
+| object size (% img) | TinyLLaVA MAE | MobileVLM MAE | mean true count |
+|---|---:|---:|---:|
+| 0.1-0.2% | 3.46 | 4.52 | ~6.0 |
+| 0.2-0.5% | 2.32 | 2.70 | ~5.2 |
+| 0.5-1%   | 2.38 | 1.59 | ~3.5 |
+| 1-2%     | 0.94 | 1.15 | ~3.4 |
+| >2%      | 0.80 | 0.60 | ~1.9 |
+
+```
+   MAE
+   4.5 | M                          BOTH models improve sharply as the
+   3.5 | T                          objects get bigger:
+   2.5 |    M  T                       MobileVLM 4.52 -> 0.60
+   1.5 |       T  M                     TinyLLaVA 3.46 -> 0.80
+   0.5 |             T  M  TM
+   0.0 +----+----+----+----+----
+       0.1- 0.2- 0.5- 1-2% >2%   object size (% of image)
+       0.2% 0.5% 1%
+```
+
+**Small objects are the hard cases — clearly, for both models** (error falls
+~4-7x from smallest to largest band). On big (and sparse) objects both are nearly
+exact. **Confound:** small-object scenes are also crowded (mean true count drops
+6.0 -> 1.9 across the bands), so "small" and "many" are entangled and this cut
+cannot separate them. No contradiction with the threshold sweep above: that one
+shrank the GT under a fixed inflated guess; this one groups by the real scene.
+
 ---
 
 ## Run status
