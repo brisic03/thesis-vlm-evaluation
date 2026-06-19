@@ -338,6 +338,57 @@ where the model gave a parseable number (TinyLLaVA 399/545, MobileVLM 545/545).
   on crowded scenes — that fat +6-and-beyond tail is what drives MAE 7.80 /
   RMSE 20.69.
 
+### Follow-up — what if we DON'T let TinyLLaVA refuse? (retry until answered)
+
+TinyLLaVA refused 27% of the time. Natural question: is it hiding a usable count
+behind the "Many" refusals? We re-ran it and, whenever it refused, kept asking
+with an escalating prompt until it produced a number (firmer wording, then
+sampled retries). Script: `scripts/visdrone/visdrone_numeric_tinyllava_retry.py`.
+
+```
+  attempt 1: normal prompt, greedy        -> 399/545 answer (same as before)
+  attempt 2: firmer prompt, greedy        -> fixes 139 of the 146 refusals
+  attempt 3+: firmer prompt, sampled      -> fixes the last 7
+  result: refusals 26.8% -> 0.0%   (every image now answered)
+```
+
+| TinyLLaVA run | answered | parse-fail | MAE | RMSE | bias |
+|---|---:|---:|---:|---:|---:|
+| original (allowed to refuse) | 399/545 | 26.8% | 2.69 | 7.14 | −1.04 |
+| retry (forced to answer) | 545/545 | 0.0% | **13.51** | **31.27** | **+10.29** |
+
+**The refusals were NOT hiding a good answer — forcing one makes it far worse.**
+On the 146 images it used to refuse, the forced answers are nonsense:
+
+```
+  the 146 previously-refused (crowded) images:
+     true count (avg)      =  9.5
+     forced guess (avg)    = 50.7      <- wildly over
+     MAE on these          = 43.1
+     bias                  = +41.2
+```
+
+So when TinyLLaVA cannot count a crowded scene, its honest move is "Many"; if we
+forbid that, it just blurts a huge number. The tidy original MAE (2.69) really was
+just an artifact of it answering only the easy scenes.
+
+**It also flips the model comparison.** Earlier TinyLLaVA's 2.69 *looked* better
+than MobileVLM's 7.80 — but that was the refusal artifact. With both models forced
+to always answer, TinyLLaVA (13.51) is the **worse** counter, not the better one:
+
+```
+  always-answer, head to head:
+     MobileVLM       MAE 7.80     (over-counts with round numbers)
+     TinyLLaVA-retry MAE 13.51    (over-counts even harder when forced)
+```
+
+**Takeaway:** "ask in a loop until it answers" successfully removes refusals but
+does not buy real counting ability — it converts honest abstentions into large
+over-counts. The refusal rate is better reported as an *honesty signal*, not a bug
+to be suppressed. (Recomputed Step 3B sweeps for the retry run are in
+`results/step3/step3b_*_retry.csv`; with retry, TinyLLaVA's threshold-sweep MAE
+now *rises* 13.4→14.7 like MobileVLM's, confirming it became an over-counter.)
+
 ---
 
 ## Step 3B — VisDrone object-size sweep

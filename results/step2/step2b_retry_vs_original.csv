@@ -1,0 +1,3 @@
+run,n_total,n_answered,parse_fail_%,MAE,RMSE,bias
+TinyLLaVA original,545,399,26.8,2.69,7.14,-1.04
+TinyLLaVA retry,545,545,0.0,13.51,31.27,10.29
