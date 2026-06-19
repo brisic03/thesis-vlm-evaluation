@@ -1,0 +1,886 @@
+videoID,question,options,n_frames,raw_output,prediction,answer,correct
+8547321641,how many babies are in the video,"{'A': 'kitchen', 'B': 'four', 'C': 'two', 'D': 'three', 'E': 'one'}",1,E,E,E,1
+8547321641,how many babies are in the video,"{'A': 'kitchen', 'B': 'four', 'C': 'two', 'D': 'three', 'E': 'one'}",2,E,E,E,1
+8547321641,how many babies are in the video,"{'A': 'kitchen', 'B': 'four', 'C': 'two', 'D': 'three', 'E': 'one'}",4,E,E,E,1
+8547321641,how many babies are in the video,"{'A': 'kitchen', 'B': 'four', 'C': 'two', 'D': 'three', 'E': 'one'}",8,E,E,E,1
+8547321641,how many babies are in the video,"{'A': 'kitchen', 'B': 'four', 'C': 'two', 'D': 'three', 'E': 'one'}",16,The beach and The beach and a a a 26 and a a a,A,E,0
+4942054721,how many goats can be spotted,"{'A': 'eight', 'B': 'two', 'C': 'one', 'D': 'three', 'E': 'four'}",1,C,C,A,0
+4942054721,how many goats can be spotted,"{'A': 'eight', 'B': 'two', 'C': 'one', 'D': 'three', 'E': 'four'}",2,B,B,A,0
+4942054721,how many goats can be spotted,"{'A': 'eight', 'B': 'two', 'C': 'one', 'D': 'three', 'E': 'four'}",4,D,D,A,0
+4942054721,how many goats can be spotted,"{'A': 'eight', 'B': 'two', 'C': 'one', 'D': 'three', 'E': 'four'}",8,A,A,A,1
+4942054721,how many goats can be spotted,"{'A': 'eight', 'B': 'two', 'C': 'one', 'D': 'three', 'E': 'four'}",16,"The 18. The 265, and a, and a",A,A,1
+9213637099,how many people are involved,"{'A': 'six', 'B': 'two', 'C': 'five', 'D': 'seven', 'E': 'one'}",1,A,A,C,0
+9213637099,how many people are involved,"{'A': 'six', 'B': 'two', 'C': 'five', 'D': 'seven', 'E': 'one'}",2,A,A,C,0
+9213637099,how many people are involved,"{'A': 'six', 'B': 'two', 'C': 'five', 'D': 'seven', 'E': 'one'}",4,A,A,C,0
+9213637099,how many people are involved,"{'A': 'six', 'B': 'two', 'C': 'five', 'D': 'seven', 'E': 'one'}",8,A,A,C,0
+9213637099,how many people are involved,"{'A': 'six', 'B': 'two', 'C': 'five', 'D': 'seven', 'E': 'one'}",16,36.50.,,C,0
+3206694342,how many people are on stage,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'five', 'E': 'seven'}",1,D,D,B,0
+3206694342,how many people are on stage,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'five', 'E': 'seven'}",2,B,B,B,1
+3206694342,how many people are on stage,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'five', 'E': 'seven'}",4,B,B,B,1
+3206694342,how many people are on stage,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'five', 'E': 'seven'}",8,B,B,B,1
+3206694342,how many people are on stage,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'five', 'E': 'seven'}",16,,,B,0
+4798585428,how many people are posing for the photos,"{'A': 'two', 'B': 'five', 'C': 'six', 'D': 'thirteen', 'E': 'one'}",1,B,B,B,1
+4798585428,how many people are posing for the photos,"{'A': 'two', 'B': 'five', 'C': 'six', 'D': 'thirteen', 'E': 'one'}",2,B,B,B,1
+4798585428,how many people are posing for the photos,"{'A': 'two', 'B': 'five', 'C': 'six', 'D': 'thirteen', 'E': 'one'}",4,B,B,B,1
+4798585428,how many people are posing for the photos,"{'A': 'two', 'B': 'five', 'C': 'six', 'D': 'thirteen', 'E': 'one'}",8,B,B,B,1
+4798585428,how many people are posing for the photos,"{'A': 'two', 'B': 'five', 'C': 'six', 'D': 'thirteen', 'E': 'one'}",16,,,B,0
+4984417707,how many elephants were playing with the ball,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'five', 'E': 'one'}",1,C,C,C,1
+4984417707,how many elephants were playing with the ball,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'five', 'E': 'one'}",2,C,C,C,1
+4984417707,how many elephants were playing with the ball,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'five', 'E': 'one'}",4,C,C,C,1
+4984417707,how many elephants were playing with the ball,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'five', 'E': 'one'}",8,C,C,C,1
+4984417707,how many elephants were playing with the ball,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'five', 'E': 'one'}",16,,,C,0
+5237219621,how many people are there,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'eleven', 'E': 'five'}",1,B,B,C,0
+5237219621,how many people are there,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'eleven', 'E': 'five'}",2,B,B,C,0
+5237219621,how many people are there,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'eleven', 'E': 'five'}",4,B,B,C,0
+5237219621,how many people are there,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'eleven', 'E': 'five'}",8,B,B,C,0
+5237219621,how many people are there,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'eleven', 'E': 'five'}",16,"256.182727, a, and a and",A,C,0
+2834146886,how many dogs are there,"{'A': 'four', 'B': 'one', 'C': 'two', 'D': 'six', 'E': 'three'}",1,C,C,C,1
+2834146886,how many dogs are there,"{'A': 'four', 'B': 'one', 'C': 'two', 'D': 'six', 'E': 'three'}",2,C,C,C,1
+2834146886,how many dogs are there,"{'A': 'four', 'B': 'one', 'C': 'two', 'D': 'six', 'E': 'three'}",4,B,B,C,0
+2834146886,how many dogs are there,"{'A': 'four', 'B': 'one', 'C': 'two', 'D': 'six', 'E': 'three'}",8,B,B,C,0
+2834146886,how many dogs are there,"{'A': 'four', 'B': 'one', 'C': 'two', 'D': 'six', 'E': 'three'}",16,,,C,0
+8563398032,how many people are presenting,"{'A': 'seven', 'B': 'five', 'C': 'six', 'D': 'three', 'E': 'two'}",1,E,E,E,1
+8563398032,how many people are presenting,"{'A': 'seven', 'B': 'five', 'C': 'six', 'D': 'three', 'E': 'two'}",2,E,E,E,1
+8563398032,how many people are presenting,"{'A': 'seven', 'B': 'five', 'C': 'six', 'D': 'three', 'E': 'two'}",4,E,E,E,1
+8563398032,how many people are presenting,"{'A': 'seven', 'B': 'five', 'C': 'six', 'D': 'three', 'E': 'two'}",8,E,E,E,1
+8563398032,how many people are presenting,"{'A': 'seven', 'B': 'five', 'C': 'six', 'D': 'three', 'E': 'two'}",16,236.27. The poster. The a a a a a,A,E,0
+2679328607,how many times does the girl pass the toy to the boy,"{'A': 'six', 'B': 'two', 'C': 'four', 'D': 'five', 'E': 'three'}",1,B,B,E,0
+2679328607,how many times does the girl pass the toy to the boy,"{'A': 'six', 'B': 'two', 'C': 'four', 'D': 'five', 'E': 'three'}",2,B,B,E,0
+2679328607,how many times does the girl pass the toy to the boy,"{'A': 'six', 'B': 'two', 'C': 'four', 'D': 'five', 'E': 'three'}",4,B,B,E,0
+2679328607,how many times does the girl pass the toy to the boy,"{'A': 'six', 'B': 'two', 'C': 'four', 'D': 'five', 'E': 'three'}",8,B,B,E,0
+2679328607,how many times does the girl pass the toy to the boy,"{'A': 'six', 'B': 'two', 'C': 'four', 'D': 'five', 'E': 'three'}",16,,,E,0
+5801184682,how many cats are there,"{'A': 'three', 'B': 'four', 'C': 'two', 'D': 'one', 'E': 'five'}",1,D,D,D,1
+5801184682,how many cats are there,"{'A': 'three', 'B': 'four', 'C': 'two', 'D': 'one', 'E': 'five'}",2,D,D,D,1
+5801184682,how many cats are there,"{'A': 'three', 'B': 'four', 'C': 'two', 'D': 'one', 'E': 'five'}",4,D,D,D,1
+5801184682,how many cats are there,"{'A': 'three', 'B': 'four', 'C': 'two', 'D': 'one', 'E': 'five'}",8,D,D,D,1
+5801184682,how many cats are there,"{'A': 'three', 'B': 'four', 'C': 'two', 'D': 'one', 'E': 'five'}",16,,,D,0
+2978295992,how many ladies are filmed,"{'A': 'six', 'B': 'two', 'C': 'seven', 'D': 'five', 'E': 'four'}",1,B,B,B,1
+2978295992,how many ladies are filmed,"{'A': 'six', 'B': 'two', 'C': 'seven', 'D': 'five', 'E': 'four'}",2,B,B,B,1
+2978295992,how many ladies are filmed,"{'A': 'six', 'B': 'two', 'C': 'seven', 'D': 'five', 'E': 'four'}",4,B,B,B,1
+2978295992,how many ladies are filmed,"{'A': 'six', 'B': 'two', 'C': 'seven', 'D': 'five', 'E': 'four'}",8,B,B,B,1
+2978295992,how many ladies are filmed,"{'A': 'six', 'B': 'two', 'C': 'seven', 'D': 'five', 'E': 'four'}",16,The woman.,E,B,0
+3388598772,how many people are mainly involved in the video,"{'A': 'four', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'one'}",1,D,D,D,1
+3388598772,how many people are mainly involved in the video,"{'A': 'four', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'one'}",2,D,D,D,1
+3388598772,how many people are mainly involved in the video,"{'A': 'four', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'one'}",4,D,D,D,1
+3388598772,how many people are mainly involved in the video,"{'A': 'four', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'one'}",8,D,D,D,1
+3388598772,how many people are mainly involved in the video,"{'A': 'four', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'one'}",16,The woman and The woman.,E,D,0
+4036955771,how many performers are there,"{'A': 'six', 'B': 'seven', 'C': 'eleven', 'D': 'eight', 'E': 'five'}",1,D,D,B,0
+4036955771,how many performers are there,"{'A': 'six', 'B': 'seven', 'C': 'eleven', 'D': 'eight', 'E': 'five'}",2,D,D,B,0
+4036955771,how many performers are there,"{'A': 'six', 'B': 'seven', 'C': 'eleven', 'D': 'eight', 'E': 'five'}",4,D,D,B,0
+4036955771,how many performers are there,"{'A': 'six', 'B': 'seven', 'C': 'eleven', 'D': 'eight', 'E': 'five'}",8,D,D,B,0
+4036955771,how many performers are there,"{'A': 'six', 'B': 'seven', 'C': 'eleven', 'D': 'eight', 'E': 'five'}",16,,,B,0
+6265968082,how many people are performing on stage,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'three', 'E': 'nine'}",1,D,D,A,0
+6265968082,how many people are performing on stage,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'three', 'E': 'nine'}",2,D,D,A,0
+6265968082,how many people are performing on stage,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'three', 'E': 'nine'}",4,D,D,A,0
+6265968082,how many people are performing on stage,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'three', 'E': 'nine'}",8,D,D,A,0
+6265968082,how many people are performing on stage,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'three', 'E': 'nine'}",16,256563636,,A,0
+11541421563,how many people are involved in reading the score,"{'A': 'six', 'B': 'four', 'C': 'eight', 'D': 'seven', 'E': 'two'}",1,E,E,E,1
+11541421563,how many people are involved in reading the score,"{'A': 'six', 'B': 'four', 'C': 'eight', 'D': 'seven', 'E': 'two'}",2,E,E,E,1
+11541421563,how many people are involved in reading the score,"{'A': 'six', 'B': 'four', 'C': 'eight', 'D': 'seven', 'E': 'two'}",4,E,E,E,1
+11541421563,how many people are involved in reading the score,"{'A': 'six', 'B': 'four', 'C': 'eight', 'D': 'seven', 'E': 'two'}",8,E,E,E,1
+11541421563,how many people are involved in reading the score,"{'A': 'six', 'B': 'four', 'C': 'eight', 'D': 'seven', 'E': 'two'}",16,1827 and 26 and a a a a a a a,A,E,0
+2573424030,how many people in total are there in the video,"{'A': 'six', 'B': 'one', 'C': 'two', 'D': 'five', 'E': 'seven'}",1,A,A,E,0
+2573424030,how many people in total are there in the video,"{'A': 'six', 'B': 'one', 'C': 'two', 'D': 'five', 'E': 'seven'}",2,C,C,E,0
+2573424030,how many people in total are there in the video,"{'A': 'six', 'B': 'one', 'C': 'two', 'D': 'five', 'E': 'seven'}",4,C,C,E,0
+2573424030,how many people in total are there in the video,"{'A': 'six', 'B': 'one', 'C': 'two', 'D': 'five', 'E': 'seven'}",8,C,C,E,0
+2573424030,how many people in total are there in the video,"{'A': 'six', 'B': 'one', 'C': 'two', 'D': 'five', 'E': 'seven'}",16,The woman and a a a a a a a a a a a a a,A,E,0
+5017166671,how many pople are on stage,"{'A': 'nine', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'four'}",1,B,B,E,0
+5017166671,how many pople are on stage,"{'A': 'nine', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'four'}",2,B,B,E,0
+5017166671,how many pople are on stage,"{'A': 'nine', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'four'}",4,C,C,E,0
+5017166671,how many pople are on stage,"{'A': 'nine', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'four'}",8,C,C,E,0
+5017166671,how many pople are on stage,"{'A': 'nine', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'four'}",16,The guitar. Thes and The backgroundscape and a a a as,A,E,0
+4516967897,how many ladies are there,"{'A': 'three', 'B': 'two', 'C': 'seven', 'D': 'one', 'E': 'six'}",1,B,B,B,1
+4516967897,how many ladies are there,"{'A': 'three', 'B': 'two', 'C': 'seven', 'D': 'one', 'E': 'six'}",2,B,B,B,1
+4516967897,how many ladies are there,"{'A': 'three', 'B': 'two', 'C': 'seven', 'D': 'one', 'E': 'six'}",4,B,B,B,1
+4516967897,how many ladies are there,"{'A': 'three', 'B': 'two', 'C': 'seven', 'D': 'one', 'E': 'six'}",8,B,B,B,1
+4516967897,how many ladies are there,"{'A': 'three', 'B': 'two', 'C': 'seven', 'D': 'one', 'E': 'six'}",16,The building building building building building ands ands and The building ands and,E,B,0
+8225502382,how many times does the man in dark green attempt to go up the slope,"{'A': 'one', 'B': 'eight', 'C': 'five', 'D': 'three', 'E': 'twelve'}",1,D,D,C,0
+8225502382,how many times does the man in dark green attempt to go up the slope,"{'A': 'one', 'B': 'eight', 'C': 'five', 'D': 'three', 'E': 'twelve'}",2,A,A,C,0
+8225502382,how many times does the man in dark green attempt to go up the slope,"{'A': 'one', 'B': 'eight', 'C': 'five', 'D': 'three', 'E': 'twelve'}",4,A,A,C,0
+8225502382,how many times does the man in dark green attempt to go up the slope,"{'A': 'one', 'B': 'eight', 'C': 'five', 'D': 'three', 'E': 'twelve'}",8,A,A,C,0
+8225502382,how many times does the man in dark green attempt to go up the slope,"{'A': 'one', 'B': 'eight', 'C': 'five', 'D': 'three', 'E': 'twelve'}",16,"265, and a26 and a and a.",A,C,0
+5658916668,how many people were filmed sliding down,"{'A': 'four', 'B': 'one', 'C': 'seven', 'D': 'two', 'E': 'six'}",1,D,D,B,0
+5658916668,how many people were filmed sliding down,"{'A': 'four', 'B': 'one', 'C': 'seven', 'D': 'two', 'E': 'six'}",2,D,D,B,0
+5658916668,how many people were filmed sliding down,"{'A': 'four', 'B': 'one', 'C': 'seven', 'D': 'two', 'E': 'six'}",4,B,B,B,1
+5658916668,how many people were filmed sliding down,"{'A': 'four', 'B': 'one', 'C': 'seven', 'D': 'two', 'E': 'six'}",8,B,B,B,1
+5658916668,how many people were filmed sliding down,"{'A': 'four', 'B': 'one', 'C': 'seven', 'D': 'two', 'E': 'six'}",16,,,B,0
+4444192938,how many kids are there at the area,"{'A': 'one', 'B': 'four', 'C': 'nine', 'D': 'two', 'E': 'three'}",1,D,D,E,0
+4444192938,how many kids are there at the area,"{'A': 'one', 'B': 'four', 'C': 'nine', 'D': 'two', 'E': 'three'}",2,D,D,E,0
+4444192938,how many kids are there at the area,"{'A': 'one', 'B': 'four', 'C': 'nine', 'D': 'two', 'E': 'three'}",4,D,D,E,0
+4444192938,how many kids are there at the area,"{'A': 'one', 'B': 'four', 'C': 'nine', 'D': 'two', 'E': 'three'}",8,A,A,E,0
+4444192938,how many kids are there at the area,"{'A': 'one', 'B': 'four', 'C': 'nine', 'D': 'two', 'E': 'three'}",16,,,E,0
+9409566840,how many dogs are playng biting with each other in the video,"{'A': 'three', 'B': 'two', 'C': 'five', 'D': 'six', 'E': 'four'}",1,B,B,B,1
+9409566840,how many dogs are playng biting with each other in the video,"{'A': 'three', 'B': 'two', 'C': 'five', 'D': 'six', 'E': 'four'}",2,B,B,B,1
+9409566840,how many dogs are playng biting with each other in the video,"{'A': 'three', 'B': 'two', 'C': 'five', 'D': 'six', 'E': 'four'}",4,B,B,B,1
+9409566840,how many dogs are playng biting with each other in the video,"{'A': 'three', 'B': 'two', 'C': 'five', 'D': 'six', 'E': 'four'}",8,B,B,B,1
+9409566840,how many dogs are playng biting with each other in the video,"{'A': 'three', 'B': 'two', 'C': 'five', 'D': 'six', 'E': 'four'}",16,"The cat, and a a a and a a a a a a a a",A,B,0
+12392885583,how many babies are in the video,"{'A': 'three', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'kitchen'}",1,B,B,B,1
+12392885583,how many babies are in the video,"{'A': 'three', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'kitchen'}",2,B,B,B,1
+12392885583,how many babies are in the video,"{'A': 'three', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'kitchen'}",4,B,B,B,1
+12392885583,how many babies are in the video,"{'A': 'three', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'kitchen'}",8,B,B,B,1
+12392885583,how many babies are in the video,"{'A': 'three', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'kitchen'}",16,,,B,0
+5235909148,how many people are in the video,"{'A': 'three', 'B': 'six', 'C': 'one', 'D': 'four', 'E': 'eight'}",1,C,C,D,0
+5235909148,how many people are in the video,"{'A': 'three', 'B': 'six', 'C': 'one', 'D': 'four', 'E': 'eight'}",2,C,C,D,0
+5235909148,how many people are in the video,"{'A': 'three', 'B': 'six', 'C': 'one', 'D': 'four', 'E': 'eight'}",4,C,C,D,0
+5235909148,how many people are in the video,"{'A': 'three', 'B': 'six', 'C': 'one', 'D': 'four', 'E': 'eight'}",8,A,A,D,0
+5235909148,how many people are in the video,"{'A': 'three', 'B': 'six', 'C': 'one', 'D': 'four', 'E': 'eight'}",16,19657657,,D,0
+9208803675,how many people are on the swing in the video,"{'A': 'five', 'B': 'one', 'C': 'six', 'D': 'two', 'E': 'eight'}",1,B,B,D,0
+9208803675,how many people are on the swing in the video,"{'A': 'five', 'B': 'one', 'C': 'six', 'D': 'two', 'E': 'eight'}",2,B,B,D,0
+9208803675,how many people are on the swing in the video,"{'A': 'five', 'B': 'one', 'C': 'six', 'D': 'two', 'E': 'eight'}",4,B,B,D,0
+9208803675,how many people are on the swing in the video,"{'A': 'five', 'B': 'one', 'C': 'six', 'D': 'two', 'E': 'eight'}",8,B,B,D,0
+9208803675,how many people are on the swing in the video,"{'A': 'five', 'B': 'one', 'C': 'six', 'D': 'two', 'E': 'eight'}",16,2776577776767 and a and,A,D,0
+4636208292,how many people are cheering their glasses at the end,"{'A': 'five', 'B': 'three', 'C': 'four', 'D': 'seven', 'E': 'one'}",1,E,E,C,0
+4636208292,how many people are cheering their glasses at the end,"{'A': 'five', 'B': 'three', 'C': 'four', 'D': 'seven', 'E': 'one'}",2,E,E,C,0
+4636208292,how many people are cheering their glasses at the end,"{'A': 'five', 'B': 'three', 'C': 'four', 'D': 'seven', 'E': 'one'}",4,E,E,C,0
+4636208292,how many people are cheering their glasses at the end,"{'A': 'five', 'B': 'three', 'C': 'four', 'D': 'seven', 'E': 'one'}",8,E,E,C,0
+4636208292,how many people are cheering their glasses at the end,"{'A': 'five', 'B': 'three', 'C': 'four', 'D': 'seven', 'E': 'one'}",16,The glass and The pl and The pland and a and a and a and,A,C,0
+7887764754,how many people are involved in the video,"{'A': 'four', 'B': 'six', 'C': 'three', 'D': 'one', 'E': 'two'}",1,D,D,D,1
+7887764754,how many people are involved in the video,"{'A': 'four', 'B': 'six', 'C': 'three', 'D': 'one', 'E': 'two'}",2,D,D,D,1
+7887764754,how many people are involved in the video,"{'A': 'four', 'B': 'six', 'C': 'three', 'D': 'one', 'E': 'two'}",4,D,D,D,1
+7887764754,how many people are involved in the video,"{'A': 'four', 'B': 'six', 'C': 'three', 'D': 'one', 'E': 'two'}",8,D,D,D,1
+7887764754,how many people are involved in the video,"{'A': 'four', 'B': 'six', 'C': 'three', 'D': 'one', 'E': 'two'}",16,,,D,0
+8253302563,how many people are involved in the video,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'one', 'E': 'five'}",1,D,D,D,1
+8253302563,how many people are involved in the video,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'one', 'E': 'five'}",2,D,D,D,1
+8253302563,how many people are involved in the video,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'one', 'E': 'five'}",4,D,D,D,1
+8253302563,how many people are involved in the video,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'one', 'E': 'five'}",8,D,D,D,1
+8253302563,how many people are involved in the video,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'one', 'E': 'five'}",16,,,D,0
+2589540862,how many children are there,"{'A': 'nine', 'B': 'two', 'C': 'six', 'D': 'one', 'E': 'four'}",1,D,D,D,1
+2589540862,how many children are there,"{'A': 'nine', 'B': 'two', 'C': 'six', 'D': 'one', 'E': 'four'}",2,D,D,D,1
+2589540862,how many children are there,"{'A': 'nine', 'B': 'two', 'C': 'six', 'D': 'one', 'E': 'four'}",4,D,D,D,1
+2589540862,how many children are there,"{'A': 'nine', 'B': 'two', 'C': 'six', 'D': 'one', 'E': 'four'}",8,D,D,D,1
+2589540862,how many children are there,"{'A': 'nine', 'B': 'two', 'C': 'six', 'D': 'one', 'E': 'four'}",16,,,D,0
+6046149003,how many girls are there,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",1,B,B,B,1
+6046149003,how many girls are there,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",2,B,B,B,1
+6046149003,how many girls are there,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",4,B,B,B,1
+6046149003,how many girls are there,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",8,B,B,B,1
+6046149003,how many girls are there,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",16,The,E,B,0
+3626788516,how many people are in the video,"{'A': 'four', 'B': 'eight', 'C': 'two', 'D': 'nine', 'E': 'ten'}",1,C,C,C,1
+3626788516,how many people are in the video,"{'A': 'four', 'B': 'eight', 'C': 'two', 'D': 'nine', 'E': 'ten'}",2,C,C,C,1
+3626788516,how many people are in the video,"{'A': 'four', 'B': 'eight', 'C': 'two', 'D': 'nine', 'E': 'ten'}",4,C,C,C,1
+3626788516,how many people are in the video,"{'A': 'four', 'B': 'eight', 'C': 'two', 'D': 'nine', 'E': 'ten'}",8,C,C,C,1
+3626788516,how many people are in the video,"{'A': 'four', 'B': 'eight', 'C': 'two', 'D': 'nine', 'E': 'ten'}",16,The woman and a the a the a and a and a a a a and,A,C,0
+8552680285,how many people are there,"{'A': 'two', 'B': 'six', 'C': 'one', 'D': 'eleven', 'E': 'three'}",1,A,A,A,1
+8552680285,how many people are there,"{'A': 'two', 'B': 'six', 'C': 'one', 'D': 'eleven', 'E': 'three'}",2,A,A,A,1
+8552680285,how many people are there,"{'A': 'two', 'B': 'six', 'C': 'one', 'D': 'eleven', 'E': 'three'}",4,A,A,A,1
+8552680285,how many people are there,"{'A': 'two', 'B': 'six', 'C': 'one', 'D': 'eleven', 'E': 'three'}",8,A,A,A,1
+8552680285,how many people are there,"{'A': 'two', 'B': 'six', 'C': 'one', 'D': 'eleven', 'E': 'three'}",16,,,A,0
+2835125654,how many elephants are there,"{'A': 'one', 'B': 'five', 'C': 'two', 'D': 'four', 'E': 'three'}",1,C,C,C,1
+2835125654,how many elephants are there,"{'A': 'one', 'B': 'five', 'C': 'two', 'D': 'four', 'E': 'three'}",2,C,C,C,1
+2835125654,how many elephants are there,"{'A': 'one', 'B': 'five', 'C': 'two', 'D': 'four', 'E': 'three'}",4,C,C,C,1
+2835125654,how many elephants are there,"{'A': 'one', 'B': 'five', 'C': 'two', 'D': 'four', 'E': 'three'}",8,C,C,C,1
+2835125654,how many elephants are there,"{'A': 'one', 'B': 'five', 'C': 'two', 'D': 'four', 'E': 'three'}",16,The 18 and The 19998888 and,E,C,0
+2705374471,how many people are there in the room,"{'A': 'three', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'eight'}",1,D,D,D,1
+2705374471,how many people are there in the room,"{'A': 'three', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'eight'}",2,D,D,D,1
+2705374471,how many people are there in the room,"{'A': 'three', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'eight'}",4,D,D,D,1
+2705374471,how many people are there in the room,"{'A': 'three', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'eight'}",8,D,D,D,1
+2705374471,how many people are there in the room,"{'A': 'three', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'eight'}",16,,,D,0
+11584566583,how many people can be seen in the video,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'thirteen', 'E': 'eight'}",1,B,B,B,1
+11584566583,how many people can be seen in the video,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'thirteen', 'E': 'eight'}",2,B,B,B,1
+11584566583,how many people can be seen in the video,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'thirteen', 'E': 'eight'}",4,C,C,B,0
+11584566583,how many people can be seen in the video,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'thirteen', 'E': 'eight'}",8,B,B,B,1
+11584566583,how many people can be seen in the video,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'thirteen', 'E': 'eight'}",16,The speaker and The speaker and The speech and and and and and and and a,A,B,0
+3469864014,how many cats were there,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'five'}",1,D,D,B,0
+3469864014,how many cats were there,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'five'}",2,D,D,B,0
+3469864014,how many cats were there,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'five'}",4,D,D,B,0
+3469864014,how many cats were there,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'five'}",8,D,D,B,0
+3469864014,how many cats were there,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'five'}",16,,,B,0
+6754608321,how many people are shown in the video,"{'A': 'eight', 'B': 'two', 'C': 'five', 'D': 'eleven', 'E': 'one'}",1,B,B,B,1
+6754608321,how many people are shown in the video,"{'A': 'eight', 'B': 'two', 'C': 'five', 'D': 'eleven', 'E': 'one'}",2,B,B,B,1
+6754608321,how many people are shown in the video,"{'A': 'eight', 'B': 'two', 'C': 'five', 'D': 'eleven', 'E': 'one'}",4,B,B,B,1
+6754608321,how many people are shown in the video,"{'A': 'eight', 'B': 'two', 'C': 'five', 'D': 'eleven', 'E': 'one'}",8,B,B,B,1
+6754608321,how many people are shown in the video,"{'A': 'eight', 'B': 'two', 'C': 'five', 'D': 'eleven', 'E': 'one'}",16,,,B,0
+6097994550,how many men were there,"{'A': 'seven', 'B': 'two', 'C': 'four', 'D': 'three', 'E': 'one'}",1,E,E,B,0
+6097994550,how many men were there,"{'A': 'seven', 'B': 'two', 'C': 'four', 'D': 'three', 'E': 'one'}",2,B,B,B,1
+6097994550,how many men were there,"{'A': 'seven', 'B': 'two', 'C': 'four', 'D': 'three', 'E': 'one'}",4,D,D,B,0
+6097994550,how many men were there,"{'A': 'seven', 'B': 'two', 'C': 'four', 'D': 'three', 'E': 'one'}",8,B,B,B,1
+6097994550,how many men were there,"{'A': 'seven', 'B': 'two', 'C': 'four', 'D': 'three', 'E': 'one'}",16,,,B,0
+4264435046,how many dogs are there,"{'A': 'one', 'B': 'two', 'C': 'four', 'D': 'six', 'E': 'nine'}",1,A,A,B,0
+4264435046,how many dogs are there,"{'A': 'one', 'B': 'two', 'C': 'four', 'D': 'six', 'E': 'nine'}",2,A,A,B,0
+4264435046,how many dogs are there,"{'A': 'one', 'B': 'two', 'C': 'four', 'D': 'six', 'E': 'nine'}",4,A,A,B,0
+4264435046,how many dogs are there,"{'A': 'one', 'B': 'two', 'C': 'four', 'D': 'six', 'E': 'nine'}",8,B,B,B,1
+4264435046,how many dogs are there,"{'A': 'one', 'B': 'two', 'C': 'four', 'D': 'six', 'E': 'nine'}",16,The 2,E,B,0
+4092992100,how many people are filmed,"{'A': 'three', 'B': 'nine', 'C': 'two', 'D': 'five', 'E': 'four'}",1,C,C,C,1
+4092992100,how many people are filmed,"{'A': 'three', 'B': 'nine', 'C': 'two', 'D': 'five', 'E': 'four'}",2,C,C,C,1
+4092992100,how many people are filmed,"{'A': 'three', 'B': 'nine', 'C': 'two', 'D': 'five', 'E': 'four'}",4,C,C,C,1
+4092992100,how many people are filmed,"{'A': 'three', 'B': 'nine', 'C': 'two', 'D': 'five', 'E': 'four'}",8,C,C,C,1
+4092992100,how many people are filmed,"{'A': 'three', 'B': 'nine', 'C': 'two', 'D': 'five', 'E': 'four'}",16,,,C,0
+8531675050,how many people are acting on the stage,"{'A': 'two', 'B': 'nine', 'C': 'one', 'D': 'eleven', 'E': 'six'}",1,A,A,A,1
+8531675050,how many people are acting on the stage,"{'A': 'two', 'B': 'nine', 'C': 'one', 'D': 'eleven', 'E': 'six'}",2,A,A,A,1
+8531675050,how many people are acting on the stage,"{'A': 'two', 'B': 'nine', 'C': 'one', 'D': 'eleven', 'E': 'six'}",4,C,C,A,0
+8531675050,how many people are acting on the stage,"{'A': 'two', 'B': 'nine', 'C': 'one', 'D': 'eleven', 'E': 'six'}",8,A,A,A,1
+8531675050,how many people are acting on the stage,"{'A': 'two', 'B': 'nine', 'C': 'one', 'D': 'eleven', 'E': 'six'}",16,2,,A,0
+10109097475,how many planes are involved in the video,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'eight'}",1,C,C,D,0
+10109097475,how many planes are involved in the video,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'eight'}",2,C,C,D,0
+10109097475,how many planes are involved in the video,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'eight'}",4,C,C,D,0
+10109097475,how many planes are involved in the video,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'eight'}",8,D,D,D,1
+10109097475,how many planes are involved in the video,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'eight'}",16,7237236365725 and a and,A,D,0
+6277800530,how many people were on the jeep,"{'A': 'two', 'B': 'five', 'C': 'one', 'D': 'six', 'E': 'nine'}",1,C,C,C,1
+6277800530,how many people were on the jeep,"{'A': 'two', 'B': 'five', 'C': 'one', 'D': 'six', 'E': 'nine'}",2,C,C,C,1
+6277800530,how many people were on the jeep,"{'A': 'two', 'B': 'five', 'C': 'one', 'D': 'six', 'E': 'nine'}",4,C,C,C,1
+6277800530,how many people were on the jeep,"{'A': 'two', 'B': 'five', 'C': 'one', 'D': 'six', 'E': 'nine'}",8,C,C,C,1
+6277800530,how many people were on the jeep,"{'A': 'two', 'B': 'five', 'C': 'one', 'D': 'six', 'E': 'nine'}",16,1656,,C,0
+8505893258,how many people were in the video,"{'A': 'seven', 'B': 'twelve', 'C': 'six', 'D': 'five', 'E': 'two'}",1,C,C,C,1
+8505893258,how many people were in the video,"{'A': 'seven', 'B': 'twelve', 'C': 'six', 'D': 'five', 'E': 'two'}",2,A,A,C,0
+8505893258,how many people were in the video,"{'A': 'seven', 'B': 'twelve', 'C': 'six', 'D': 'five', 'E': 'two'}",4,A,A,C,0
+8505893258,how many people were in the video,"{'A': 'seven', 'B': 'twelve', 'C': 'six', 'D': 'five', 'E': 'two'}",8,A,A,C,0
+8505893258,how many people were in the video,"{'A': 'seven', 'B': 'twelve', 'C': 'six', 'D': 'five', 'E': 'two'}",16,,,C,0
+4465235803,how many people are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'three', 'D': 'one', 'E': 'four'}",1,D,D,C,0
+4465235803,how many people are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'three', 'D': 'one', 'E': 'four'}",2,D,D,C,0
+4465235803,how many people are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'three', 'D': 'one', 'E': 'four'}",4,D,D,C,0
+4465235803,how many people are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'three', 'D': 'one', 'E': 'four'}",8,D,D,C,0
+4465235803,how many people are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'three', 'D': 'one', 'E': 'four'}",16,The 199996726666 and a,A,C,0
+5429688959,how many people are playing instruments,"{'A': 'five', 'B': 'eleven', 'C': 'one', 'D': 'four', 'E': 'three'}",1,C,C,C,1
+5429688959,how many people are playing instruments,"{'A': 'five', 'B': 'eleven', 'C': 'one', 'D': 'four', 'E': 'three'}",2,C,C,C,1
+5429688959,how many people are playing instruments,"{'A': 'five', 'B': 'eleven', 'C': 'one', 'D': 'four', 'E': 'three'}",4,C,C,C,1
+5429688959,how many people are playing instruments,"{'A': 'five', 'B': 'eleven', 'C': 'one', 'D': 'four', 'E': 'three'}",8,C,C,C,1
+5429688959,how many people are playing instruments,"{'A': 'five', 'B': 'eleven', 'C': 'one', 'D': 'four', 'E': 'three'}",16,2566666666666666,,C,0
+8513603944,how many children are there,"{'A': 'one', 'B': 'two', 'C': 'four', 'D': 'nine', 'E': 'three'}",1,B,B,B,1
+8513603944,how many children are there,"{'A': 'one', 'B': 'two', 'C': 'four', 'D': 'nine', 'E': 'three'}",2,B,B,B,1
+8513603944,how many children are there,"{'A': 'one', 'B': 'two', 'C': 'four', 'D': 'nine', 'E': 'three'}",4,B,B,B,1
+8513603944,how many children are there,"{'A': 'one', 'B': 'two', 'C': 'four', 'D': 'nine', 'E': 'three'}",8,A,A,B,0
+8513603944,how many children are there,"{'A': 'one', 'B': 'two', 'C': 'four', 'D': 'nine', 'E': 'three'}",16,The 1996,E,B,0
+2809330695,how many times does the baby attempt to flip over,"{'A': 'five', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'three'}",1,B,B,E,0
+2809330695,how many times does the baby attempt to flip over,"{'A': 'five', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'three'}",2,B,B,E,0
+2809330695,how many times does the baby attempt to flip over,"{'A': 'five', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'three'}",4,B,B,E,0
+2809330695,how many times does the baby attempt to flip over,"{'A': 'five', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'three'}",8,B,B,E,0
+2809330695,how many times does the baby attempt to flip over,"{'A': 'five', 'B': 'one', 'C': 'four', 'D': 'two', 'E': 'three'}",16,The and the and a and a a a a a and a and a and,A,E,0
+4276006683,how many people are involved in the video,"{'A': 'two', 'B': 'six', 'C': 'five', 'D': 'one', 'E': 'four'}",1,D,D,D,1
+4276006683,how many people are involved in the video,"{'A': 'two', 'B': 'six', 'C': 'five', 'D': 'one', 'E': 'four'}",2,D,D,D,1
+4276006683,how many people are involved in the video,"{'A': 'two', 'B': 'six', 'C': 'five', 'D': 'one', 'E': 'four'}",4,D,D,D,1
+4276006683,how many people are involved in the video,"{'A': 'two', 'B': 'six', 'C': 'five', 'D': 'one', 'E': 'four'}",8,D,D,D,1
+4276006683,how many people are involved in the video,"{'A': 'two', 'B': 'six', 'C': 'five', 'D': 'one', 'E': 'four'}",16,,,D,0
+6096998186,how many items was the woman in blonde hair holding at the end,"{'A': 'four', 'B': 'three', 'C': 'six', 'D': 'two', 'E': 'seven'}",1,D,D,D,1
+6096998186,how many items was the woman in blonde hair holding at the end,"{'A': 'four', 'B': 'three', 'C': 'six', 'D': 'two', 'E': 'seven'}",2,D,D,D,1
+6096998186,how many items was the woman in blonde hair holding at the end,"{'A': 'four', 'B': 'three', 'C': 'six', 'D': 'two', 'E': 'seven'}",4,D,D,D,1
+6096998186,how many items was the woman in blonde hair holding at the end,"{'A': 'four', 'B': 'three', 'C': 'six', 'D': 'two', 'E': 'seven'}",8,D,D,D,1
+6096998186,how many items was the woman in blonde hair holding at the end,"{'A': 'four', 'B': 'three', 'C': 'six', 'D': 'two', 'E': 'seven'}",16,The woman and The and a and a and a and the and The woman.,A,D,0
+5521781780,how many people were under the umbrella,"{'A': 'six', 'B': 'eleven', 'C': 'five', 'D': 'one', 'E': 'two'}",1,D,D,E,0
+5521781780,how many people were under the umbrella,"{'A': 'six', 'B': 'eleven', 'C': 'five', 'D': 'one', 'E': 'two'}",2,D,D,E,0
+5521781780,how many people were under the umbrella,"{'A': 'six', 'B': 'eleven', 'C': 'five', 'D': 'one', 'E': 'two'}",4,D,D,E,0
+5521781780,how many people were under the umbrella,"{'A': 'six', 'B': 'eleven', 'C': 'five', 'D': 'one', 'E': 'two'}",8,D,D,E,0
+5521781780,how many people were under the umbrella,"{'A': 'six', 'B': 'eleven', 'C': 'five', 'D': 'one', 'E': 'two'}",16,The stone and a and a and a a a and a and a a a,A,E,0
+3158022797,how many people were playing together,"{'A': 'eight', 'B': 'four', 'C': 'two', 'D': 'three', 'E': 'eleven'}",1,C,C,B,0
+3158022797,how many people were playing together,"{'A': 'eight', 'B': 'four', 'C': 'two', 'D': 'three', 'E': 'eleven'}",2,C,C,B,0
+3158022797,how many people were playing together,"{'A': 'eight', 'B': 'four', 'C': 'two', 'D': 'three', 'E': 'eleven'}",4,D,D,B,0
+3158022797,how many people were playing together,"{'A': 'eight', 'B': 'four', 'C': 'two', 'D': 'three', 'E': 'eleven'}",8,D,D,B,0
+3158022797,how many people were playing together,"{'A': 'eight', 'B': 'four', 'C': 'two', 'D': 'three', 'E': 'eleven'}",16,,,B,0
+5256928210,how many dogs are there,"{'A': 'two', 'B': 'nine', 'C': 'one', 'D': 'three', 'E': 'four'}",1,A,A,C,0
+5256928210,how many dogs are there,"{'A': 'two', 'B': 'nine', 'C': 'one', 'D': 'three', 'E': 'four'}",2,C,C,C,1
+5256928210,how many dogs are there,"{'A': 'two', 'B': 'nine', 'C': 'one', 'D': 'three', 'E': 'four'}",4,C,C,C,1
+5256928210,how many dogs are there,"{'A': 'two', 'B': 'nine', 'C': 'one', 'D': 'three', 'E': 'four'}",8,C,C,C,1
+5256928210,how many dogs are there,"{'A': 'two', 'B': 'nine', 'C': 'one', 'D': 'three', 'E': 'four'}",16,26,,C,0
+2435633172,how many people are there,"{'A': 'one', 'B': 'seven', 'C': 'four', 'D': 'eleven', 'E': 'three'}",1,A,A,E,0
+2435633172,how many people are there,"{'A': 'one', 'B': 'seven', 'C': 'four', 'D': 'eleven', 'E': 'three'}",2,A,A,E,0
+2435633172,how many people are there,"{'A': 'one', 'B': 'seven', 'C': 'four', 'D': 'eleven', 'E': 'three'}",4,E,E,E,1
+2435633172,how many people are there,"{'A': 'one', 'B': 'seven', 'C': 'four', 'D': 'eleven', 'E': 'three'}",8,E,E,E,1
+2435633172,how many people are there,"{'A': 'one', 'B': 'seven', 'C': 'four', 'D': 'eleven', 'E': 'three'}",16,,,E,0
+3846475848,how many people are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'two', 'E': 'one'}",1,D,D,E,0
+3846475848,how many people are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'two', 'E': 'one'}",2,D,D,E,0
+3846475848,how many people are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'two', 'E': 'one'}",4,D,D,E,0
+3846475848,how many people are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'two', 'E': 'one'}",8,E,E,E,1
+3846475848,how many people are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'two', 'E': 'one'}",16,,,E,0
+6356067859,how many children are involved in the video,"{'A': 'one', 'B': 'four', 'C': 'six', 'D': 'kitchen', 'E': 'seven'}",1,A,A,B,0
+6356067859,how many children are involved in the video,"{'A': 'one', 'B': 'four', 'C': 'six', 'D': 'kitchen', 'E': 'seven'}",2,A,A,B,0
+6356067859,how many children are involved in the video,"{'A': 'one', 'B': 'four', 'C': 'six', 'D': 'kitchen', 'E': 'seven'}",4,A,A,B,0
+6356067859,how many children are involved in the video,"{'A': 'one', 'B': 'four', 'C': 'six', 'D': 'kitchen', 'E': 'seven'}",8,A,A,B,0
+6356067859,how many children are involved in the video,"{'A': 'one', 'B': 'four', 'C': 'six', 'D': 'kitchen', 'E': 'seven'}",16,The horse and a and a a a a a a a a a and a,A,B,0
+5421648216,how many sheeps are involved in the video,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'two'}",1,C,C,C,1
+5421648216,how many sheeps are involved in the video,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'two'}",2,E,E,C,0
+5421648216,how many sheeps are involved in the video,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'two'}",4,C,C,C,1
+5421648216,how many sheeps are involved in the video,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'two'}",8,E,E,C,0
+5421648216,how many sheeps are involved in the video,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'two'}",16,"7672726, and 267 and and and",A,C,0
+3851913128,how many people are involved in the video,"{'A': 'two', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'one'}",1,C,C,B,0
+3851913128,how many people are involved in the video,"{'A': 'two', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'one'}",2,C,C,B,0
+3851913128,how many people are involved in the video,"{'A': 'two', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'one'}",4,C,C,B,0
+3851913128,how many people are involved in the video,"{'A': 'two', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'one'}",8,C,C,B,0
+3851913128,how many people are involved in the video,"{'A': 'two', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'one'}",16,The watered and a the water and a a a a a a a a,A,B,0
+7786283208,how many children are there in total,"{'A': 'six', 'B': 'three', 'C': 'two', 'D': 'one', 'E': 'nine'}",1,C,C,B,0
+7786283208,how many children are there in total,"{'A': 'six', 'B': 'three', 'C': 'two', 'D': 'one', 'E': 'nine'}",2,C,C,B,0
+7786283208,how many children are there in total,"{'A': 'six', 'B': 'three', 'C': 'two', 'D': 'one', 'E': 'nine'}",4,C,C,B,0
+7786283208,how many children are there in total,"{'A': 'six', 'B': 'three', 'C': 'two', 'D': 'one', 'E': 'nine'}",8,C,C,B,0
+7786283208,how many children are there in total,"{'A': 'six', 'B': 'three', 'C': 'two', 'D': 'one', 'E': 'nine'}",16,18.,,B,0
+6142416815,how many children are in the video,"{'A': 'one', 'B': 'two', 'C': 'kitchen', 'D': 'four', 'E': 'three'}",1,A,A,A,1
+6142416815,how many children are in the video,"{'A': 'one', 'B': 'two', 'C': 'kitchen', 'D': 'four', 'E': 'three'}",2,A,A,A,1
+6142416815,how many children are in the video,"{'A': 'one', 'B': 'two', 'C': 'kitchen', 'D': 'four', 'E': 'three'}",4,A,A,A,1
+6142416815,how many children are in the video,"{'A': 'one', 'B': 'two', 'C': 'kitchen', 'D': 'four', 'E': 'three'}",8,A,A,A,1
+6142416815,how many children are in the video,"{'A': 'one', 'B': 'two', 'C': 'kitchen', 'D': 'four', 'E': 'three'}",16,The baby.,E,A,0
+3063380173,how many kittens are in the video,"{'A': 'one', 'B': 'three', 'C': 'two', 'D': 'four', 'E': 'five'}",1,C,C,C,1
+3063380173,how many kittens are in the video,"{'A': 'one', 'B': 'three', 'C': 'two', 'D': 'four', 'E': 'five'}",2,A,A,C,0
+3063380173,how many kittens are in the video,"{'A': 'one', 'B': 'three', 'C': 'two', 'D': 'four', 'E': 'five'}",4,A,A,C,0
+3063380173,how many kittens are in the video,"{'A': 'one', 'B': 'three', 'C': 'two', 'D': 'four', 'E': 'five'}",8,A,A,C,0
+3063380173,how many kittens are in the video,"{'A': 'one', 'B': 'three', 'C': 'two', 'D': 'four', 'E': 'five'}",16,"The cat, cat and cat, and a a a a a a a a",A,C,0
+9873067604,how many people were singing,"{'A': 'four', 'B': 'three', 'C': 'two', 'D': 'nine', 'E': 'eleven'}",1,B,B,B,1
+9873067604,how many people were singing,"{'A': 'four', 'B': 'three', 'C': 'two', 'D': 'nine', 'E': 'eleven'}",2,B,B,B,1
+9873067604,how many people were singing,"{'A': 'four', 'B': 'three', 'C': 'two', 'D': 'nine', 'E': 'eleven'}",4,C,C,B,0
+9873067604,how many people were singing,"{'A': 'four', 'B': 'three', 'C': 'two', 'D': 'nine', 'E': 'eleven'}",8,C,C,B,0
+9873067604,how many people were singing,"{'A': 'four', 'B': 'three', 'C': 'two', 'D': 'nine', 'E': 'eleven'}",16,,,B,0
+4087654898,how many children are there,"{'A': 'two', 'B': 'nine', 'C': 'six', 'D': 'three', 'E': 'one'}",1,A,A,A,1
+4087654898,how many children are there,"{'A': 'two', 'B': 'nine', 'C': 'six', 'D': 'three', 'E': 'one'}",2,A,A,A,1
+4087654898,how many children are there,"{'A': 'two', 'B': 'nine', 'C': 'six', 'D': 'three', 'E': 'one'}",4,A,A,A,1
+4087654898,how many children are there,"{'A': 'two', 'B': 'nine', 'C': 'six', 'D': 'three', 'E': 'one'}",8,A,A,A,1
+4087654898,how many children are there,"{'A': 'two', 'B': 'nine', 'C': 'six', 'D': 'three', 'E': 'one'}",16,The green and The girl and green and green green green green green and green and,E,A,0
+2461993294,how many audiences are there,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'one', 'E': 'five'}",1,D,D,A,0
+2461993294,how many audiences are there,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'one', 'E': 'five'}",2,D,D,A,0
+2461993294,how many audiences are there,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'one', 'E': 'five'}",4,D,D,A,0
+2461993294,how many audiences are there,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'one', 'E': 'five'}",8,D,D,A,0
+2461993294,how many audiences are there,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'one', 'E': 'five'}",16,The man and sitting and sitting and a and a and a a and and a,A,A,1
+3303565503,how many people are posing in this shoot,"{'A': 'seven', 'B': 'five', 'C': 'six', 'D': 'two', 'E': 'three'}",1,D,D,D,1
+3303565503,how many people are posing in this shoot,"{'A': 'seven', 'B': 'five', 'C': 'six', 'D': 'two', 'E': 'three'}",2,D,D,D,1
+3303565503,how many people are posing in this shoot,"{'A': 'seven', 'B': 'five', 'C': 'six', 'D': 'two', 'E': 'three'}",4,D,D,D,1
+3303565503,how many people are posing in this shoot,"{'A': 'seven', 'B': 'five', 'C': 'six', 'D': 'two', 'E': 'three'}",8,D,D,D,1
+3303565503,how many people are posing in this shoot,"{'A': 'seven', 'B': 'five', 'C': 'six', 'D': 'two', 'E': 'three'}",16,,,D,0
+5702201498,how many people are present in the video,"{'A': 'five', 'B': 'four', 'C': 'two', 'D': 'eight', 'E': 'one'}",1,E,E,E,1
+5702201498,how many people are present in the video,"{'A': 'five', 'B': 'four', 'C': 'two', 'D': 'eight', 'E': 'one'}",2,C,C,E,0
+5702201498,how many people are present in the video,"{'A': 'five', 'B': 'four', 'C': 'two', 'D': 'eight', 'E': 'one'}",4,C,C,E,0
+5702201498,how many people are present in the video,"{'A': 'five', 'B': 'four', 'C': 'two', 'D': 'eight', 'E': 'one'}",8,C,C,E,0
+5702201498,how many people are present in the video,"{'A': 'five', 'B': 'four', 'C': 'two', 'D': 'eight', 'E': 'one'}",16,"The book, and the and a and a and a and a and a and",A,E,0
+8493226484,how many people are involved in the video,"{'A': 'five', 'B': 'one', 'C': 'two', 'D': 'six', 'E': 'four'}",1,C,C,C,1
+8493226484,how many people are involved in the video,"{'A': 'five', 'B': 'one', 'C': 'two', 'D': 'six', 'E': 'four'}",2,C,C,C,1
+8493226484,how many people are involved in the video,"{'A': 'five', 'B': 'one', 'C': 'two', 'D': 'six', 'E': 'four'}",4,C,C,C,1
+8493226484,how many people are involved in the video,"{'A': 'five', 'B': 'one', 'C': 'two', 'D': 'six', 'E': 'four'}",8,C,C,C,1
+8493226484,how many people are involved in the video,"{'A': 'five', 'B': 'one', 'C': 'two', 'D': 'six', 'E': 'four'}",16,,,C,0
+3555755537,how many people are in the video,"{'A': 'three', 'B': 'one', 'C': 'seven', 'D': 'eight', 'E': 'nine'}",1,B,B,B,1
+3555755537,how many people are in the video,"{'A': 'three', 'B': 'one', 'C': 'seven', 'D': 'eight', 'E': 'nine'}",2,B,B,B,1
+3555755537,how many people are in the video,"{'A': 'three', 'B': 'one', 'C': 'seven', 'D': 'eight', 'E': 'nine'}",4,B,B,B,1
+3555755537,how many people are in the video,"{'A': 'three', 'B': 'one', 'C': 'seven', 'D': 'eight', 'E': 'nine'}",8,B,B,B,1
+3555755537,how many people are in the video,"{'A': 'three', 'B': 'one', 'C': 'seven', 'D': 'eight', 'E': 'nine'}",16,,,B,0
+3861485381,how many animals are in the video,"{'A': 'two', 'B': 'one', 'C': 'three', 'D': 'four', 'E': 'five'}",1,C,C,E,0
+3861485381,how many animals are in the video,"{'A': 'two', 'B': 'one', 'C': 'three', 'D': 'four', 'E': 'five'}",2,C,C,E,0
+3861485381,how many animals are in the video,"{'A': 'two', 'B': 'one', 'C': 'three', 'D': 'four', 'E': 'five'}",4,C,C,E,0
+3861485381,how many animals are in the video,"{'A': 'two', 'B': 'one', 'C': 'three', 'D': 'four', 'E': 'five'}",8,A,A,E,0
+3861485381,how many animals are in the video,"{'A': 'two', 'B': 'one', 'C': 'three', 'D': 'four', 'E': 'five'}",16,The wilds and 1 and a a a a a a a a a,A,E,0
+3355698421,how many people are there together,"{'A': 'eleven', 'B': 'seven', 'C': 'five', 'D': 'three', 'E': 'six'}",1,D,D,D,1
+3355698421,how many people are there together,"{'A': 'eleven', 'B': 'seven', 'C': 'five', 'D': 'three', 'E': 'six'}",2,D,D,D,1
+3355698421,how many people are there together,"{'A': 'eleven', 'B': 'seven', 'C': 'five', 'D': 'three', 'E': 'six'}",4,D,D,D,1
+3355698421,how many people are there together,"{'A': 'eleven', 'B': 'seven', 'C': 'five', 'D': 'three', 'E': 'six'}",8,D,D,D,1
+3355698421,how many people are there together,"{'A': 'eleven', 'B': 'seven', 'C': 'five', 'D': 'three', 'E': 'six'}",16,18.1999 and 202566 and,A,D,0
+7651639778,how many people are present,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'seven', 'E': 'eleven'}",1,B,B,C,0
+7651639778,how many people are present,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'seven', 'E': 'eleven'}",2,B,B,C,0
+7651639778,how many people are present,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'seven', 'E': 'eleven'}",4,A,A,C,0
+7651639778,how many people are present,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'seven', 'E': 'eleven'}",8,A,A,C,0
+7651639778,how many people are present,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'seven', 'E': 'eleven'}",16,,,C,0
+9917882506,how many children are cycling,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'two', 'E': 'eight'}",1,D,D,D,1
+9917882506,how many children are cycling,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'two', 'E': 'eight'}",2,D,D,D,1
+9917882506,how many children are cycling,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'two', 'E': 'eight'}",4,D,D,D,1
+9917882506,how many children are cycling,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'two', 'E': 'eight'}",8,B,B,D,0
+9917882506,how many children are cycling,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'two', 'E': 'eight'}",16,566,,D,0
+5840177726,how many people were cycling,"{'A': 'five', 'B': 'four', 'C': 'seven', 'D': 'two', 'E': 'six'}",1,D,D,D,1
+5840177726,how many people were cycling,"{'A': 'five', 'B': 'four', 'C': 'seven', 'D': 'two', 'E': 'six'}",2,D,D,D,1
+5840177726,how many people were cycling,"{'A': 'five', 'B': 'four', 'C': 'seven', 'D': 'two', 'E': 'six'}",4,D,D,D,1
+5840177726,how many people were cycling,"{'A': 'five', 'B': 'four', 'C': 'seven', 'D': 'two', 'E': 'six'}",8,D,D,D,1
+5840177726,how many people were cycling,"{'A': 'five', 'B': 'four', 'C': 'seven', 'D': 'two', 'E': 'six'}",16,The trees.,E,D,0
+2697261300,how many dogs are filmed,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'two', 'E': 'three'}",1,A,A,D,0
+2697261300,how many dogs are filmed,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'two', 'E': 'three'}",2,A,A,D,0
+2697261300,how many dogs are filmed,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'two', 'E': 'three'}",4,A,A,D,0
+2697261300,how many dogs are filmed,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'two', 'E': 'three'}",8,A,A,D,0
+2697261300,how many dogs are filmed,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'two', 'E': 'three'}",16,The lake and a and the and the 2 and 20 and,A,D,0
+3581585756,how many adults are on the bus,"{'A': 'one', 'B': 'four', 'C': 'nine', 'D': 'five', 'E': 'two'}",1,E,E,A,0
+3581585756,how many adults are on the bus,"{'A': 'one', 'B': 'four', 'C': 'nine', 'D': 'five', 'E': 'two'}",2,E,E,A,0
+3581585756,how many adults are on the bus,"{'A': 'one', 'B': 'four', 'C': 'nine', 'D': 'five', 'E': 'two'}",4,E,E,A,0
+3581585756,how many adults are on the bus,"{'A': 'one', 'B': 'four', 'C': 'nine', 'D': 'five', 'E': 'two'}",8,E,E,A,0
+3581585756,how many adults are on the bus,"{'A': 'one', 'B': 'four', 'C': 'nine', 'D': 'five', 'E': 'two'}",16,,,A,0
+8457210773,how many dogs are in the video,"{'A': 'one', 'B': 'three', 'C': 'two', 'D': 'five', 'E': 'six'}",1,C,C,C,1
+8457210773,how many dogs are in the video,"{'A': 'one', 'B': 'three', 'C': 'two', 'D': 'five', 'E': 'six'}",2,C,C,C,1
+8457210773,how many dogs are in the video,"{'A': 'one', 'B': 'three', 'C': 'two', 'D': 'five', 'E': 'six'}",4,C,C,C,1
+8457210773,how many dogs are in the video,"{'A': 'one', 'B': 'three', 'C': 'two', 'D': 'five', 'E': 'six'}",8,C,C,C,1
+8457210773,how many dogs are in the video,"{'A': 'one', 'B': 'three', 'C': 'two', 'D': 'five', 'E': 'six'}",16,,,C,0
+3972259774,how many people are filmed by the camera,"{'A': 'one', 'B': 'five', 'C': 'six', 'D': 'seven', 'E': 'two'}",1,A,A,B,0
+3972259774,how many people are filmed by the camera,"{'A': 'one', 'B': 'five', 'C': 'six', 'D': 'seven', 'E': 'two'}",2,A,A,B,0
+3972259774,how many people are filmed by the camera,"{'A': 'one', 'B': 'five', 'C': 'six', 'D': 'seven', 'E': 'two'}",4,A,A,B,0
+3972259774,how many people are filmed by the camera,"{'A': 'one', 'B': 'five', 'C': 'six', 'D': 'seven', 'E': 'two'}",8,A,A,B,0
+3972259774,how many people are filmed by the camera,"{'A': 'one', 'B': 'five', 'C': 'six', 'D': 'seven', 'E': 'two'}",16,The womanary and The woman and a the 1 and a a a a,A,B,0
+3105728894,how many people are practising their tricks in the video,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'two', 'E': 'one'}",1,D,D,A,0
+3105728894,how many people are practising their tricks in the video,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'two', 'E': 'one'}",2,D,D,A,0
+3105728894,how many people are practising their tricks in the video,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'two', 'E': 'one'}",4,D,D,A,0
+3105728894,how many people are practising their tricks in the video,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'two', 'E': 'one'}",8,D,D,A,0
+3105728894,how many people are practising their tricks in the video,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'two', 'E': 'one'}",16,The building and The building and The building and The and The and The and The,E,A,0
+8403741210,how many people are involved in the video,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'three', 'E': 'one'}",1,D,D,D,1
+8403741210,how many people are involved in the video,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'three', 'E': 'one'}",2,D,D,D,1
+8403741210,how many people are involved in the video,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'three', 'E': 'one'}",4,D,D,D,1
+8403741210,how many people are involved in the video,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'three', 'E': 'one'}",8,B,B,D,0
+8403741210,how many people are involved in the video,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'three', 'E': 'one'}",16,18.,,D,0
+4189100053,how many people are involved in the video,"{'A': 'one', 'B': 'two', 'C': 'five', 'D': 'four', 'E': 'three'}",1,A,A,B,0
+4189100053,how many people are involved in the video,"{'A': 'one', 'B': 'two', 'C': 'five', 'D': 'four', 'E': 'three'}",2,B,B,B,1
+4189100053,how many people are involved in the video,"{'A': 'one', 'B': 'two', 'C': 'five', 'D': 'four', 'E': 'three'}",4,B,B,B,1
+4189100053,how many people are involved in the video,"{'A': 'one', 'B': 'two', 'C': 'five', 'D': 'four', 'E': 'three'}",8,B,B,B,1
+4189100053,how many people are involved in the video,"{'A': 'one', 'B': 'two', 'C': 'five', 'D': 'four', 'E': 'three'}",16,,,B,0
+7453733046,how many people are playing in the water playground,"{'A': 'one', 'B': 'kitchen', 'C': 'four', 'D': 'five', 'E': 'two'}",1,E,E,E,1
+7453733046,how many people are playing in the water playground,"{'A': 'one', 'B': 'kitchen', 'C': 'four', 'D': 'five', 'E': 'two'}",2,E,E,E,1
+7453733046,how many people are playing in the water playground,"{'A': 'one', 'B': 'kitchen', 'C': 'four', 'D': 'five', 'E': 'two'}",4,E,E,E,1
+7453733046,how many people are playing in the water playground,"{'A': 'one', 'B': 'kitchen', 'C': 'four', 'D': 'five', 'E': 'two'}",8,A,A,E,0
+7453733046,how many people are playing in the water playground,"{'A': 'one', 'B': 'kitchen', 'C': 'four', 'D': 'five', 'E': 'two'}",16,182125 and a5 and26 and2 and2,A,E,0
+2679130168,how many times did the girl try to stuff her face into the cushion in the beginning of the video,"{'A': 'four', 'B': 'two', 'C': 'three', 'D': 'five', 'E': 'six'}",1,B,B,D,0
+2679130168,how many times did the girl try to stuff her face into the cushion in the beginning of the video,"{'A': 'four', 'B': 'two', 'C': 'three', 'D': 'five', 'E': 'six'}",2,B,B,D,0
+2679130168,how many times did the girl try to stuff her face into the cushion in the beginning of the video,"{'A': 'four', 'B': 'two', 'C': 'three', 'D': 'five', 'E': 'six'}",4,C,C,D,0
+2679130168,how many times did the girl try to stuff her face into the cushion in the beginning of the video,"{'A': 'four', 'B': 'two', 'C': 'three', 'D': 'five', 'E': 'six'}",8,B,B,D,0
+2679130168,how many times did the girl try to stuff her face into the cushion in the beginning of the video,"{'A': 'four', 'B': 'two', 'C': 'three', 'D': 'five', 'E': 'six'}",16,The and a and a and thes and the the the a the a the,A,D,0
+6143391925,how many babies are there,"{'A': 'one', 'B': 'nine', 'C': 'three', 'D': 'four', 'E': 'six'}",1,A,A,A,1
+6143391925,how many babies are there,"{'A': 'one', 'B': 'nine', 'C': 'three', 'D': 'four', 'E': 'six'}",2,A,A,A,1
+6143391925,how many babies are there,"{'A': 'one', 'B': 'nine', 'C': 'three', 'D': 'four', 'E': 'six'}",4,A,A,A,1
+6143391925,how many babies are there,"{'A': 'one', 'B': 'nine', 'C': 'three', 'D': 'four', 'E': 'six'}",8,A,A,A,1
+6143391925,how many babies are there,"{'A': 'one', 'B': 'nine', 'C': 'three', 'D': 'four', 'E': 'six'}",16,The The The and a and a and The and The and a a a a,A,A,1
+5145526755,how many people are involved in the video,"{'A': 'one', 'B': 'three', 'C': 'four', 'D': 'five', 'E': 'two'}",1,E,E,E,1
+5145526755,how many people are involved in the video,"{'A': 'one', 'B': 'three', 'C': 'four', 'D': 'five', 'E': 'two'}",2,E,E,E,1
+5145526755,how many people are involved in the video,"{'A': 'one', 'B': 'three', 'C': 'four', 'D': 'five', 'E': 'two'}",4,E,E,E,1
+5145526755,how many people are involved in the video,"{'A': 'one', 'B': 'three', 'C': 'four', 'D': 'five', 'E': 'two'}",8,A,A,E,0
+5145526755,how many people are involved in the video,"{'A': 'one', 'B': 'three', 'C': 'four', 'D': 'five', 'E': 'two'}",16,The5076572576565 and a,A,E,0
+3441428429,how many skaters are performing on the ice,"{'A': 'eight', 'B': 'nine', 'C': 'six', 'D': 'four', 'E': 'two'}",1,E,E,E,1
+3441428429,how many skaters are performing on the ice,"{'A': 'eight', 'B': 'nine', 'C': 'six', 'D': 'four', 'E': 'two'}",2,E,E,E,1
+3441428429,how many skaters are performing on the ice,"{'A': 'eight', 'B': 'nine', 'C': 'six', 'D': 'four', 'E': 'two'}",4,E,E,E,1
+3441428429,how many skaters are performing on the ice,"{'A': 'eight', 'B': 'nine', 'C': 'six', 'D': 'four', 'E': 'two'}",8,E,E,E,1
+3441428429,how many skaters are performing on the ice,"{'A': 'eight', 'B': 'nine', 'C': 'six', 'D': 'four', 'E': 'two'}",16,The28. The,E,E,1
+2925298951,how many women are posing for the photo,"{'A': 'six', 'B': 'five', 'C': 'two', 'D': 'four', 'E': 'one'}",1,C,C,A,0
+2925298951,how many women are posing for the photo,"{'A': 'six', 'B': 'five', 'C': 'two', 'D': 'four', 'E': 'one'}",2,C,C,A,0
+2925298951,how many women are posing for the photo,"{'A': 'six', 'B': 'five', 'C': 'two', 'D': 'four', 'E': 'one'}",4,D,D,A,0
+2925298951,how many women are posing for the photo,"{'A': 'six', 'B': 'five', 'C': 'two', 'D': 'four', 'E': 'one'}",8,D,D,A,0
+2925298951,how many women are posing for the photo,"{'A': 'six', 'B': 'five', 'C': 'two', 'D': 'four', 'E': 'one'}",16,The woman and a and a the a the a a a the and a and,A,A,1
+3375218204,how many people are involved in the video,"{'A': 'three', 'B': 'five', 'C': 'two', 'D': 'six', 'E': 'one'}",1,E,E,A,0
+3375218204,how many people are involved in the video,"{'A': 'three', 'B': 'five', 'C': 'two', 'D': 'six', 'E': 'one'}",2,C,C,A,0
+3375218204,how many people are involved in the video,"{'A': 'three', 'B': 'five', 'C': 'two', 'D': 'six', 'E': 'one'}",4,A,A,A,1
+3375218204,how many people are involved in the video,"{'A': 'three', 'B': 'five', 'C': 'two', 'D': 'six', 'E': 'one'}",8,C,C,A,0
+3375218204,how many people are involved in the video,"{'A': 'three', 'B': 'five', 'C': 'two', 'D': 'six', 'E': 'one'}",16,The bookary and the book and as and a a a a and a,A,A,1
+8211075660,how many men are filmed,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'one', 'E': 'four'}",1,C,C,A,0
+8211075660,how many men are filmed,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'one', 'E': 'four'}",2,C,C,A,0
+8211075660,how many men are filmed,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'one', 'E': 'four'}",4,C,C,A,0
+8211075660,how many men are filmed,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'one', 'E': 'four'}",8,C,C,A,0
+8211075660,how many men are filmed,"{'A': 'three', 'B': 'six', 'C': 'two', 'D': 'one', 'E': 'four'}",16,,,A,0
+11503803033,how many people are skiing,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'one', 'E': 'two'}",1,E,E,B,0
+11503803033,how many people are skiing,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'one', 'E': 'two'}",2,E,E,B,0
+11503803033,how many people are skiing,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'one', 'E': 'two'}",4,E,E,B,0
+11503803033,how many people are skiing,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'one', 'E': 'two'}",8,B,B,B,1
+11503803033,how many people are skiing,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'one', 'E': 'two'}",16,256,,B,0
+4925211209,how many people are in the video,"{'A': 'nine', 'B': 'five', 'C': 'seven', 'D': 'one', 'E': 'six'}",1,D,D,D,1
+4925211209,how many people are in the video,"{'A': 'nine', 'B': 'five', 'C': 'seven', 'D': 'one', 'E': 'six'}",2,D,D,D,1
+4925211209,how many people are in the video,"{'A': 'nine', 'B': 'five', 'C': 'seven', 'D': 'one', 'E': 'six'}",4,D,D,D,1
+4925211209,how many people are in the video,"{'A': 'nine', 'B': 'five', 'C': 'seven', 'D': 'one', 'E': 'six'}",8,D,D,D,1
+4925211209,how many people are in the video,"{'A': 'nine', 'B': 'five', 'C': 'seven', 'D': 'one', 'E': 'six'}",16,7657657265766666,,D,0
+2669452260,how many people walk past the man,"{'A': 'three', 'B': 'two', 'C': 'seven', 'D': 'thirteen', 'E': 'four'}",1,A,A,B,0
+2669452260,how many people walk past the man,"{'A': 'three', 'B': 'two', 'C': 'seven', 'D': 'thirteen', 'E': 'four'}",2,A,A,B,0
+2669452260,how many people walk past the man,"{'A': 'three', 'B': 'two', 'C': 'seven', 'D': 'thirteen', 'E': 'four'}",4,A,A,B,0
+2669452260,how many people walk past the man,"{'A': 'three', 'B': 'two', 'C': 'seven', 'D': 'thirteen', 'E': 'four'}",8,B,B,B,1
+2669452260,how many people walk past the man,"{'A': 'three', 'B': 'two', 'C': 'seven', 'D': 'thirteen', 'E': 'four'}",16,,,B,0
+3372023610,how many people are there in the video,"{'A': 'seven', 'B': 'one', 'C': 'two', 'D': 'four', 'E': 'six'}",1,D,D,D,1
+3372023610,how many people are there in the video,"{'A': 'seven', 'B': 'one', 'C': 'two', 'D': 'four', 'E': 'six'}",2,D,D,D,1
+3372023610,how many people are there in the video,"{'A': 'seven', 'B': 'one', 'C': 'two', 'D': 'four', 'E': 'six'}",4,D,D,D,1
+3372023610,how many people are there in the video,"{'A': 'seven', 'B': 'one', 'C': 'two', 'D': 'four', 'E': 'six'}",8,C,C,D,0
+3372023610,how many people are there in the video,"{'A': 'seven', 'B': 'one', 'C': 'two', 'D': 'four', 'E': 'six'}",16,,,D,0
+3719793245,how many people are there in the video,"{'A': 'six', 'B': 'four', 'C': 'five', 'D': 'two', 'E': 'thirteen'}",1,D,D,D,1
+3719793245,how many people are there in the video,"{'A': 'six', 'B': 'four', 'C': 'five', 'D': 'two', 'E': 'thirteen'}",2,D,D,D,1
+3719793245,how many people are there in the video,"{'A': 'six', 'B': 'four', 'C': 'five', 'D': 'two', 'E': 'thirteen'}",4,D,D,D,1
+3719793245,how many people are there in the video,"{'A': 'six', 'B': 'four', 'C': 'five', 'D': 'two', 'E': 'thirteen'}",8,D,D,D,1
+3719793245,how many people are there in the video,"{'A': 'six', 'B': 'four', 'C': 'five', 'D': 'two', 'E': 'thirteen'}",16,,,D,0
+3175315183,how many toys are hang above the baby,"{'A': 'three', 'B': 'two', 'C': 'five', 'D': 'one', 'E': 'four'}",1,A,A,C,0
+3175315183,how many toys are hang above the baby,"{'A': 'three', 'B': 'two', 'C': 'five', 'D': 'one', 'E': 'four'}",2,A,A,C,0
+3175315183,how many toys are hang above the baby,"{'A': 'three', 'B': 'two', 'C': 'five', 'D': 'one', 'E': 'four'}",4,D,D,C,0
+3175315183,how many toys are hang above the baby,"{'A': 'three', 'B': 'two', 'C': 'five', 'D': 'one', 'E': 'four'}",8,D,D,C,0
+3175315183,how many toys are hang above the baby,"{'A': 'three', 'B': 'two', 'C': 'five', 'D': 'one', 'E': 'four'}",16,The baby and a the a a a a a a a a a a a,A,C,0
+4164771889,how many boys are working together to bury the boy,"{'A': 'seven', 'B': 'three', 'C': 'one', 'D': 'five', 'E': 'twice'}",1,B,B,D,0
+4164771889,how many boys are working together to bury the boy,"{'A': 'seven', 'B': 'three', 'C': 'one', 'D': 'five', 'E': 'twice'}",2,D,D,D,1
+4164771889,how many boys are working together to bury the boy,"{'A': 'seven', 'B': 'three', 'C': 'one', 'D': 'five', 'E': 'twice'}",4,B,B,D,0
+4164771889,how many boys are working together to bury the boy,"{'A': 'seven', 'B': 'three', 'C': 'one', 'D': 'five', 'E': 'twice'}",8,A,A,D,0
+4164771889,how many boys are working together to bury the boy,"{'A': 'seven', 'B': 'three', 'C': 'one', 'D': 'five', 'E': 'twice'}",16,The rocked and a and a a the a a the a and a a,A,D,0
+6542914065,how many people are involved in the video,"{'A': 'three', 'B': 'six', 'C': 'five', 'D': 'two', 'E': 'one'}",1,D,D,C,0
+6542914065,how many people are involved in the video,"{'A': 'three', 'B': 'six', 'C': 'five', 'D': 'two', 'E': 'one'}",2,D,D,C,0
+6542914065,how many people are involved in the video,"{'A': 'three', 'B': 'six', 'C': 'five', 'D': 'two', 'E': 'one'}",4,D,D,C,0
+6542914065,how many people are involved in the video,"{'A': 'three', 'B': 'six', 'C': 'five', 'D': 'two', 'E': 'one'}",8,D,D,C,0
+6542914065,how many people are involved in the video,"{'A': 'three', 'B': 'six', 'C': 'five', 'D': 'two', 'E': 'one'}",16,18.2636236366 and a and,A,C,0
+4126010904,how many times does the tall man lean his face on the television,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'one', 'E': 'two'}",1,D,D,A,0
+4126010904,how many times does the tall man lean his face on the television,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'one', 'E': 'two'}",2,D,D,A,0
+4126010904,how many times does the tall man lean his face on the television,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'one', 'E': 'two'}",4,D,D,A,0
+4126010904,how many times does the tall man lean his face on the television,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'one', 'E': 'two'}",8,D,D,A,0
+4126010904,how many times does the tall man lean his face on the television,"{'A': 'four', 'B': 'three', 'C': 'five', 'D': 'one', 'E': 'two'}",16,The black and a and a the and a and a and a and The and,A,A,1
+3477387686,how many times did the girl put her palm out,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'seven'}",1,A,A,C,0
+3477387686,how many times did the girl put her palm out,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'seven'}",2,A,A,C,0
+3477387686,how many times did the girl put her palm out,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'seven'}",4,A,A,C,0
+3477387686,how many times did the girl put her palm out,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'seven'}",8,A,A,C,0
+3477387686,how many times did the girl put her palm out,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'seven'}",16,,,C,0
+6297019062,how many babies are there in the video,"{'A': 'two', 'B': 'three', 'C': 'five', 'D': 'four', 'E': 'seven'}",1,A,A,D,0
+6297019062,how many babies are there in the video,"{'A': 'two', 'B': 'three', 'C': 'five', 'D': 'four', 'E': 'seven'}",2,A,A,D,0
+6297019062,how many babies are there in the video,"{'A': 'two', 'B': 'three', 'C': 'five', 'D': 'four', 'E': 'seven'}",4,A,A,D,0
+6297019062,how many babies are there in the video,"{'A': 'two', 'B': 'three', 'C': 'five', 'D': 'four', 'E': 'seven'}",8,A,A,D,0
+6297019062,how many babies are there in the video,"{'A': 'two', 'B': 'three', 'C': 'five', 'D': 'four', 'E': 'seven'}",16,The blacks,E,D,0
+8455160795,how many people are there,"{'A': 'four', 'B': 'seven', 'C': 'five', 'D': 'two', 'E': 'three'}",1,D,D,D,1
+8455160795,how many people are there,"{'A': 'four', 'B': 'seven', 'C': 'five', 'D': 'two', 'E': 'three'}",2,D,D,D,1
+8455160795,how many people are there,"{'A': 'four', 'B': 'seven', 'C': 'five', 'D': 'two', 'E': 'three'}",4,D,D,D,1
+8455160795,how many people are there,"{'A': 'four', 'B': 'seven', 'C': 'five', 'D': 'two', 'E': 'three'}",8,D,D,D,1
+8455160795,how many people are there,"{'A': 'four', 'B': 'seven', 'C': 'five', 'D': 'two', 'E': 'three'}",16,7288888272727765,,D,0
+7499763064,how many people are climbing,"{'A': 'eleven', 'B': 'four', 'C': 'seven', 'D': 'two', 'E': 'six'}",1,D,D,D,1
+7499763064,how many people are climbing,"{'A': 'eleven', 'B': 'four', 'C': 'seven', 'D': 'two', 'E': 'six'}",2,D,D,D,1
+7499763064,how many people are climbing,"{'A': 'eleven', 'B': 'four', 'C': 'seven', 'D': 'two', 'E': 'six'}",4,D,D,D,1
+7499763064,how many people are climbing,"{'A': 'eleven', 'B': 'four', 'C': 'seven', 'D': 'two', 'E': 'six'}",8,D,D,D,1
+7499763064,how many people are climbing,"{'A': 'eleven', 'B': 'four', 'C': 'seven', 'D': 'two', 'E': 'six'}",16,"5.6. The rock. The rock, 167. The",E,D,0
+5889898795,how many people ziplined down,"{'A': 'six', 'B': 'four', 'C': 'seven', 'D': 'three', 'E': 'two'}",1,E,E,E,1
+5889898795,how many people ziplined down,"{'A': 'six', 'B': 'four', 'C': 'seven', 'D': 'three', 'E': 'two'}",2,E,E,E,1
+5889898795,how many people ziplined down,"{'A': 'six', 'B': 'four', 'C': 'seven', 'D': 'three', 'E': 'two'}",4,D,D,E,0
+5889898795,how many people ziplined down,"{'A': 'six', 'B': 'four', 'C': 'seven', 'D': 'three', 'E': 'two'}",8,D,D,E,0
+5889898795,how many people ziplined down,"{'A': 'six', 'B': 'four', 'C': 'seven', 'D': 'three', 'E': 'two'}",16,65777,,E,0
+8388104887,how many times did the dog run back and forth,"{'A': 'three', 'B': 'fifteen', 'C': 'one', 'D': 'nine', 'E': 'two'}",1,C,C,E,0
+8388104887,how many times did the dog run back and forth,"{'A': 'three', 'B': 'fifteen', 'C': 'one', 'D': 'nine', 'E': 'two'}",2,C,C,E,0
+8388104887,how many times did the dog run back and forth,"{'A': 'three', 'B': 'fifteen', 'C': 'one', 'D': 'nine', 'E': 'two'}",4,C,C,E,0
+8388104887,how many times did the dog run back and forth,"{'A': 'three', 'B': 'fifteen', 'C': 'one', 'D': 'nine', 'E': 'two'}",8,C,C,E,0
+8388104887,how many times did the dog run back and forth,"{'A': 'three', 'B': 'fifteen', 'C': 'one', 'D': 'nine', 'E': 'two'}",16,The grass and a,A,E,0
+6860322796,how many dogs are there playing,"{'A': 'four', 'B': 'one', 'C': 'two', 'D': 'three', 'E': 'five'}",1,C,C,C,1
+6860322796,how many dogs are there playing,"{'A': 'four', 'B': 'one', 'C': 'two', 'D': 'three', 'E': 'five'}",2,C,C,C,1
+6860322796,how many dogs are there playing,"{'A': 'four', 'B': 'one', 'C': 'two', 'D': 'three', 'E': 'five'}",4,C,C,C,1
+6860322796,how many dogs are there playing,"{'A': 'four', 'B': 'one', 'C': 'two', 'D': 'three', 'E': 'five'}",8,C,C,C,1
+6860322796,how many dogs are there playing,"{'A': 'four', 'B': 'one', 'C': 'two', 'D': 'three', 'E': 'five'}",16,506,,C,0
+4859057828,how many ladies are there,"{'A': 'six', 'B': 'three', 'C': 'four', 'D': 'two', 'E': 'seven'}",1,B,B,B,1
+4859057828,how many ladies are there,"{'A': 'six', 'B': 'three', 'C': 'four', 'D': 'two', 'E': 'seven'}",2,B,B,B,1
+4859057828,how many ladies are there,"{'A': 'six', 'B': 'three', 'C': 'four', 'D': 'two', 'E': 'seven'}",4,B,B,B,1
+4859057828,how many ladies are there,"{'A': 'six', 'B': 'three', 'C': 'four', 'D': 'two', 'E': 'seven'}",8,B,B,B,1
+4859057828,how many ladies are there,"{'A': 'six', 'B': 'three', 'C': 'four', 'D': 'two', 'E': 'seven'}",16,The house and a the tree and a and a a a a a a a,A,B,0
+4264435046,how many vehicles were filmed,"{'A': 'four', 'B': 'one', 'C': 'six', 'D': 'three', 'E': 'five'}",1,B,B,D,0
+4264435046,how many vehicles were filmed,"{'A': 'four', 'B': 'one', 'C': 'six', 'D': 'three', 'E': 'five'}",2,B,B,D,0
+4264435046,how many vehicles were filmed,"{'A': 'four', 'B': 'one', 'C': 'six', 'D': 'three', 'E': 'five'}",4,B,B,D,0
+4264435046,how many vehicles were filmed,"{'A': 'four', 'B': 'one', 'C': 'six', 'D': 'three', 'E': 'five'}",8,B,B,D,0
+4264435046,how many vehicles were filmed,"{'A': 'four', 'B': 'one', 'C': 'six', 'D': 'three', 'E': 'five'}",16,The The The The grass and The grass and 2 and 1 a a,A,D,0
+13515224395,how many dogs appear in the video,"{'A': 'two', 'B': 'five', 'C': 'one', 'D': 'four', 'E': 'three'}",1,A,A,A,1
+13515224395,how many dogs appear in the video,"{'A': 'two', 'B': 'five', 'C': 'one', 'D': 'four', 'E': 'three'}",2,C,C,A,0
+13515224395,how many dogs appear in the video,"{'A': 'two', 'B': 'five', 'C': 'one', 'D': 'four', 'E': 'three'}",4,C,C,A,0
+13515224395,how many dogs appear in the video,"{'A': 'two', 'B': 'five', 'C': 'one', 'D': 'four', 'E': 'three'}",8,C,C,A,0
+13515224395,how many dogs appear in the video,"{'A': 'two', 'B': 'five', 'C': 'one', 'D': 'four', 'E': 'three'}",16,,,A,0
+5863411262,how many people are involved in the video,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'four', 'E': 'two'}",1,C,C,A,0
+5863411262,how many people are involved in the video,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'four', 'E': 'two'}",2,E,E,A,0
+5863411262,how many people are involved in the video,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'four', 'E': 'two'}",4,B,B,A,0
+5863411262,how many people are involved in the video,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'four', 'E': 'two'}",8,D,D,A,0
+5863411262,how many people are involved in the video,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'four', 'E': 'two'}",16,The animal.,E,A,0
+4094488636,how many dogs are there,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'two'}",1,E,E,E,1
+4094488636,how many dogs are there,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'two'}",2,E,E,E,1
+4094488636,how many dogs are there,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'two'}",4,E,E,E,1
+4094488636,how many dogs are there,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'two'}",8,E,E,E,1
+4094488636,how many dogs are there,"{'A': 'six', 'B': 'four', 'C': 'three', 'D': 'one', 'E': 'two'}",16,The,E,E,1
+5133787349,how many of the man are actually involved in the fighting on stage,"{'A': 'three', 'B': 'four', 'C': 'one', 'D': 'seven', 'E': 'five'}",1,A,A,B,0
+5133787349,how many of the man are actually involved in the fighting on stage,"{'A': 'three', 'B': 'four', 'C': 'one', 'D': 'seven', 'E': 'five'}",2,A,A,B,0
+5133787349,how many of the man are actually involved in the fighting on stage,"{'A': 'three', 'B': 'four', 'C': 'one', 'D': 'seven', 'E': 'five'}",4,C,C,B,0
+5133787349,how many of the man are actually involved in the fighting on stage,"{'A': 'three', 'B': 'four', 'C': 'one', 'D': 'seven', 'E': 'five'}",8,C,C,B,0
+5133787349,how many of the man are actually involved in the fighting on stage,"{'A': 'three', 'B': 'four', 'C': 'one', 'D': 'seven', 'E': 'five'}",16,The black and The black and The and a and a and a and The and,A,B,0
+4130504920,how many babies are there,"{'A': 'three', 'B': 'four', 'C': 'two', 'D': 'one', 'E': 'nine'}",1,D,D,D,1
+4130504920,how many babies are there,"{'A': 'three', 'B': 'four', 'C': 'two', 'D': 'one', 'E': 'nine'}",2,D,D,D,1
+4130504920,how many babies are there,"{'A': 'three', 'B': 'four', 'C': 'two', 'D': 'one', 'E': 'nine'}",4,D,D,D,1
+4130504920,how many babies are there,"{'A': 'three', 'B': 'four', 'C': 'two', 'D': 'one', 'E': 'nine'}",8,D,D,D,1
+4130504920,how many babies are there,"{'A': 'three', 'B': 'four', 'C': 'two', 'D': 'one', 'E': 'nine'}",16,The The The The a the The a a a a a a a a a,A,D,0
+3078294001,how many people are there,"{'A': 'five', 'B': 'six', 'C': 'eleven', 'D': 'two', 'E': 'one'}",1,D,D,D,1
+3078294001,how many people are there,"{'A': 'five', 'B': 'six', 'C': 'eleven', 'D': 'two', 'E': 'one'}",2,D,D,D,1
+3078294001,how many people are there,"{'A': 'five', 'B': 'six', 'C': 'eleven', 'D': 'two', 'E': 'one'}",4,D,D,D,1
+3078294001,how many people are there,"{'A': 'five', 'B': 'six', 'C': 'eleven', 'D': 'two', 'E': 'one'}",8,D,D,D,1
+3078294001,how many people are there,"{'A': 'five', 'B': 'six', 'C': 'eleven', 'D': 'two', 'E': 'one'}",16,,,D,0
+3155382178,how many people are there,"{'A': 'eleven', 'B': 'one', 'C': 'seven', 'D': 'four', 'E': 'two'}",1,E,E,E,1
+3155382178,how many people are there,"{'A': 'eleven', 'B': 'one', 'C': 'seven', 'D': 'four', 'E': 'two'}",2,E,E,E,1
+3155382178,how many people are there,"{'A': 'eleven', 'B': 'one', 'C': 'seven', 'D': 'four', 'E': 'two'}",4,E,E,E,1
+3155382178,how many people are there,"{'A': 'eleven', 'B': 'one', 'C': 'seven', 'D': 'four', 'E': 'two'}",8,B,B,E,0
+3155382178,how many people are there,"{'A': 'eleven', 'B': 'one', 'C': 'seven', 'D': 'four', 'E': 'two'}",16,,,E,0
+4260763967,how many boys are in the video,"{'A': 'five', 'B': 'eight', 'C': 'eleven', 'D': 'two', 'E': 'nine'}",1,D,D,D,1
+4260763967,how many boys are in the video,"{'A': 'five', 'B': 'eight', 'C': 'eleven', 'D': 'two', 'E': 'nine'}",2,D,D,D,1
+4260763967,how many boys are in the video,"{'A': 'five', 'B': 'eight', 'C': 'eleven', 'D': 'two', 'E': 'nine'}",4,D,D,D,1
+4260763967,how many boys are in the video,"{'A': 'five', 'B': 'eight', 'C': 'eleven', 'D': 'two', 'E': 'nine'}",8,D,D,D,1
+4260763967,how many boys are in the video,"{'A': 'five', 'B': 'eight', 'C': 'eleven', 'D': 'two', 'E': 'nine'}",16,The fire.,E,D,0
+4412508597,how many people are filmed,"{'A': 'two', 'B': 'four', 'C': 'seven', 'D': 'one', 'E': 'three'}",1,D,D,E,0
+4412508597,how many people are filmed,"{'A': 'two', 'B': 'four', 'C': 'seven', 'D': 'one', 'E': 'three'}",2,D,D,E,0
+4412508597,how many people are filmed,"{'A': 'two', 'B': 'four', 'C': 'seven', 'D': 'one', 'E': 'three'}",4,D,D,E,0
+4412508597,how many people are filmed,"{'A': 'two', 'B': 'four', 'C': 'seven', 'D': 'one', 'E': 'three'}",8,D,D,E,0
+4412508597,how many people are filmed,"{'A': 'two', 'B': 'four', 'C': 'seven', 'D': 'one', 'E': 'three'}",16,The buses in the blue and a the bus and a a a a a,A,E,0
+6253433310,how many people were in the pool,"{'A': 'eleven', 'B': 'three', 'C': 'two', 'D': 'four', 'E': 'nine'}",1,C,C,B,0
+6253433310,how many people were in the pool,"{'A': 'eleven', 'B': 'three', 'C': 'two', 'D': 'four', 'E': 'nine'}",2,C,C,B,0
+6253433310,how many people were in the pool,"{'A': 'eleven', 'B': 'three', 'C': 'two', 'D': 'four', 'E': 'nine'}",4,B,B,B,1
+6253433310,how many people were in the pool,"{'A': 'eleven', 'B': 'three', 'C': 'two', 'D': 'four', 'E': 'nine'}",8,B,B,B,1
+6253433310,how many people were in the pool,"{'A': 'eleven', 'B': 'three', 'C': 'two', 'D': 'four', 'E': 'nine'}",16,The57777. The water. The a a a a a,A,B,0
+4825843801,how many penguins are there,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'four', 'E': 'two'}",1,D,D,B,0
+4825843801,how many penguins are there,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'four', 'E': 'two'}",2,B,B,B,1
+4825843801,how many penguins are there,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'four', 'E': 'two'}",4,D,D,B,0
+4825843801,how many penguins are there,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'four', 'E': 'two'}",8,D,D,B,0
+4825843801,how many penguins are there,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'four', 'E': 'two'}",16,,,B,0
+9293415110,how many people are on the stage,"{'A': 'two', 'B': 'nine', 'C': 'four', 'D': 'seven', 'E': 'three'}",1,D,D,C,0
+9293415110,how many people are on the stage,"{'A': 'two', 'B': 'nine', 'C': 'four', 'D': 'seven', 'E': 'three'}",2,D,D,C,0
+9293415110,how many people are on the stage,"{'A': 'two', 'B': 'nine', 'C': 'four', 'D': 'seven', 'E': 'three'}",4,E,E,C,0
+9293415110,how many people are on the stage,"{'A': 'two', 'B': 'nine', 'C': 'four', 'D': 'seven', 'E': 'three'}",8,E,E,C,0
+9293415110,how many people are on the stage,"{'A': 'two', 'B': 'nine', 'C': 'four', 'D': 'seven', 'E': 'three'}",16,206527276767666 and,A,C,0
+2482028659,how many people are in the video,"{'A': 'one', 'B': 'five', 'C': 'eight', 'D': 'four', 'E': 'three'}",1,A,A,D,0
+2482028659,how many people are in the video,"{'A': 'one', 'B': 'five', 'C': 'eight', 'D': 'four', 'E': 'three'}",2,A,A,D,0
+2482028659,how many people are in the video,"{'A': 'one', 'B': 'five', 'C': 'eight', 'D': 'four', 'E': 'three'}",4,A,A,D,0
+2482028659,how many people are in the video,"{'A': 'one', 'B': 'five', 'C': 'eight', 'D': 'four', 'E': 'three'}",8,A,A,D,0
+2482028659,how many people are in the video,"{'A': 'one', 'B': 'five', 'C': 'eight', 'D': 'four', 'E': 'three'}",16,21826 and the and a and a and a and a and,A,D,0
+3427674558,how many people can be seen dancing on the stage,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'nine', 'E': 'two'}",1,B,B,B,1
+3427674558,how many people can be seen dancing on the stage,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'nine', 'E': 'two'}",2,C,C,B,0
+3427674558,how many people can be seen dancing on the stage,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'nine', 'E': 'two'}",4,B,B,B,1
+3427674558,how many people can be seen dancing on the stage,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'nine', 'E': 'two'}",8,B,B,B,1
+3427674558,how many people can be seen dancing on the stage,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'nine', 'E': 'two'}",16,The concerts and The background. The backgrounds and a and thes and,A,B,0
+10779838974,how many girls are there,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'six', 'E': 'five'}",1,B,B,B,1
+10779838974,how many girls are there,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'six', 'E': 'five'}",2,B,B,B,1
+10779838974,how many girls are there,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'six', 'E': 'five'}",4,B,B,B,1
+10779838974,how many girls are there,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'six', 'E': 'five'}",8,B,B,B,1
+10779838974,how many girls are there,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'six', 'E': 'five'}",16,,,B,0
+3066064005,how many women in total that can be seen in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'seven', 'E': 'six'}",1,B,B,C,0
+3066064005,how many women in total that can be seen in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'seven', 'E': 'six'}",2,B,B,C,0
+3066064005,how many women in total that can be seen in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'seven', 'E': 'six'}",4,A,A,C,0
+3066064005,how many women in total that can be seen in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'seven', 'E': 'six'}",8,D,D,C,0
+3066064005,how many women in total that can be seen in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'seven', 'E': 'six'}",16,The in the and a and a a a a and The and a and The,A,C,0
+4103088549,how many people successfully got on the surfboard,"{'A': 'twelve', 'B': 'five', 'C': 'three', 'D': 'one', 'E': 'two'}",1,C,C,D,0
+4103088549,how many people successfully got on the surfboard,"{'A': 'twelve', 'B': 'five', 'C': 'three', 'D': 'one', 'E': 'two'}",2,D,D,D,1
+4103088549,how many people successfully got on the surfboard,"{'A': 'twelve', 'B': 'five', 'C': 'three', 'D': 'one', 'E': 'two'}",4,D,D,D,1
+4103088549,how many people successfully got on the surfboard,"{'A': 'twelve', 'B': 'five', 'C': 'three', 'D': 'one', 'E': 'two'}",8,D,D,D,1
+4103088549,how many people successfully got on the surfboard,"{'A': 'twelve', 'B': 'five', 'C': 'three', 'D': 'one', 'E': 'two'}",16,The ocean and a and a and a and a and a and a and a,A,D,0
+4333544549,how many men are there,"{'A': 'three', 'B': 'six', 'C': 'four', 'D': 'eight', 'E': 'two'}",1,E,E,E,1
+4333544549,how many men are there,"{'A': 'three', 'B': 'six', 'C': 'four', 'D': 'eight', 'E': 'two'}",2,E,E,E,1
+4333544549,how many men are there,"{'A': 'three', 'B': 'six', 'C': 'four', 'D': 'eight', 'E': 'two'}",4,E,E,E,1
+4333544549,how many men are there,"{'A': 'three', 'B': 'six', 'C': 'four', 'D': 'eight', 'E': 'two'}",8,E,E,E,1
+4333544549,how many men are there,"{'A': 'three', 'B': 'six', 'C': 'four', 'D': 'eight', 'E': 'two'}",16,52,,E,0
+4761953886,how many dogs are there,"{'A': 'three', 'B': 'two', 'C': 'one', 'D': 'six', 'E': 'four'}",1,C,C,C,1
+4761953886,how many dogs are there,"{'A': 'three', 'B': 'two', 'C': 'one', 'D': 'six', 'E': 'four'}",2,C,C,C,1
+4761953886,how many dogs are there,"{'A': 'three', 'B': 'two', 'C': 'one', 'D': 'six', 'E': 'four'}",4,C,C,C,1
+4761953886,how many dogs are there,"{'A': 'three', 'B': 'two', 'C': 'one', 'D': 'six', 'E': 'four'}",8,C,C,C,1
+4761953886,how many dogs are there,"{'A': 'three', 'B': 'two', 'C': 'one', 'D': 'six', 'E': 'four'}",16,,,C,0
+2735019707,how many drums in total are there for the people to play,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'three', 'E': 'eleven'}",1,D,D,C,0
+2735019707,how many drums in total are there for the people to play,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'three', 'E': 'eleven'}",2,D,D,C,0
+2735019707,how many drums in total are there for the people to play,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'three', 'E': 'eleven'}",4,D,D,C,0
+2735019707,how many drums in total are there for the people to play,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'three', 'E': 'eleven'}",8,D,D,C,0
+2735019707,how many drums in total are there for the people to play,"{'A': 'four', 'B': 'two', 'C': 'six', 'D': 'three', 'E': 'eleven'}",16,,,C,0
+3708066257,how many peopl are dancing,"{'A': 'one', 'B': 'three', 'C': 'four', 'D': 'five', 'E': 'two'}",1,E,E,E,1
+3708066257,how many peopl are dancing,"{'A': 'one', 'B': 'three', 'C': 'four', 'D': 'five', 'E': 'two'}",2,E,E,E,1
+3708066257,how many peopl are dancing,"{'A': 'one', 'B': 'three', 'C': 'four', 'D': 'five', 'E': 'two'}",4,E,E,E,1
+3708066257,how many peopl are dancing,"{'A': 'one', 'B': 'three', 'C': 'four', 'D': 'five', 'E': 'two'}",8,E,E,E,1
+3708066257,how many peopl are dancing,"{'A': 'one', 'B': 'three', 'C': 'four', 'D': 'five', 'E': 'two'}",16,,,E,0
+4983922034,how many dogs are there,"{'A': 'six', 'B': 'two', 'C': 'nine', 'D': 'one', 'E': 'three'}",1,E,E,E,1
+4983922034,how many dogs are there,"{'A': 'six', 'B': 'two', 'C': 'nine', 'D': 'one', 'E': 'three'}",2,B,B,E,0
+4983922034,how many dogs are there,"{'A': 'six', 'B': 'two', 'C': 'nine', 'D': 'one', 'E': 'three'}",4,E,E,E,1
+4983922034,how many dogs are there,"{'A': 'six', 'B': 'two', 'C': 'nine', 'D': 'one', 'E': 'three'}",8,E,E,E,1
+4983922034,how many dogs are there,"{'A': 'six', 'B': 'two', 'C': 'nine', 'D': 'one', 'E': 'three'}",16,The trees and The trees and 19 and a a a a a a,A,E,0
+2984974097,how many wheels does the girl s bike have,"{'A': 'five', 'B': 'six', 'C': 'seven', 'D': 'four', 'E': 'three'}",1,D,D,D,1
+2984974097,how many wheels does the girl s bike have,"{'A': 'five', 'B': 'six', 'C': 'seven', 'D': 'four', 'E': 'three'}",2,D,D,D,1
+2984974097,how many wheels does the girl s bike have,"{'A': 'five', 'B': 'six', 'C': 'seven', 'D': 'four', 'E': 'three'}",4,D,D,D,1
+2984974097,how many wheels does the girl s bike have,"{'A': 'five', 'B': 'six', 'C': 'seven', 'D': 'four', 'E': 'three'}",8,D,D,D,1
+2984974097,how many wheels does the girl s bike have,"{'A': 'five', 'B': 'six', 'C': 'seven', 'D': 'four', 'E': 'three'}",16,,,D,0
+6018490041,how many players are involved in the video,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'five', 'E': 'one'}",1,C,C,C,1
+6018490041,how many players are involved in the video,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'five', 'E': 'one'}",2,B,B,C,0
+6018490041,how many players are involved in the video,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'five', 'E': 'one'}",4,A,A,C,0
+6018490041,how many players are involved in the video,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'five', 'E': 'one'}",8,D,D,C,0
+6018490041,how many players are involved in the video,"{'A': 'three', 'B': 'two', 'C': 'four', 'D': 'five', 'E': 'one'}",16,The 19 and 19 and The 19 and The and,E,C,0
+2552130183,how many people are in the room,"{'A': 'three', 'B': 'one', 'C': 'eight', 'D': 'two', 'E': 'five'}",1,D,D,A,0
+2552130183,how many people are in the room,"{'A': 'three', 'B': 'one', 'C': 'eight', 'D': 'two', 'E': 'five'}",2,D,D,A,0
+2552130183,how many people are in the room,"{'A': 'three', 'B': 'one', 'C': 'eight', 'D': 'two', 'E': 'five'}",4,D,D,A,0
+2552130183,how many people are in the room,"{'A': 'three', 'B': 'one', 'C': 'eight', 'D': 'two', 'E': 'five'}",8,D,D,A,0
+2552130183,how many people are in the room,"{'A': 'three', 'B': 'one', 'C': 'eight', 'D': 'two', 'E': 'five'}",16,,,A,0
+3557498300,how many children are in the video,"{'A': 'one', 'B': 'five', 'C': 'three', 'D': 'seven', 'E': 'kitchen'}",1,C,C,C,1
+3557498300,how many children are in the video,"{'A': 'one', 'B': 'five', 'C': 'three', 'D': 'seven', 'E': 'kitchen'}",2,C,C,C,1
+3557498300,how many children are in the video,"{'A': 'one', 'B': 'five', 'C': 'three', 'D': 'seven', 'E': 'kitchen'}",4,C,C,C,1
+3557498300,how many children are in the video,"{'A': 'one', 'B': 'five', 'C': 'three', 'D': 'seven', 'E': 'kitchen'}",8,C,C,C,1
+3557498300,how many children are in the video,"{'A': 'one', 'B': 'five', 'C': 'three', 'D': 'seven', 'E': 'kitchen'}",16,The tree. The tree and The tree and 16 and a and a,A,C,0
+4984331176,how many groups passed the rope,"{'A': 'one', 'B': 'two', 'C': 'five', 'D': 'six', 'E': 'three'}",1,E,E,E,1
+4984331176,how many groups passed the rope,"{'A': 'one', 'B': 'two', 'C': 'five', 'D': 'six', 'E': 'three'}",2,B,B,E,0
+4984331176,how many groups passed the rope,"{'A': 'one', 'B': 'two', 'C': 'five', 'D': 'six', 'E': 'three'}",4,E,E,E,1
+4984331176,how many groups passed the rope,"{'A': 'one', 'B': 'two', 'C': 'five', 'D': 'six', 'E': 'three'}",8,B,B,E,0
+4984331176,how many groups passed the rope,"{'A': 'one', 'B': 'two', 'C': 'five', 'D': 'six', 'E': 'three'}",16,,,E,0
+7987845241,how many people were needed to hold the dog down during the injection,"{'A': 'six', 'B': 'three', 'C': 'four', 'D': 'one', 'E': 'two'}",1,B,B,E,0
+7987845241,how many people were needed to hold the dog down during the injection,"{'A': 'six', 'B': 'three', 'C': 'four', 'D': 'one', 'E': 'two'}",2,B,B,E,0
+7987845241,how many people were needed to hold the dog down during the injection,"{'A': 'six', 'B': 'three', 'C': 'four', 'D': 'one', 'E': 'two'}",4,B,B,E,0
+7987845241,how many people were needed to hold the dog down during the injection,"{'A': 'six', 'B': 'three', 'C': 'four', 'D': 'one', 'E': 'two'}",8,D,D,E,0
+7987845241,how many people were needed to hold the dog down during the injection,"{'A': 'six', 'B': 'three', 'C': 'four', 'D': 'one', 'E': 'two'}",16,The medical and the a the and the and a and a and the and the,A,E,0
+7059877301,how many dogs are there in the video,"{'A': 'one', 'B': 'four', 'C': 'three', 'D': 'six', 'E': 'five'}",1,A,A,C,0
+7059877301,how many dogs are there in the video,"{'A': 'one', 'B': 'four', 'C': 'three', 'D': 'six', 'E': 'five'}",2,A,A,C,0
+7059877301,how many dogs are there in the video,"{'A': 'one', 'B': 'four', 'C': 'three', 'D': 'six', 'E': 'five'}",4,A,A,C,0
+7059877301,how many dogs are there in the video,"{'A': 'one', 'B': 'four', 'C': 'three', 'D': 'six', 'E': 'five'}",8,A,A,C,0
+7059877301,how many dogs are there in the video,"{'A': 'one', 'B': 'four', 'C': 'three', 'D': 'six', 'E': 'five'}",16,,,C,0
+7364407194,how many babies are in the video,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'two', 'E': 'kitchen'}",1,D,D,D,1
+7364407194,how many babies are in the video,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'two', 'E': 'kitchen'}",2,D,D,D,1
+7364407194,how many babies are in the video,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'two', 'E': 'kitchen'}",4,D,D,D,1
+7364407194,how many babies are in the video,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'two', 'E': 'kitchen'}",8,D,D,D,1
+7364407194,how many babies are in the video,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'two', 'E': 'kitchen'}",16,,,D,0
+2810112808,how many people are there,"{'A': 'three', 'B': 'eleven', 'C': 'five', 'D': 'one', 'E': 'four'}",1,A,A,A,1
+2810112808,how many people are there,"{'A': 'three', 'B': 'eleven', 'C': 'five', 'D': 'one', 'E': 'four'}",2,A,A,A,1
+2810112808,how many people are there,"{'A': 'three', 'B': 'eleven', 'C': 'five', 'D': 'one', 'E': 'four'}",4,D,D,A,0
+2810112808,how many people are there,"{'A': 'three', 'B': 'eleven', 'C': 'five', 'D': 'one', 'E': 'four'}",8,A,A,A,1
+2810112808,how many people are there,"{'A': 'three', 'B': 'eleven', 'C': 'five', 'D': 'one', 'E': 'four'}",16,,,A,0
+4333544549,how many dogs are there,"{'A': 'one', 'B': 'nine', 'C': 'six', 'D': 'four', 'E': 'two'}",1,E,E,E,1
+4333544549,how many dogs are there,"{'A': 'one', 'B': 'nine', 'C': 'six', 'D': 'four', 'E': 'two'}",2,A,A,E,0
+4333544549,how many dogs are there,"{'A': 'one', 'B': 'nine', 'C': 'six', 'D': 'four', 'E': 'two'}",4,E,E,E,1
+4333544549,how many dogs are there,"{'A': 'one', 'B': 'nine', 'C': 'six', 'D': 'four', 'E': 'two'}",8,A,A,E,0
+4333544549,how many dogs are there,"{'A': 'one', 'B': 'nine', 'C': 'six', 'D': 'four', 'E': 'two'}",16,52,,E,0
+3383804222,how many pandas are involved in the video,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'two', 'E': 'four'}",1,D,D,D,1
+3383804222,how many pandas are involved in the video,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'two', 'E': 'four'}",2,D,D,D,1
+3383804222,how many pandas are involved in the video,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'two', 'E': 'four'}",4,C,C,D,0
+3383804222,how many pandas are involved in the video,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'two', 'E': 'four'}",8,D,D,D,1
+3383804222,how many pandas are involved in the video,"{'A': 'five', 'B': 'three', 'C': 'one', 'D': 'two', 'E': 'four'}",16,,,D,0
+2599937944,how many people were in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'two', 'E': 'nine'}",1,B,B,A,0
+2599937944,how many people were in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'two', 'E': 'nine'}",2,A,A,A,1
+2599937944,how many people were in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'two', 'E': 'nine'}",4,A,A,A,1
+2599937944,how many people were in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'two', 'E': 'nine'}",8,B,B,A,0
+2599937944,how many people were in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'two', 'E': 'nine'}",16,"The riveral, and a, and a, rock and a and a and",A,A,1
+8783897632,how many people are filmed,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'six', 'E': 'two'}",1,B,B,E,0
+8783897632,how many people are filmed,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'six', 'E': 'two'}",2,E,E,E,1
+8783897632,how many people are filmed,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'six', 'E': 'two'}",4,E,E,E,1
+8783897632,how many people are filmed,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'six', 'E': 'two'}",8,B,B,E,0
+8783897632,how many people are filmed,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'six', 'E': 'two'}",16,576572,,E,0
+10727696143,how many children are there,"{'A': 'nine', 'B': 'four', 'C': 'one', 'D': 'six', 'E': 'three'}",1,C,C,C,1
+10727696143,how many children are there,"{'A': 'nine', 'B': 'four', 'C': 'one', 'D': 'six', 'E': 'three'}",2,C,C,C,1
+10727696143,how many children are there,"{'A': 'nine', 'B': 'four', 'C': 'one', 'D': 'six', 'E': 'three'}",4,C,C,C,1
+10727696143,how many children are there,"{'A': 'nine', 'B': 'four', 'C': 'one', 'D': 'six', 'E': 'three'}",8,C,C,C,1
+10727696143,how many children are there,"{'A': 'nine', 'B': 'four', 'C': 'one', 'D': 'six', 'E': 'three'}",16,The wall and a the wall and The fire and a a a a and a,A,C,0
+2535384528,how many people are together on the field,"{'A': 'three', 'B': 'six', 'C': 'one', 'D': 'seven', 'E': 'eleven'}",1,C,C,A,0
+2535384528,how many people are together on the field,"{'A': 'three', 'B': 'six', 'C': 'one', 'D': 'seven', 'E': 'eleven'}",2,C,C,A,0
+2535384528,how many people are together on the field,"{'A': 'three', 'B': 'six', 'C': 'one', 'D': 'seven', 'E': 'eleven'}",4,C,C,A,0
+2535384528,how many people are together on the field,"{'A': 'three', 'B': 'six', 'C': 'one', 'D': 'seven', 'E': 'eleven'}",8,C,C,A,0
+2535384528,how many people are together on the field,"{'A': 'three', 'B': 'six', 'C': 'one', 'D': 'seven', 'E': 'eleven'}",16,,,A,0
+2833209794,how many bags is the man in black carrying,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'one', 'E': 'four'}",1,D,D,B,0
+2833209794,how many bags is the man in black carrying,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'one', 'E': 'four'}",2,D,D,B,0
+2833209794,how many bags is the man in black carrying,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'one', 'E': 'four'}",4,B,B,B,1
+2833209794,how many bags is the man in black carrying,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'one', 'E': 'four'}",8,B,B,B,1
+2833209794,how many bags is the man in black carrying,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'one', 'E': 'four'}",16,Thes and The a the a the a a a a a a a a,A,B,0
+6011836129,how many ladies are doing yoga,"{'A': 'nine', 'B': 'two', 'C': 'one', 'D': 'three', 'E': 'four'}",1,D,D,E,0
+6011836129,how many ladies are doing yoga,"{'A': 'nine', 'B': 'two', 'C': 'one', 'D': 'three', 'E': 'four'}",2,D,D,E,0
+6011836129,how many ladies are doing yoga,"{'A': 'nine', 'B': 'two', 'C': 'one', 'D': 'three', 'E': 'four'}",4,D,D,E,0
+6011836129,how many ladies are doing yoga,"{'A': 'nine', 'B': 'two', 'C': 'one', 'D': 'three', 'E': 'four'}",8,E,E,E,1
+6011836129,how many ladies are doing yoga,"{'A': 'nine', 'B': 'two', 'C': 'one', 'D': 'three', 'E': 'four'}",16,,,E,0
+4968805923,how many people are in the video,"{'A': 'three', 'B': 'eleven', 'C': 'seven', 'D': 'six', 'E': 'five'}",1,A,A,A,1
+4968805923,how many people are in the video,"{'A': 'three', 'B': 'eleven', 'C': 'seven', 'D': 'six', 'E': 'five'}",2,A,A,A,1
+4968805923,how many people are in the video,"{'A': 'three', 'B': 'eleven', 'C': 'seven', 'D': 'six', 'E': 'five'}",4,A,A,A,1
+4968805923,how many people are in the video,"{'A': 'three', 'B': 'eleven', 'C': 'seven', 'D': 'six', 'E': 'five'}",8,C,C,A,0
+4968805923,how many people are in the video,"{'A': 'three', 'B': 'eleven', 'C': 'seven', 'D': 'six', 'E': 'five'}",16,,,A,0
+9576671750,how many phones are shown in the video,"{'A': 'six', 'B': 'five', 'C': 'three', 'D': 'one', 'E': 'nine'}",1,D,D,D,1
+9576671750,how many phones are shown in the video,"{'A': 'six', 'B': 'five', 'C': 'three', 'D': 'one', 'E': 'nine'}",2,D,D,D,1
+9576671750,how many phones are shown in the video,"{'A': 'six', 'B': 'five', 'C': 'three', 'D': 'one', 'E': 'nine'}",4,D,D,D,1
+9576671750,how many phones are shown in the video,"{'A': 'six', 'B': 'five', 'C': 'three', 'D': 'one', 'E': 'nine'}",8,D,D,D,1
+9576671750,how many phones are shown in the video,"{'A': 'six', 'B': 'five', 'C': 'three', 'D': 'one', 'E': 'nine'}",16,1965725236666 and a a,A,D,0
+2731071928,how many children are in the video,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'two'}",1,A,A,A,1
+2731071928,how many children are in the video,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'two'}",2,A,A,A,1
+2731071928,how many children are in the video,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'two'}",4,A,A,A,1
+2731071928,how many children are in the video,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'two'}",8,A,A,A,1
+2731071928,how many children are in the video,"{'A': 'one', 'B': 'five', 'C': 'four', 'D': 'three', 'E': 'two'}",16,The guitarra and the guitar and a a a a a a a a a,A,A,1
+5940941487,how many people are performing,"{'A': 'five', 'B': 'four', 'C': 'eight', 'D': 'seven', 'E': 'eleven'}",1,B,B,A,0
+5940941487,how many people are performing,"{'A': 'five', 'B': 'four', 'C': 'eight', 'D': 'seven', 'E': 'eleven'}",2,B,B,A,0
+5940941487,how many people are performing,"{'A': 'five', 'B': 'four', 'C': 'eight', 'D': 'seven', 'E': 'eleven'}",4,B,B,A,0
+5940941487,how many people are performing,"{'A': 'five', 'B': 'four', 'C': 'eight', 'D': 'seven', 'E': 'eleven'}",8,B,B,A,0
+5940941487,how many people are performing,"{'A': 'five', 'B': 'four', 'C': 'eight', 'D': 'seven', 'E': 'eleven'}",16,,,A,0
+4138579400,how many times did he put stuffs in the cup before it dropped,"{'A': 'seven', 'B': 'three', 'C': 'two', 'D': 'one', 'E': 'five'}",1,D,D,E,0
+4138579400,how many times did he put stuffs in the cup before it dropped,"{'A': 'seven', 'B': 'three', 'C': 'two', 'D': 'one', 'E': 'five'}",2,D,D,E,0
+4138579400,how many times did he put stuffs in the cup before it dropped,"{'A': 'seven', 'B': 'three', 'C': 'two', 'D': 'one', 'E': 'five'}",4,D,D,E,0
+4138579400,how many times did he put stuffs in the cup before it dropped,"{'A': 'seven', 'B': 'three', 'C': 'two', 'D': 'one', 'E': 'five'}",8,D,D,E,0
+4138579400,how many times did he put stuffs in the cup before it dropped,"{'A': 'seven', 'B': 'three', 'C': 'two', 'D': 'one', 'E': 'five'}",16,s and  The 1 and 1 and a and a the kitchen.,A,E,0
+4249756405,how many people are there in the video,"{'A': 'eleven', 'B': 'two', 'C': 'six', 'D': 'five', 'E': 'thirteen'}",1,B,B,B,1
+4249756405,how many people are there in the video,"{'A': 'eleven', 'B': 'two', 'C': 'six', 'D': 'five', 'E': 'thirteen'}",2,B,B,B,1
+4249756405,how many people are there in the video,"{'A': 'eleven', 'B': 'two', 'C': 'six', 'D': 'five', 'E': 'thirteen'}",4,B,B,B,1
+4249756405,how many people are there in the video,"{'A': 'eleven', 'B': 'two', 'C': 'six', 'D': 'five', 'E': 'thirteen'}",8,B,B,B,1
+4249756405,how many people are there in the video,"{'A': 'eleven', 'B': 'two', 'C': 'six', 'D': 'five', 'E': 'thirteen'}",16,,,B,0
+9735768590,how many babies are in the video,"{'A': 'two', 'B': 'seven', 'C': 'four', 'D': 'one', 'E': 'three'}",1,D,D,D,1
+9735768590,how many babies are in the video,"{'A': 'two', 'B': 'seven', 'C': 'four', 'D': 'one', 'E': 'three'}",2,D,D,D,1
+9735768590,how many babies are in the video,"{'A': 'two', 'B': 'seven', 'C': 'four', 'D': 'one', 'E': 'three'}",4,D,D,D,1
+9735768590,how many babies are in the video,"{'A': 'two', 'B': 'seven', 'C': 'four', 'D': 'one', 'E': 'three'}",8,D,D,D,1
+9735768590,how many babies are in the video,"{'A': 'two', 'B': 'seven', 'C': 'four', 'D': 'one', 'E': 'three'}",16,The A and the a and the a a a a a a a a a,A,D,0
+4757890069,how many vehicles passed by,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'four'}",1,A,A,E,0
+4757890069,how many vehicles passed by,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'four'}",2,D,D,E,0
+4757890069,how many vehicles passed by,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'four'}",4,D,D,E,0
+4757890069,how many vehicles passed by,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'four'}",8,A,A,E,0
+4757890069,how many vehicles passed by,"{'A': 'one', 'B': 'six', 'C': 'three', 'D': 'two', 'E': 'four'}",16,,,E,0
+4419096437,how many times does the person signal for the cat to close its eyes,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",1,D,D,A,0
+4419096437,how many times does the person signal for the cat to close its eyes,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",2,D,D,A,0
+4419096437,how many times does the person signal for the cat to close its eyes,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",4,D,D,A,0
+4419096437,how many times does the person signal for the cat to close its eyes,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",8,D,D,A,0
+4419096437,how many times does the person signal for the cat to close its eyes,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",16,The black,E,A,0
+3060478605,how many people were riding the horse,"{'A': 'one', 'B': 'two', 'C': 'six', 'D': 'five', 'E': 'three'}",1,A,A,A,1
+3060478605,how many people were riding the horse,"{'A': 'one', 'B': 'two', 'C': 'six', 'D': 'five', 'E': 'three'}",2,A,A,A,1
+3060478605,how many people were riding the horse,"{'A': 'one', 'B': 'two', 'C': 'six', 'D': 'five', 'E': 'three'}",4,A,A,A,1
+3060478605,how many people were riding the horse,"{'A': 'one', 'B': 'two', 'C': 'six', 'D': 'five', 'E': 'three'}",8,A,A,A,1
+3060478605,how many people were riding the horse,"{'A': 'one', 'B': 'two', 'C': 'six', 'D': 'five', 'E': 'three'}",16,The horse and a and a and a tree and a a a a and a,A,A,1
+10607095936,how many people are involved in the video,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'one', 'E': 'four'}",1,A,A,A,1
+10607095936,how many people are involved in the video,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'one', 'E': 'four'}",2,C,C,A,0
+10607095936,how many people are involved in the video,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'one', 'E': 'four'}",4,C,C,A,0
+10607095936,how many people are involved in the video,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'one', 'E': 'four'}",8,E,E,A,0
+10607095936,how many people are involved in the video,"{'A': 'five', 'B': 'two', 'C': 'three', 'D': 'one', 'E': 'four'}",16,2,,A,0
+14012319794,how many children are in the video,"{'A': 'three', 'B': 'six', 'C': 'seven', 'D': 'kitchen', 'E': 'one'}",1,E,E,E,1
+14012319794,how many children are in the video,"{'A': 'three', 'B': 'six', 'C': 'seven', 'D': 'kitchen', 'E': 'one'}",2,E,E,E,1
+14012319794,how many children are in the video,"{'A': 'three', 'B': 'six', 'C': 'seven', 'D': 'kitchen', 'E': 'one'}",4,E,E,E,1
+14012319794,how many children are in the video,"{'A': 'three', 'B': 'six', 'C': 'seven', 'D': 'kitchen', 'E': 'one'}",8,E,E,E,1
+14012319794,how many children are in the video,"{'A': 'three', 'B': 'six', 'C': 'seven', 'D': 'kitchen', 'E': 'one'}",16,The book.,E,E,1
+3869005094,how many people are in the video,"{'A': 'eleven', 'B': 'four', 'C': 'nine', 'D': 'seven', 'E': 'two'}",1,D,D,B,0
+3869005094,how many people are in the video,"{'A': 'eleven', 'B': 'four', 'C': 'nine', 'D': 'seven', 'E': 'two'}",2,D,D,B,0
+3869005094,how many people are in the video,"{'A': 'eleven', 'B': 'four', 'C': 'nine', 'D': 'seven', 'E': 'two'}",4,B,B,B,1
+3869005094,how many people are in the video,"{'A': 'eleven', 'B': 'four', 'C': 'nine', 'D': 'seven', 'E': 'two'}",8,D,D,B,0
+3869005094,how many people are in the video,"{'A': 'eleven', 'B': 'four', 'C': 'nine', 'D': 'seven', 'E': 'two'}",16,The building a the building.,A,B,0
+8318310610,how many girls are involved in the video,"{'A': 'seven', 'B': 'five', 'C': 'one', 'D': 'three', 'E': 'two'}",1,A,A,B,0
+8318310610,how many girls are involved in the video,"{'A': 'seven', 'B': 'five', 'C': 'one', 'D': 'three', 'E': 'two'}",2,B,B,B,1
+8318310610,how many girls are involved in the video,"{'A': 'seven', 'B': 'five', 'C': 'one', 'D': 'three', 'E': 'two'}",4,D,D,B,0
+8318310610,how many girls are involved in the video,"{'A': 'seven', 'B': 'five', 'C': 'one', 'D': 'three', 'E': 'two'}",8,B,B,B,1
+8318310610,how many girls are involved in the video,"{'A': 'seven', 'B': 'five', 'C': 'one', 'D': 'three', 'E': 'two'}",16,The 2 and The building and a and a a a a a a and,A,B,0
+3902997424,how many people were watching the man playing keyboard,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'five', 'E': 'two'}",1,B,B,E,0
+3902997424,how many people were watching the man playing keyboard,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'five', 'E': 'two'}",2,E,E,E,1
+3902997424,how many people were watching the man playing keyboard,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'five', 'E': 'two'}",4,E,E,E,1
+3902997424,how many people were watching the man playing keyboard,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'five', 'E': 'two'}",8,E,E,E,1
+3902997424,how many people were watching the man playing keyboard,"{'A': 'four', 'B': 'one', 'C': 'three', 'D': 'five', 'E': 'two'}",16,,,E,0
+4935987905,how many dogs are there in the video,"{'A': 'one', 'B': 'five', 'C': 'two', 'D': 'three', 'E': 'six'}",1,C,C,D,0
+4935987905,how many dogs are there in the video,"{'A': 'one', 'B': 'five', 'C': 'two', 'D': 'three', 'E': 'six'}",2,C,C,D,0
+4935987905,how many dogs are there in the video,"{'A': 'one', 'B': 'five', 'C': 'two', 'D': 'three', 'E': 'six'}",4,C,C,D,0
+4935987905,how many dogs are there in the video,"{'A': 'one', 'B': 'five', 'C': 'two', 'D': 'three', 'E': 'six'}",8,C,C,D,0
+4935987905,how many dogs are there in the video,"{'A': 'one', 'B': 'five', 'C': 'two', 'D': 'three', 'E': 'six'}",16,206.27. 257 and a a a a,A,D,0
+3897746373,how many people are standing on the white stage at the end,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'three', 'E': 'two'}",1,D,D,B,0
+3897746373,how many people are standing on the white stage at the end,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'three', 'E': 'two'}",2,D,D,B,0
+3897746373,how many people are standing on the white stage at the end,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'three', 'E': 'two'}",4,D,D,B,0
+3897746373,how many people are standing on the white stage at the end,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'three', 'E': 'two'}",8,D,D,B,0
+3897746373,how many people are standing on the white stage at the end,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'three', 'E': 'two'}",16,The watered and a and a and a and a and and and a and,A,B,0
+4882821564,how many children are in the video,"{'A': 'six', 'B': 'one', 'C': 'kitchen', 'D': 'two', 'E': 'four'}",1,B,B,B,1
+4882821564,how many children are in the video,"{'A': 'six', 'B': 'one', 'C': 'kitchen', 'D': 'two', 'E': 'four'}",2,B,B,B,1
+4882821564,how many children are in the video,"{'A': 'six', 'B': 'one', 'C': 'kitchen', 'D': 'two', 'E': 'four'}",4,B,B,B,1
+4882821564,how many children are in the video,"{'A': 'six', 'B': 'one', 'C': 'kitchen', 'D': 'two', 'E': 'four'}",8,B,B,B,1
+4882821564,how many children are in the video,"{'A': 'six', 'B': 'one', 'C': 'kitchen', 'D': 'two', 'E': 'four'}",16,The room and the and the and the a the a the a the a and,A,B,0
+7508439506,how many people are there in the video,"{'A': 'two', 'B': 'three', 'C': 'four', 'D': 'eleven', 'E': 'six'}",1,A,A,B,0
+7508439506,how many people are there in the video,"{'A': 'two', 'B': 'three', 'C': 'four', 'D': 'eleven', 'E': 'six'}",2,A,A,B,0
+7508439506,how many people are there in the video,"{'A': 'two', 'B': 'three', 'C': 'four', 'D': 'eleven', 'E': 'six'}",4,A,A,B,0
+7508439506,how many people are there in the video,"{'A': 'two', 'B': 'three', 'C': 'four', 'D': 'eleven', 'E': 'six'}",8,A,A,B,0
+7508439506,how many people are there in the video,"{'A': 'two', 'B': 'three', 'C': 'four', 'D': 'eleven', 'E': 'six'}",16,The green and the and the a a a a a a a a and a,A,B,0
+5308503740,how many rabbits are there in the video,"{'A': 'three', 'B': 'six', 'C': 'five', 'D': 'four', 'E': 'two'}",1,E,E,E,1
+5308503740,how many rabbits are there in the video,"{'A': 'three', 'B': 'six', 'C': 'five', 'D': 'four', 'E': 'two'}",2,E,E,E,1
+5308503740,how many rabbits are there in the video,"{'A': 'three', 'B': 'six', 'C': 'five', 'D': 'four', 'E': 'two'}",4,E,E,E,1
+5308503740,how many rabbits are there in the video,"{'A': 'three', 'B': 'six', 'C': 'five', 'D': 'four', 'E': 'two'}",8,E,E,E,1
+5308503740,how many rabbits are there in the video,"{'A': 'three', 'B': 'six', 'C': 'five', 'D': 'four', 'E': 'two'}",16,The grass and a and a and a and a and a and a and a,A,E,0
+11584566583,how many people are speaking on the microphone,"{'A': 'one', 'B': 'five', 'C': 'nine', 'D': 'six', 'E': 'three'}",1,A,A,A,1
+11584566583,how many people are speaking on the microphone,"{'A': 'one', 'B': 'five', 'C': 'nine', 'D': 'six', 'E': 'three'}",2,A,A,A,1
+11584566583,how many people are speaking on the microphone,"{'A': 'one', 'B': 'five', 'C': 'nine', 'D': 'six', 'E': 'three'}",4,A,A,A,1
+11584566583,how many people are speaking on the microphone,"{'A': 'one', 'B': 'five', 'C': 'nine', 'D': 'six', 'E': 'three'}",8,A,A,A,1
+11584566583,how many people are speaking on the microphone,"{'A': 'one', 'B': 'five', 'C': 'nine', 'D': 'six', 'E': 'three'}",16,196,,A,0
+5467727317,how many elephants are there,"{'A': 'one', 'B': 'four', 'C': 'three', 'D': 'six', 'E': 'two'}",1,E,E,E,1
+5467727317,how many elephants are there,"{'A': 'one', 'B': 'four', 'C': 'three', 'D': 'six', 'E': 'two'}",2,E,E,E,1
+5467727317,how many elephants are there,"{'A': 'one', 'B': 'four', 'C': 'three', 'D': 'six', 'E': 'two'}",4,E,E,E,1
+5467727317,how many elephants are there,"{'A': 'one', 'B': 'four', 'C': 'three', 'D': 'six', 'E': 'two'}",8,E,E,E,1
+5467727317,how many elephants are there,"{'A': 'one', 'B': 'four', 'C': 'three', 'D': 'six', 'E': 'two'}",16,2,,E,0
+2697214342,how many guys can be seen working in the video,"{'A': 'one', 'B': 'four', 'C': 'two', 'D': 'five', 'E': 'six'}",1,C,C,B,0
+2697214342,how many guys can be seen working in the video,"{'A': 'one', 'B': 'four', 'C': 'two', 'D': 'five', 'E': 'six'}",2,C,C,B,0
+2697214342,how many guys can be seen working in the video,"{'A': 'one', 'B': 'four', 'C': 'two', 'D': 'five', 'E': 'six'}",4,C,C,B,0
+2697214342,how many guys can be seen working in the video,"{'A': 'one', 'B': 'four', 'C': 'two', 'D': 'five', 'E': 'six'}",8,B,B,B,1
+2697214342,how many guys can be seen working in the video,"{'A': 'one', 'B': 'four', 'C': 'two', 'D': 'five', 'E': 'six'}",16,The building.,E,B,0
+2871995580,how many children are in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'two', 'E': 'seven'}",1,B,B,B,1
+2871995580,how many children are in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'two', 'E': 'seven'}",2,B,B,B,1
+2871995580,how many children are in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'two', 'E': 'seven'}",4,B,B,B,1
+2871995580,how many children are in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'two', 'E': 'seven'}",8,B,B,B,1
+2871995580,how many children are in the video,"{'A': 'four', 'B': 'one', 'C': 'five', 'D': 'two', 'E': 'seven'}",16,The 19 and The 16 and The 2 and The and,E,B,0
+7331927796,how many dogs are there in the video,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",1,D,D,E,0
+7331927796,how many dogs are there in the video,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",2,B,B,E,0
+7331927796,how many dogs are there in the video,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",4,B,B,E,0
+7331927796,how many dogs are there in the video,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",8,B,B,E,0
+7331927796,how many dogs are there in the video,"{'A': 'five', 'B': 'two', 'C': 'four', 'D': 'one', 'E': 'three'}",16,,,E,0
+5919180502,how many people are sitting at the ledge of the swimming pool,"{'A': 'six', 'B': 'four', 'C': 'two', 'D': 'eight', 'E': 'seven'}",1,C,C,C,1
+5919180502,how many people are sitting at the ledge of the swimming pool,"{'A': 'six', 'B': 'four', 'C': 'two', 'D': 'eight', 'E': 'seven'}",2,C,C,C,1
+5919180502,how many people are sitting at the ledge of the swimming pool,"{'A': 'six', 'B': 'four', 'C': 'two', 'D': 'eight', 'E': 'seven'}",4,C,C,C,1
+5919180502,how many people are sitting at the ledge of the swimming pool,"{'A': 'six', 'B': 'four', 'C': 'two', 'D': 'eight', 'E': 'seven'}",8,C,C,C,1
+5919180502,how many people are sitting at the ledge of the swimming pool,"{'A': 'six', 'B': 'four', 'C': 'two', 'D': 'eight', 'E': 'seven'}",16,The sky and a and a and a and a and a and a and a,A,C,0
+2510696559,how many people are cycling in the video,"{'A': 'eleven', 'B': 'eight', 'C': 'one', 'D': 'six', 'E': 'five'}",1,C,C,C,1
+2510696559,how many people are cycling in the video,"{'A': 'eleven', 'B': 'eight', 'C': 'one', 'D': 'six', 'E': 'five'}",2,C,C,C,1
+2510696559,how many people are cycling in the video,"{'A': 'eleven', 'B': 'eight', 'C': 'one', 'D': 'six', 'E': 'five'}",4,C,C,C,1
+2510696559,how many people are cycling in the video,"{'A': 'eleven', 'B': 'eight', 'C': 'one', 'D': 'six', 'E': 'five'}",8,C,C,C,1
+2510696559,how many people are cycling in the video,"{'A': 'eleven', 'B': 'eight', 'C': 'one', 'D': 'six', 'E': 'five'}",16,,,C,0
+5498331490,how many cats are there,"{'A': 'two', 'B': 'four', 'C': 'three', 'D': 'five', 'E': 'one'}",1,E,E,E,1
+5498331490,how many cats are there,"{'A': 'two', 'B': 'four', 'C': 'three', 'D': 'five', 'E': 'one'}",2,E,E,E,1
+5498331490,how many cats are there,"{'A': 'two', 'B': 'four', 'C': 'three', 'D': 'five', 'E': 'one'}",4,E,E,E,1
+5498331490,how many cats are there,"{'A': 'two', 'B': 'four', 'C': 'three', 'D': 'five', 'E': 'one'}",8,E,E,E,1
+5498331490,how many cats are there,"{'A': 'two', 'B': 'four', 'C': 'three', 'D': 'five', 'E': 'one'}",16,,,E,0
+11670386946,how many people are mainly involved in the video,"{'A': 'eight', 'B': 'four', 'C': 'one', 'D': 'six', 'E': 'three'}",1,C,C,C,1
+11670386946,how many people are mainly involved in the video,"{'A': 'eight', 'B': 'four', 'C': 'one', 'D': 'six', 'E': 'three'}",2,C,C,C,1
+11670386946,how many people are mainly involved in the video,"{'A': 'eight', 'B': 'four', 'C': 'one', 'D': 'six', 'E': 'three'}",4,C,C,C,1
+11670386946,how many people are mainly involved in the video,"{'A': 'eight', 'B': 'four', 'C': 'one', 'D': 'six', 'E': 'three'}",8,C,C,C,1
+11670386946,how many people are mainly involved in the video,"{'A': 'eight', 'B': 'four', 'C': 'one', 'D': 'six', 'E': 'three'}",16,2572725. The black and a and a and a,A,C,0
+3112351937,how many people are there,"{'A': 'seven', 'B': 'three', 'C': 'four', 'D': 'eleven', 'E': 'two'}",1,E,E,E,1
+3112351937,how many people are there,"{'A': 'seven', 'B': 'three', 'C': 'four', 'D': 'eleven', 'E': 'two'}",2,E,E,E,1
+3112351937,how many people are there,"{'A': 'seven', 'B': 'three', 'C': 'four', 'D': 'eleven', 'E': 'two'}",4,E,E,E,1
+3112351937,how many people are there,"{'A': 'seven', 'B': 'three', 'C': 'four', 'D': 'eleven', 'E': 'two'}",8,E,E,E,1
+3112351937,how many people are there,"{'A': 'seven', 'B': 'three', 'C': 'four', 'D': 'eleven', 'E': 'two'}",16,The 18. Thes and the 20.,E,E,1
+4483447009,how many ducks are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'one', 'E': 'two'}",1,D,D,E,0
+4483447009,how many ducks are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'one', 'E': 'two'}",2,E,E,E,1
+4483447009,how many ducks are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'one', 'E': 'two'}",4,E,E,E,1
+4483447009,how many ducks are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'one', 'E': 'two'}",8,E,E,E,1
+4483447009,how many ducks are involved in the video,"{'A': 'five', 'B': 'six', 'C': 'four', 'D': 'one', 'E': 'two'}",16,The bird in the The bird and a a a a a and a a a,A,E,0
