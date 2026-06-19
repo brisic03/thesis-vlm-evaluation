@@ -378,11 +378,38 @@ counting.
 **Gate:** if symbolic repair approaches composite, the finding is "a trivial
 detector-free fix recovers most of the loss."
 
+**RESULTS (2026-06-19)** — full plain-language write-up in `docs/STEP4_RESULTS.md`.
+Script: `scripts/step4/step4_symbolic_repair.py` (CSV-only, reuses Step 1 text;
+multi-regex number extractor, validated 100% agreement vs naive parser on all
+2832 frames).
+
+Accuracy on the 177 counting questions (%):
+
+| method | TinyLLaVA | MobileVLM |
+|---|---:|---:|
+| per-frame vote (baseline) | 57.1 | 57.1 |
+| composite @ 8 frames | 53.1 | 53.7 |
+| repair: mode | 53.1 | 57.1 |
+| repair: median | 53.1 | 56.5 |
+| **repair: max** | **59.3** | **58.2** |
+| oracle: best single frame (ceiling) | 69.5 | 75.1 |
+
+**Outcome:** the MAX rule beats both the vote (+2.2 / +1.1) and composite — a
+small, free, detector-free gain, consistent with "models miss objects, rarely
+invent them, so the fullest frame is best." Mode/median do not help. The real
+story is the **oracle gap**: the right answer is present in the model's own words
+~70–75% of the time, but simple aggregation only captures a sliver — the
+bottleneck is now picking/trusting the right frame, not raw counting ability. The
++1–2 pt repair gains are likely within noise (Step 5 will test); the oracle gap
+is the robust finding.
+
 **Checklist** *(skip entire step if Step 1 recoverable < 15%)*
-- [ ] Aggregate per-frame stated numbers via mode / median / max.
-- [ ] Map aggregated count → nearest answer option.
-- [ ] Table: vote vs symbolic-repair (×3 rules) vs composite, NExT-QA counting.
-- [ ] State whether repair approaches composite.
+- [x] Aggregate per-frame stated numbers via mode / median / max.
+- [x] Map aggregated count → nearest answer option.
+- [x] Table: vote vs symbolic-repair (×3 rules) vs composite, NExT-QA counting.
+- [x] State whether repair approaches composite (it exceeds it via MAX; both
+      below the oracle ceiling).
+- [x] Robust multi-strategy number extraction (validated vs naive parser).
 
 ---
 

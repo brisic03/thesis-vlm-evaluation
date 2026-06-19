@@ -1,0 +1,178 @@
+videoID,question,answer_letter,frame_numbers,mode_pred,mode_correct,median_pred,median_correct,max_pred,max_correct,oracle_anyframe_correct
+8547321641,how many babies are in the video,E,"[1, 1, 1, 1, 1, 1, 1, 1]",E,1,E,1,E,1,1
+4942054721,how many goats can be spotted,A,"[1, 4, 5, 3, 3, 3, 4, 3]",D,0,D,0,E,0,0
+9213637099,how many people are involved,C,"[3, 4, 3, 4, 5, 5, 5, 4]",C,1,C,1,C,1,1
+3206694342,how many people are on stage,B,"[4, 6, 6, 5, 5, 5, 5, 5]",D,0,D,0,B,1,1
+4798585428,how many people are posing for the photos,B,"[5, 5, 5, 4, 5, 5, 4, 4]",B,1,B,1,B,1,1
+4984417707,how many elephants were playing with the ball,C,"[2, 2, 3, 2, 2, 2, 3, 2]",C,1,C,1,A,0,1
+5237219621,how many people are there,C,"[1, 2, 2, 1, 1, 3, 2, 1]",B,0,B,0,B,0,0
+2834146886,how many dogs are there,C,"[1, 0, 1, 1, 1, 2, 1, 1]",B,0,B,0,C,1,1
+8563398032,how many people are presenting,E,"[2, 2, 2, 2, 2, 2, 2, 3]",E,1,E,1,D,0,1
+2679328607,how many times does the girl pass the toy to the boy,E,"[1, 1, 1, 1, 1, 1, 1, 1]",B,0,B,0,B,0,0
+5801184682,how many cats are there,D,"[1, 2, 0, 1, 1, 1, 1, 1]",D,1,D,1,C,0,1
+2978295992,how many ladies are filmed,B,"[2, 2, 1, 2, 2, 2, 2, 2]",B,1,B,1,B,1,1
+3388598772,how many people are mainly involved in the video,D,"[3, 3, 3, 3, 2, 3, 3, 3]",C,0,C,0,C,0,1
+4036955771,how many performers are there,B,"[8, 8, 8, 8, 8, 6, 8, 10]",D,0,D,0,C,0,0
+6265968082,how many people are performing on stage,A,"[4, 3, 1, 2, 3, 1, 3, 2]",D,0,D,0,A,1,1
+11541421563,how many people are involved in reading the score,E,"[4, 4, 4, 3, 4, 4, 4, 4]",B,0,B,0,B,0,1
+2573424030,how many people in total are there in the video,E,"[5, 12, 2, 3, 2, 2, 2, 1]",C,0,C,0,E,1,1
+5017166671,how many pople are on stage,E,"[4, 4, 4, 4, 5, 4, 4, 4]",E,1,E,1,E,1,1
+4516967897,how many ladies are there,B,"[2, 2, 2, 2, 2, 2, 2, 2]",B,1,B,1,B,1,1
+8225502382,how many times does the man in dark green attempt to go up the slope,C,"[1, 1, 1, 1]",A,0,A,0,A,0,0
+5658916668,how many people were filmed sliding down,B,"[3, 4, 5, 5, 1, 1, 1, 1]",B,1,D,0,A,0,1
+4444192938,how many kids are there at the area,E,"[3, 3, 3, 2, 2, 2, 1, 1]",D,0,D,0,E,1,1
+9409566840,how many dogs are playng biting with each other in the video,B,"[2, 2, 2, 2, 2, 2, 2, 2]",B,1,B,1,B,1,1
+12392885583,how many babies are in the video,B,"[1, 1, 2, 1, 1, 1, 2, 1]",B,1,B,1,D,0,1
+5235909148,how many people are in the video,D,"[2, 0, 1, 1, 2, 2, 2, 3]",C,0,C,0,A,0,0
+9208803675,how many people are on the swing in the video,D,"[3, 5, 3, 3, 5, 3, 4, 4]",D,1,D,1,A,0,1
+4636208292,how many people are cheering their glasses at the end,C,"[1, 1, 1, 1, 1, 1, 1, 1]",E,0,E,0,E,0,0
+7887764754,how many people are involved in the video,D,"[2, 2, 2, 2, 2, 1, 2, 2]",E,0,E,0,E,0,1
+8253302563,how many people are involved in the video,D,"[1, 1, 1, 1, 1, 1, 1, 1]",D,1,D,1,D,1,1
+2589540862,how many children are there,D,"[1, 1, 1, 1, 1, 1, 1, 1]",D,1,D,1,D,1,1
+6046149003,how many girls are there,B,"[2, 1, 1, 2, 2, 2, 2, 2]",B,1,B,1,B,1,1
+3626788516,how many people are in the video,C,"[3, 3, 2, 3, 4, 5, 5, 2]",C,1,C,1,A,0,1
+8552680285,how many people are there,A,"[2, 2, 1, 1, 1, 2, 2, 2]",A,1,A,1,A,1,1
+2835125654,how many elephants are there,C,"[3, 2, 2, 2, 3, 2, 2, 2]",C,1,C,1,E,0,1
+2705374471,how many people are there in the room,D,"[2, 2, 2, 2, 2, 2, 1, 2]",D,1,D,1,D,1,1
+11584566583,how many people can be seen in the video,B,"[1, 1, 1, 1, 2, 2, 2, 2]",B,1,B,1,B,1,1
+3469864014,how many cats were there,B,"[1, 1, 1, 1, 1, 1, 1, 1]",D,0,D,0,D,0,0
+6754608321,how many people are shown in the video,B,"[2, 2, 2, 2, 2, 2, 2, 2]",B,1,B,1,B,1,1
+6097994550,how many men were there,B,"[1, 2, 2, 2, 2, 2, 3, 1]",B,1,B,1,D,0,1
+4264435046,how many dogs are there,B,"[1, 1, 1, 1, 1, 2, 1, 2]",A,0,A,0,B,1,1
+4092992100,how many people are filmed,C,"[2, 2, 2, 2, 2, 1, 1, 2]",C,1,C,1,C,1,1
+8531675050,how many people are acting on the stage,A,"[2, 2, 2, 2, 2, 2, 1, 2]",A,1,A,1,A,1,1
+10109097475,how many planes are involved in the video,D,"[2, 3, 2, 2, 2, 2, 2, 2]",D,1,D,1,C,0,1
+6277800530,how many people were on the jeep,C,"[1, 1, 1, 1, 1, 1, 1, 1]",C,1,C,1,C,1,1
+8505893258,how many people were in the video,C,"[5, 3, 4, 3, 3, 3, 3, 5]",E,0,E,0,D,0,0
+4465235803,how many people are involved in the video,C,"[0, 2, 2, 2, 2, 2, 2, 2]",D,0,D,0,D,0,0
+5429688959,how many people are playing instruments,C,"[3, 1, 1, 3, 1, 1, 1, 2]",C,1,C,1,E,0,1
+8513603944,how many children are there,B,"[2, 3, 2, 2, 2, 1, 1, 1]",B,1,B,1,E,0,1
+2809330695,how many times does the baby attempt to flip over,E,"[1, 1, 1, 1, 0, 0, 0, 1]",B,0,B,0,B,0,0
+4276006683,how many people are involved in the video,D,"[1, 1, 2, 1, 2, 1, 2, 1]",D,1,D,1,A,0,1
+6096998186,how many items was the woman in blonde hair holding at the end,D,"[1, 2, 2, 2, 2, 3, 3, 1]",D,1,D,1,B,0,1
+5521781780,how many people were under the umbrella,E,"[0, 0, 1, 0, 1, 1, 0, 2]",D,0,D,0,E,1,1
+3158022797,how many people were playing together,B,"[3, 2, 4, 4, 4, 4, 4, 4]",B,1,B,1,B,1,1
+5256928210,how many dogs are there,C,"[2, 1, 1, 1, 1, 1, 1, 1]",C,1,C,1,A,0,1
+2435633172,how many people are there,E,"[0, 0, 0, 0, 0, 0, 4, 3]",A,0,A,0,C,0,1
+3846475848,how many people are involved in the video,E,"[2, 1, 2, 1, 2, 2, 2, 2]",D,0,D,0,D,0,1
+6356067859,how many children are involved in the video,B,"[3, 3, 4, 3, 2, 3, 2, 2]",B,1,B,1,B,1,1
+5421648216,how many sheeps are involved in the video,C,"[2, 3, 2, 1, 2, 2, 1, 2]",E,0,E,0,C,1,1
+3851913128,how many people are involved in the video,B,"[4, 4, 4, 4, 4, 3, 4, 4]",C,0,C,0,C,0,0
+7786283208,how many children are there in total,B,"[3, 3, 2, 2, 2, 3, 3, 3]",B,1,B,1,B,1,1
+6142416815,how many children are in the video,A,"[1, 1, 1, 1, 1, 1, 1, 1]",A,1,A,1,A,1,1
+3063380173,how many kittens are in the video,C,"[2, 1, 2, 1, 1, 1, 1, 1]",A,0,A,0,C,1,1
+9873067604,how many people were singing,B,"[3, 3, 2, 3, 3, 3, 2, 3]",B,1,B,1,B,1,1
+4087654898,how many children are there,A,"[2, 2, 2, 2, 2, 2, 2, 2]",A,1,A,1,A,1,1
+2461993294,how many audiences are there,A,"[5, 5, 3, 4, 5, 3, 4, 4]",A,1,A,1,E,0,1
+3303565503,how many people are posing in this shoot,D,"[2, 2, 3, 3, 2, 3, 2, 2]",D,1,D,1,E,0,1
+5702201498,how many people are present in the video,E,"[1, 1, 1, 1, 1, 1, 1, 1]",E,1,E,1,E,1,1
+8493226484,how many people are involved in the video,C,"[2, 2, 2, 2, 2, 2, 2, 2]",C,1,C,1,C,1,1
+3555755537,how many people are in the video,B,"[2, 2, 2, 2, 2, 2, 1, 1]",B,1,B,1,B,1,1
+3861485381,how many animals are in the video,E,"[3, 1, 2, 1, 1, 2, 3, 3]",B,0,A,0,C,0,0
+3355698421,how many people are there together,D,"[3, 2, 2, 2, 1, 1, 2, 1]",D,1,D,1,D,1,1
+7651639778,how many people are present,C,"[2, 3, 3, 2, 2, 3, 3, 3]",A,0,A,0,A,0,0
+9917882506,how many children are cycling,D,"[2, 1, 2, 2, 2, 2, 2, 1]",D,1,D,1,D,1,1
+5840177726,how many people were cycling,D,"[1, 1, 1, 1, 1, 2, 3, 3]",D,1,D,1,D,1,1
+2697261300,how many dogs are filmed,D,"[0, 0, 0, 0, 0, 0, 1, 0]",A,0,A,0,A,0,0
+3581585756,how many adults are on the bus,A,"[2, 1, 1, 1, 1, 1, 1, 2]",A,1,A,1,E,0,1
+8457210773,how many dogs are in the video,C,"[2, 2, 2, 2, 2, 2, 2, 2]",C,1,C,1,C,1,1
+3972259774,how many people are filmed by the camera,B,"[1, 3, 4, 3, 4, 4, 4, 4]",B,1,B,1,B,1,1
+3105728894,how many people are practising their tricks in the video,A,"[3, 2, 1, 3, 5, 3, 3, 2]",B,0,B,0,C,0,0
+8403741210,how many people are involved in the video,D,"[3, 3, 3, 2, 3, 2, 3, 2]",D,1,D,1,D,1,1
+4189100053,how many people are involved in the video,B,"[2, 2, 2, 2, 2, 2, 2, 2]",B,1,B,1,B,1,1
+7453733046,how many people are playing in the water playground,E,"[3, 2, 2, 2, 3, 2, 0, 0]",E,1,E,1,E,1,1
+2679130168,how many times did the girl try to stuff her face into the cushion in the beginning of the video,D,"[1, 1, 1, 1, 1, 1, 1, 1]",B,0,B,0,B,0,0
+6143391925,how many babies are there,A,"[1, 1, 1, 1, 1, 1, 1, 1]",A,1,A,1,A,1,1
+5145526755,how many people are involved in the video,E,"[2, 2, 2, 2, 2, 2, 2]",E,1,E,1,E,1,1
+3441428429,how many skaters are performing on the ice,E,"[2, 2, 2, 2, 2, 2, 2, 2]",E,1,E,1,E,1,1
+2925298951,how many women are posing for the photo,A,"[3, 3, 3, 2, 3, 3, 3, 4]",C,0,C,0,D,0,0
+3375218204,how many people are involved in the video,A,"[0, 2, 3, 3, 2, 3, 2]",C,0,C,0,A,1,1
+8211075660,how many men are filmed,A,"[2, 2, 2, 1, 1, 2, 2, 2]",C,0,C,0,C,0,0
+11503803033,how many people are skiing,B,"[2, 2, 3, 3, 2, 3, 4, 3]",B,1,B,1,A,0,1
+4925211209,how many people are in the video,D,"[1, 1, 1, 1, 1, 0, 0, 1]",D,1,D,1,D,1,1
+2669452260,how many people walk past the man,B,"[1, 1, 1, 1, 2, 1, 0, 2]",B,1,B,1,B,1,1
+3372023610,how many people are there in the video,D,"[4, 4, 4, 3, 3, 3, 3, 2]",C,0,C,0,D,1,1
+3719793245,how many people are there in the video,D,"[2, 2, 2, 2, 2, 2, 1, 2]",D,1,D,1,D,1,1
+3175315183,how many toys are hang above the baby,C,"[3, 5, 5, 3, 5, 3, 10, 3]",A,0,E,0,C,1,1
+4164771889,how many boys are working together to bury the boy,D,"[4, 5, 4, 6, 5, 4, 4, 4]",B,0,B,0,D,1,1
+6542914065,how many people are involved in the video,C,"[2, 2, 1, 1, 2, 2, 3, 1]",D,0,D,0,A,0,0
+4126010904,how many times does the tall man lean his face on the television,A,"[1, 1, 1, 1, 1, 1, 1, 1]",D,0,D,0,D,0,0
+3477387686,how many times did the girl put her palm out,C,"[1, 1, 1, 1, 1, 1, 1, 1]",A,0,A,0,A,0,0
+6297019062,how many babies are there in the video,D,"[1, 2, 2, 2, 2, 2, 1, 2]",A,0,A,0,A,0,0
+8455160795,how many people are there,D,"[2, 2, 3, 3, 3, 2, 2, 2]",D,1,D,1,E,0,1
+7499763064,how many people are climbing,D,"[2, 2, 2, 1, 1, 2, 2, 1]",D,1,D,1,D,1,1
+5889898795,how many people ziplined down,E,"[1, 1, 2, 2, 1, 2, 1, 1]",E,1,E,1,E,1,1
+8388104887,how many times did the dog run back and forth,E,"[0, 0, 1, 1, 1, 0, 1, 1]",C,0,C,0,C,0,0
+6860322796,how many dogs are there playing,C,"[1, 2, 1, 1, 1, 1, 2, 2]",B,0,B,0,C,1,1
+4859057828,how many ladies are there,B,"[3, 3, 1, 2, 3, 3, 2, 3]",B,1,B,1,B,1,1
+4264435046,how many vehicles were filmed,D,"[0, 2, 2, 2, 2, 2, 2, 2]",B,0,B,0,B,0,0
+13515224395,how many dogs appear in the video,A,"[2, 1, 1, 1, 1, 1, 1, 1]",C,0,C,0,A,1,1
+5863411262,how many people are involved in the video,A,"[1, 3, 3, 3, 3, 2, 3, 3]",B,0,B,0,B,0,0
+4094488636,how many dogs are there,E,"[2, 2, 1, 2, 2, 2, 1, 2]",E,1,E,1,E,1,1
+5133787349,how many of the man are actually involved in the fighting on stage,B,"[3, 3, 3, 2, 3, 2, 2, 2]",C,0,A,0,A,0,0
+4130504920,how many babies are there,D,"[1, 1, 1, 1, 1, 1, 1, 1]",D,1,D,1,D,1,1
+3078294001,how many people are there,D,"[2, 2, 2, 2, 2, 2, 2, 2]",D,1,D,1,D,1,1
+3155382178,how many people are there,E,"[2, 2, 2, 1, 1, 1, 1, 0]",B,0,B,0,E,1,1
+4260763967,how many boys are in the video,D,"[2, 2, 1, 2, 2, 1, 1, 1]",D,1,D,1,D,1,1
+4412508597,how many people are filmed,E,"[2, 3, 3, 3, 3, 3, 3, 3]",E,1,E,1,E,1,1
+6253433310,how many people were in the pool,B,"[1, 1, 2, 1, 1, 1, 2, 2]",C,0,C,0,C,0,0
+4825843801,how many penguins are there,B,"[3, 3, 3, 3, 3, 3, 3, 4]",B,1,B,1,D,0,1
+9293415110,how many people are on the stage,C,"[4, 1, 3, 3, 3, 2, 1, 3]",E,0,E,0,C,1,1
+2482028659,how many people are in the video,D,"[3, 3, 3, 2, 3, 3, 3, 3]",E,0,E,0,E,0,0
+3427674558,how many people can be seen dancing on the stage,B,"[4, 4, 4, 4, 4, 4, 4, 5]",C,0,C,0,B,1,1
+10779838974,how many girls are there,B,"[2, 2, 2, 2, 2, 2, 2, 2]",B,1,B,1,B,1,1
+3066064005,how many women in total that can be seen in the video,C,"[2, 2, 2, 2, 2, 3, 2, 3]",B,0,B,0,A,0,0
+4103088549,how many people successfully got on the surfboard,D,"[5, 3, 3, 1, 1, 1, 1, 1]",D,1,D,1,B,0,1
+4333544549,how many men are there,E,"[1, 1, 1, 1, 2, 1, 2, 1]",E,1,E,1,E,1,1
+4761953886,how many dogs are there,C,"[1, 1, 1, 1, 1, 1, 1, 1]",C,1,C,1,C,1,1
+2735019707,how many drums in total are there for the people to play,C,"[2, 3, 4, 2, 3, 3, 2, 3]",D,0,D,0,A,0,0
+3708066257,how many peopl are dancing,E,"[2, 2, 2, 2, 2, 2, 2, 2]",E,1,E,1,E,1,1
+4983922034,how many dogs are there,E,"[4, 3, 3, 3, 2, 3, 3, 3]",E,1,E,1,E,1,1
+2984974097,how many wheels does the girl s bike have,D,"[2, 2, 2, 2, 2, 2, 2, 2]",E,0,E,0,E,0,0
+6018490041,how many players are involved in the video,C,"[4, 3, 3, 4, 3, 4, 3, 4]",A,0,A,0,C,1,1
+2552130183,how many people are in the room,A,"[2, 2, 2, 2, 2, 2, 2, 1]",D,0,D,0,D,0,0
+3557498300,how many children are in the video,C,"[3, 1, 2, 2, 2, 0, 1, 2]",A,0,A,0,C,1,1
+4984331176,how many groups passed the rope,E,"[3, 3, 3, 3, 3, 3, 2, 2]",E,1,E,1,E,1,1
+7987845241,how many people were needed to hold the dog down during the injection,E,"[3, 3, 1, 3, 3, 3, 3, 1]",B,0,B,0,B,0,0
+7059877301,how many dogs are there in the video,C,"[1, 1, 1, 1, 1, 1, 1, 2]",A,0,A,0,A,0,0
+7364407194,how many babies are in the video,D,"[2, 2, 2, 2, 2, 2, 2, 2]",D,1,D,1,D,1,1
+2810112808,how many people are there,A,"[3, 2, 2, 1, 1, 2, 1, 2]",D,0,D,0,A,1,1
+4333544549,how many dogs are there,E,"[1, 1, 1, 1, 2, 2, 2, 1]",A,0,A,0,E,1,1
+3383804222,how many pandas are involved in the video,D,"[2, 2, 3, 3, 2, 2, 2, 2]",D,1,D,1,B,0,1
+2599937944,how many people were in the video,A,"[3, 3, 2, 2, 4, 1, 0, 0]",B,0,D,0,A,1,1
+8783897632,how many people are filmed,E,"[0, 0, 1, 1, 2, 2, 2, 1]",B,0,B,0,E,1,1
+10727696143,how many children are there,C,"[1, 1, 0, 1, 2, 1, 1, 1]",C,1,C,1,C,1,1
+2535384528,how many people are together on the field,A,"[1, 1, 2, 1, 1, 1, 1, 1]",C,0,C,0,C,0,0
+2833209794,how many bags is the man in black carrying,B,"[2, 2, 1, 2, 2, 2, 2, 2]",B,1,B,1,B,1,1
+6011836129,how many ladies are doing yoga,E,"[4, 5, 4, 4, 3, 4, 4, 4]",E,1,E,1,E,1,1
+4968805923,how many people are in the video,A,"[3, 3, 3, 3, 3, 3, 3, 3]",A,1,A,1,A,1,1
+9576671750,how many phones are shown in the video,D,"[1, 1, 1, 1, 1, 1, 1, 1]",D,1,D,1,D,1,1
+2731071928,how many children are in the video,A,"[1, 1, 1, 1, 1, 1, 1, 1]",A,1,A,1,A,1,1
+5940941487,how many people are performing,A,"[1, 4, 3, 3, 3, 3, 3, 3]",B,0,B,0,B,0,0
+4138579400,how many times did he put stuffs in the cup before it dropped,E,"[1, 1, 1, 1, 1]",D,0,D,0,D,0,0
+4249756405,how many people are there in the video,B,"[2, 2, 2, 2, 2, 2, 2, 2]",B,1,B,1,B,1,1
+9735768590,how many babies are in the video,D,"[1, 1, 1, 1, 1, 1, 1, 1]",D,1,D,1,D,1,1
+4757890069,how many vehicles passed by,E,"[1, 1, 1, 1, 1, 1, 1, 1]",A,0,A,0,A,0,0
+4419096437,how many times does the person signal for the cat to close its eyes,A,"[1, 1, 1, 1, 1, 1, 1, 1]",D,0,D,0,D,0,0
+3060478605,how many people were riding the horse,A,"[1, 1, 1, 0, 1, 1, 1, 1]",A,1,A,1,A,1,1
+10607095936,how many people are involved in the video,A,"[5, 4, 3, 3, 4, 4, 4, 4]",E,0,E,0,A,1,1
+14012319794,how many children are in the video,E,"[1, 1, 1, 1, 1, 1, 1, 1]",E,1,E,1,E,1,1
+3869005094,how many people are in the video,B,"[4, 4, 4, 4, 4, 4, 4, 4]",B,1,B,1,B,1,1
+8318310610,how many girls are involved in the video,B,"[5, 5, 5, 4, 4, 4, 4, 3]",D,0,D,0,B,1,1
+3902997424,how many people were watching the man playing keyboard,E,"[2, 2, 2, 2, 2, 2, 1, 1]",E,1,E,1,E,1,1
+4935987905,how many dogs are there in the video,D,"[2, 2, 2, 2, 2, 1, 1, 2]",C,0,C,0,C,0,0
+3897746373,how many people are standing on the white stage at the end,B,"[1, 1, 2, 4, 3, 5, 5, 4]",E,0,D,0,A,0,0
+4882821564,how many children are in the video,B,"[2, 1, 1, 1, 1, 1, 1, 1]",B,1,B,1,D,0,1
+7508439506,how many people are there in the video,B,"[2, 2, 2, 2, 2, 2, 2, 1]",A,0,A,0,A,0,0
+5308503740,how many rabbits are there in the video,E,"[2, 2, 1, 2, 2, 2, 2, 2]",E,1,E,1,E,1,1
+11584566583,how many people are speaking on the microphone,A,"[1, 1, 1, 1, 1, 2, 1, 1]",A,1,A,1,A,1,1
+5467727317,how many elephants are there,E,"[2, 2, 2, 2, 2, 2, 2, 2]",E,1,E,1,E,1,1
+2697214342,how many guys can be seen working in the video,B,"[2, 3, 3, 3, 3, 3, 3, 3]",C,0,C,0,C,0,0
+2871995580,how many children are in the video,B,"[1, 1, 1, 1, 1, 1, 1, 1]",B,1,B,1,B,1,1
+7331927796,how many dogs are there in the video,E,"[2, 1, 2, 2, 3, 2, 2, 1]",B,0,B,0,E,1,1
+5919180502,how many people are sitting at the ledge of the swimming pool,C,"[3, 3, 2, 2, 0, 2, 3, 3]",C,1,C,1,C,1,1
+2510696559,how many people are cycling in the video,C,"[1, 1, 1, 2, 1, 3, 1, 1]",C,1,C,1,C,1,1
+5498331490,how many cats are there,E,"[1, 1, 1, 1, 1, 1, 1, 1]",E,1,E,1,E,1,1
+11670386946,how many people are mainly involved in the video,C,"[1, 0, 2, 3, 2, 1, 1, 1]",C,1,C,1,E,0,1
+3112351937,how many people are there,E,"[2, 2, 2, 2, 2, 1, 1, 0]",E,1,E,1,E,1,1
+4483447009,how many ducks are involved in the video,E,"[2, 2, 2, 2, 2, 2, 2, 2]",E,1,E,1,E,1,1

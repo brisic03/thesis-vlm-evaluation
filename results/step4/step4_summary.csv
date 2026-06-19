@@ -1,0 +1,13 @@
+model,method,n,accuracy
+TinyLLaVA,per-frame vote (baseline),177,57.1
+TinyLLaVA,composite @ 8 frames,177,53.1
+TinyLLaVA,symbolic repair: mode,177,53.1
+TinyLLaVA,symbolic repair: median,177,53.1
+TinyLLaVA,symbolic repair: max,177,59.3
+TinyLLaVA,oracle: best single frame (ceiling),177,69.5
+MobileVLM,per-frame vote (baseline),177,57.1
+MobileVLM,composite @ 8 frames,177,53.7
+MobileVLM,symbolic repair: mode,177,57.1
+MobileVLM,symbolic repair: median,177,56.5
+MobileVLM,symbolic repair: max,177,58.2
+MobileVLM,oracle: best single frame (ceiling),177,75.1
