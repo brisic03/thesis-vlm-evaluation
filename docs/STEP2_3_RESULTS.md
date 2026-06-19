@@ -20,8 +20,11 @@
      MobileVLM literally BREAKS at 16 frames (runs out of context -> gibberish).
 
   3. VisDrone numeric counting: both models are poor, but fail in OPPOSITE ways.
-        TinyLLaVA  -> UNDER-counts; often says "0"; REFUSES on crowded scenes (27%)
-        MobileVLM  -> OVER-counts; defaults to round numbers like "10" / "100"
+        TinyLLaVA  -> barely counts: 66% of its answers are "0" (always wrong, the
+                      object is present) and it REFUSES 27% (esp. crowded scenes).
+                      Its low MAE 2.69 is an ARTIFACT of guessing ~0 on small counts.
+        MobileVLM  -> always answers; exactly right 2x more often, but OVER-counts
+                      with round-number defaults ("10" 35%, "100" 5%) -> MAE 7.80.
 ```
 
 ---
@@ -261,6 +264,79 @@ behaviour.)
 
 Both small VLMs are weak at precise aerial counting, but in opposite directions:
 TinyLLaVA under-counts / refuses, MobileVLM over-counts with round-number guesses.
+
+### How far off, and how often (error distributions)
+
+Script: `scripts/visdrone/step2b_error_distribution.py`. "Answered" = questions
+where the model gave a parseable number (TinyLLaVA 399/545, MobileVLM 545/545).
+
+**Absolute error |guess − truth|, share of answered questions:**
+
+```
+                 TinyLLaVA                       MobileVLM
+  exact (0)    9.8% ████▏                   19.1% ████████▌
+  off by 1    44.9% ██████████████████████▍ 22.6% ██████████
+  off by 2    18.5% █████████▎               9.9% ████▍
+  off by 3-5  18.3% █████████▏              17.2% ███████▋
+  off by 6-10  6.3% ███▏                    23.1% ██████████▎   <- big tail
+  off by >10   2.3% █▏                       8.1% ███▌          <- big tail
+```
+
+**Cumulative — "how often close enough":**
+
+| within | TinyLLaVA | MobileVLM |
+|---|---:|---:|
+| exact     | 9.8%  | **19.1%** |
+| ±1        | **54.6%** | 41.7% |
+| ±2        | **73.2%** | 51.6% |
+| ±5        | **91.5%** | 68.8% |
+| off by >5 | 8.6%  | **31.2%** |
+
+**Signed error (− = under-count, + = over-count):**
+
+```
+  TinyLLaVA  bias -1.04 (UNDER)         MobileVLM  bias +5.30 (OVER)
+   -5..-3   █████████████████ 17.0%      -5..-3  ████████████████ 8.4%
+       -2   █████████████████ 16.8%          -2  ████████████████ 8.3%
+       -1   ████████████████████████ 40.6%   -1  █████████████████████████ 14.7%
+  0 exact   ██████ 9.8%                  0 exact  ███████████████████████████████ 19.1%
+       +1   ████  4.3%                        +1  ████████████████ 7.9%
+   +3..+5   ▏ 1.3%                        +3..+5  █████████████████ 8.8%
+  +6..+10   ▏ 1.8%                       +6..+10  ████████████████████████████ 20.2%  <- overshoot
+ way over   ▏ 1.3%                      way over  ███████████ 5.3%   <- overshoot
+```
+
+**What numbers they actually output (top guesses):**
+
+```
+  TinyLLaVA (true mean 2.8)        MobileVLM (true mean 4.6)
+    "0"  65.7%  <- always WRONG      "10"  35.4%  <- default "lots"
+    "1"  11.8%     (objects are        "1"  20.4%
+    "2"   7.8%      always present,     "0"  15.6%
+    "10"  4.3%      so true >= 1)       "2"  14.7%
+    "3"   4.0%                        "100"  4.8%  <- default "tons"
+```
+
+**Refusal is count-dependent (TinyLLaVA):**
+
+```
+  true count | refusal rate
+     1-2      | 13%  ░░░░░
+     3-5      | 27%  ░░░░░░░░░░
+     6-10     | 40%  ░░░░░░░░░░░░░░░
+     11+      | 81%  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   <- bails out when it's hard
+```
+
+**What this means (do not mis-read the MAE):**
+- **TinyLLaVA barely counts.** 66% of its committed answers are "0", and since
+  every asked object is present (true ≥ 1) *every one of those is wrong*. With
+  the 27% refusals on top, it almost never gives a useful count. Its low MAE
+  (2.69) is an artifact — true counts are small (mean 2.8), so guessing ≈0 is
+  only "off by 1–2."
+- **MobileVLM actually tries** and is bimodal: exactly right twice as often
+  (19.1% vs 9.8%) on sparse scenes, but dumps round-number defaults ("10"/"100")
+  on crowded scenes — that fat +6-and-beyond tail is what drives MAE 7.80 /
+  RMSE 20.69.
 
 ---
 
