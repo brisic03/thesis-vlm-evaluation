@@ -1,0 +1,5 @@
+model,subset,n,vote_acc,composite8_acc,delta
+TinyLLaVA,counting (how-many),177,57.1,53.1,-4.0
+TinyLLaVA,all descriptive,777,77.3,72.7,-4.6
+MobileVLM,counting (how-many),177,57.1,53.7,-3.4
+MobileVLM,all descriptive,777,76.4,76.3,-0.1

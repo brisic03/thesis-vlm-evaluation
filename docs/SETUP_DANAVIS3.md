@@ -63,7 +63,8 @@ All scripts set `sys.path.insert(0, '.../MobileVLM')` explicitly; no install nee
 | NExT-QA descriptive CSV | `tinyllava/data/nextqa/val_descriptive.csv` (777 rows) |
 | NExT-QA videos | `tinyllava/data/nextqa/videos/NExTVideo/<videoID>.mp4` |
 | VisDrone questions | `results/visdrone/visdrone_val_questions.csv` |
-| VisDrone images | *(need to confirm path — not used yet in raja-develop)* |
+| VisDrone images+labels | `/data/raja/Datasets/VisDrone/VisDrone2019-DET-val/` (548 imgs + YOLO labels; downloaded from HF `banu4prasad/VisDrone-Dataset`, outside the repo) |
+| VisDrone GT counts | `results/step2/visdrone_counting_gt.csv` (re-derived, validated) |
 | TinyLLaVA baseline | `results_3b_nextqa.csv` (777 rows, per-frame vote) |
 | MobileVLM baseline | `results_mobilevlm_3b_nextqa.csv` (777 rows, per-frame vote) |
 
@@ -101,10 +102,14 @@ Both models download from HuggingFace at first run (no local weights cache):
 - **Step 0** ✓ — VisDrone characterisation (local analysis machine)
 - **Step 1** ✓ — Recoverable fraction: TinyLLaVA 36.8%, MobileVLM 43.4%
   - Gate: supervisor approved proceeding with both models into Step 4
+- **Steps 2 & 3** ✓ (2026-06-19) — composite vs vote, frame sweep, VisDrone
+  numeric + size sweep. Results: `docs/STEP2_3_RESULTS.md`. Headline: composite
+  never beats the per-frame vote; both models are weak counters (Tiny
+  under-counts/refuses, Mobile over-counts).
 
 ## Next to run
 
-Steps 2+3 combined (see EVAL_PLAN.md for detailed plan):
-1. Frame sweep {1,2,4,8,16} on NExT-QA counting subset — both models (GPU 0+1)
-2. Composite@8 on full NExT-QA descriptive — both models (GPU 0+1)
-3. VisDrone numeric counting — both models (GPU 2+3)
+- **Step 4** — symbolic repair (aggregate Step 1 per-frame stated numbers via
+  mode/median/max; compare to vote and composite). Gate from Step 1 was positive.
+- **Step 5** — confidence intervals + McNemar significance + bootstrap CIs on all
+  of the above (local CSV analysis).

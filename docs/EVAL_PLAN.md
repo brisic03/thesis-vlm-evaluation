@@ -257,14 +257,42 @@ as 0).
 of the combined Step 2+3 frame-sweep (see Step 3 note below). The 8-frame result
 from the sweep is the Step 2A counting number.
 
+**RESULTS (2026-06-19)** — full write-up with diagrams in
+`docs/STEP2_3_RESULTS.md`. Scripts: `scripts/step23/`, `scripts/visdrone/`.
+
+Part A — composite@8 vs per-frame vote accuracy (%):
+
+| model | subset | n | vote | composite@8 | Δ |
+|---|---|---:|---:|---:|---:|
+| TinyLLaVA | counting | 177 | 57.1 | 53.1 | −4.0 |
+| TinyLLaVA | all descriptive | 777 | 77.3 | 72.7 | −4.6 |
+| MobileVLM | counting | 177 | 57.1 | 53.7 | −3.4 |
+| MobileVLM | all descriptive | 777 | 76.4 | 76.3 | −0.1 |
+
+Part B — VisDrone numeric counting (true counts re-derived from DET-val labels,
+validated 362/362 against the MCQ buckets):
+
+| model | MAE | RMSE | parse-failure |
+|---|---:|---:|---:|
+| TinyLLaVA | 2.69 | 7.14 | 26.8% |
+| MobileVLM | 7.80 | 20.69 | 0.0% |
+
+**Gate outcome: composite does NOT close the counting gap** — it is slightly
+*worse* than the vote for both models and never wins. So Step 4 (symbolic repair)
+remains worth building. VisDrone: the two models fail in opposite directions —
+TinyLLaVA under-counts and refuses on crowded scenes (refusals where true count
+averages 9.5; never scored as 0), MobileVLM over-counts with round-number
+guesses. On the 399 images where both commit a number, TinyLLaVA MAE 2.69 vs
+MobileVLM 4.09.
+
 **Checklist**
-- [ ] Composite prompt: 8 frames concatenated into one prompt, single answer.
-- [ ] NExT-QA composite run — counting subset, both models. *(covered by Step 3A sweep)*
-- [ ] NExT-QA composite run — all descriptive, both models.
-- [ ] Table: composite vs vote accuracy, per model, per subset.
-- [ ] VisDrone numeric prompt ("how many Xs?"), no fixed buckets.
-- [ ] Number parser + explicit parse-failure rule, logged.
-- [ ] Compute MAE, RMSE, parse-failure rate per model; report.
+- [x] Composite prompt: N frames in one prompt, single answer (multi-image verified).
+- [x] NExT-QA composite run — counting subset, both models. *(via Step 3A sweep)*
+- [x] NExT-QA composite run — all descriptive, both models.
+- [x] Table: composite vs vote accuracy, per model, per subset.
+- [x] VisDrone numeric prompt ("how many Xs?"), no fixed buckets.
+- [x] Number parser + explicit parse-failure rule, logged (refusals never = 0).
+- [x] Compute MAE, RMSE, parse-failure rate per model; report.
 
 ---
 
@@ -294,12 +322,43 @@ full curve feeds Step 3A. This saves a full re-run. 4 GPUs available on danavis3
 (GTX 1080 Ti ×4): assign TinyLLaVA and MobileVLM to GPU 0/1 for NExT-QA and
 GPU 2/3 for VisDrone to run all in parallel.
 
+**RESULTS (2026-06-19)** — diagrams in `docs/STEP2_3_RESULTS.md`.
+
+Sweep A — accuracy vs frame count (counting subset, n=177):
+
+| frames | TinyLLaVA | MobileVLM |
+|---:|---:|---:|
+| 1 | 54.2 | 53.7 |
+| 2 | 52.0 | 54.2 |
+| 4 | 53.1 | 54.2 |
+| 8 | 53.1 | 53.7 |
+| 16 | 54.2 | broken* |
+
+**Shape: FLAT** — more frames does not help either model. *MobileVLM at 16
+frames overflows its context and emits gibberish (only 94/177 parseable); this
+is a failure mode, not a 7.3% accuracy. TinyLLaVA handles 16 frames fine.
+
+Sweep B — VisDrone MAE vs min object-size threshold:
+
+| threshold | TinyLLaVA MAE | MobileVLM MAE |
+|---|---:|---:|
+| 0.05% | 3.57 | 7.74 |
+| 0.1% | 2.69 | 7.80 |
+| 0.2% | 1.95 | 8.43 |
+| 0.5% | 1.71 | 9.20 |
+| 1.0% | 1.65 | 9.60 |
+
+**Shape: opposite slopes** — excluding small objects helps TinyLLaVA (it
+under-counts / misses small objects) and hurts MobileVLM (it over-counts), with
+no sudden cliff. RMSE stays high for both (the big misses are not a size effect).
+
 **Checklist**
-- [ ] Composite runs at frames ∈ {1,2,4,8,16}, counting subset, both models.
-- [ ] Plot accuracy vs frame count; describe shape.
-- [ ] Recompute VisDrone MAE/RMSE at thresholds {0.05,0.1,0.2,0.5,1}% area.
-- [ ] Plot error vs threshold; describe shape.
-- [ ] Note: changing the threshold changes the GT count — recompute GT per threshold.
+- [x] Composite runs at frames ∈ {1,2,4,8,16}, counting subset, both models.
+- [x] Accuracy vs frame count computed; shape = flat (MobileVLM breaks at 16).
+- [x] Recompute VisDrone MAE/RMSE at thresholds {0.05,0.1,0.2,0.5,1}% area.
+- [x] Error vs threshold computed; shape = opposite slopes, no cliff.
+- [x] Threshold changes the GT count — GT recomputed per threshold from box areas.
+- [ ] Plots (PNG) — deferred to Step 5 alongside CIs (numbers + ASCII done now).
 
 ---
 

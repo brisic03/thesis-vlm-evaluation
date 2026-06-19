@@ -2,14 +2,17 @@
 
 > Plain-language log of what we did, why, how, and what we got.
 > Models: **TinyLLaVA-3.1B** and **MobileVLM-V2-3B**. Machine: danavis3 (4 GPUs).
-> Last updated: 2026-06-19. Status: **Step 2B, 3A, 3B done; Step 2A descriptive running.**
+> Last updated: 2026-06-19. Status: **Steps 2A, 2B, 3A, 3B all done.** (Step 5
+> adds confidence intervals / significance tests on top of these.)
 
 ## TL;DR (the headlines so far)
 
 ```
-  1. Composite does NOT beat the old per-frame vote on counting.
-     It is actually a touch WORSE, and adding frames does not help.
-        counting accuracy:  vote 57.1%   vs   composite@8  ~53%   (both models)
+  1. Composite NEVER beats the old per-frame vote. It is a touch WORSE on
+     counting for both models, worse across the board for TinyLLaVA, and only
+     TIES the vote for MobileVLM on general questions.
+        counting:        vote 57.1%   vs   composite@8 ~53%   (both models)
+        all descriptive: vote 77.3/76.4 vs composite 72.7/76.3
      -> "show all frames at once" is not the fix. Step 4 (symbolic repair)
         is still worth doing.
 
@@ -147,8 +150,30 @@ questions, and compare to the old per-frame-vote baseline on the same questions.
 questions is a Step 5 question — it is small and may well be noise; either way
 composite clearly does not *fix* counting.)
 
-**All 777 descriptive questions:** _(filled once Run B finishes; baseline vote
-is TinyLLaVA 77.3%, MobileVLM 76.4%)_
+**All 777 descriptive questions:**
+
+| method | TinyLLaVA | MobileVLM |
+|---|---:|---:|
+| per-frame vote (old baseline) | **77.3** | **76.4** |
+| composite @ 8 frames | 72.7 | 76.3 |
+| difference | −4.6 | −0.1 |
+
+**Full Step 2A picture (composite − vote):**
+
+```
+              counting        all descriptive
+  TinyLLaVA    -4.0              -4.6        <- composite worse on both
+  MobileVLM    -3.4              -0.1        <- worse on counting, tied overall
+```
+
+**Reading:** composite never wins. For MobileVLM it only *ties* the vote on
+general questions and loses on counting; for TinyLLaVA it loses across the board.
+The simple per-frame majority vote — which effectively ensembles an answer from
+each frame — is as good as or better than feeding all frames at once. So the
+"use the model the way it was designed" hypothesis does not pay off here, and
+counting in particular is the worst case for composite. (Step 5 will attach CIs /
+McNemar significance; the −0.1 and −3 to −5 point gaps are small, but the
+direction is consistent and composite clearly does not *improve* anything.)
 
 ---
 
@@ -278,6 +303,17 @@ high throughout for both — the occasional huge miss is not a small-object effe
 | Run | What | GPU | Status |
 |---|---|---|---|
 | A | NExT-QA counting frame sweep {1,2,4,8,16}, both models | 0 (Tiny), 1 (Mobile) | ✅ done |
-| B | NExT-QA all 777 descriptive, composite @8, both models | 0+1 (after A) | running |
+| B | NExT-QA all 777 descriptive, composite @8, both models | 0+1 (after A) | ✅ done |
 | C | VisDrone numeric counting, both models | 2 (Tiny), 3 (Mobile) | ✅ done |
 | 3B | VisDrone size sweep (CSV analysis) | — | ✅ done |
+
+## Output files
+
+| File | What |
+|---|---|
+| `results/step3/step3a_{model}_framesweep.csv` | per-question composite results at 1/2/4/8/16 frames |
+| `results/step2/step2a_{model}_composite8.csv` | composite@8 on all 777 descriptive |
+| `results/step2/step2a_composite_vs_vote.csv` | the Step 2A comparison table |
+| `results/step2/step2b_{model}_numeric.csv` | VisDrone numeric per-image guesses + parse flag |
+| `results/step2/visdrone_counting_gt.csv` | re-derived true counts (+ per-object areas for 3B) |
+| `results/step3/step3b_size_sweep.csv` | MAE/RMSE vs object-size threshold |
