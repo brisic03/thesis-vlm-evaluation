@@ -171,7 +171,7 @@ Default for now: **exclude `location` from headline numbers**; keep `presence`,
 
 ## Step 1 — Recoverable fraction on NExT-QA counting
 
-**Needs a re-run.**
+**DONE (2026-06-19).**
 
 **Goal:** the number that decides whether "symbolic repair" (Step 4) is alive.
 Existing reasoning data is only 50 examples — too few. Re-generate at full scale.
@@ -202,13 +202,32 @@ showing reasoning text vs true count.
 **Note:** the recoverable fraction *is* the faithfulness measure — no separate
 faithfulness step is needed.
 
+**RESULTS (2026-06-19)** — scripts: `scripts/step1_tinyllava_reasoning.py`,
+`scripts/step1_mobilevlm_reasoning.py`. Full outputs in `results/step1/`.
+
+| Model | Wrong how-many items | Recoverable | Fraction |
+|---|---|---|---|
+| TinyLLaVA-3.1B | 76 | 28 | **36.8%** |
+| MobileVLM V2-3B | 76 | 33 | **43.4%** |
+
+Gate outcomes:
+- **TinyLLaVA 36.8%** → 15–40% middle zone (borderline).
+- **MobileVLM 43.4%** → > 40% (Step 4 gate fires).
+- **Supervisor decision (2026-06-19):** proceed with Step 4 for **both** models.
+
+Example recoverable item (TinyLLaVA): Q "how many people are involved",
+true=5 (five), frame[0] output "There are five people involved in the image."
+
+Example non-recoverable (TinyLLaVA): Q "how many goats can be spotted",
+true=8 (eight), frame[0] output "1" — model never states 8 across any frame.
+
 **Checklist**
-- [ ] Identify the `how many` counting subset in the NExT-QA descriptive data.
-- [ ] Reasoning prompt run for TinyLLaVA over the full subset; save per-frame text.
-- [ ] Reasoning prompt run for MobileVLM over the full subset; save per-frame text.
-- [ ] Parse stated numbers per frame (word- and digit-form, e.g. "two"/"2").
-- [ ] Restrict to originally-wrong items; compute recoverable fraction per model.
-- [ ] Report fraction + 3–5 example rows; state which gate branch fires.
+- [x] Identify the `how many` counting subset in the NExT-QA descriptive data.
+- [x] Reasoning prompt run for TinyLLaVA over the full subset; save per-frame text.
+- [x] Reasoning prompt run for MobileVLM over the full subset; save per-frame text.
+- [x] Parse stated numbers per frame (word- and digit-form, e.g. "two"/"2").
+- [x] Restrict to originally-wrong items; compute recoverable fraction per model.
+- [x] Report fraction + 3–5 example rows; state which gate branch fires.
 
 ---
 
@@ -234,9 +253,13 @@ as 0).
 **Gate:** the composite-vs-vote gap is likely the **headline**. If composite
 *fully* fixes counting, Step 4 becomes a cost comparison rather than a fix.
 
+**Implementation note:** Step 2A (counting subset, composite@8) is run as part
+of the combined Step 2+3 frame-sweep (see Step 3 note below). The 8-frame result
+from the sweep is the Step 2A counting number.
+
 **Checklist**
 - [ ] Composite prompt: 8 frames concatenated into one prompt, single answer.
-- [ ] NExT-QA composite run — counting subset, both models.
+- [ ] NExT-QA composite run — counting subset, both models. *(covered by Step 3A sweep)*
 - [ ] NExT-QA composite run — all descriptive, both models.
 - [ ] Table: composite vs vote accuracy, per model, per subset.
 - [ ] VisDrone numeric prompt ("how many Xs?"), no fixed buckets.
@@ -263,6 +286,13 @@ the shape **honestly** (peak? cliff? flat?) — do not assume an inflection exis
 
 **Gate:** a peak in frames, or a sharp drop in error as small objects are
 excluded, each become standalone findings.
+
+**Implementation note (Step 2+3 combined run):** Step 3A and Step 2A (counting
+subset) are batched together in one pass: run composite at {1,2,4,8,16} frames
+on the counting subset for both models. The 8-frame result feeds Step 2A; the
+full curve feeds Step 3A. This saves a full re-run. 4 GPUs available on danavis3
+(GTX 1080 Ti ×4): assign TinyLLaVA and MobileVLM to GPU 0/1 for NExT-QA and
+GPU 2/3 for VisDrone to run all in parallel.
 
 **Checklist**
 - [ ] Composite runs at frames ∈ {1,2,4,8,16}, counting subset, both models.
