@@ -431,8 +431,27 @@ mark any difference that is *not* significant.**
 **Gate:** nothing proceeds to the writeup without this — an unmarked
 insignificant difference is the fastest way to get rejected.
 
+**RESULTS (2026-06-19)** — full write-up `docs/STEP5_RESULTS.md`, script
+`scripts/step5/step5_statistics.py`, tables in `results/step5/`.
+
+Significant (can claim):
+- TinyLLaVA composite@8 vs vote, all-777: **−4.6%, p=0.0001** (composite hurts).
+- Oracle (best single frame) vs vote, counting: **+12.4% (Tiny, p=0.0003)** and
+  **+18.1% (Mobile, p<0.0001)** — the correct count is in the model's own words
+  far more often than voting recovers. Strongest finding.
+- VisDrone MAE differs between models (bootstrap CIs disjoint: Tiny 2.69
+  [2.14, 3.42] vs Mobile 7.80 [6.27, 9.45]); RMSE Tiny 7.14 [3.21, 10.76], Mobile
+  20.69 [16.81, 24.24]. (Caveat: reflects TinyLLaVA's refusal/under-count bias,
+  not better counting.)
+
+NOT significant (explicitly cannot claim):
+- All counting-subset (177) comparisons: composite vs vote, and every
+  repair-rule vs vote (the +1–2 pt MAX gains are noise, p≥0.66).
+- TinyLLaVA vs MobileVLM anywhere on NExT-QA (statistically tied).
+- MobileVLM composite vs vote on all-777 (−0.1%, p=1.0).
+
 **Checklist**
-- [ ] Binomial-normal 95% CI added to every accuracy figure.
-- [ ] McNemar's test on every same-question paired comparison; significance flagged.
-- [ ] Bootstrap CIs on VisDrone MAE/RMSE.
-- [ ] Every non-significant difference explicitly marked as such.
+- [x] Binomial-normal 95% CI added to every accuracy figure.
+- [x] McNemar's test on every same-question paired comparison; significance flagged.
+- [x] Bootstrap CIs on VisDrone MAE/RMSE.
+- [x] Every non-significant difference explicitly marked as such.

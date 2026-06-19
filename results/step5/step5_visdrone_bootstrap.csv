@@ -1,0 +1,5 @@
+model,metric,n_scored,value,ci_low,ci_high
+TinyLLaVA,MAE,399,2.69,2.14,3.42
+TinyLLaVA,RMSE,399,7.14,3.21,10.76
+MobileVLM,MAE,545,7.8,6.27,9.45
+MobileVLM,RMSE,545,20.69,16.81,24.24

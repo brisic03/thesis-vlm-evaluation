@@ -1,0 +1,17 @@
+model,metric,subset,n,accuracy_%,ci_low_%,ci_high_%
+TinyLLaVA,vote,counting,177,57.1,49.8,64.4
+TinyLLaVA,vote,all-777,777,77.3,74.4,80.3
+TinyLLaVA,composite@8,counting,177,53.1,45.8,60.5
+TinyLLaVA,composite@8,all-777,777,72.7,69.6,75.8
+TinyLLaVA,repair-mode,counting,177,53.1,45.8,60.5
+TinyLLaVA,repair-median,counting,177,53.1,45.8,60.5
+TinyLLaVA,repair-max,counting,177,59.3,52.1,66.6
+TinyLLaVA,oracle-bestframe,counting,177,69.5,62.7,76.3
+MobileVLM,vote,counting,177,57.1,49.8,64.4
+MobileVLM,vote,all-777,777,76.4,73.5,79.4
+MobileVLM,composite@8,counting,177,53.7,46.3,61.0
+MobileVLM,composite@8,all-777,777,76.3,73.3,79.3
+MobileVLM,repair-mode,counting,177,57.1,49.8,64.4
+MobileVLM,repair-median,counting,177,56.5,49.2,63.8
+MobileVLM,repair-max,counting,177,58.2,50.9,65.5
+MobileVLM,oracle-bestframe,counting,177,75.1,68.8,81.5
