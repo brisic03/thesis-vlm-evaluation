@@ -1,0 +1,7 @@
+# Local CPU-only analysis environment (this machine, NOT danavis3).
+# For the eval-plan analysis steps: CSV characterisation, plots, statistics.
+# Model/GPU deps live in pyproject.toml (TinyLLaVA framework) and run on danavis3.
+pandas
+numpy
+matplotlib
+scipy
