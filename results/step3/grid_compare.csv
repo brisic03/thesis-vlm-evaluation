@@ -1,0 +1,7 @@
+model,method,n,MAE,RMSE,bias,pred_mean,gt_mean
+TinyLLaVA,"whole-image (retry, forced)",545,13.51,31.27,10.29,14.9,4.6
+TinyLLaVA,grid 2x2,545,4.1,7.14,0.79,5.4,4.6
+TinyLLaVA,grid 3x3,545,5.77,10.54,4.46,9.0,4.6
+MobileVLM,whole-image,545,7.8,20.69,5.3,9.9,4.6
+MobileVLM,grid 2x2,545,13.62,29.41,13.26,17.9,4.6
+MobileVLM,grid 3x3,545,18.6,34.71,18.54,23.1,4.6

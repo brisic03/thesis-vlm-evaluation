@@ -1,0 +1,8 @@
+subset,method,n,MAE,RMSE,bias,gt_mean
+EASY (orig answered),whole-image orig,399,2.69,7.14,-1.04,2.8
+EASY (orig answered),whole-image retry,399,2.69,7.14,-1.04,2.8
+EASY (orig answered),grid 2x2,399,2.3,3.84,0.29,2.8
+EASY (orig answered),grid 3x3,399,3.47,6.22,2.51,2.8
+HARD (orig refused),whole-image retry,146,43.08,59.26,41.25,9.5
+HARD (orig refused),grid 2x2,146,9.01,12.25,2.14,9.5
+HARD (orig refused),grid 3x3,146,12.08,17.57,9.79,9.5
