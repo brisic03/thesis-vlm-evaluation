@@ -110,6 +110,40 @@ whole-image answer there was useless (MAE 43). Grid mode is where it pays off:
     over-counter (MobileVLM)             -> grid HURTS  (amplifies over-guessing)
 ```
 
+## Does forcing answers still hurt under grid mode? YES.
+
+Grid mode above counts a refused tile as 0. Natural question: is that 0-fallback
+doing the work, or the resolution boost? We re-ran TinyLLaVA grid mode with
+per-tile **retry-until-answered** (`--force`: firmer prompt then sampling, no free
+0) — the same forcing that wrecked the whole-image run.
+
+| TinyLLaVA grid | all 545 MAE | bias | 146 crowded MAE | bias |
+|---|---:|---:|---:|---:|
+| 2×2, refused tile = 0 | **4.10** | +0.79 | **9.01** | +2.14 |
+| 2×2, FORCED | 13.37 | +12.19 | 40.87 | +40.61 |
+| 3×3, refused tile = 0 | 5.77 | +4.46 | 12.08 | +9.79 |
+| 3×3, FORCED | 20.01 | +19.30 | 58.68 | +58.42 |
+
+```
+  MAE on the 146 crowded scenes:
+    grid 2x2, allow refuse(=0)  █████ 9.0
+    grid 2x2, FORCED            ████████████████████████ 40.9  (~= whole-image-forced 43)
+```
+
+**Forcing re-breaks everything.** Tiling fixed the *resolution* (sparse tiles are
+now countable), but the dense tiles are still uncountable — and when forced, the
+model blurts huge numbers (bias +40 on crowded scenes, exactly like the
+whole-image forced run). The 0-fallback was essential: it lets the model **abstain
+on the tiles it can't do** while still counting the ones it can.
+
+```
+  The grid win = RESOLUTION (tiling)  +  HONESTY (abstain -> 0 on hard tiles)
+  Remove the honesty (force an answer) and MAE goes 4.1 -> 13.4 (9.0 -> 40.9 on crowds).
+```
+
+So across BOTH whole-image and grid settings, forcing the model to answer always
+hurts — the refusal is a useful signal, not a bug to suppress.
+
 ## Caveats (stated honestly)
 - **Boundary effect:** an object on a tile edge can be counted twice or missed; we
   have no coordinates to dedupe. This is part of why 3×3 over-counts more than 2×2.

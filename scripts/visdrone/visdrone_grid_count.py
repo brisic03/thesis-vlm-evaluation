@@ -68,14 +68,19 @@ def build_loader(model_name):
         model = model.half().cuda(); model.resize_token_embeddings(max(len(tok), model.config.vocab_size)+100)
         tp = TextPreprocess(tok, "phi"); imp = ImagePreprocess(ip, model.config)
         stop = tp.template.separator.apply()[1]
-        def ask(img, prompt):
+        def ask(img, prompt, sample=False, seed=0):
             msg = Message(); msg.add_message(f"{DEFAULT_IMAGE_TOKEN}\n{prompt}")
             ids = tp(msg.messages, mode="eval")["input_ids"].unsqueeze(0).to(model.device)
             it = imp(img).unsqueeze(0).to(model.device, dtype=torch.float16)
             sc = KeywordsStoppingCriteria([stop], tok, ids)
+            gen = dict(images=it, max_new_tokens=16, pad_token_id=tok.pad_token_id,
+                       use_cache=True, stopping_criteria=[sc])
+            if sample:
+                torch.manual_seed(seed); gen.update(do_sample=True, temperature=0.7, top_p=0.9)
+            else:
+                gen.update(do_sample=False)
             with torch.inference_mode():
-                o = model.generate(ids, images=it, do_sample=False, max_new_tokens=16,
-                                   pad_token_id=tok.pad_token_id, use_cache=True, stopping_criteria=[sc])
+                o = model.generate(ids, **gen)
             d = tok.batch_decode(o, skip_special_tokens=True)[0].strip()
             return d[:-len(stop)].strip() if d.endswith(stop) else d
         return ask
@@ -87,15 +92,20 @@ def build_loader(model_name):
         from mobilevlm.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN
         disable_torch_init()
         tok, model, ip, _ = load_pretrained_model("mtgv/MobileVLM_V2-3B"); model = model.half().cuda()
-        def ask(img, prompt):
+        def ask(img, prompt, sample=False, seed=0):
             it = process_images([img], ip, model.config).to(model.device, dtype=torch.float16)
             conv = conv_templates["v1"].copy(); conv.append_message(conv.roles[0], f"{DEFAULT_IMAGE_TOKEN}\n{prompt}")
             conv.append_message(conv.roles[1], None); fp = conv.get_prompt()
             stop = conv.sep if conv.sep_style != SeparatorStyle.TWO else conv.sep2
             ids = tokenizer_image_token(fp, tok, IMAGE_TOKEN_INDEX, return_tensors="pt").unsqueeze(0).to(model.device)
             sc = KeywordsStoppingCriteria([stop], tok, ids)
+            gen = dict(images=it, max_new_tokens=16, use_cache=True, stopping_criteria=[sc])
+            if sample:
+                torch.manual_seed(seed); gen.update(do_sample=True, temperature=0.7, top_p=0.9)
+            else:
+                gen.update(do_sample=False)
             with torch.inference_mode():
-                o = model.generate(ids, images=it, do_sample=False, max_new_tokens=16, use_cache=True, stopping_criteria=[sc])
+                o = model.generate(ids, **gen)
             d = tok.batch_decode(o[:, ids.shape[1]:], skip_special_tokens=True)[0].strip()
             return d[:-len(stop)].strip() if d.endswith(stop) else d
         return ask
@@ -105,9 +115,14 @@ def main():
     ap.add_argument("--model", required=True, choices=["tinyllava","mobilevlm"])
     ap.add_argument("--grid", type=int, required=True)
     ap.add_argument("--limit", type=int, default=None)
+    ap.add_argument("--force", action="store_true",
+                    help="retry each tile (firmer prompt then sampling) until it gives a "
+                         "number, instead of counting a refused tile as 0")
+    ap.add_argument("--max-attempts", type=int, default=5)
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
-    out = a.out or f"{REPO}/results/step3/visdrone_grid{a.grid}x{a.grid}_{a.model}.csv"
+    suffix = "_force" if a.force else ""
+    out = a.out or f"{REPO}/results/step3/visdrone_grid{a.grid}x{a.grid}_{a.model}{suffix}.csv"
 
     print(f"Loading {a.model} … grid={a.grid}x{a.grid}")
     ask = build_loader(a.model)
@@ -115,19 +130,32 @@ def main():
 
     gt = pd.read_csv(GT_CSV)
     if a.limit: gt = gt.head(a.limit)
-    n2 = a.grid * a.grid
     rows = []
-    tile_fail = 0; tile_tot = 0
-    for _, r in tqdm(gt.iterrows(), total=len(gt)):
+    tile_fail = 0; tile_tot = 0; tile_forced = 0
+    for ti, (_, r) in enumerate(tqdm(gt.iterrows(), total=len(gt))):
         if not os.path.exists(r["image_path"]): continue
         img = Image.open(r["image_path"]).convert("RGB")
         plural = PLURAL[r["target_class"]]
-        prompt = f"How many {plural} are in this image? Answer with a number only."
+        p_base = f"How many {plural} are in this image? Answer with a number only."
+        p_firm = (f"How many {plural} are in this image? You must answer with a single "
+                  f"whole number that is your best estimate. Do not say 'many', 'several', "
+                  f"or 'cannot'. Reply with just the number.")
         per_tile = []
-        for t in tiles(img, a.grid):
-            raw = ask(t, prompt); v = parse_count(raw)
+        for tj, t in enumerate(tiles(img, a.grid)):
             tile_tot += 1
-            if v is None: tile_fail += 1
+            v = parse_count(ask(t, p_base))
+            if v is None and a.force:
+                # escalate: firmer prompt greedy, then sampled retries
+                for att in range(2, a.max_attempts + 1):
+                    if att == 2:
+                        v = parse_count(ask(t, p_firm))
+                    else:
+                        v = parse_count(ask(t, p_firm, sample=True, seed=1000 + ti * 37 + tj * 7 + att))
+                    if v is not None:
+                        tile_forced += 1
+                        break
+            if v is None:
+                tile_fail += 1
             per_tile.append(v if v is not None else 0)
         rows.append({"image": r["image"], "target_class": r["target_class"],
                      "gt_count": int(r["gt_count"]), "pred_count": sum(per_tile),
@@ -138,9 +166,11 @@ def main():
     df.to_csv(out, index=False)
     err = df.pred_count - df.gt_count
     print(f"\nSaved {len(df)} rows -> {out}")
-    print(f"=== VisDrone grid {a.grid}x{a.grid} — {a.model} ===")
+    print(f"=== VisDrone grid {a.grid}x{a.grid} — {a.model}{'  [FORCE]' if a.force else ''} ===")
     print(f"MAE={err.abs().mean():.2f}  RMSE={math.sqrt((err**2).mean()):.2f}  bias={err.mean():+.2f}")
-    print(f"tile parse-fail (counted as 0): {tile_fail}/{tile_tot} ({100*tile_fail/tile_tot:.1f}%)")
+    print(f"tile parse-fail (still 0 after retries): {tile_fail}/{tile_tot} ({100*tile_fail/tile_tot:.1f}%)")
+    if a.force:
+        print(f"tiles forced (refused then answered on retry): {tile_forced}/{tile_tot} ({100*tile_forced/tile_tot:.1f}%)")
     print(f"pred mean={df.pred_count.mean():.1f}  gt mean={df.gt_count.mean():.1f}")
 
 if __name__ == "__main__":
