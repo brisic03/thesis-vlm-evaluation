@@ -1002,3 +1002,20 @@ MobileVLM achieved the higher overall accuracy on the generated VisDrone questio
 The strongest performance for both models was on the most frequent object question type, where both models reached above 70% accuracy. Counting was the weakest category, especially for TinyLLaVA, which reached only 13.21%. This suggests that object counting in aerial drone images is difficult for lightweight VLMs, even after filtering out very small bounding boxes.
 
 TinyLLaVA performed slightly better on location and object presence questions, while MobileVLM performed better overall mainly because of its way stronger counting performance.
+
+## MANUAL INSPECTION OF MUTUAL FAILED VIDEOS
+
+From the manual inspection of the failed videos, many of them showed visually busy indoor scenes, especially videos involving  babies, young children, or people holding babies in living rooms. These scenes often contained several people, overlapping objects, and small actions happening at the same time, which most probably made counting and relationship reasoning harder for the two models. 
+
+Another recurring group of failures involved airplanes landing, which was surprising because the visual scene is way less crowded, but the models still struggled to identify or interpret the acrtion correctly.
+
+
+Mutual scene cases are also inspected manually as a comparison group. 
+This helped to check whether the same visual patterns, such as babies, children, crowded rooms etc, also appear in examples that both models answered correctly. 
+
+This comparison made clear that some of these patterns also resulted in correct answers at times, which means to the fact that they could be linked to failure but are also simply common in the dataset.
+
+
+For the VisDrone dataset, the mutual failure images were manually inspected swell and most images that failed showed either strong motion blur caused by moving vehicles or dense traffic scenes with many small and overlapping objects. 
+
+These conditions make it difficult for lightweight VLMs to correctly detect object categories, count objects, or reason about location.
