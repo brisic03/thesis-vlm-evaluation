@@ -233,6 +233,73 @@ Regarding JPEG, TinyLLaVA drops more as JPEG quality decreases while MobileVLM s
 
 Both models have similar robustness patterns. MobileVLM is slightly more robust to JPEG compression and blur showed as how it loses less accuracy under both than TinyLLaVA. TinyLLaVA and MobileVLM are both strongly affected by occlusion.
 
+## For VisDrone
+VisDrone-DET val is image-based, not video-based. So for VisDrone these will be applied:
+
+```blur
+JPEG compression
+occlusion
+```
+The metric for MC robustness is going to be accuracy drop and for continuous counting robustness is gonna be MAE and RMSE increase.
+
+We already have:
+| Task group | TinyLLaVA baseline | MobileVLM baseline |
+|---|---:|---:|
+| MC accuracy | 47.86% | 38.20% |
+| Counting MAE | 2.28 | 4.46 |
+| Counting RMSE | 4.39 | 12.54 |
+
+VisDrone MC Robustness
+
+TinyLLaVA clean MC: 47.86%
+MobileVLM clean MC: 38.20%
+
+| Noise | TinyLLaVA Acc | Tiny Drop | MobileVLM Acc | Mobile Drop |
+|---|---:|---:|---:|---:|
+| Blur 3 | 48.36% | +0.50 | 37.77% | -0.43 |
+| Blur 5 | 47.80% | -0.06 | 38.45% | +0.25 |
+| Blur 7 | 48.80% | +0.62 | 38.58% | +0.37 |
+| JPEG 60 | 47.93% | +0.06 | 38.02% | -0.19 |
+| JPEG 40 | 48.17% | +0.31 | 38.27% | +0.06 |
+| JPEG 20 | 47.80% | -0.06 | 38.02% | -0.19 |
+| Occlusion 0.1 | 46.32% | -1.55 | 40.50% | +2.29 |
+| Occlusion 0.2 | 46.50% | -1.36 | 42.29% | +4.09 |
+| Occlusion 0.3 | 44.64% | -3.32 | 41.30% | +3.10 |
+
+Blur and JPEG compression caused almost no meaningful degradation in the VisDrone multiple-choice setting. TinyLLaVA stayed around 48%, and MobileVLM stayed around 38%. Occlusion affected TinyLLaVA more clearly, with accuracy dropping to 44.64% at 30% occlusion. 
+
+MobileVLM did not degrade under occlusion in this run and even improved, which likely reflects instability in the multiple-choice setting or occlusion hiding distracting visual regions rather than true robustness improvement. 
+
+Overall, TinyLLaVA is more sensitive to occlusion, while blur and JPEG compression have limited effect on both models.
+
+VisDrone Counting Robustness
+| Noise | Tiny MAE | Tiny MAE Increase | Mobile MAE | Mobile MAE Increase |
+|---|---:|---:|---:|---:|
+| Blur 3 | 2.24 | -0.04 | 4.58 | +0.12 |
+| Blur 5 | 2.24 | -0.04 | 4.80 | +0.33 |
+| Blur 7 | 2.36 | +0.07 | 4.87 | +0.41 |
+| JPEG 60 | 2.28 | -0.01 | 4.06 | -0.40 |
+| JPEG 40 | 2.25 | -0.04 | 4.27 | -0.19 |
+| JPEG 20 | 2.30 | +0.01 | 4.29 | -0.17 |
+| Occlusion 0.1 | 2.85 | +0.57 | 4.04 | -0.42 |
+| Occlusion 0.2 | 3.06 | +0.77 | 3.64 | -0.82 |
+| Occlusion 0.3 | 3.16 | +0.88 | 3.31 | -1.16 |
+
+TinyLLaVA counting is mostly stable under blur and JPEG compression, but it clearly gets worse under occlusion. Its MAE increases from 2.28 clean to 3.16 at occlusion 0.3, which means hiding parts of the image makes counting harder.
+
+MobileVLM behaves differently. Blur slightly worsens its counting error, but JPEG and occlusion reduce its MAE compared with the clean baseline. This does not necessarily mean noise helps MobileVLM, but rather that its continuous counting behavior is unstable and may change when distracting visual details are removed.
+
+INFERENCE TIME
+| Setup | TinyLLaVA Avg Time | MobileVLM Avg Time |
+|---|---:|---:|
+| VisDrone MC clean | ~1.16s | ~0.37s |
+| VisDrone counting clean | ~1.11s | ~0.36s |
+| Counting blur/JPEG/occlusion | ~1.10-1.16s | ~0.35-0.40s |
+
+MobileVLM was consistently much faster than TinyLLaVA on VisDrone. Across both the multiple-choice and continuous counting experiments, MobileVLM usually answered in about 0.35-0.40 seconds per image-question pair, while TinyLLaVA usually needed about 1.10-1.16 seconds. This means MobileVLM was roughly 3 times faster than TinyLLaVA.
+
+The added visual degradations did not strongly change inference time. Blur, JPEG compression, and occlusion changed the image quality, but the models still processed one image and generated a short answer, so latency stayed mostly stable. The main latency difference therefore comes from the model architecture rather than from the degradation type.
+
 ## Phase 3
 ## Visual Complexity Analysis
 To better understand why some phase 1 examples failed I used SAM to segment object like regions in the sampled video frames. 
