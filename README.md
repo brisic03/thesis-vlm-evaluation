@@ -78,7 +78,7 @@ Both models hate option E and this is a classic LLM trait because they run out o
 | Min latency | 1.070s | 0.323s |
 | Max latency | 9.568s | 9.568s |
 
-###Observations:
+### Observations:
 MobileVLM is around 2.5x faster than TinyLLaVA on pure inference latency. Both models usually run quite fast but sometimes they get stuck and take up to 9 seconds for a single question. This happens when the models write too many words. The more it writes before giving the final answer, the longer we have to wait.
 
 Median typical performance: A typical TinyLLaVA answer takes 1.08 seconds whereas a typical MobileVLM answer takes only 0.33 seconds so basically in a normal situation MobileVLM is 3 times faster.
