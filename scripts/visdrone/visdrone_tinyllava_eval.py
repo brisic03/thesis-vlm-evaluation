@@ -33,7 +33,6 @@ def build_prompt(question, options):
 
     return prompt
 
-
 def extract_answer_letter(text):
     text = str(text).strip()
 
@@ -50,7 +49,6 @@ def extract_answer_letter(text):
             return char
 
     return None
-
 
 def query_single_image(image, question, options, model, tok, img_proc):
     from tinyllava.data import TextPreprocess, ImagePreprocess
@@ -200,4 +198,3 @@ print(f"Average inference time: {avg_time:.2f}s")
 print("\nAccuracy by question type:")
 print(df.groupby("qtype")["correct"].mean() * 100)
 print(f"\nResults saved in {OUT_PATH}")
-
