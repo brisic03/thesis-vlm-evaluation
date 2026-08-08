@@ -9,7 +9,6 @@ from collections import Counter
 from segment_anything import sam_model_registry, SamAutomaticMaskGenerator
 from torchvision.models import resnet50, ResNet50_Weights
 
-
 PHASE1_RESULTS = "/home/brisic03/thesis_eval/results_3b_nextqa.csv"
 VIDEO_ROOT = "/home/brisic03/NExT-QA/dataset/videos/val"
 
@@ -24,7 +23,6 @@ NUM_FRAMES = 8
 MAX_ROWS = 20  
 MAX_MASKS_PER_FRAME = 5
 MIN_CROP_SIDE = 20
-
 
 def get_frames(v_path, n=NUM_FRAMES):
     vid = cv2.VideoCapture(v_path)
@@ -48,7 +46,6 @@ def get_frames(v_path, n=NUM_FRAMES):
     vid.release()
     return frames
 
-
 def classify_crops(crops, preprocess, model, categories, device):
     if not crops:
         return []
@@ -66,7 +63,6 @@ def classify_crops(crops, preprocess, model, categories, device):
         (categories[idx.item()], float(conf.item()))
         for idx, conf in zip(idxs, confs)
     ]
-
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}")
@@ -198,4 +194,3 @@ if len(crop_df) > 0:
 print(f"Saved row-level object types to {OUT_PATH}")
 print(f"Saved crop-level labels to {CROP_OUT_PATH}")
 print(f"Saved label summary to {SUMMARY_OUT_PATH}")
-
