@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import sys
 import os
 import io
@@ -28,7 +26,6 @@ from mobilevlm.utils import (
 )
 from mobilevlm.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN
 
-
 MODEL_PATH = "mtgv/MobileVLM_V2-3B"
 DATA_ROOT = "/home/brisic03/dataset/nextqa/val_descriptive.csv"
 VIDEO_ROOT = "/home/brisic03/NExT-QA/dataset/videos/val"
@@ -40,7 +37,6 @@ NUM_FRAMES = 8
 
 NOISE_TYPE = "occlusion"
 SEVERITY = 0.3
-
 
 def get_frames(v_path, n=NUM_FRAMES):
     vid = cv2.VideoCapture(v_path)
@@ -63,7 +59,6 @@ def get_frames(v_path, n=NUM_FRAMES):
 
     vid.release()
     return frames
-
 
 def apply_noise(img, noise_type=None, severity=None, seed=42):
     if noise_type is None:
@@ -107,7 +102,6 @@ def apply_noise(img, noise_type=None, severity=None, seed=42):
 
     return img
 
-
 def build_prompt(question, options):
     opts_str = "\n".join([f"{k}. {v}" for k, v in options.items()])
 
@@ -117,7 +111,6 @@ def build_prompt(question, options):
         f"{opts_str}\n"
         f"Answer with only the letter of the correct option (A, B, C, D or E)."
     )
-
 
 def query_single_frame(frame, question, options, model, tokenizer, image_processor):
     prompt = build_prompt(question, options)
@@ -171,7 +164,6 @@ def query_single_frame(frame, question, options, model, tokenizer, image_process
             return char
 
     return None
-
 
 def majority_vote(predictions):
     valid = [p for p in predictions if p is not None]
@@ -293,4 +285,3 @@ avg_time = df["inference_time_sec"].mean()
 print(f"\nAccuracy: {accuracy:.2f}%")
 print(f"Average inference time per question: {avg_time:.2f} seconds")
 print(f"Results saved in {OUT_PATH}")
-
