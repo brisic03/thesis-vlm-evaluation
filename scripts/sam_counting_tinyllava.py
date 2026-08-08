@@ -7,7 +7,6 @@ import numpy as np
 from tqdm import tqdm
 from segment_anything import sam_model_registry, SamAutomaticMaskGenerator
 
-
 PHASE1_RESULTS = "/home/brisic03/thesis_eval/results_3b_nextqa.csv"
 VIDEO_ROOT = "/home/brisic03/NExT-QA/dataset/videos/val"
 OUT_PATH = "/home/brisic03/sam_tinyllava_object_counts.csv"
