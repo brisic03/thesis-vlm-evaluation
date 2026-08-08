@@ -128,7 +128,6 @@ for image_name in image_files:
 
     present_classes = list(counts.keys())
 
-    # Question 1: object presence
     correct_class = random.choice(present_classes)
     options, answer_idx = make_options(correct_class, all_classes)
 
@@ -144,7 +143,6 @@ for image_name in image_files:
             correct_class,
         )
 
-    # Question 2: counting with buckets
     target_class = random.choice(present_classes)
     count = counts[target_class]
 
@@ -167,7 +165,6 @@ for image_name in image_files:
         correct_count,
     )
 
-    # Question 3: most frequent object class
     max_count = max(counts.values())
     top_classes = [cls for cls, c in counts.items() if c == max_count]
 
@@ -187,7 +184,6 @@ for image_name in image_files:
                 correct_top,
             )
 
-    # Question 4: location of largest object
     largest = max(objects, key=lambda o: o["w"] * o["h"])
     cx = largest["x"] + largest["w"] / 2
     cy = largest["y"] + largest["h"] / 2
